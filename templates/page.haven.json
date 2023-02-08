@@ -1,5 +1,5 @@
 {
-  "wrapper": ".zeilkamp-page",
+  "wrapper": ".haven-page",
   "sections": {
     "hero": {
       "type": "pages-hero",

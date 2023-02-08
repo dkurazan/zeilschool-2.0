@@ -1,7 +1,7 @@
 <div class="start-section">
     <div class="youtube-container">
 		{% if section.settings.video_link == blank %}
-			{{  page.featured_image | img_url: 'master' | img_tag }}
+			{{  section.settings.img | img_url: 'master' | img_tag }}
 		{% else %}
 			<iframe src="https://www.youtube.com/embed/{{ section.settings.video_link | slice: 32, 11 }}?autoplay=1&mute=1&loop=1&color=white&controls=0&modestbranding=1&playsinline=1&rel=0&enablejsapi=1&playlist={{ section.settings.video_link | slice: 32, 11 }}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 		{% endif %}
@@ -31,7 +31,12 @@
 		"label": {
 		"en": "Paste the YouTube video link"
 		}
-	}
+	},
+    {
+        "type": "image_picker",
+        "id": "img",
+        "label": "Background image"
+    }
   ],
 	"presets": []
 }

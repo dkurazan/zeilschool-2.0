@@ -102,6 +102,21 @@
     display: none;
 }
 
+.button-section.weather-section{
+    padding-top: 20px;
+}
+
+.button-section.weather-section .weather-section__info{
+    flex: 0 0 100%;
+    max-width: 100%;
+    padding-top: 35px;
+}
+
+
+.button-section.weather-section .weather-section__info p{
+    max-width: 1056px;
+    padding-bottom: 0;
+}
 
 @media(max-width: 1460px){
     .weather-section__button{
