@@ -1,7 +1,7 @@
 {
     "sections": {
-        "type":{
-            "hero": "pages-hero"
+        "hero":{
+            "type": "pages-hero"
         }
     },
     "order": ["hero"]
