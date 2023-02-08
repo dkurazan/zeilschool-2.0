@@ -5,5 +5,5 @@
             "type": "main-hero"
         }
   },
-  "order": ["main-hero"]
+  "order": ["hero"]
 }
