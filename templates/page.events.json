@@ -1,0 +1,34 @@
+{
+  "wrapper": ".events-page.pages",
+  "sections": {
+    "hero": {
+      "type": "pages-hero",
+      "settings": {
+        "title": "",
+        "video_link": "",
+        "img": "shopify:\/\/shop_images\/zeilkamp-bg.png"
+      }
+    },
+    "breadcrumbs": {
+      "type": "breadcrumbs",
+      "settings": {
+      }
+    },
+    "button-section":{
+        "type": "events-button-section"
+    },
+    "gallery": {
+      "type": "main-gallery"
+    },
+    "info-section":{
+      "type": "events-info-section"
+    }
+  },
+  "order": [
+    "hero",
+    "breadcrumbs",
+    "button-section",
+    "gallery",
+    "info-section"
+  ]
+}

@@ -290,6 +290,11 @@
       justify-content: end;
   }
 
+  .e-mail{
+
+    padding-left: 20px;
+}
+
   .e-mail button{
       margin-top: 21px;
       margin-right: 10px;

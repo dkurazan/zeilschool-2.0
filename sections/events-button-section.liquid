@@ -1,0 +1,44 @@
+{{ 'events.css' | asset_url | stylesheet_tag }}
+<div class="weather-section">
+  <div class="container">
+    <div class="row">
+        <div class="events weather-section__button">
+            <div class="weather-section__button-inner">
+                <a href="#" class="btn__lg">Boek nu</a>
+                <a href="#" class="btn__lg">CORONA UPDATE</a>
+            </div>
+        </div>
+        <div class="weather-section__info">
+            {% if section.settings.text-content != blank %} 
+                        {{ section.settings.text-content }}
+            {%  else %}
+                <p>
+                    • De leukste zeilschool van Midden Nederland <br>
+                    • Wel 12 soorten boten om te huren, van sloep tot fusion <br>
+                    • Surfen, suppen, kanoën en waterfietsen <br>
+                    • Team-uitjes en activiteiten voor jong en oud <br>
+                    • Eten en slapen aan het water<br>
+                </p>
+            {% endif %}
+        </div>
+        <div class="weather-section__data"></div>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+"name": "Add your text",
+    "settings": [
+            {
+                "type": "richtext",
+                "id": "text",
+                "label": {
+                "en": "Type your text"
+                }
+            }
+        ],
+    "presets": [
+    ]
+}
+{% endschema %}
