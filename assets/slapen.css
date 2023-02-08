@@ -1,0 +1,72 @@
+.kopje__title-right{
+    background-color: #C65F50;
+}
+
+.kopje__title-left{
+    background-color: #984539;
+}
+
+.info-section .row , .row:last-child .info-section__text div:last-child{
+    padding-left: 0;
+}
+
+.row:last-child .info-section__text{
+    display: block;
+}
+
+a.slapen-btn:hover{
+    background-color: var(--unnamed-color-984539);
+}
+
+@media (max-width: 1460px) {
+    .weather-section__info{
+        flex: 0 0 70%;
+        max-width: 70%;
+    }
+}
+
+@media (max-width: 956px){
+    .info-section .row:last-child {
+        display: block;
+    }
+
+    .weather-section__button-inner a {
+        width: 116px;
+        height: 48px;
+        font-size: 23px;
+        line-height: 48px;
+        padding-left: 14px;
+    }
+
+    .slapen.weather-section__button{
+        flex: 0 0 25%;
+        max-width: 25%;
+    }
+
+    .weather-section__info{
+        flex: 0 0 75%;
+        max-width: 75%;
+    }
+}
+
+@media(max-width: 600px){
+    .weather-section__info{
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
+
+@media(max-width: 550px){
+
+    .weather-section__button-inner a{
+        width: 116px !important;
+    }
+}
+
+.footer{
+    background-color: #C65F50 !important;
+}
+
+.footer-main__buttons a{
+    background-color: #984539 !important;
+}

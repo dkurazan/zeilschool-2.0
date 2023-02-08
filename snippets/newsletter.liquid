@@ -1,0 +1,49 @@
+<div class="contact-form__inner">
+  <div class="newsletter center ">
+    <div class="newsletter__wrapper color">
+      <h4 {% if section.settings.newsletter-color %} style="color: {{ section.settings.newsletter-color }};" {% endif %}>
+        {% if section.settings.newsletter-title %}
+          {{ section.settings.newsletter-title }}
+        {% else %}
+          ONTVANG ONZE NIEUWSBRIEF
+        {% endif %}
+      </h4>
+      {% form 'customer', class: 'newsletter-form' %}
+        <input type="hidden" name="contact[tags]" value="newsletter">
+        <div class="newsletter-form__field-wrapper">
+          <div class="field">
+            <input
+              id="NewsletterForm--{{ section.id }}"
+              type="email"
+              name="contact[email]"
+              class="field__email"
+              value="{{ form.email }}"
+              aria-required="true"
+              autocorrect="off"
+              autocapitalize="off"
+              autocomplete="email"
+              placeholder="je e-mailadres"
+              required
+            >
+            <button type="submit" class="subscribe" name="commit" id="subscribe" aria-label="VERSTUUR">
+              VERSTUUR
+            </button>
+          </div>
+        </div>
+        {%- if form.errors -%}
+          <p>
+            <small class="newsletter-form__error" id="{{- error_id -}}">
+              {{ form.errors.translated_fields['email'] | capitalize }} {{ form.errors.messages['email'] }}
+            </small>
+          </p>
+        {%- endif -%}
+  
+        {%- if form.posted_successfully? -%}
+          <p class="newsletter-form__success" id="{{- success_id -}}" tabindex="-1" autofocus>
+            Subscribed
+          </p><!-- /.newsletter-form__success -->
+        {%- endif -%}
+      {% endform %}
+    </div>
+  </div>
+</div>

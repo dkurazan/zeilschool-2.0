@@ -1,0 +1,190 @@
+<div class="container">
+<div class="news-info">
+    <div class="news-info__left-block">
+        <div>
+            <div class="news-info__insta-block">
+            <h3 class="main-title news-info-title">{{ section.settings.insta-title }}</h3>
+            <div id="instagram-feed-box"></div>
+            <div id="instagram-feed-box"></div>
+            <div class="insta-block__images">
+                <a href="#">
+                    {{ 'insta-block-1.png' | asset_url | img_tag }}
+                </a>
+                <a href="#">
+                    {{ 'insta-block-2.png' | asset_url | img_tag }}
+                </a>
+                <a href="#">
+                    {{ 'insta-block-3.png' | asset_url | img_tag }}
+                </a>
+                <a href="#">
+                    {{ 'insta-block-4.png' | asset_url | img_tag }}
+                </a>
+            </div>
+        </div>
+        <div class="news-info__social-netw">
+                <h3 class="main-title">{{ section.settings.social-title }}</h3>
+                <div class="social-block__inst-facebook">
+                    <a href="https://www.facebook.com/zeilschoolvinkeveen/" target="_blank" >
+                        {{ 'icon-facebook.png' | asset_url | img_tag }}
+                    </a>
+                    <a href="https://www.instagram.com/zeilschool_vinkeveen/" target="_blank" >
+                        {{ 'icon-instagram.png' | asset_url | img_tag }}
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="news-info__social-block sm-hidden">
+            <div class="newsletter-main">
+                {% render 'newsletter' %}
+            </div>
+        </div>
+    </div>
+    <div class="news-info__right-block">
+        <div class="news-info__news-block">
+            <h3 class="main-title news-info-title">{{ section.settings.news-title }}</h3>
+            <div class="news-block__inner">
+                {%- for article in blogs.news.articles limit: 2 -%}
+                    <div class="news-block__post">
+                        <a href="{{ article.url }}">
+                            {{ article.image | image_url: width: 120 | image_tag }}
+                        </a>
+                        <div>
+                            <a href="{{ article.url }}">{{ article.title }}</a>
+                            <a href="{{ article.url }}">{{ article.excerpt | truncatewords: 9 }}</a>
+                        </div>
+                    </div>
+                {%- endfor -%}
+            </div>
+        </div>
+        <div class="news-info__agenda-block">
+            <h3 class="main-title news-info-title">{{ section.settings.agenda-title }}</h3>
+            <div class="agenda__inner">
+                
+                {% paginate blogs.agenda.articles by 50 %}
+                
+                    {% assign res = false %}
+                    {% for article in blogs.agenda.articles %}
+                        {%- assign agenda_ns = article.metafields.agenda -%}
+                        {% if res %}
+                            {% assign tmp = agenda_ns.start_date | append: "." | append: article.handle | split: "," %}
+                            {% assign res = res | concat: tmp %}
+                        {% else %}
+                            {% assign res = agenda_ns.start_date | append: "." | append: article.handle | split: "," %}
+                        {% endif %}
+                    {% endfor %}
+                    {% assign res = res | sort %}
+                {% endpaginate %}
+                {% for articl in res %}
+                    {%- assign handl = articl | split: "." | last -%}
+                    {%- assign article = articles[handl] -%}
+                    {%- assign agenda_ns = article.metafields.agenda -%}
+                    {%- assign start = agenda_ns.start_date -%}
+                    {%- assign end = agenda_ns.end_fdate -%}
+                    {%- assign start_day = start | date: '%d' -%}
+                    {%- assign end_day = end | date: '%d' -%}
+                    {%- assign start_month = start | date: '%B' -%}
+                    {%- assign end_month = end | date: '%B' -%}
+                    
+                    <a class="agenda__item" href="{{ article.url }}">
+                        <div class="agenda__data" style="background: {{ section.settings.agenda-blocks-color }};">
+                            {%- if start_month == end_month -%}
+                                <h6>
+                                    <span class="font-scarlet">{{- start_day -}}
+                                    {%- if end_day and end_day != start_day -%}
+                                    -{{- end_day -}}
+                                    {%- endif -%}
+                                    </span>
+                                </h6>
+                                <h6>{{ end_month }}</h6>
+                            {%- else -%}
+                                <h6><span class="font-scarlet">{{ start | date: '%d %b' }}</span></h6>
+                                <h6>{{ end | date: '%d %b' }}</h6>
+                            {%- endif -%}
+                            
+                        </div>
+                        <div class="agenda__text">
+                            <h4>{{ article.title }}</h4>
+                            <h6>{% if article.excerpt != "" and article.excerpt != nil %}{{article.excerpt | strip_html }}{% else %}{{article.content | truncatewords: 8 | strip_html | replace: "&nbsp;", " " }}{% endif %}</h6>
+                        </div>
+                    </a>
+                  {% if forloop.index > 2 %}{% break %}{% endif %}
+                {% endfor %}
+              
+            </div>
+        </div>
+        <div class="news-info__social-block md-hidden">
+            <div class="social-block__inner">
+                <div>
+                    <h3 class="main-title">maps</h3>
+                    <a href="https://goo.gl/maps/UmCBQTqipYUYj52b6">
+                        {{ 'icon-maps.jpg' | asset_url | img_tag }}
+                    </a>
+                </div>
+                <div>
+                    <h3 class="main-title">volg ons</h3>
+                    <div class="social-block__inst-facebook">
+                        <a href="https://www.facebook.com/zeilschoolvinkeveen/" target="_blank" >
+                            {{ 'icon-facebook.png' | asset_url | img_tag }}
+                        </a>
+                        <a href="https://www.instagram.com/zeilschool_vinkeveen/" target="_blank" >
+                            {{ 'icon-instagram.png' | asset_url | img_tag }}
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="newsletter-main md-hidden">
+            {% render 'newsletter' %}
+        </div>
+    </div>
+</div>
+</div>
+
+{%  schema  %} 
+    {
+        "name": "News section",
+        "settings": [
+            {
+                "type": "text",
+                "id": "insta-title",
+                "label": "instagram app title",
+                "default": "Instagram"
+            },
+            {
+                "type": "text",
+                "id": "social-title",
+                "label": "social networks title",
+                "default": "volg ons"
+            },
+            {
+                "type": "text",
+                "id": "news-title",
+                "label": "news blocks title",
+                "default": "nieuws"
+            },
+            {
+                "type": "text",
+                "id": "newsletter-title",
+                "label": "newsletter title",
+                "default": "ONTVANG ONZE NIEUWSBRIEF"
+            },
+            {
+                "type": "color",
+                "id": "newsletter-color",
+                "label": "newsletter title color"
+            },
+            {
+                "type": "text",
+                "id": "agenda-title",
+                "label": "agenda title",
+                "default": "Agenda"
+            },
+            {
+                "type": "color",
+                "id": "agenda-blocks-color",
+                "label": "agenda blocks color"
+            }
+        ]
+    }
+{% endschema %}

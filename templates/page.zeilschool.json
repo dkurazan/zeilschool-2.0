@@ -1,0 +1,124 @@
+{
+    "sections": {
+      "main-hero": {
+        "type": "main-hero",
+        "settings": {
+          "title": "",
+          "video_link": "https:\/\/www.youtube.com\/watch?v=DrQCR3I7TYQ&ab_channel=THEBOATSHOW",
+          "section-height": "xl"
+        }
+      },
+      "weather-section": {
+        "type": "main-weather-section",
+        "settings": {
+          "button-color": "",
+          "button-color-hover": "",
+          "text-content": ""
+        }
+      },
+      "gallery": {
+        "type": "main-gallery",
+        "blocks": {
+          "4d602f2f-06f0-470f-be41-e7699f27b1e1": {
+            "type": "block1",
+            "settings": {
+              "item-title1": "Zeilschool",
+              "richtext-item1": "",
+              "title-1-color": "",
+              "item-link1": "/pages/zeilschool"
+            }
+          },
+          "5cdec799-9d72-49a9-b890-6a8489d23fab": {
+            "type": "block2",
+            "settings": {
+              "item-title2": "ZEILKAMP",
+              "richtext-item2": "",
+              "title-2-color": "",
+              "item-link2": "/pages/zeilkamp"
+            }
+          },
+          "f30f2bb9-cf72-472e-80fb-9956a643199a": {
+            "type": "block3",
+            "settings": {
+              "item-title3": "HAVEN",
+              "richtext-item3": "",
+              "title-3-color": "",
+              "item-link3": "/pages/haven"
+            }
+          },
+          "e049f24c-62a9-40b7-909e-09bfbe9edfd6": {
+            "type": "block4",
+            "settings": {
+              "item-title4": "BOOT HUREN",
+              "richtext-item4": "",
+              "title-4-color": "",
+              "item-link4": "/pages/boot-huren"
+            }
+          },
+          "3bc66305-af3c-494b-9491-66312c189180": {
+            "type": "block5",
+            "settings": {
+              "item-title5": "Slapen",
+              "richtext-item5": "",
+              "title-5-color": "",
+              "item-link5": "/pages/slapen"
+            }
+          },
+          "efc58c59-b989-4c3d-8dfe-e38fade70171": {
+            "type": "block6",
+            "settings": {
+              "item-title6": "B&B",
+              "richtext-item6": "",
+              "title-6-color": "",
+              "item-link6": "/pages/b-b"
+            }
+          },
+          "7b1d756a-2a53-482e-bf67-4f7c7069fb36": {
+            "type": "block7",
+            "settings": {
+              "item-title7": "EVENTS",
+              "richtext-item7": "",
+              "title-7-color": "",
+              "item-link7": "/pages/events"
+            }
+          },
+          "9fd927e3-463b-4e6c-9caf-0579f2289fc5": {
+            "type": "block8",
+            "settings": {
+              "item-title8": "BEDRIJVEN",
+              "richtext-item8": "",
+              "title-8-color": "",
+              "item-link8": "/pages/bedrijven"
+            }
+          }
+        },
+        "block_order": [
+          "4d602f2f-06f0-470f-be41-e7699f27b1e1",
+          "5cdec799-9d72-49a9-b890-6a8489d23fab",
+          "f30f2bb9-cf72-472e-80fb-9956a643199a",
+          "e049f24c-62a9-40b7-909e-09bfbe9edfd6",
+          "3bc66305-af3c-494b-9491-66312c189180",
+          "efc58c59-b989-4c3d-8dfe-e38fade70171",
+          "7b1d756a-2a53-482e-bf67-4f7c7069fb36",
+          "9fd927e3-463b-4e6c-9caf-0579f2289fc5"
+        ],
+        "settings": {
+          "row-title1": "Kopje",
+          "row-title2": "Kopje"
+        }
+      },
+      "info-section":{
+        "type": "main-info-section"
+      },
+      "news":{
+        "type": "main-news"
+      }
+    },
+    "order": [
+      "main-hero",
+      "weather-section",
+      "gallery",
+      "info-section",
+      "news"
+    ]
+  }

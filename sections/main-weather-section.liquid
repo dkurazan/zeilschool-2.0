@@ -1,0 +1,100 @@
+
+<div class="weather-section">
+  <div class="container">
+    <div class="row">
+        <div class="weather-section__button">
+            <div class="main weather-section__button-inner">
+                <a href="#" style="background: {{ section.settings.button-color }};" onmouseover="this.style.backgroundColor='{{ section.settings.button-color-hover }}'" onmouseout="this.style.backgroundColor=''">Boek nu</a>
+            </div>
+        </div>
+        <div class="weather-info__wraper">
+            <div class="weather-section__info">
+                <p>
+                    {% if section.settings.text-content != blank %} 
+                        {{ section.settings.text-content }}
+                    {%  else %}
+                    • De leukste zeilschool van Midden Nederland <br>
+                    • Wel 12 soorten boten om te huren, van sloep tot fusion <br>
+                    • Surfen, suppen, kanoën en waterfietsen <br>
+                    • Team-uitjes en activiteiten voor jong en oud <br>
+                    • Eten en slapen aan het water<br>
+                    {% endif %}
+                </p>
+                <a href="#">Voor Simon: de algemene voorwaarden</a>
+            </div>
+            <div class="weather-section__data" style="visibility:hidden">
+                <div class="weather-section__day">
+                    <div class="weather-section__day-title">VANDAAG <span class="weather-temperature">19</span>°</div>
+                    <div class="weather-section__clouds">
+                        <div class="weather-section__cloudy">
+                            {% render 'icon-w-cloudy' %}
+                        </div>
+                        <div class="weather-section__sunny">
+                            {% render 'icon-w-sunny' %}
+                        </div>
+                    </div>
+                    <div class="weather-section__wind">
+                        <div class="weather-section__wind-compass">
+                            <div class="weather-section__wind-arrow">
+                                {% render 'icon-w-arrow' %}
+                            </div>
+                        </div>
+                        <div class="weather-section__wind-image">
+                            {% render 'icon-w-wind' %}
+                            <div class="weather-section__wind-speed">22</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="weather-section__morning">
+                    <div class="weather-section__day-title">MORGEN <span class="weather-temperature">20</span>°</div>
+                    <div class="weather-section__clouds">
+                        <div class="weather-section__cloudy">
+                            {% render 'icon-w-cloudy' %}
+                        </div>
+                        <div class="weather-section__sunny">
+                            {% render 'icon-w-sunny' %}
+                        </div>
+                    </div>
+                    <div class="weather-section__wind">
+                        <div class="weather-section__wind-compass">
+                            <div class="weather-section__wind-arrow">
+                                {% render 'icon-w-arrow' %}
+                            </div>
+                        </div>
+                        <div class="weather-section__wind-image">
+                            {% render 'icon-w-wind' %}
+                            <div class="weather-section__wind-speed">22</div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+"name": "Weather section",
+"settings": [
+    {
+        "type": "color",
+        "id": "button-color",
+        "label": "Change the button color"
+    },
+    {
+        "type": "color",
+        "id": "button-color-hover",
+        "label": "Change the button hover color"
+    },
+    {
+        "type": "richtext",
+        "id": "text-content",
+        "label": "Change the button hover color"
+    }
+],
+	"presets": [
+	]
+}
+{% endschema %}

@@ -1,6 +1,100 @@
 {
-    "current": "Default",
-    "presets": {
-      "Default": { }
+  "current": {
+    "sections": {
+      "header": {
+        "type": "header",
+        "blocks": {
+          "09bb5761-9fd4-4c7f-b985-31cc4b38eda4": {
+            "type": "customize_colors",
+            "settings": {
+              "title": "Zeilschool",
+              "bg_color": "#6c9db7",
+              "tx_color": "#ffffff"
+            }
+          },
+          "23416e80-1a65-4c86-b8d4-f7d46dde9f62": {
+            "type": "customize_colors",
+            "settings": {
+              "title": "Zeilkamp",
+              "bg_color": "#396d84",
+              "tx_color": "#ffffff"
+            }
+          },
+          "51a7fa93-7bc5-447c-9f70-ec3817775063": {
+            "type": "customize_colors",
+            "settings": {
+              "title": "HAVEN",
+              "bg_color": "#98ba7f",
+              "tx_color": "#ffffff"
+            }
+          },
+          "159c49ad-95a7-427f-8204-b7ad0fbfa279": {
+            "type": "customize_colors",
+            "settings": {
+              "title": "BOOT HUREN",
+              "bg_color": "#6a8456",
+              "tx_color": "#ffffff"
+            }
+          },
+          "f9e9333c-c034-4f54-8510-5355d41fa850": {
+            "type": "customize_colors",
+            "settings": {
+              "title": "SLAPEN",
+              "bg_color": "#c65f50",
+              "tx_color": "#ffffff"
+            }
+          },
+          "595641b1-5f11-4b04-9c70-91f86cc73ee2": {
+            "type": "customize_colors",
+            "settings": {
+              "title": "B&B",
+              "bg_color": "#984539",
+              "tx_color": "#ffffff"
+            }
+          },
+          "28d31fac-66a1-4726-854a-1fd8565e8b68": {
+            "type": "customize_colors",
+            "settings": {
+              "title": "EVENTS",
+              "bg_color": "#f3c867",
+              "tx_color": "#ffffff"
+            }
+          },
+          "659022cd-078d-4357-b2da-25cf5658153e": {
+            "type": "customize_colors",
+            "settings": {
+              "title": "BEDRIJVEN",
+              "bg_color": "#bc953c",
+              "tx_color": "#ffffff"
+            }
+          }
+        },
+        "block_order": [
+          "09bb5761-9fd4-4c7f-b985-31cc4b38eda4",
+          "23416e80-1a65-4c86-b8d4-f7d46dde9f62",
+          "51a7fa93-7bc5-447c-9f70-ec3817775063",
+          "159c49ad-95a7-427f-8204-b7ad0fbfa279",
+          "f9e9333c-c034-4f54-8510-5355d41fa850",
+          "595641b1-5f11-4b04-9c70-91f86cc73ee2",
+          "28d31fac-66a1-4726-854a-1fd8565e8b68",
+          "659022cd-078d-4357-b2da-25cf5658153e"
+        ],
+        "settings": {
+          "navigation_menu": "main-menu"
+        }
+      },
+      "footer": {
+        "type": "footer",
+        "settings": {
+        }
+      }
+    },
+    "content_for_index": [
+
+    ]
+  },
+  "presets": {
+    "Default": {
     }
   }
+}
