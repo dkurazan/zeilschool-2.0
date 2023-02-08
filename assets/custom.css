@@ -1,0 +1,474 @@
+body {
+  font-family: 'Roboto Condensed';
+}
+
+.font-scarlet {
+  font-family: 'Scarlet';
+}
+
+.weather-section__data {
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 30px;
+  color: var(--unnamed-color-818080);
+  list-style: initial;
+  padding-bottom: 10px;
+}
+
+.weather-section__day{
+  margin-bottom: 56px;
+}
+
+.weather-section__day-title {
+  white-space: nowrap;
+}
+
+.weather-section__data {
+  padding: 0 54px 0 20px;
+
+}
+
+.weather-section__day, .weather-section__morning, .weather-section__wind, .weather-section__wind-image {
+  display:flex;
+  gap: 16px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.weather-section__wind, .weather-sectoin__clouds {
+  flex-basis: 33%;
+}
+
+.weather-section__clouds > * {
+  display: none;
+}
+
+.weather-section__clouds .active {
+  display: block;
+}
+
+.weather-section__wind-compass {
+  /* position:relative; */
+  background-image: url('./weather-compass.svg');
+  background-repeat: no-repeat;
+  height: 64px;
+  width: 64px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.weather-section__wind-arrow {
+  display: inline;
+  scale: 0.9;
+}
+
+.news-block__post:first-child>div>a:last-child {
+  max-width: unset;
+}
+
+@media (max-width:600px) {
+  .weather-section__day, .weather-section__morning {
+    scale: 0.65;
+  }
+  .weather-section__data {
+    padding: 0;
+  }
+}
+
+.header__menu .header__nav-item {
+  font-size: 20px;
+  /* padding: 15px 0 6px 6px; */
+  text-align: left;
+  padding: 35px 44px 16px 16px;
+  font: normal normal bold 30px/39px 'Roboto Condensed', sans-serif;
+  letter-spacing: 0px;
+  color: #FFFFFF;
+  text-decoration: none;
+  text-transform: uppercase;
+  border-radius: 0px 0px 35px 0px;
+  white-space: nowrap;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.header__menu .header__nav-subitem {
+  font-size: 15px;
+  width: fit-content !important;
+  margin-top: -100px;
+  padding: 106px 20px 8px 10px !important;
+  z-index: -1;
+  text-align: left;
+  text-align: center;
+  font: normal normal bold 20px/26px 'Roboto Condensed', sans-serif;
+  letter-spacing: 0px;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-radius: 0px 0px 30px 0px;
+  width: fit-content;
+  white-space: nowrap;
+  overflow: hidden;
+  z-index: 0;
+}
+
+.header__menu .header__nav-item span, .header__menu .header__nav-subitem span {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: all 200ms ease-in-out;
+}
+
+.header__menu .header__nav-item:hover span, .header__menu .header__nav-subitem:hover span {
+  filter: brightness(0.7);
+  transition: all 200ms ease-in-out;
+}
+
+.header__menu>nav>li:nth-child(2) {
+  background-color: unset !important;
+  border-radius: unset !important;
+  width: fit-content;
+}
+
+/* CHALLENGE SECTION */
+
+main:has(.shopify-challenge__container) {
+  background-color: antiquewhite;
+}
+
+.shopify-challenge__container {
+  max-width: 500px;
+  margin: 0 auto;
+  min-height: 700px;
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+  flex-direction: column;
+  justify-content: center;
+  gap: 32px;
+}
+
+.shopify-challenge__button {
+  font-size: 26px;
+  font-weight: 700;
+  background-color: #707070;
+  color: #FFFFFF;
+  border-radius: 0 25px 25px 25px;
+  padding: 6px 17px 9px 17px;
+  transition: .3s all ease-in-out;
+  border: 1px solid #818080;
+  cursor: pointer;
+}
+
+.shopify-challenge__button:hover {
+  cursor: pointer;
+  background-color: #fff;
+  color: #707070;
+  transition: .3s all ease-in-out;
+}
+
+.shopify-challenge__container .g-recaptcha {
+  margin-bottom:32px;
+}
+
+.newsletter__wrapper {
+    font: 700 50px Roboto Condensed,sans-serif;
+    color: #6E9DB6;
+    padding-bottom: 12px;
+    position: relative;
+}
+
+.newsletter__wrapper form {
+  display: flex;
+  align-items: end;
+}
+
+.newsletter__wrapper form p {
+  font-size: 30px;
+  line-height: 50px;
+  color: #818080;
+  padding-right: 27px;
+}
+
+.newsletter-form__field-wrapper{
+  width: 100%;
+}
+
+.newsletter__wrapper form input, .newsletter__wrapper form input::placeholder{
+  color: #818080;
+}
+
+.newsletter__wrapper form input {
+  height: 49px;
+  border-radius: 25px;
+  padding-left: 20px;
+  font-size: 25px;
+  margin-right: 9px;
+  border: 1px solid #818080;
+}
+
+.newsletter__wrapper form input:focus{
+  outline: none;
+}
+
+.newsletter__wrapper button:hover {
+    cursor: pointer;
+    background-color: #fff;
+    color: #707070;
+    transition: .3s all ease-in-out;
+}
+
+.newsletter__wrapper button {
+  font: 700 50px Roboto Condensed,sans-serif;
+  font-size: 26px;
+  font-weight: 700;
+  background-color: #707070;
+  color: #FFFFFF;
+  border-radius: 0 25px 25px 25px;
+  padding: 6px 17px 9px 17px;
+  transition: .3s all ease-in-out;
+  border: 1px solid #818080;
+}
+
+.newsletter__wrapper {
+  margin-left: 54px;
+  padding-top: 67px
+}
+
+.filter-grid {
+  display: grid;
+  grid-auto-flow: column;
+  width: fit-content;
+  margin: 20px auto;
+  gap: 32px;
+  color: #818080;
+  font-size: 26px;
+}
+
+.filter-grid .filter-column {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  justify-content: space-between;
+}
+
+.filter-grid .filter-column .filter-value {
+  display: flex;
+  gap: 8px;
+  min-height: 30px;
+  align-items: flex-start;
+}
+
+.filter-grid .filter-column:last-child label{
+  display: inline-block;
+  max-width: 97px;
+  width: 100%;
+}
+
+.filter-grid button {
+  background: #818080;
+  color: white;
+  border: none;
+  font-size: 20px;
+  font-family: Roboto Condensed,sans-serif;
+  padding: 4px 16px;
+  cursor: pointer;
+  border: 1px solid #818080;
+  transition: .2s ease-in-out;
+  margin-bottom:3px;
+}
+
+.filter-grid button:hover {
+  background: white;
+  border: 1px solid #818080;
+  color: #818080;
+  
+}
+
+.filter-grid .filter-title {
+  text-transform: uppercase;
+  font-weight: 700;
+  /* margin-bottom: -6px; */
+}
+
+.filter-grid .filter-column .filter-value input[type="checkbox"] {
+  -webkit-appearance: none;
+  appearance: none;
+  background-color: white;
+  margin: 0;
+
+  font: inherit;
+  color: #818080;
+  width: 1.15em;
+  height: 1.15em;
+  border: 1px solid #818080;
+  transform: translateY(-0.075em);
+
+  display: grid;
+  place-content: center;
+}
+
+.filter-grid .filter-column .filter-value input[type="checkbox"]::before {
+  content: "";
+  width: 0.65em;
+  height: 0.65em;
+  clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
+  transform: scale(0);
+  transform-origin: bottom left;
+  transition: 120ms transform ease-in-out;
+  box-shadow: inset 1em 1em #818080;
+  /* Windows High Contrast Mode */
+  background-color: CanvasText;
+}
+
+.filter-grid .filter-column .filter-value input[type="checkbox"]:checked::before {
+  transform: scale(1);
+}
+
+.filter-grid .filter-column .filter-value select {
+  appearance: none;
+  background-color: transparent;
+  border: none;
+  padding: 0 1em 0 0;
+  margin: 0;
+  color: #818080;
+  width: 100%;
+  font-family: inherit;
+  font-size: inherit;
+  cursor: inherit;
+  line-height: inherit;
+  outline: none;
+}
+
+.filter-grid .filter-column .filter-value select option {
+  color:#818080;
+}
+
+.filter-grid .filter-column .filter-value select::-ms-expand {
+  display: none;
+}
+
+.filter-grid .filter-column .filter-value .select {
+  border: 1px solid #818080;
+  padding: 5px 10px;
+  margin-top: -6px;
+  min-width: 6ch;
+  width: fit-content;
+  color: #818080;
+  font-size: 1.25rem;
+  cursor: pointer;
+  line-height: 1.1;
+  background-color: #fff;
+  background-image: linear-gradient(to top, #f9f9f9, #fff 33%);
+  display: grid;
+  grid-template-areas: "select";
+  align-items: center;
+  position: relative;
+}
+
+.filter-grid .filter-column .filter-value .select::after {
+  content: "";
+  width: 0.8em;
+  height: 0.5em;
+  background-color: #818080;
+  clip-path: polygon(100% 0%, 0 0%, 50% 100%);
+  justify-self: end;
+}
+
+.filter-grid .filter-column .filter-value select,
+.select:after {
+  grid-area: select;
+}
+
+
+.news-info__left-block>div:first-child{
+  display: flex;
+}
+
+.instagram-grid-container{
+  max-width: fit-content !important;
+  gap: 2px;
+}
+
+
+
+#shopify-section-main-kopje-section .kopje-section{
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+#shopify-section-main-kopje-section .kopje-section .filter-grid{
+  margin: 20px 0 20px 25%;
+}
+
+.agenda-detail-description__inner p {
+  padding-bottom: 1.5rem;
+}
+
+
+
+
+
+@media (max-width: 960px) {
+  .instagram-grid-container li.ingtagram-grid-item{
+    height: fit-content !important;
+  }
+
+  .instagram-grid-container{
+    overflow: hidden;
+  }
+
+  #shopify-section-main-kopje-section .kopje-section .filter-grid{
+    margin: 20px auto 40px;
+  }
+}
+
+@media (min-width: 1300px) {
+  .insta-block__images {
+    max-width: 100%;
+  }
+  .insta-block__images {
+    gap: 2px;
+  }
+  .insta-block__images a {
+    overflow: hidden;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .filter-grid{
+      display: none;
+  }
+
+  .weather-section__day{
+    margin-bottom: 20px;
+  }
+
+  .newsletter__wrapper form input{
+    height: 30px;
+    font-size: 16px;
+  }
+
+  .newsletter__wrapper button{
+    padding: 4px 7px 5px 10px;
+    font-size: 16px;
+    max-width: 92px;
+  }
+
+  .field{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+  }
+}
+
+@media (max-width: 350px) {
+  .weather-section__day, .weather-section__morning, .weather-section__wind, .weather-section__wind-image{
+    gap: 7px
+  }
+}
+

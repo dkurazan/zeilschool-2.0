@@ -1,615 +1,368 @@
-{% comment %}theme-check-disable UndefinedObject{% endcomment %}
-{{ 'section-footer.css' | asset_url | stylesheet_tag }}
-<link rel="stylesheet" href="{{ 'component-newsletter.css' | asset_url }}" media="print" onload="this.media='all'">
-<link rel="stylesheet" href="{{ 'component-list-menu.css' | asset_url }}" media="print" onload="this.media='all'">
-<link rel="stylesheet" href="{{ 'component-list-payment.css' | asset_url }}" media="print" onload="this.media='all'">
-<link rel="stylesheet" href="{{ 'component-list-social.css' | asset_url }}" media="print" onload="this.media='all'">
-<link rel="stylesheet" href="{{ 'component-rte.css' | asset_url }}" media="print" onload="this.media='all'">
-<link rel="stylesheet" href="{{ 'disclosure.css' | asset_url }}" media="print" onload="this.media='all'">
+{{ 'footer.css' | asset_url | stylesheet_tag }}
 
-<noscript>{{ 'component-newsletter.css' | asset_url | stylesheet_tag }}</noscript>
-<noscript>{{ 'component-list-menu.css' | asset_url | stylesheet_tag }}</noscript>
-<noscript>{{ 'component-list-payment.css' | asset_url | stylesheet_tag }}</noscript>
-<noscript>{{ 'component-list-social.css' | asset_url | stylesheet_tag }}</noscript>
-<noscript>{{ 'component-rte.css' | asset_url | stylesheet_tag }}</noscript>
-<noscript>{{ 'disclosure.css' | asset_url | stylesheet_tag }}</noscript>
-
-{%- style -%}
-  .footer {
-    margin-top: {{ section.settings.margin_top | times: 0.75 | round: 0 }}px;
-  }
-
-  .section-{{ section.id }}-padding {
-    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
-    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
-  }
-
-  @media screen and (min-width: 750px) {
-    .footer {
-      margin-top: {{ section.settings.margin_top }}px;
-    }
-
-    .section-{{ section.id }}-padding {
-      padding-top: {{ section.settings.padding_top }}px;
-      padding-bottom: {{ section.settings.padding_bottom }}px;
-    }
-  }
-{%- endstyle -%}
-
-<footer class="footer color-{{ section.settings.color_scheme }} gradient section-{{ section.id }}-padding">
-  {%- if section.blocks.size > 0 or section.settings.newsletter_enable or section.settings.show_social -%}
-    <div class="footer__content-top page-width">
-      {%- if section.blocks.size > 0 -%}
-        {%- liquid
-          if section.blocks.size == 9
-            assign footer_grid_class = 'grid--3-col-tablet'
-          elsif section.blocks.size > 6
-            assign footer_grid_class = 'grid--4-col-desktop'
-          elsif section.blocks.size > 4
-            assign footer_grid_class = 'grid--3-col-tablet'
-          endif
-        -%}
-        <div class="footer__blocks-wrapper grid grid--1-col grid--2-col grid--4-col-tablet {{ footer_grid_class }}">
-          {%- for block in section.blocks -%}
-            <div class="footer-block grid__item{% if block.type == 'link_list' %} footer-block--menu{% endif %}" {{ block.shopify_attributes }}>
-              {%- if block.settings.heading != blank -%}
-                <h2 class="footer-block__heading">{{- block.settings.heading | escape -}}</h2>
-              {%- endif -%}
-
-              {%- case block.type -%}
-                {%- when 'text' -%}
-                  <div class="footer-block__details-content rte">
-                    {{ block.settings.subtext }}
-                  </div>
-                {%- when 'link_list' -%}
-                  {%- if block.settings.menu != blank -%}
-                    <ul class="footer-block__details-content list-unstyled">
-                      {%- for link in block.settings.menu.links -%}
-                        <li>
-                          <a href="{{ link.url }}" class="link link--text list-menu__item list-menu__item--link{% if link.active %} list-menu__item--active{% endif %}">
-                            {{ link.title }}
-                          </a>
-                        </li>
-                      {%- endfor -%}
-                    </ul>
-                  {%- endif -%}
-                {%- when 'image' -%}
-                  <div class="footer-block__details-content footer-block-image {{ block.settings.alignment }}">
-                    {%- if block.settings.image != blank -%}
-                      {%- assign image_size_2x = block.settings.image_width | times: 2 | at_most: 5760 -%}
-                      <img
-                        srcset= "{{ block.settings.image | image_url: width: block.settings.image_width }}, {{ block.settings.image | image_url: width: image_size_2x }} 2x"
-                        src="{{ block.settings.image | image_url: width: 400 }}"
-                        alt="{{ block.settings.image.alt | escape }}"
-                        loading="lazy"
-                        width="{{ block.settings.image.width }}"
-                        height="{{ block.settings.image.height }}"
-                        style="max-width: min(100%, {{ block.settings.image_width }}px);"
-                      >
-                    {%- else -%}
-                      {{ 'image' | placeholder_svg_tag: 'placeholder-svg placeholder' }}
-                    {%- endif -%}
-                  </div>
-                {%- endcase -%}
-            </div>
-          {%- endfor -%}
+<footer class="footer">
+  <div class="container">
+    <div class="row">
+      <div class="footer__logo">
+        <div class="footer__logo-inner">
+          <a href="/">
+            <svg
+              class="header__logo-icon-footer"
+              fill="#ffffff"
+              id="_Group_"
+              data-name="&lt;Group&gt;"
+              xmlns="http://www.w3.org/2000/svg"
+              width="293"
+              height="111"
+              viewBox="0 0 525.813 212.594">
+              <g id="_Group_2" data-name="&lt;Group&gt;">
+                <g id="_Group_3" data-name="&lt;Group&gt;">
+                  <path
+                    id="_Compound_Path_"
+                    data-name="&lt;Compound Path&gt;"
+                    class="cls-1"
+                    d="M240.59,873.929c0.117,4.265,0,6.812,2.8,16.052,1.926,5.33,3.912,9.951,6.3,16.052h0.234c2.452-6.1,4.378-10.78,6.306-16.111,2.859-9.181,2.685-11.728,2.859-15.993h8.816c-0.058,4.857-.466,8.944-3.561,17.828-2.452,6.576-5.546,13.031-9.165,21.857H244.5c-3.679-8.766-6.773-15.281-9.224-21.8-3.036-8.944-3.445-13.031-3.5-17.888h8.815Z"
+                    transform="translate(-23.438 -722.281)" />
+                  <path
+                    id="_Compound_Path_2"
+                    data-name="&lt;Compound Path&gt;"
+                    class="cls-1"
+                    d="M274.1,873.929h8.816v39.685H274.1V873.929Z"
+                    transform="translate(-23.438 -722.281)" />
+                  <path
+                    id="_Compound_Path_3"
+                    data-name="&lt;Compound Path&gt;"
+                    class="cls-1"
+                    d="M292.784,873.929h9.634l15.119,26.062h0.235V873.929h8.406v39.685h-9.516L301.425,888.8h-0.233v24.818h-8.408V873.929Z"
+                    transform="translate(-23.438 -722.281)" />
+                  <path
+                    id="_Compound_Path_4"
+                    data-name="&lt;Compound Path&gt;"
+                    class="cls-1"
+                    d="M336.337,873.929h8.817V892h3.561a100.992,100.992,0,0,0,7.005-7.819,15.25,15.25,0,0,0,3.269-10.247h8.816c0.291,4.8-.584,8.115-4.145,13.09-2.4,2.962-4.787,5.509-7.59,8.826l11.735,17.769H357.471l-8.465-14.1h-3.852v14.1h-8.817V873.929Z"
+                    transform="translate(-23.438 -722.281)" />
+                  <path
+                    id="_Compound_Path_5"
+                    data-name="&lt;Compound Path&gt;"
+                    class="cls-1"
+                    d="M374.579,873.929H401.55v7.582H383.4v9.833h13.894v7.581H383.4v7.108H401.55v7.581H374.579V873.929Z"
+                    transform="translate(-23.438 -722.281)" />
+                  <path
+                    id="_Compound_Path_6"
+                    data-name="&lt;Compound Path&gt;"
+                    class="cls-1"
+                    d="M414.511,873.929c0.118,4.265,0,6.812,2.8,16.052,1.927,5.33,3.912,9.951,6.305,16.052h0.233c2.452-6.1,4.378-10.78,6.306-16.111,2.859-9.181,2.686-11.728,2.859-15.993h8.817c-0.058,4.857-.467,8.944-3.561,17.828-2.453,6.576-5.547,13.031-9.166,21.857H418.423c-3.678-8.766-6.773-15.281-9.223-21.8-3.036-8.944-3.445-13.031-3.5-17.888h8.814Z"
+                    transform="translate(-23.438 -722.281)" />
+                  <path
+                    id="_Compound_Path_7"
+                    data-name="&lt;Compound Path&gt;"
+                    class="cls-1"
+                    d="M446.271,873.929h26.972v7.582H455.088v9.833h13.894v7.581H455.088v7.108h18.155v7.581H446.271V873.929Z"
+                    transform="translate(-23.438 -722.281)" />
+                  <path
+                    id="_Compound_Path_8"
+                    data-name="&lt;Compound Path&gt;"
+                    class="cls-1"
+                    d="M481.65,873.929h26.972v7.582H490.466v9.833h13.895v7.581H490.466v7.108h18.156v7.581H481.65V873.929Z"
+                    transform="translate(-23.438 -722.281)" />
+                  <path
+                    id="_Compound_Path_9"
+                    data-name="&lt;Compound Path&gt;"
+                    class="cls-1"
+                    d="M515.863,873.929H525.5l15.121,26.062h0.233V873.929h8.406v39.685H539.74L524.5,888.8H524.27v24.818h-8.407V873.929Z"
+                    transform="translate(-23.438 -722.281)" />
+                </g>
+              </g>
+              <path
+                id="_Path_"
+                data-name="&lt;Path&gt;"
+                class="cls-1"
+                d="M23.429,722.275V924.244s10.63,10.631,35.433,10.63c13.786,0,35.229-11.516,55.855-21.24C101.891,902.9,79.365,889.446,53,881.148l-1.229-.387,1.214-.455c0.594-.223,59.738-22.628,87.017-53.225l8.823-63.7,0.616,1.038c1.771,2.982,10.5,18.677,8.268,34.769-1.678,12.114-8.913,19.8-15.91,27.241l-0.993,1.058-11.9,79.692c11.154-4.8,21.468-7.735,29.169-7.735,20.341,0,31.325,7.325,34.468,9.811,0.085,0.075.355,0.318,0.453,0.414a0.969,0.969,0,0,0,.512.4v-187.8H23.429Z"
+                transform="translate(-23.438 -722.281)" />
+              <g id="_Group_4" data-name="&lt;Group&gt;">
+                <path
+                  id="_Compound_Path_10"
+                  data-name="&lt;Compound Path&gt;"
+                  class="cls-1"
+                  d="M231.775,858.922l8.645-12.659h-8.358V844.12h11.1v2.191l-8.62,12.66h8.764v2.142H231.775v-2.191Z"
+                  transform="translate(-23.438 -722.281)" />
+                <path
+                  id="_Compound_Path_11"
+                  data-name="&lt;Compound Path&gt;"
+                  class="cls-1"
+                  d="M251.376,844.12h9.337v2.143h-6.948v4.966h6.327v2.143h-6.327v5.6h6.948v2.142h-9.337V844.12Z"
+                  transform="translate(-23.438 -722.281)" />
+                <path
+                  id="_Compound_Path_12"
+                  data-name="&lt;Compound Path&gt;"
+                  class="cls-1"
+                  d="M269.712,844.12H272.1v16.993h-2.388V844.12Z"
+                  transform="translate(-23.438 -722.281)" />
+                <path
+                  id="_Compound_Path_13"
+                  data-name="&lt;Compound Path&gt;"
+                  class="cls-1"
+                  d="M281.769,844.12h2.387v14.851h6.974v2.142h-9.361V844.12Z"
+                  transform="translate(-23.438 -722.281)" />
+                <path
+                  id="_Compound_Path_14"
+                  data-name="&lt;Compound Path&gt;"
+                  class="cls-1"
+                  d="M305.692,846.677a7.226,7.226,0,0,0-3.128-.706c-1.337,0-2.914.486-2.914,2.264,0,3.262,7.165,2.507,7.165,8.107,0,3.627-2.746,5.063-6.09,5.063a10.96,10.96,0,0,1-3.414-.706l0.238-2.264a9.955,9.955,0,0,0,3.463.828c1.361,0,3.271-.779,3.271-2.775,0-3.8-7.164-2.751-7.164-8.034,0-3.019,2.341-4.626,5.349-4.626a10.924,10.924,0,0,1,3.558.609Z"
+                  transform="translate(-23.438 -722.281)" />
+                <path
+                  id="_Compound_Path_15"
+                  data-name="&lt;Compound Path&gt;"
+                  class="cls-1"
+                  d="M325.246,846.92a6.6,6.6,0,0,0-3.438-.949c-3.845,0-6.4,2.824-6.4,6.646a6.279,6.279,0,0,0,6.28,6.646,8.075,8.075,0,0,0,3.63-.828l0.143,2.362a10.243,10.243,0,0,1-3.8.608c-5.278,0-8.787-3.457-8.787-8.861,0-5.234,3.725-8.716,8.811-8.716a9.034,9.034,0,0,1,3.749.731Z"
+                  transform="translate(-23.438 -722.281)" />
+                <path
+                  id="_Compound_Path_16"
+                  data-name="&lt;Compound Path&gt;"
+                  class="cls-1"
+                  d="M332.717,844.12h2.388v7.109h7.976V844.12h2.387v16.993h-2.387v-7.741h-7.976v7.741h-2.388V844.12Z"
+                  transform="translate(-23.438 -722.281)" />
+                <path
+                  id="_Compound_Path_17"
+                  data-name="&lt;Compound Path&gt;"
+                  class="cls-1"
+                  d="M360.365,843.828c5.062,0,8.023,3.749,8.023,8.789,0,5.161-2.937,8.788-8.023,8.788s-8.024-3.627-8.024-8.788C352.341,847.577,355.3,843.828,360.365,843.828Zm0,15.435c3.844,0,5.492-3.262,5.492-6.646,0-3.457-1.815-6.671-5.492-6.646-3.678-.025-5.493,3.189-5.493,6.646C354.872,856,356.52,859.263,360.365,859.263Z"
+                  transform="translate(-23.438 -722.281)" />
+                <path
+                  id="_Compound_Path_18"
+                  data-name="&lt;Compound Path&gt;"
+                  class="cls-1"
+                  d="M382.376,843.828c5.063,0,8.023,3.749,8.023,8.789,0,5.161-2.936,8.788-8.023,8.788s-8.023-3.627-8.023-8.788C374.353,847.577,377.314,843.828,382.376,843.828Zm0,15.435c3.845,0,5.493-3.262,5.493-6.646,0-3.457-1.815-6.671-5.493-6.646-3.677-.025-5.492,3.189-5.492,6.646C376.884,856,378.531,859.263,382.376,859.263Z"
+                  transform="translate(-23.438 -722.281)" />
+                <path
+                  id="_Compound_Path_19"
+                  data-name="&lt;Compound Path&gt;"
+                  class="cls-1"
+                  d="M396.628,844.12h2.388v14.851h6.973v2.142h-9.361V844.12Z"
+                  transform="translate(-23.438 -722.281)" />
+              </g>
+              <g id="_Group_5" data-name="&lt;Group&gt;">
+                <path
+                  id="_Compound_Path_20"
+                  data-name="&lt;Compound Path&gt;"
+                  class="cls-1"
+                  d="M458.229,843.828h2.435v7.158h8.128v-7.158h2.433v17.111h-2.433v-7.795h-8.128v7.795h-2.435V843.828Z"
+                  transform="translate(-23.438 -722.281)" />
+                <path
+                  id="_Compound_Path_21"
+                  data-name="&lt;Compound Path&gt;"
+                  class="cls-1"
+                  d="M484.258,843.828h2.554l7.179,17.111h-2.652l-1.728-4.315h-8.323l-1.727,4.315h-2.556Zm1.192,2.305-3.383,8.481h6.765Z"
+                  transform="translate(-23.438 -722.281)" />
+                <path
+                  id="_Compound_Path_22"
+                  data-name="&lt;Compound Path&gt;"
+                  class="cls-1"
+                  d="M506.677,860.939h-3.042l-6.4-17.111h2.726l5.232,14.954h0.049l5.378-14.954h2.555Z"
+                  transform="translate(-23.438 -722.281)" />
+                <path
+                  id="_Compound_Path_23"
+                  data-name="&lt;Compound Path&gt;"
+                  class="cls-1"
+                  d="M519.4,843.828h9.515v2.157h-7.082v5h6.449v2.158h-6.449v5.638h7.082v2.157H519.4V843.828Z"
+                  transform="translate(-23.438 -722.281)" />
+                <path
+                  id="_Compound_Path_24"
+                  data-name="&lt;Compound Path&gt;"
+                  class="cls-1"
+                  d="M535.968,843.828h3.31l7.5,13.777h0.048V843.828h2.434v17.111h-3.115l-7.691-14.07H538.4v14.07h-2.434V843.828Z"
+                  transform="translate(-23.438 -722.281)" />
+              </g>
+            </svg>
+          </a>
         </div>
-      {%- endif -%}
-
-      <div class="footer-block--newsletter">
-        {%- if section.settings.newsletter_enable -%}
-          <div class="footer-block__newsletter">
-            {%- if section.settings.newsletter_heading != blank -%}
-              <h2 class="footer-block__heading">{{ section.settings.newsletter_heading | escape }}</h2>
-            {%- endif -%}
-            {%- form 'customer', id: 'ContactFooter', class: 'footer__newsletter newsletter-form' -%}
-              <input type="hidden" name="contact[tags]" value="newsletter">
-              <div class="newsletter-form__field-wrapper">
-                <div class="field">
-                  <input
-                    id="NewsletterForm--{{ section.id }}"
-                    type="email"
-                    name="contact[email]"
-                    class="field__input"
-                    value="{{ form.email }}"
-                    aria-required="true"
-                    autocorrect="off"
-                    autocapitalize="off"
-                    autocomplete="email"
-                    {% if form.errors %}
-                      autofocus
-                      aria-invalid="true"
-                      aria-describedby="ContactFooter-error"
-                    {% elsif form.posted_successfully? %}
-                      aria-describedby="ContactFooter-success"
-                    {% endif %}
-                    placeholder="{{ 'newsletter.label' | t }}"
-                    required
-                  >
-                  <label class="field__label" for="NewsletterForm--{{ section.id }}">
-                    {{ 'newsletter.label' | t }}
-                  </label>
-                  <button type="submit" class="newsletter-form__button field__button" name="commit" id="Subscribe" aria-label="{{ 'newsletter.button_label' | t }}">
-                    {% render 'icon-arrow' %}
-                  </button>
-                </div>
-                {%- if form.errors -%}
-                  <small class="newsletter-form__message form__message" id="ContactFooter-error">{% render 'icon-error' %}{{ form.errors.translated_fields['email'] | capitalize }} {{ form.errors.messages['email'] }}</small>
-                {%- endif -%}
-              </div>
-              {%- if form.posted_successfully? -%}
-                <h3 class="newsletter-form__message newsletter-form__message--success form__message" id="ContactFooter-success" tabindex="-1" autofocus>{% render 'icon-success' %}{{ 'newsletter.success' | t }}</h3>
-              {%- endif -%}
-            {%- endform -%}
-          </div>
-        {%- endif -%}
-
-        {%- if section.settings.show_social -%}
-          <ul class="footer__list-social list-unstyled list-social" role="list">
-            {%- if settings.social_twitter_link != blank -%}
-              <li class="list-social__item">
-                <a href="{{ settings.social_twitter_link }}" class="link list-social__link" >
-                  {%- render 'icon-twitter' -%}
-                  <span class="visually-hidden">{{ 'general.social.links.twitter' | t }}</span>
-                </a>
-              </li>
-            {%- endif -%}
-            {%- if settings.social_facebook_link != blank -%}
-              <li class="list-social__item">
-                <a href="{{ settings.social_facebook_link }}" class="link list-social__link" >
-                  {%- render 'icon-facebook' -%}
-                  <span class="visually-hidden">{{ 'general.social.links.facebook' | t }}</span>
-                </a>
-              </li>
-            {%- endif -%}
-            {%- if settings.social_pinterest_link != blank -%}
-              <li class="list-social__item">
-                <a href="{{ settings.social_pinterest_link }}" class="link list-social__link" >
-                  {%- render 'icon-pinterest' -%}
-                  <span class="visually-hidden">{{ 'general.social.links.pinterest' | t }}</span>
-                </a>
-              </li>
-            {%- endif -%}
-            {%- if settings.social_instagram_link != blank -%}
-              <li class="list-social__item">
-                <a href="{{ settings.social_instagram_link }}" class="link list-social__link" >
-                  {%- render 'icon-instagram' -%}
-                  <span class="visually-hidden">{{ 'general.social.links.instagram' | t }}</span>
-                </a>
-              </li>
-            {%- endif -%}
-            {%- if settings.social_tiktok_link != blank -%}
-              <li class="list-social__item">
-                <a href="{{ settings.social_tiktok_link }}" class="link list-social__link" >
-                  {%- render 'icon-tiktok' -%}
-                  <span class="visually-hidden">{{ 'general.social.links.tiktok' | t }}</span>
-                </a>
-              </li>
-            {%- endif -%}
-            {%- if settings.social_tumblr_link != blank -%}
-              <li class="list-social__item">
-                <a href="{{ settings.social_tumblr_link }}" class="link list-social__link" >
-                  {%- render 'icon-tumblr' -%}
-                  <span class="visually-hidden">{{ 'general.social.links.tumblr' | t }}</span>
-                </a>
-              </li>
-            {%- endif -%}
-            {%- if settings.social_snapchat_link != blank -%}
-              <li class="list-social__item">
-                <a href="{{ settings.social_snapchat_link }}" class="link list-social__link" >
-                  {%- render 'icon-snapchat' -%}
-                  <span class="visually-hidden">{{ 'general.social.links.snapchat' | t }}</span>
-                </a>
-              </li>
-            {%- endif -%}
-            {%- if settings.social_youtube_link != blank -%}
-              <li class="list-social__item">
-                <a href="{{ settings.social_youtube_link }}" class="link list-social__link" >
-                  {%- render 'icon-youtube' -%}
-                  <span class="visually-hidden">{{ 'general.social.links.youtube' | t }}</span>
-                </a>
-              </li>
-            {%- endif -%}
-            {%- if settings.social_vimeo_link != blank -%}
-              <li class="list-social__item">
-                <a href="{{ settings.social_vimeo_link }}" class="link list-social__link" >
-                  {%- render 'icon-vimeo' -%}
-                  <span class="visually-hidden">{{ 'general.social.links.vimeo' | t }}</span>
-                </a>
-              </li>
-            {%- endif -%}
-          </ul>
-        {%- endif -%}
       </div>
-    </div>
-  {%- endif -%}
-
-  <div class="footer__content-bottom">
-    <div class="footer__content-bottom-wrapper page-width">
-      <div class="footer__column footer__localization isolate">
-        {%- if section.settings.enable_country_selector and localization.available_countries.size > 1 -%}
-          <noscript>
-            {%- form 'localization', id: 'FooterCountryFormNoScript', class: 'localization-form' -%}
-              <div class="localization-form__select">
-                <h2 class="visually-hidden" id="FooterCountryLabelNoScript">{{ 'localization.country_label' | t }}</h2>
-                <select class="localization-selector link" name="country_code" aria-labelledby="FooterCountryLabelNoScript">
-                  {%- for country in localization.available_countries -%}
-                    <option value="{{ country.iso_code }}" {%- if country.iso_code == localization.country.iso_code %} selected{% endif %}>
-                      {{ country.name }} ({{ country.currency.iso_code }} {{ country.currency.symbol }})
-                    </option>
-                  {%- endfor -%}
-                </select>
-                {% render 'icon-caret' %}
-              </div>
-              <button class="button button--tertiary">{{ 'localization.update_country' | t }}</button>
-            {%- endform -%}
-          </noscript>
-          <localization-form>
-            {%- form 'localization', id: 'FooterCountryForm', class: 'localization-form' -%}
-              <div class="no-js-hidden">
-                <h2 class="caption-large text-body" id="FooterCountryLabel">{{ 'localization.country_label' | t }}</h2>
-                <div class="disclosure">
-                  <button type="button" class="disclosure__button localization-form__select localization-selector link link--text caption-large" aria-expanded="false" aria-controls="FooterCountryList" aria-describedby="FooterCountryLabel">
-                    {{ localization.country.name }} ({{ localization.country.currency.iso_code }} {{ localization.country.currency.symbol }})
-                    {% render 'icon-caret' %}
-                  </button>
-                  <div class="disclosure__list-wrapper" hidden>
-                    <ul id="FooterCountryList" role="list" class="disclosure__list list-unstyled">
-                      {%- for country in localization.available_countries -%}
-                        <li class="disclosure__item" tabindex="-1">
-                          <a class="link link--text disclosure__link caption-large{% if country.iso_code == localization.country.iso_code %} disclosure__link--active{% endif %} focus-inset" href="#"{% if country.iso_code == localization.country.iso_code %} aria-current="true"{% endif %} data-value="{{ country.iso_code }}">
-                            {{ country.name }} <span class="localization-form__currency">({{ country.currency.iso_code }} {{ country.currency.symbol }})</span>
-                          </a>
-                        </li>
-                      {%- endfor -%}
-                    </ul>
-                  </div>
-                </div>
-                <input type="hidden" name="country_code" value="{{ localization.country.iso_code }}">
-              </div>
-            {%- endform -%}
-          </localization-form>
-        {%- endif -%}
-
-        {%- if section.settings.enable_language_selector and localization.available_languages.size > 1 -%}
-          <noscript>
-            {%- form 'localization', id: 'FooterLanguageFormNoScript', class: 'localization-form' -%}
-              <div class="localization-form__select">
-                <h2 class="visually-hidden" id="FooterLanguageLabelNoScript">{{ 'localization.language_label' | t }}</h2>
-                <select class="localization-selector link" name="locale_code" aria-labelledby="FooterLanguageLabelNoScript">
-                  {%- for language in localization.available_languages -%}
-                    <option value="{{ language.iso_code }}" lang="{{ language.iso_code }}" {%- if language.iso_code == localization.language.iso_code %} selected{% endif %}>
-                      {{ language.endonym_name | capitalize }}
-                    </option>
-                  {%- endfor -%}
-                </select>
-                {% render 'icon-caret' %}
-              </div>
-              <button class="button button--tertiary">{{ 'localization.update_language' | t }}</button>
-            {%- endform -%}
-          </noscript>
-
-          <localization-form>
-            {%- form 'localization', id: 'FooterLanguageForm', class: 'localization-form' -%}
-              <div class="no-js-hidden">
-                <h2 class="caption-large text-body" id="FooterLanguageLabel">{{ 'localization.language_label' | t }}</h2>
-                <div class="disclosure">
-                  <button type="button" class="disclosure__button localization-form__select localization-selector link link--text caption-large" aria-expanded="false" aria-controls="FooterLanguageList" aria-describedby="FooterLanguageLabel">
-                    {{ localization.language.endonym_name | capitalize }}
-                    {% render 'icon-caret' %}
-                  </button>
-                  <div class="disclosure__list-wrapper" hidden>
-                    <ul id="FooterLanguageList" role="list" class="disclosure__list list-unstyled">
-                      {%- for language in localization.available_languages -%}
-                        <li class="disclosure__item" tabindex="-1">
-                          <a class="link link--text disclosure__link caption-large{% if language.iso_code == localization.language.iso_code %} disclosure__link--active{% endif %} focus-inset" href="#" hreflang="{{ language.iso_code }}" lang="{{ language.iso_code }}"{% if language.iso_code == localization.language.iso_code %} aria-current="true"{% endif %} data-value="{{ language.iso_code }}">
-                            {{ language.endonym_name | capitalize }}
-                          </a>
-                        </li>
-                      {%- endfor -%}
-                    </ul>
-                  </div>
-                </div>
-                <input type="hidden" name="locale_code" value="{{ localization.language.iso_code }}">
-              </div>
-            {%- endform -%}
-          </localization-form>
-        {%- endif -%}
-      </div>
-      <div class="footer__column footer__column--info">
-        {%- if section.settings.payment_enable -%}
-          <div class="footer__payment">
-            <span class="visually-hidden">{{ 'sections.footer.payment' | t }}</span>
-            <ul class="list list-payment" role="list">
-              {%- for type in shop.enabled_payment_types -%}
-                <li class="list-payment__item">
-                  {{ type | payment_type_svg_tag: class: 'icon icon--full-color' }}
+      <div class="footer__inner">
+        <header class="footer__header">
+          <nav class="row">
+            <li>
+              Herenweg 144
+            </li>
+            <li>
+              3645 dt vinkeveen
+            </li>
+            <li>
+              t 0297 - 26200
+            </li>
+            <li>
+              INFO@VINKEVEENHAVEN.NL
+            </li>
+          </nav>
+        </header>
+        <main class="footer__main">
+          <div class="row">
+            <div class="footer__main-col">
+              <nav>
+                <li>
+                  <a href="#">OVER ONS</a>
                 </li>
-              {%- endfor -%}
-            </ul>
+                <li>
+                  <a href="#">Dit zijn wij</a>
+                </li>
+                <li>
+                  <a href="#">Vacatures & stages</a>
+                </li>
+                <li>
+                  <a href="#">FAQ Haven & zeilschool</a>
+                </li>
+                <li>
+                  <a href="#">Contact & route</a>
+                </li>
+              </nav>
+            </div>
+            <div class="footer__main-col">
+              <nav>
+                <li>
+                  <a href="#">DOEN IN DE OMGEVING</a>
+                </li>
+                <li>
+                  <a href="#">Routekaarten leuke tochten</a>
+                </li>
+                <li>
+                  <a href="#">Toeristische info</a>
+                </li>
+                <li>
+                  <a href="#">Eten & Drinken rond Vinkeveen</a>
+                </li>
+              </nav>
+            </div>
+            <div class="footer__main-col">
+              <nav>
+                <li>
+                  <a href="#">DUURZAAMHEID & GREEN KEY</a>
+                </li>
+                <li>
+                  <a href="#">Duurzaamheid in beeld</a>
+                </li>
+                <li>
+                  <a href="#">MVO Jaarverslag</a>
+                </li>
+                <li>
+                  <a href="#">Green Key normen</a>
+                </li>
+                <li>
+                  <a href="#">MVO beleid</a>
+                </li>
+                <li>
+                  <a href="#">Juttas</a>
+                </li>
+              </nav>
+            </div>
+            <div class="footer__main-col">
+              <nav>
+                <li>
+                  <a href="#">VOORWAARDEN
+                  </a>
+                </li>
+                <li>
+                  <a href="#">Verzekeringen</a>
+                </li>
+              </nav>
+            </div>
           </div>
-        {%- endif -%}
-        <div class="footer__copyright caption">
-          <small class="copyright__content">&copy; {{ 'now' | date: "%Y" }}, {{ shop.name | link_to: routes.root_url }}</small>
-          <small class="copyright__content">{{ powered_by_link }}</small>
-        </div>
+          <div class="footer-main__mobile hidden-600">
+            <div class="footer-main__buttons">
+              <a href="#">Voorwaarden</a>
+              <a href="#">DOEN IN DE OMGEVING</a>
+              <a href="#">OVER ONS</a>
+              <a href="#">DUURZAAMHEID & GREEN KEY</a>
+            </div>
+          </div>
+          <div class="footer-main__logos">
+            {% if section.settings.img1 != blank %}
+              {{ section.settings.img1 | img_url: 'master' | img_tag }}
+            {% else %}
+              {{ 'footer-watersport.png' | asset_url | img_tag }}
+            {% endif %}
+            {% if section.settings.img2 != blank %}
+              {{ section.settings.img2 | img_url: 'master' | img_tag }}
+            {% else %}
+              {{ 'footer-green-key.svg' | asset_url | img_tag }}
+            {% endif %}
+            {% if section.settings.img3 != blank %}
+              {{ section.settings.img3 | img_url: 'master' | img_tag }}
+            {% else %}
+              {{ 'footer-CWO.png' | asset_url | img_tag }}
+            {% endif %}
+            {% if section.settings.img4 != blank %}
+              {{ section.settings.img4 | img_url: 'master' | img_tag }}
+            {% else %}
+              {{ 'footer-horeca.png' | asset_url | img_tag }}
+            {% endif %}
+            {% if section.settings.img5 != blank %}
+              {{ section.settings.img5 | img_url: 'master' | img_tag }}
+            {% else %}
+              {{ 'footer-vdws.svg' | asset_url | img_tag }}
+            {% endif %}
+            {% if section.settings.img6 != blank %}
+              {{ section.settings.img6 | img_url: 'master' | img_tag }}
+            {% else %}
+              {{ 'footer-hiswa.png' | asset_url | img_tag }}
+            {% endif %}
+          </div>
+        </main>
+        <footer class="footer__footer">
+          <nav class="row">
+            <li>
+              <a href="#">Copyright © 2022 Zeilschool Vinkeveen Haven</a>
+            </li>
+            <li>
+              <a href="#">
+                Alle rechten voorbehouden</a>
+            </li>
+            <li>
+              <a href="#">Privacy beleid</a>
+            </li>
+            <li>
+              <a href="#">Algemene Voorwaarden</a>
+            </li>
+            <li>
+              <a href="#">Cookie voorkeuren</a>
+            </li>
+          </nav>
+        </footer>
       </div>
     </div>
   </div>
 </footer>
-
-{% javascript %}
-  class LocalizationForm extends HTMLElement {
-    constructor() {
-      super();
-      this.elements = {
-        input: this.querySelector('input[name="locale_code"], input[name="country_code"]'),
-        button: this.querySelector('button'),
-        panel: this.querySelector('.disclosure__list-wrapper'),
-      };
-      this.elements.button.addEventListener('click', this.openSelector.bind(this));
-      this.elements.button.addEventListener('focusout', this.closeSelector.bind(this));
-      this.addEventListener('keyup', this.onContainerKeyUp.bind(this));
-
-      this.querySelectorAll('a').forEach(item => item.addEventListener('click', this.onItemClick.bind(this)));
-    }
-
-    hidePanel() {
-      this.elements.button.setAttribute('aria-expanded', 'false');
-      this.elements.panel.setAttribute('hidden', true);
-    }
-
-    onContainerKeyUp(event) {
-      if (event.code.toUpperCase() !== 'ESCAPE') return;
-
-      this.hidePanel();
-      this.elements.button.focus();
-    }
-
-    onItemClick(event) {
-      event.preventDefault();
-      const form = this.querySelector('form');
-      this.elements.input.value = event.currentTarget.dataset.value;
-      if (form) form.submit();
-    }
-
-    openSelector() {
-      this.elements.button.focus();
-      this.elements.panel.toggleAttribute('hidden');
-      this.elements.button.setAttribute('aria-expanded', (this.elements.button.getAttribute('aria-expanded') === 'false').toString());
-    }
-
-    closeSelector(event) {
-      const shouldClose = event.relatedTarget && event.relatedTarget.nodeName === 'BUTTON';
-      if (event.relatedTarget === null || shouldClose) {
-        this.hidePanel();
-      }
-    }
-  }
-
-  customElements.define('localization-form', LocalizationForm);
-{% endjavascript %}
-
 {% schema %}
-{
-  "name": "t:sections.footer.name",
-  "blocks": [
-    {
-      "type": "link_list",
-      "name": "t:sections.footer.blocks.link_list.name",
-      "settings": [
-        {
-          "type": "text",
-          "id": "heading",
-          "default": "Quick links",
-          "label": "t:sections.footer.blocks.link_list.settings.heading.label"
-        },
-        {
-          "type": "link_list",
-          "id": "menu",
-          "default": "footer",
-          "label": "t:sections.footer.blocks.link_list.settings.menu.label",
-          "info": "t:sections.footer.blocks.link_list.settings.menu.info"
-        }
-      ]
-    },
-    {
-      "type": "text",
-      "name": "t:sections.footer.blocks.text.name",
-      "settings": [
-        {
-          "type": "text",
-          "id": "heading",
-          "default": "Heading",
-          "label": "t:sections.footer.blocks.text.settings.heading.label"
-        },
-        {
-          "type": "richtext",
-          "id": "subtext",
-          "default": "<p>Share contact information, store details, and brand content with your customers.</p>",
-          "label": "t:sections.footer.blocks.text.settings.subtext.label"
-        }
-      ]
-    },
-    {
-      "type": "image",
-      "name": "Image",
-      "settings": [
-        {
-          "type": "image_picker",
-          "id": "image",
-          "label": "Image"
-        },
-        {
-          "type": "range",
-          "id": "image_width",
-          "min": 50,
-          "max": 200,
-          "step": 5,
-          "unit": "px",
-          "label": "Image width",
-          "default": 100
-        },
-        {
-          "type": "select",
-          "id": "alignment",
-          "label": "Image alignment on large screen",
-          "options": [
-            {
-              "value": "",
-              "label": "Left"
-            },
-            {
-              "value": "center",
-              "label": "Center"
-            },
-            {
-              "value": "right",
-              "label": "Right"
-            }
-          ],
-          "default": "center"
-        }
-      ]
-    }
-  ],
-  "settings": [
-    {
-      "type": "select",
-      "id": "color_scheme",
-      "options": [
-        {
-          "value": "accent-1",
-          "label": "t:sections.all.colors.accent_1.label"
-        },
-        {
-          "value": "accent-2",
-          "label": "t:sections.all.colors.accent_2.label"
-        },
-        {
-          "value": "background-1",
-          "label": "t:sections.all.colors.background_1.label"
-        },
-        {
-          "value": "background-2",
-          "label": "t:sections.all.colors.background_2.label"
-        },
-        {
-          "value": "inverse",
-          "label": "t:sections.all.colors.inverse.label"
-        }
-      ],
-      "default": "background-1",
-      "label": "t:sections.all.colors.label"
-    },
-    {
-      "type": "header",
-      "content": "t:sections.footer.settings.header__1.content",
-      "info": "t:sections.footer.settings.header__1.info"
-    },
-    {
-      "type": "checkbox",
-      "id": "newsletter_enable",
-      "default": true,
-      "label": "t:sections.footer.settings.newsletter_enable.label"
-    },
-    {
-      "type": "text",
-      "id": "newsletter_heading",
-      "default": "Subscribe to our emails",
-      "label": "t:sections.footer.settings.newsletter_heading.label"
-    },
-    {
-      "type": "header",
-      "content": "t:sections.footer.settings.header__2.content",
-      "info": "t:sections.footer.settings.header__2.info"
-    },
-    {
-      "type": "checkbox",
-      "id": "show_social",
-      "default": false,
-      "label": "t:sections.footer.settings.show_social.label"
-    },
-    {
-      "type": "header",
-      "content": "t:sections.footer.settings.header__3.content",
-      "info": "t:sections.footer.settings.header__4.info"
-    },
-    {
-      "type": "checkbox",
-      "id": "enable_country_selector",
-      "default": true,
-      "label": "t:sections.footer.settings.enable_country_selector.label"
-    },
-    {
-      "type": "header",
-      "content": "t:sections.footer.settings.header__5.content",
-      "info": "t:sections.footer.settings.header__6.info"
-    },
-    {
-      "type": "checkbox",
-      "id": "enable_language_selector",
-      "default": true,
-      "label": "t:sections.footer.settings.enable_language_selector.label"
-    },
-    {
-      "type": "header",
-      "content": "t:sections.footer.settings.header__7.content"
-    },
-    {
-      "type": "checkbox",
-      "id": "payment_enable",
-      "default": true,
-      "label": "t:sections.footer.settings.payment_enable.label"
-    },
-    {
-      "type": "header",
-      "content": "t:sections.all.spacing"
-    },
-    {
-      "type": "range",
-      "id": "margin_top",
-      "min": 0,
-      "max": 100,
-      "step": 4,
-      "unit": "px",
-      "label": "t:sections.footer.settings.margin_top.label",
-      "default": 0
-    },
-    {
-      "type": "header",
-      "content": "t:sections.all.padding.section_padding_heading"
-    },
-    {
-      "type": "range",
-      "id": "padding_top",
-      "min": 0,
-      "max": 100,
-      "step": 4,
-      "unit": "px",
-      "label": "t:sections.all.padding.padding_top",
-      "default": 36
-    },
-    {
-      "type": "range",
-      "id": "padding_bottom",
-      "min": 0,
-      "max": 100,
-      "step": 4,
-      "unit": "px",
-      "label": "t:sections.all.padding.padding_bottom",
-      "default": 36
-    }
-  ],
-  "default": {
-    "blocks": [
+  {
+    "name": "Footer settings",
+    "settings": [
       {
-        "type": "link_list"
+        "type": "image_picker",
+        "id": "img1",
+        "label": "Pick 1st logo"
       },
       {
-        "type": "text"
+        "type": "image_picker",
+        "id": "img2",
+        "label": "Pick 2nd logo"
+      },
+      {
+        "type": "image_picker",
+        "id": "img3",
+        "label": "Pick 3th logo"
+      },
+      {
+        "type": "image_picker",
+        "id": "img4",
+        "label": "Pick 4th logo"
+      }, {
+        "type": "image_picker",
+        "id": "img5",
+        "label": "Pick 5th logo"
+      }, {
+        "type": "image_picker",
+        "id": "img6",
+        "label": "Pick 6th logo"
       }
-    ]
+    ],
+    "presets": []
   }
-}
 {% endschema %}
