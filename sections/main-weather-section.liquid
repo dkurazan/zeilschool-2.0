@@ -1,25 +1,34 @@
+{{ 'weather-section.css' | asset_url | stylesheet_tag }}
+<style>
+    .main.weather-section__button-inner a {
+        background-color: {{ section.settings.button-color }};
+    }
 
+    .main.weather-section__button-inner a:hover{
+        background-color: {{ section.settings.button-color-hover }};
+    }
+</style>
 <div class="weather-section">
   <div class="container">
     <div class="row">
         <div class="weather-section__button">
             <div class="main weather-section__button-inner">
-                <a href="#" style="background: {{ section.settings.button-color }};" onmouseover="this.style.backgroundColor='{{ section.settings.button-color-hover }}'" onmouseout="this.style.backgroundColor=''">Boek nu</a>
+                <a href="{{ section.settings.btn-url}}" >{{ section.settings.btn-text}}</a>
             </div>
         </div>
         <div class="weather-info__wraper">
             <div class="weather-section__info">
-                <p>
                     {% if section.settings.text-content != blank %} 
                         {{ section.settings.text-content }}
                     {%  else %}
-                    • De leukste zeilschool van Midden Nederland <br>
-                    • Wel 12 soorten boten om te huren, van sloep tot fusion <br>
-                    • Surfen, suppen, kanoën en waterfietsen <br>
-                    • Team-uitjes en activiteiten voor jong en oud <br>
-                    • Eten en slapen aan het water<br>
+                        <p>
+                            • De leukste zeilschool van Midden Nederland <br>
+                            • Wel 12 soorten boten om te huren, van sloep tot fusion <br>
+                            • Surfen, suppen, kanoën en waterfietsen <br>
+                            • Team-uitjes en activiteiten voor jong en oud <br>
+                            • Eten en slapen aan het water<br>
+                        </p>
                     {% endif %}
-                </p>
                 <a href="#">Voor Simon: de algemene voorwaarden</a>
             </div>
             <div class="weather-section__data" style="visibility:hidden">
@@ -78,6 +87,18 @@
 {
 "name": "Weather section",
 "settings": [
+    {
+        "type": "text",
+        "id": "btn-text",
+        "label": "Button text",
+        "default": "Boek nu"
+    },
+    {
+        "type": "text",
+        "id": "btn-url",
+        "label": "Button url",
+        "default": "#"
+    },
     {
         "type": "color",
         "id": "button-color",

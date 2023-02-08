@@ -1,0 +1,9 @@
+{
+    "wrapper": ".product-page",
+    "sections": {
+        "hero": {
+            "type": "main-hero"
+        }
+  },
+  "order": ["main-hero"]
+}

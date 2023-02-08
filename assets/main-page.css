@@ -24,91 +24,7 @@
     
     
     
-    /* weather section */
-    .weather-section{
-        padding-top: 106px;
-        padding-bottom: 47px;
-    }
-    
-    .weather-section__button{
-        flex: 0 0 25%;
-        max-width: 25%;
-    }
-    
-    .weather-info__wraper{
-        flex: 0 0 75%;
-        max-width: 75%;
-        display: flex;
-        flex-wrap: wrap;
-    }
-    
-    .weather-section__info{
-        flex: 0 0 50%;
-        max-width: 50%;
-    }
-    
-    .weather-section__data{
-        flex: 0 0 50%;
-        max-width: 50%;
-    }
-    
-    .weather-section__button-inner{
-        padding-left: 54px;
-    }
-    
-    .weather-section__button-inner a{
-        display: block;
-        background: #6C9DB7 0% 0% no-repeat padding-box;
-        border-radius: 0px 100px 100px 100px;
-        text-align: left;
-        font: normal normal bold 41px/37px 'Roboto Condensed', sans-serif;
-        letter-spacing: 0px;
-        color: #FFFFFF;
-        text-transform: uppercase;
-        text-decoration: none;
-        height: 109px;
-        line-height: 109px;
-        width: 263px;
-        padding-left: 54px;
-        transition: .3s all ease-in-out;
-    }
-    
-    .main.weather-section__button-inner a{
-        background-color: #98BA7F ;
-    }
-    
-    .weather-section__button-inner a:hover{
-        background-color: #3c5969;
-        transition: .3s all ease-in-out;
-    }
-    
-    .main.weather-section__button-inner a:hover{
-        background-color: #6a8456;
-    }
-    
-    .weather-section__info p{
-        font-family: 'Roboto Condensed', sans-serif;
-        font-size: 30px;
-        color: var(--unnamed-color-818080);
-        list-style: none;
-        padding-bottom: 49px;
-        line-height: 43px;
-    }
-
-    
-    .weather-section__info a{
-        color: #6E9DB6;
-        font-size: 30px;
-        font-family: 'Roboto Condensed', sans-serif;
-        transition: .3s all ease-in-out;
-    }
-    
-    .weather-section__info a:hover{
-        color: #C45F53;
-        transition: .3s all ease-in-out;
-    }
-    
-    /* end weather section */
+   
     
     /* KOPJE section */
     
@@ -268,6 +184,19 @@
         opacity: 1;
         transition: .5s all ease-in-out;
     }
+
+    .zeilschool-page .kopje__photo-item h4{
+        width: fit-content;
+    }
+
+    .zeilschool-page .kopje__title-left{
+        padding-right: 23px;
+    }
+
+    .zeilschool-page .kopje__title-right{
+        padding-left: 23px;
+    }
+
     /* end KOPJE */
     
     /* info section */
@@ -295,9 +224,10 @@
     }
     
     .info-section__text-inner img{
-       width: 240px;
-       height: 240px;
+       max-width: 240px;
+       max-height: 240px;
        margin-top: 10px;
+       object-fit: cover;
     }
     
     .info-section__text p{
@@ -328,6 +258,9 @@
     .info-section>.row:nth-child(2)>.info-section__text>p{
         max-width: 1066px;
     }
+
+
+
     
     /* End info section */
     
@@ -580,44 +513,18 @@
         .info-section{
             padding: 50px 34px 22px 54px;
         }
-    
-        .weather-section__button{
-            flex: 0 0 35%;
-            max-width: 35%;
-        }
-    
-        .weather-info__wraper{
-            flex: 0 0 65%;
-            max-width: 65%;
+
+        .zeilschool-page .row:nth-child(2) .info-section__title{
             justify-content: start;
-        }
-    
-        .weather-section__data{
             flex: 0 0 100%;
             max-width: 100%;
-            display: flex;
-            flex-direction: column;
-            align-items: start;
-        }
-    
-        .weather-section__info{
-            flex: 0 0 100%;
-            max-width: 100%;
-            display: flex;
-            justify-content: start;
-        }
-    
-        .weather-section__info ul{
             width: 100%;
         }
+
+        .zeilschool-page .row:last-child .info-section__text{
+            margin-left: 0;
+        }
     
-        .weather-section__button{
-            padding-bottom: 30px;
-        }
-        
-        .weather-section__info a{
-            display: none;
-        }
     }
     
     @media(max-width: 1400px){
@@ -718,10 +625,6 @@
             margin-right: 0;
         }
     
-        .weather-section{
-            padding: 106px 20px 47px 0
-        }
-    
     }
     
     
@@ -758,36 +661,10 @@
             padding: 0 100px;
             bottom: 20px;
         }
-    
-         .weather-section__data{
-            flex: 0 0 100%;
-            max-width: 100%;
-        }
-    
-        
-    
-        .weather-section{
-            padding-top: 42px;
-        }
-    
-        .weather-section__info{
-            padding-left: 34px;
-        }
+
     
         .kopje-title{
             display: none;
-        }
-    
-        .weather-section__info a{
-            display: none;
-        }
-    
-        .weather-section__info{
-            padding-bottom: 28px;
-        }
-    
-        .weather-section__data{
-            padding-bottom: 30px;
         }
     
         .kopje__photo-item{
@@ -802,14 +679,6 @@
     
         .kopje__photo-item:hover .kopje__title-left {
             bottom: 75%;
-        }
-    
-        .main.weather-section__button-inner a{
-            width: 116px;
-            height: 48px;
-            font-size: 23px;
-            line-height: 48px;
-            padding-left: 10px;
         }
     
         .kopje__photo-item-bot-0 h4{
@@ -833,52 +702,15 @@
             display: none;
         }
     
-        .weather-section__button{
-            flex: 0 0 20%;
-            max-width: 20%;
-        }
-    
-        .weather-info__wraper{
-            flex: 0 0 80%; 
-            max-width: 80%;
-        }
-    
     }
     
-    @media (max-width: 768px) {
-        
-        .weather-section__button-inner{
-            padding-left: 34px;
-        }
     
-        .weather-info__wraper{
-            flex: 0 0 100%; 
-            max-width: 100%;
-        }
-    
-        .weather-section__data{
-            align-items: center;
-        }
-    
-        .weather-section__info ul{
-            width: fit-content;
-        }
-    
-        .weather-section__info{
-            justify-content: center;
-        }
-    }
     
     @media(max-width: 600px){
     
-        .kopje__photo-item h4{
+        .kopje__photo-item h4, .zeilschool-page .kopje__photo-item h4{
             width: calc(100% - 34px);
             font-size: 30px;
-        }
-    
-        .weather-section__info, .weather-section__data{
-            flex: 0 0 100%;
-            max-width: 100%;
         }
     
         .news-info-title{
@@ -977,14 +809,6 @@
             padding-top: 20px;
         }
     
-        .weather-section__info{
-            padding-right: 20px;
-        }
-    
-        .weather-section__info li{
-            font-size: 25px;
-        }
-    
         .start-section__title{
             padding: 0 30px;
         }
@@ -1007,18 +831,6 @@
             font-size: 18px;
             height: 40px;
             line-height: 40px;
-        }
-    
-        .weather-section__info li{
-            font-size: 20px;
-        }
-    
-        .weather-section__day, .weather-section__morning, .weather-section__wind, .weather-section__wind-image{
-            gap: 7px;
-        }
-    
-        .weather-section {
-            padding: 42px 0px 47px 0;
         }
        
     }

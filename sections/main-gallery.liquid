@@ -3,13 +3,14 @@
     {% render 'filter' %}
     <h2 class="main-title kopje-title">{{ section.settings.row-title1 }}</h2>
     <div class="row">
+
       <div class="kopje__photo-item">
         {% if section.settings.img1 %}
             {{ section.settings.img1 | img_url: 'master' | img_tag }}
         {% else %}
             {{ 'product-1' | placeholder_svg_tag }}
         {% endif %}
-        <h4 class="kopje__title-right kopje__title-1" {% for block in section.blocks %} style="background-color: {{ block.settings.title-1-color }};" {% endfor %}>
+        <h4 class="kopje__title-right kopje__title-1" style="background-color: {{ section.settings.title-1-color }};" >
             {% for block in section.blocks %}
                 {{ block.settings.item-title1 }}
             {% endfor %}
@@ -21,7 +22,7 @@
             {% endfor %}
           </ul>
         </div>
-        {% for block in section.blocks %} <a href="{{ block.settings.item-link1 }}" class="kopje__link"></a> {% endfor %}
+        <a href="{{ block.settings.item-link1 }}" class="kopje__link"></a>
       </div>
       <div class="kopje__photo-item">
         {% if section.settings.img2 %}
@@ -29,7 +30,7 @@
         {% else %}
             {{ 'product-1' | placeholder_svg_tag }}
         {% endif %}
-        <h4 class="kopje__title-left kopje__title-2" {% for block in section.blocks %} style="background-color: {{ block.settings.title-2-color }};" {% endfor %}>
+        <h4 class="kopje__title-left kopje__title-2" style="background-color: {{ section.settings.title-2-color }};" >
           {% for block in section.blocks %}
             {{ block.settings.item-title2 }}
           {% endfor %}
@@ -41,7 +42,7 @@
             {% endfor %}
           </ul>
         </div>
-        {% for block in section.blocks %} <a href="{{ block.settings.item-link2 }}" class="kopje__link"></a> {% endfor %}
+        <a href="{{ block.settings.item-link2 }}" class="kopje__link"></a>
       </div>
       <div class="kopje__photo-item">
         {% if section.settings.img3 %}
@@ -49,7 +50,7 @@
         {% else %}
             {{ 'product-1' | placeholder_svg_tag }}
         {% endif %}
-        <h4 class="kopje__title-right kopje__title-3" {% for block in section.blocks %} style="background-color: {{ block.settings.title-3-color }};" {% endfor %}>
+        <h4 class="kopje__title-right kopje__title-3" style="background-color: {{ section.settings.title-3-color }};" >
           {% for block in section.blocks %}
             {{ block.settings.item-title3 }}
           {% endfor %}
@@ -61,7 +62,7 @@
             {% endfor %}
           </ul>
         </div>
-        {% for block in section.blocks %} <a href="{{ block.settings.item-link3 }}" class="kopje__link"></a> {% endfor %}
+        <a href="{{ block.settings.item-link3 }}" class="kopje__link"></a>
       </div>
       <div class="kopje__photo-item">
         {% if section.settings.img4 %}
@@ -69,7 +70,7 @@
         {% else %}
             {{ 'product-1' | placeholder_svg_tag }}
         {% endif %}
-        <h4 class="kopje__title-left kopje__title-4" {% for block in section.blocks %} style="background-color: {{ block.settings.title-4-color }};" {% endfor %}>
+        <h4 class="kopje__title-left kopje__title-4" style="background-color: {{ section.settings.title-4-color }};" >
           {% for block in section.blocks %}
             {{ block.settings.item-title4 }}
           {% endfor %}
@@ -80,11 +81,11 @@
               <li>{{ block.settings.richtext-item4 }}</li>
             {% endfor %}
           </ul>
-          {% for block in section.blocks %} <a href="{{ block.settings.item-link4 }}" class="kopje__link"></a> {% endfor %}
+          <a href="{{ block.settings.item-link4 }}" class="kopje__link"></a>
         </div>
       </div>
     </div>
-    <h2 class="main-title kopje-title">{{ section.settings.row-title1 }}</h2>
+    <h2 class="main-title kopje-title">{{ section.settings.row-title2 }}</h2>
     <div class="row">
       <div class="kopje__photo-item">
         {% if section.settings.img5 %}
@@ -92,7 +93,7 @@
         {% else %}
             {{ 'product-1' | placeholder_svg_tag }}
         {% endif %}
-        <h4 class="kopje__title-right kopje__title-5" {% for block in section.blocks %} style="background-color: {{ block.settings.title-5-color }};" {% endfor %}>
+        <h4 class="kopje__title-right kopje__title-5" style="background-color: {{ section.settings.title-5-color }};" >
           {% for block in section.blocks %}
             {{ block.settings.item-title5 }}
           {% endfor %}
@@ -104,7 +105,7 @@
             {% endfor %}
           </ul>
         </div>
-        {% for block in section.blocks %} <a href="{{ block.settings.item-link5 }}" class="kopje__link"></a> {% endfor %}
+        <a href="{{ block.settings.item-link5 }}" class="kopje__link"></a>
       </div>
       <div class="kopje__photo-item">
         {% if section.settings.img6 %}
@@ -112,7 +113,7 @@
         {% else %}
             {{ 'product-1' | placeholder_svg_tag }}
         {% endif %}
-        <h4 class="kopje__title-left kopje__title-6" {% for block in section.blocks %} style="background-color: {{ block.settings.title-6-color }};" {% endfor %}>
+        <h4 class="kopje__title-left kopje__title-6" style="background-color: {{ section.settings.title-6-color }};" >
           {% for block in section.blocks %}
             {{ block.settings.item-title6 }}
           {% endfor %}
@@ -124,7 +125,7 @@
             {% endfor %}
           </ul>
         </div>
-        {% for block in section.blocks %} <a href="{{ block.settings.item-link6 }}" class="kopje__link"></a> {% endfor %}
+        <a href="{{ block.settings.item-link6 }}" class="kopje__link"></a>
       </div>
       <div class="kopje__photo-item kopje__photo-item-bot-0">
         {% if section.settings.img7 %}
@@ -132,7 +133,7 @@
         {% else %}
             {{ 'product-1' | placeholder_svg_tag }}
         {% endif %}
-        <h4 class="kopje__title-right kopje__title-7" {% for block in section.blocks %} style="background-color: {{ block.settings.title-7-color }};" {% endfor %}>
+        <h4 class="kopje__title-right kopje__title-7" style="background-color: {{ section.settings.title-7-color }};" >
           {% for block in section.blocks %}
             {{ block.settings.item-title7 }}
           {% endfor %}
@@ -144,7 +145,7 @@
             {% endfor %}
           </ul>
         </div>
-        {% for block in section.blocks %} <a href="{{ block.settings.item-link7 }}" class="kopje__link"></a> {% endfor %}
+        <a href="{{ block.settings.item-link7 }}" class="kopje__link"></a>
       </div>
       <div class="kopje__photo-item kopje__photo-item-bot-0">
         {% if section.settings.img8 %}
@@ -152,7 +153,7 @@
         {% else %}
             {{ 'product-1' | placeholder_svg_tag }}
         {% endif %}
-        <h4 class="kopje__title-left kopje__title-8" {% for block in section.blocks %} style="background-color: {{ block.settings.title-8-color }};" {% endfor %}>
+        <h4 class="kopje__title-left kopje__title-8" style="background-color: {{ section.settings.title-8-color }};" >
           {% for block in section.blocks %}
             {{ block.settings.item-title8 }}
           {% endfor %}
@@ -164,7 +165,7 @@
             {% endfor %}
           </ul>
         </div>
-        {% for block in section.blocks %} <a href="{{ block.settings.item-link8 }}" class="kopje__link"></a> {% endfor %}
+         <a href="{{ section.settings.item-link8 }}" class="kopje__link"></a> 
       </div>
     </div>
   </div>
@@ -192,12 +193,36 @@
         "label": {
           "en": "Pick 1st item image"
         }
+      }, 
+      {
+        "type": "color",
+        "id": "title-1-color",
+        "label": "Change the color of title 1"
+      },
+      {
+        "type": "text",
+        "id": "item-link1",
+        "label": {
+          "en": "Item 1 url"
+        }
       },
       {
         "type": "image_picker",
         "id": "img2",
         "label": {
           "en": "Pick 2nd item image"
+        }
+      }, 
+      {
+        "type": "color",
+        "id": "title-2-color",
+        "label": "Change the color of title 2"
+      },
+      {
+        "type": "text",
+        "id": "item-link2",
+        "label": {
+          "en": "Item 2 url"
         }
       }, 
       {
@@ -208,10 +233,34 @@
         }
       }, 
       {
+          "type": "color",
+          "id": "title-3-color",
+          "label": "Change the color of title 3"
+        },
+      {
+        "type": "text",
+        "id": "item-link3",
+        "label": {
+          "en": "Item 3 url"
+        }
+      }, 
+      {
         "type": "image_picker",
         "id": "img4",
         "label": {
           "en": "Pick 4th item image"
+        }
+      }, 
+        {
+            "type": "color",
+            "id": "title-4-color",
+            "label": "Change the color of title 4"
+        },
+      {
+        "type": "text",
+        "id": "item-link4",
+        "label": {
+          "en": "Item 4 url"
         }
       }, 
       {
@@ -221,6 +270,18 @@
           "en": "Pick 5th item image"
         }
       }, 
+        {
+            "type": "color",
+            "id": "title-5-color",
+            "label": "Change the color of title 5"
+        },
+      {
+        "type": "text",
+        "id": "item-link5",
+        "label": {
+          "en": "Item url"
+        }
+      }, 
       {
         "type": "image_picker",
         "id": "img6",
@@ -228,6 +289,18 @@
           "en": "Pick 6th item image"
         }
       }, 
+            {
+                "type": "color",
+                "id": "title-6-color",
+                "label": "Change the color of title 6"
+            },
+            {
+                "type": "text",
+                "id": "item-link6",
+                "label": {
+                "en": "Item url"
+                }
+            }, 
       {
         "type": "image_picker",
         "id": "img7",
@@ -235,12 +308,36 @@
           "en": "Pick 7th item image"
         }
       }, 
+            {
+                "type": "color",
+                "id": "title-7-color",
+                "label": "Change the color of title 7"
+            },
+            {
+                "type": "text",
+                "id": "item-link7",
+                "label": {
+                "en": "Item url"
+                }
+            }, 
       {
         "type": "image_picker",
         "id": "img8",
         "label": {
           "en": "Pick 8th item image"
         }
+      }, 
+      {
+          "type": "color",
+          "id": "title-8-color",
+          "label": "Change the color of title 8"
+      },
+      {
+          "type": "text",
+          "id": "item-link8",
+          "label": {
+          "en": "Item 8 url"
+          }
       }
     ],
     "max_blocks": 8,
@@ -262,18 +359,6 @@
             "label": {
               "en": "Add your text"
             }
-          }, 
-          {
-            "type": "color",
-            "id": "title-1-color",
-            "label": "Change the color of title 1"
-          },
-          {
-            "type": "text",
-            "id": "item-link1",
-            "label": {
-              "en": "Item url"
-            }
           }
         ]
       },
@@ -293,18 +378,6 @@
             "id": "richtext-item2",
             "label": {
               "en": "Add your text"
-            }
-          }, 
-          {
-            "type": "color",
-            "id": "title-2-color",
-            "label": "Change the color of title 2"
-          },
-          {
-            "type": "text",
-            "id": "item-link2",
-            "label": {
-              "en": "Item url"
             }
           }
         ]
@@ -326,19 +399,7 @@
                 "label": {
                 "en": "Add your text"
                 }
-            }, 
-            {
-                "type": "color",
-                "id": "title-3-color",
-                "label": "Change the color of title 3"
-            },
-          {
-            "type": "text",
-            "id": "item-link3",
-            "label": {
-              "en": "Item url"
             }
-          }
         ]
       },
       {
@@ -358,19 +419,7 @@
                 "label": {
                 "en": "Add your text"
                 }
-            }, 
-            {
-                "type": "color",
-                "id": "title-4-color",
-                "label": "Change the color of title 4"
-            },
-          {
-            "type": "text",
-            "id": "item-link4",
-            "label": {
-              "en": "Item url"
             }
-          }
         ]
       }, {
         "type": "block5",
@@ -389,19 +438,7 @@
                 "label": {
                 "en": "Add your text"
                 }
-            }, 
-            {
-                "type": "color",
-                "id": "title-5-color",
-                "label": "Change the color of title 5"
-            },
-          {
-            "type": "text",
-            "id": "item-link5",
-            "label": {
-              "en": "Item url"
             }
-          }
         ]
       }, {
         "type": "block6",
@@ -419,18 +456,6 @@
                 "id": "richtext-item6",
                 "label": {
                 "en": "Add your text"
-                }
-            }, 
-            {
-                "type": "color",
-                "id": "title-6-color",
-                "label": "Change the color of title 6"
-            },
-            {
-                "type": "text",
-                "id": "item-link6",
-                "label": {
-                "en": "Item url"
                 }
             }
         ]
@@ -451,18 +476,6 @@
                 "label": {
                 "en": "Add your text"
                 }
-            }, 
-            {
-                "type": "color",
-                "id": "title-7-color",
-                "label": "Change the color of title 7"
-            },
-            {
-                "type": "text",
-                "id": "item-link7",
-                "label": {
-                "en": "Item url"
-                }
             }
         ]
       }, {
@@ -481,18 +494,6 @@
                 "id": "richtext-item8",
                 "label": {
                 "en": "Add your text"
-                }
-            }, 
-            {
-                "type": "color",
-                "id": "title-8-color",
-                "label": "Change the color of title 8"
-            },
-            {
-                "type": "text",
-                "id": "item-link8",
-                "label": {
-                "en": "Item url"
                 }
             }
         ]
