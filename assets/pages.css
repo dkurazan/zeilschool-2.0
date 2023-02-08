@@ -1,0 +1,105 @@
+/* zeilschool */
+
+
+
+/* zeilkamp */
+.pages .info-section h3{
+    display: none;
+}
+
+.pages .info-section{
+    padding-left: 25%;
+}
+
+.pages .filter-grid {
+    display: none;
+}
+
+
+/* slapen */
+.slapen-page .button-section .row{
+    padding-bottom: 20px;
+    border-bottom: 1px solid #707070 ;
+  }
+   
+   .slapen-page .kopje-section .row:last-child, .slapen-page .kopje-section h2:nth-child(4){
+    display: none;
+   }
+
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
+   
+.pages .e-mail-block{
+    padding-left: 25%;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media(max-width: 1460px){
+
+    .zeilschool-page .row:nth-child(2) .info-section__title{
+        justify-content: start;
+        flex: 0 0 100%;
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .zeilschool-page .row:last-child .info-section__text{
+        margin-left: 0;
+    }
+
+
+    .pages .info-section{
+        padding-left: 20px;
+        
+    }
+    
+    .pages .info-section .row{
+        justify-content: center;
+    }
+
+    .pages .e-mail-block{
+        padding-left: 0;
+        margin: 0 auto;
+    }
+
+
+
+}

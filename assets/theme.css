@@ -179,9 +179,6 @@
   padding-bottom: 53px;
 }
 
-.zeilkamp-page .e-mail-block{
-  padding-left: 25%;
-}
 
 [class*="btn__lg"]{
   display: block;
@@ -202,6 +199,8 @@
       width: fit-content;
       margin: 0 auto;
   }
+
+
 }
 @media (max-width:1400px) {
   .start-section__title h1{

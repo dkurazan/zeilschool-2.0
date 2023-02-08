@@ -478,18 +478,6 @@
     }
     
     
-    /* zeilkamp */
-    .zeilkamp-page .info-section h3{
-        display: none;
-    }
-
-    .zeilkamp-page .info-section{
-        padding-left: 25%;
-    }
-
-    .zeilkamp-page .filter-grid {
-        display: none;
-    }
     
     
     @media(max-width: 1815px){
@@ -534,23 +522,7 @@
 
         .zeilschool-page .row:last-child .info-section__text{
             margin-left: 0;
-        }
-
-    
-        .zeilkamp-page .info-section{
-            padding-left: 20px;
-            
-        }
-        
-        .zeilkamp-page .info-section .row{
-            justify-content: center;
-        }
-
-        .zeilkamp-page .e-mail-block{
-            padding-left: 0;
-            margin: 0 auto;
-        }
-    
+        }    
     }
     
     @media(max-width: 1400px){

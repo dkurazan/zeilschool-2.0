@@ -1,5 +1,5 @@
 {
-  "wrapper": ".haven-page.pages",
+  "wrapper": ".b-b-page.pages",
   "sections": {
     "hero": {
       "type": "pages-hero",
