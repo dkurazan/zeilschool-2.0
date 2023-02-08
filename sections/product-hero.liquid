@@ -1,0 +1,53 @@
+{{ 'Product.css' | asset_url | stylesheet_tag }}
+<div class="start-section">
+    <div class="youtube-container">
+		{% if section.settings.video_link == blank %}
+			{{ product.featured_image | img_url: 'master' | img_tag }}
+		{% else %}
+			{%- for block in section.blocks -%}
+				<iframe src="https://www.youtube.com/embed/{{ section.settings.video_link | slice: 32, 11 }}?autoplay=1&mute=1&loop=1&color=white&controls=0&modestbranding=1&playsinline=1&rel=0&enablejsapi=1&playlist={{ section.settings.video_link | slice: 32, 11 }}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			{% endfor %}
+		{% endif %}
+    </div>
+    <div class="start-section__title">
+        <h1 class="product__title">{{ product.title }}</h1>
+    </div>
+</div> 
+{% schema %}
+{
+"name": "Video Background",
+	"class": "videoBackground",
+	"max_blocks": 1,
+	"blocks": [
+		{
+		"type": "video",
+		"name": "Video",
+		"settings": [
+			{
+				"type": "text",
+				"id": "video_link",
+				"label": {
+				"en": "Paste the YouTube video link"
+				},
+                "default": "https://www.youtube.com/watch?v=WhY7uyc56ms&ab_channel=The4KMediaGroup"
+			}
+		]
+		}
+	],
+	"presets": [
+		{
+			"name": {
+				"en": "Video Background"
+			},
+			"category": {
+				"en": "Main"
+			},
+			"blocks": [
+				{
+					"type": "video"
+				}
+			]
+		}
+	]
+}
+{% endschema %}

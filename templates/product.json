@@ -2,8 +2,11 @@
     "wrapper": ".product-page",
     "sections": {
         "hero": {
-            "type": "main-hero"
+            "type": "product-hero"
+        },
+        "template":{
+            "type": "template-product"
         }
   },
-  "order": ["hero"]
+  "order": ["hero", "template"]
 }
