@@ -1,18 +1,30 @@
 {
     "sections": {
-        "hero":{
-            "type": "pages-hero"
-        },
-        "template":{
-            "type": "template-instructors"
-        },
-        "footer-color": {
-            "type": "footer-color"
+      "hero": {
+        "type": "pages-hero",
+        "settings": {
+          "title": "",
+          "video_link": "",
+          "img": "shopify:\/\/shop_images\/Image_7.jpg",
+          "section-height": "sm"
         }
+      },
+      "template": {
+        "type": "template-instructors",
+        "settings": {
+        }
+      },
+      "footer-color": {
+        "type": "footer-color",
+        "settings": {
+          "footer-color": "",
+          "footer-mobile-btns": ""
+        }
+      }
     },
     "order": [
-        "hero",
-        "template",
-        "footer-color"
+      "hero",
+      "template",
+      "footer-color"
     ]
-}
+  }
