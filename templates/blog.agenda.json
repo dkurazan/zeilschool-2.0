@@ -16,12 +16,13 @@
         "button-color-hover": "",
         "agenda-block-color": "",
         "agenda-block-color-hover": "",
-        "newsletter-title-color": "",
-        "footer-color": ""
+        "newsletter-title-color": ""
       }
     },
-    "footer-color":{
-        "type": "footer-color"
+    "footer-color": {
+      "type": "footer-color",
+      "settings": {
+      }
     }
   },
   "order": [
