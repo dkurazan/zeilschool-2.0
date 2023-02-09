@@ -8,6 +8,7 @@
 .start-section__title{
     bottom: 70px;
     width: 100%;
+    max-width: 1920px;
 }
 
 .start-section__title h1{
@@ -20,6 +21,7 @@
     padding-top: 40px;
     margin-left: 20.625%;
     padding-bottom: 47px;
+    padding-left: 0;
 }
 
 .bruiloft__title{
@@ -65,9 +67,29 @@
     font-weight: 400;
 }
 
+.bruiloft__block:last-child h4{
+    justify-content: end;
+    display: flex;
+    align-items: center;
+
+}
+
+.bruiloft__block div{
+    display: flex;
+    flex-direction: column;
+}
+
+.bruiloft__block:last-child div p:last-child{
+    padding-bottom: 0;
+}
+
 .bruiloft__block img{
     padding-bottom: 50px;
     width: 100%;
+    max-width: 480px;
+    max-height: 480px;
+    height: 100%;
+    object-fit: cover;
 }
 
 .start-section__title{

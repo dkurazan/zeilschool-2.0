@@ -6,7 +6,8 @@
       "settings": {
         "title": "",
         "video_link": "",
-        "img": "shopify:\/\/shop_images\/zeilkamp-bg.png"
+        "img": "shopify:\/\/shop_images\/zeilkamp-bg.png",
+        "section-height": "xl"
       }
     },
     "breadcrumbs": {
@@ -24,7 +25,7 @@
         "btn-text": "Ons team",
         "btn-url": "#",
         "button-color": "#6c9db7",
-        "button-color-hover": "",
+        "button-color-hover": "#396d84",
         "text-content": "<p>• De voordelen van een zeilkamp<br\/>• Je gaat wat meemaken<br\/>• Vinkeveen rules<\/p><p>Wil je weten wat een zeilkamp inhoudt? Daar gaat ie: Van april tot oktober kun je bij ons zeilen, dat kan een dag, een paar dagen zijn of langer. Je bent dan in een groep van X kinderen van dezelfde leeftijd. Er is altijd een instructeur bij jullie. Etcetera etcetera.<br\/>Gaat iets over het ontbijt en de lunch, welke kleding, hoe laat aanwezig, mogen de ouders kijken? Hoe laat ongeveer ophalen, etc etcetera etcetera<\/p>"
       }
     },

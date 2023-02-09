@@ -1,0 +1,183 @@
+<style>
+    footer.footer{
+        background-color: {{ section.settings.footer-color }} !important;
+    }
+
+    .agenda__button a{
+      background-color: {{ section.settings.button-color }};
+    }
+
+    .agenda__button a:hover{
+      background-color: {{ section.settings.button-color-hover }};
+    }
+
+    .calendar__data-item, .calendar__data-item-light{
+      background-color: {{ section.settings.agenda-block-color }};
+    }
+
+    .calendar__data-item:hover{
+      background-color: {{ section.settings.agenda-block-color-hover }};
+    }
+
+    .agenda__newsletter-inner h4{
+      color: {{ section.settings.newsletter-title-color }};
+    }
+</style>
+<div class="start-section">
+  <div class="youtube-container">
+  {%- for block in section.blocks -%}
+      <iframe src="https://www.youtube.com/embed/{{ block.settings.video_link | slice: 32, 11 }}?autoplay=1&mute=1&loop=1&color=white&controls=0&modestbranding=1&playsinline=1&rel=0&enablejsapi=1&playlist={{ block.settings.video_link | slice: 32, 11 }}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  {% endfor %}
+  </div>
+  <div class="start-section__title">
+      <h1>Agenda</h1>
+  </div>
+</div> 
+<div class="agenda">
+  <div class="container agenda__container">
+    <div class="agenda__button agenda__button-lg-dn">
+        <a href="#">CORONA UPDATE</a>
+    </div>
+    <div class="breadcrumbs">
+        >
+        <a href="/">Home</a>
+        >
+        <a href="/pages/zeilschool">Zeilschool</a>
+        >
+        <p>Agenda</p>
+    </div>
+    <div class="agenda__newsletter">
+      <div class="agenda__button">
+          <a href="#">CORONA UPDATE</a>
+      </div>
+      <div class="agenda__newsletter-inner">
+        {% render 'newsletter' %}
+      </div>
+    </div>
+    <div class="agena__calendar">
+        
+{% paginate blogs['agenda'].articles by 50 %}
+  {% assign res = false %}
+  {% for article in blogs['agenda'].articles %}
+    {% if res %}
+      {% assign tmp = article.metafields.custom.start_date | append:"." | append: article.handle | split: ","  %}
+      {% assign res = res | concat: tmp %}
+    {% else %}
+      {% assign res = article.metafields.custom.start_date | append:"." | append: article.handle | split: ","  %}
+    {% endif %}
+  {% endfor %}
+  {% assign res = res | sort %}
+{% endpaginate %}
+
+    <div class="calendar__inner">
+
+    {% assign month = 0 %}
+    {%- for articl in res  -%}
+      {% assign handl = articl | split:"." | last %}
+      {% assign article = articles[handl] %}
+      {% assign curr_month = article.metafields.custom.start_date | date: "%B" %}
+      {% if curr_month != month %}
+        {% assign month = curr_month %}
+        {% assign year = article.metafields.custom.start_date | date: "%Y" %}
+        <h1 class="calendar__mounth-name">{{ month }} {{ year }}</h1>
+      {% endif %}
+        <a class="calendar__url" href="{{ article.url }}">
+         <div class="calendar__date-wrap">
+          <div class="calendar__data-item">{{ article.metafields.custom.start_date | date: "%d" }}</div>
+          {% assign start = article.metafields.custom.start_date | date: "%d" %}
+          {% assign end = article.metafields.custom.end_date | date: "%d" %}
+          {% if article.metafields.custom.end_date and start != end  %}
+            
+            {% assign diff = end | minus: start %}
+            {% if diff != 0 and diff!=2 %}
+              <div class="calendar__data-item-light">t/m</div>
+            {% elsif diff == 2 %}
+              <div class="calendar__data-item">{{ start | plus: 1 }}</div>
+            {% endif %}
+            <div class="calendar__data-item">{{ end }}</div>
+          {% endif %}
+        </div>
+        <div class="calendar__date-text">
+          <div class="calendar__text-item">
+              <h4>{{ article.title }}</h4>
+              <h6>{% if article.excerpt != "" and article.excerpt != nil %}{{article.excerpt | strip_html }}{% endif %}</h6>
+          </div>
+        </div>
+        </a>
+
+    {%- endfor -%}
+          </div>
+    </div>
+    </div>
+  </div>
+</div>
+{% schema %}
+{
+"name": "Agenda",
+"settings": [
+  {
+        "type": "color",
+        "id": "button-color",
+        "label": "Change the button color"
+    },
+    {
+        "type": "color",
+        "id": "button-color-hover",
+        "label": "Change the button hover color"
+    },
+    {
+        "type": "color",
+        "id": "agenda-block-color",
+        "label": "Change the agenda blocks color"
+    },
+    {
+        "type": "color",
+        "id": "agenda-block-color-hover",
+        "label": "Change the agenda blocks hover color"
+    },
+    {
+        "type": "color",
+        "id": "newsletter-title-color",
+        "label": "Change the newsletter title color"
+    },
+    {
+        "type": "color",
+        "id": "footer-color",
+        "label": "Change the footer color"
+    }
+],
+"class": "videoBackground",
+"max_blocks": 1,
+"blocks": [
+  {
+  "type": "video",
+  "name": "Video",
+  "settings": [
+    {
+      "type": "text",
+      "id": "video_link",
+      "label": {
+      "en": "Paste the YouTube video link"
+      },
+              "default": "https://www.youtube.com/watch?v=WhY7uyc56ms&ab_channel=The4KMediaGroup"
+    }
+  ]
+  }
+],
+"presets": [
+  {
+    "name": {
+      "en": "Video Background"
+    },
+    "category": {
+      "en": "Main"
+    },
+    "blocks": [
+      {
+        "type": "video"
+      }
+    ]
+  }
+]
+}
+{% endschema %}

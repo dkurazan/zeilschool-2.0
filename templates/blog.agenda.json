@@ -1,0 +1,10 @@
+{
+    "sections":{
+        "template":{
+            "type": "template-blog-agenda"
+        }
+    },
+    "order": [
+        "template"
+    ]
+}

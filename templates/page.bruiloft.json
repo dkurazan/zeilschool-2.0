@@ -1,20 +1,46 @@
 {
-    "wrapper": ".bruiloft-page",
-    "sections": {
-        "hero": {
-            "type": "pages-hero",
-            "settings": {
-              "title": "",
-              "video_link": "",
-              "img": "shopify:\/\/shop_images\/2021_Zeilschool_188hb_15fc7b9d-e868-4e1d-be3a-c462b78788bc.jpg"
-            }
-        },
-        "template":{
-            "type": "template-bruiloft"
-        }
+  "wrapper": ".bruiloft-page",
+  "sections": {
+    "hero": {
+      "type": "pages-hero",
+      "settings": {
+        "title": "",
+        "video_link": "",
+        "img": "shopify:\/\/shop_images\/Scroll_Group_17.jpg",
+        "section-height": "sm"
+      }
     },
-    "order": [
-        "hero",
-        "template"
-    ]
+    "breadcrumbs": {
+      "type": "breadcrumbs",
+      "settings": {
+      }
+    },
+    "template": {
+      "type": "template-bruiloft",
+      "settings": {
+        "title": "ONZE BRUILOFTEN ZIJN EEN SPETTERENDE BELEVING",
+        "title-sm1": "Slaapzaal",
+        "text-1": "",
+        "title-sm2": "Slapen",
+        "text-2": "",
+        "title-sm-img": "Bemanning",
+        "image": "shopify:\/\/shop_images\/vierkante-fotos_jeugdzeilen.jpg",
+        "title-sm3": "Meer informatie",
+        "text-3": ""
+      }
+    },
+    "footer-color": {
+      "type": "footer-color",
+      "settings": {
+        "footer-color": "",
+        "footer-mobile-btns": ""
+      }
+    }
+  },
+  "order": [
+    "hero",
+    "breadcrumbs",
+    "template",
+    "footer-color"
+  ]
 }
