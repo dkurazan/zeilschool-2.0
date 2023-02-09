@@ -1,30 +1,94 @@
 {
-    "sections": {
-      "hero": {
-        "type": "pages-hero",
-        "settings": {
-          "title": "",
-          "video_link": "",
-          "img": "shopify:\/\/shop_images\/Image_7.jpg",
-          "section-height": "sm"
-        }
-      },
-      "template": {
-        "type": "template-instructors",
-        "settings": {
-        }
-      },
-      "footer-color": {
-        "type": "footer-color",
-        "settings": {
-          "footer-color": "",
-          "footer-mobile-btns": ""
-        }
+  "sections": {
+    "hero": {
+      "type": "pages-hero",
+      "settings": {
+        "title": "",
+        "video_link": "",
+        "img": "shopify:\/\/shop_images\/Image_7.jpg",
+        "section-height": "sm"
       }
     },
-    "order": [
-      "hero",
-      "template",
-      "footer-color"
-    ]
-  }
+    "template": {
+      "type": "template-instructors",
+      "blocks": {
+        "7c6d0d09-1430-4e81-afe3-3c48b87707a2": {
+          "type": "block",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/instructeurs-1.jpg",
+            "name-title": "NOAH - ZEILINSTRUCTEUR",
+            "desc": ""
+          }
+        },
+        "48030825-e403-42d2-b08c-4abbfe36a2dc": {
+          "type": "block",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/vierkante-fotos_jeugdzeilen_1dd17650-44a6-465a-b688-ca03c619f4fb.jpg",
+            "name-title": "MAAIKE - zeilinstructeur",
+            "desc": "<p>Ik geef les in de Valk en aan de Optimisten en Askeladden. En dan nog wat tekst hier want dit was wel een heel erg korte introductie van Maaike natuurlijk.nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. <\/p>"
+          }
+        },
+        "f3a4f70a-ed50-4f16-a7dd-04214eef59d1": {
+          "type": "block",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/vierkante-fotos_jeugdzeilen_c328bda1-62f2-403c-8157-778a7a0ea97a.jpg",
+            "name-title": "MERYL - ALLROUND MEDEWERKER",
+            "desc": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.” Mail me maar hoor!<\/p>"
+          }
+        },
+        "2ee0afda-eb02-408c-b760-09fa389b17b6": {
+          "type": "block",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/instructeurs-1.jpg",
+            "name-title": "NOAH - ZEILINSTRUCTEUR",
+            "desc": "<p>Hoi! Ik ben Noah :) Ik doe een theateropleiding in Utrecht en in de zomers geef ik de Valk, Optimist en Askeladden les. Samen met jou gaan we er een hele leuke zeilweek van maken!<\/p>"
+          }
+        },
+        "d3a68ef6-2123-4dee-b8f2-73d17b649c26": {
+          "type": "block",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/vierkante-fotos_jeugdzeilen_1dd17650-44a6-465a-b688-ca03c619f4fb.jpg",
+            "name-title": "MAAIKE - zeilinstructeur",
+            "desc": "<p>Ik geef les in de Valk en aan de Optimisten en Askeladden. En dan nog wat tekst hier want dit was wel een heel erg korte introductie van Maaike natuurlijk.nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. <\/p>"
+          }
+        },
+        "3788c15d-290b-4756-8993-a62160307d9d": {
+          "type": "block",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/vierkante-fotos_jeugdzeilen_c328bda1-62f2-403c-8157-778a7a0ea97a.jpg",
+            "name-title": "MERYL - ALLROUND MEDEWERKER",
+            "desc": "<p>“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.”<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "7c6d0d09-1430-4e81-afe3-3c48b87707a2",
+        "48030825-e403-42d2-b08c-4abbfe36a2dc",
+        "f3a4f70a-ed50-4f16-a7dd-04214eef59d1",
+        "2ee0afda-eb02-408c-b760-09fa389b17b6",
+        "d3a68ef6-2123-4dee-b8f2-73d17b649c26",
+        "3788c15d-290b-4756-8993-a62160307d9d"
+      ],
+      "settings": {
+        "btn-text": "WORD OOK INSTRUCTEUR",
+        "btn-url": "#",
+        "button-color": "",
+        "button-color-hover": "",
+        "title": "Wil je ook met ons werken?",
+        "text-content": ""
+      }
+    },
+    "footer-color": {
+      "type": "footer-color",
+      "settings": {
+        "footer-color": "",
+        "footer-mobile-btns": ""
+      }
+    }
+  },
+  "order": [
+    "hero",
+    "template",
+    "footer-color"
+  ]
+}
