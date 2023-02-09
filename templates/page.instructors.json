@@ -1,0 +1,18 @@
+{
+    "sections": {
+        "hero":{
+            "type": "pages-hero"
+        },
+        "template":{
+            "type": "template-instructors"
+        },
+        "footer-color": {
+            "type": "footer-color"
+        }
+    },
+    "order": [
+        "hero",
+        "template",
+        "footer-color"
+    ]
+}

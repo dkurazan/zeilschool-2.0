@@ -1,9 +1,5 @@
 {{ 'template-agenda.css' | asset_url | stylesheet_tag }}
 <style>
-    footer.footer{
-        background-color: {{ section.settings.footer-color }} !important;
-    }
-
     .agenda__button a{
       background-color: {{ section.settings.button-color }};
     }
@@ -12,7 +8,7 @@
       background-color: {{ section.settings.button-color-hover }};
     }
 
-    .calendar__data-item, .calendar__data-item-light{
+    .calendar__data-item{
       background-color: {{ section.settings.agenda-block-color }};
     }
 
@@ -20,20 +16,14 @@
       background-color: {{ section.settings.agenda-block-color-hover }};
     }
 
+    .calendar__data-item-light{
+      background-color: {{ section.settings.agenda-mid-block-color }};
+    }
+
     .agenda__newsletter-inner h4{
       color: {{ section.settings.newsletter-title-color }};
     }
 </style>
-<div class="start-section">
-  <div class="youtube-container">
-  {%- for block in section.blocks -%}
-      <iframe src="https://www.youtube.com/embed/{{ block.settings.video_link | slice: 32, 11 }}?autoplay=1&mute=1&loop=1&color=white&controls=0&modestbranding=1&playsinline=1&rel=0&enablejsapi=1&playlist={{ block.settings.video_link | slice: 32, 11 }}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-  {% endfor %}
-  </div>
-  <div class="start-section__title">
-      <h1>Agenda</h1>
-  </div>
-</div> 
 <div class="agenda">
   <div class="container agenda__container">
     <div class="agenda__button agenda__button-lg-dn">
@@ -133,6 +123,11 @@
     },
     {
         "type": "color",
+        "id": "agenda-mid-block-color",
+        "label": "Change the agenda middle blocks color"
+    },
+    {
+        "type": "color",
         "id": "agenda-block-color-hover",
         "label": "Change the agenda blocks hover color"
     },
@@ -140,45 +135,7 @@
         "type": "color",
         "id": "newsletter-title-color",
         "label": "Change the newsletter title color"
-    },
-    {
-        "type": "color",
-        "id": "footer-color",
-        "label": "Change the footer color"
     }
-],
-"class": "videoBackground",
-"max_blocks": 1,
-"blocks": [
-  {
-  "type": "video",
-  "name": "Video",
-  "settings": [
-    {
-      "type": "text",
-      "id": "video_link",
-      "label": {
-      "en": "Paste the YouTube video link"
-      },
-              "default": "https://www.youtube.com/watch?v=WhY7uyc56ms&ab_channel=The4KMediaGroup"
-    }
-  ]
-  }
-],
-"presets": [
-  {
-    "name": {
-      "en": "Video Background"
-    },
-    "category": {
-      "en": "Main"
-    },
-    "blocks": [
-      {
-        "type": "video"
-      }
-    ]
-  }
 ]
 }
 {% endschema %}

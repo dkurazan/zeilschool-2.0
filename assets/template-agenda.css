@@ -239,6 +239,10 @@
     
 }
 
+.breadcrumbs{
+    padding: 0;
+}
+
 @media (max-width: 1920px) {
     .agenda__container{
         padding-right: 54px;
@@ -267,9 +271,6 @@
 }
 
 @media(max-width: 900px){
-    .breadcrumbs{
-        display: none;
-    }
 
     .agenda__button{
         padding-top: 0;
