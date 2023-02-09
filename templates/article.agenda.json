@@ -1,0 +1,18 @@
+{
+    "sections":{
+        "hero": {
+            "type": "article-hero"
+        },
+        "template": {
+            "type": "template-article-agenda"
+        },
+        "footer-color": {
+            "type": "footer-color"
+        }
+    },
+    "order": [
+        "hero",
+        "template",
+        "footer-color"
+    ]
+}
