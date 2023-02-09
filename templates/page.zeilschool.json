@@ -2,11 +2,10 @@
   "wrapper": ".zeilschool-page",
   "sections": {
     "main-hero": {
-      "type": "main-hero",
+      "type": "pages-hero",
       "settings": {
         "title": "",
-        "video_link": "https:\/\/www.youtube.com\/watch?v=DrQCR3I7TYQ&ab_channel=THEBOATSHOW",
-        "section-height": "xl"
+        "video_link": "https:\/\/www.youtube.com\/watch?v=DrQCR3I7TYQ&ab_channel=THEBOATSHOW"
       }
     },
     "breadcrumbs": {
@@ -135,6 +134,11 @@
         "agenda-title": "Agenda",
         "agenda-blocks-color": "#6c9db7"
       }
+    },
+    "footer-color": {
+      "type": "footer-color",
+      "settings": {
+      }
     }
   },
   "order": [
@@ -143,6 +147,7 @@
     "weather-section",
     "gallery",
     "info-section",
-    "news"
+    "news",
+    "footer-color"
   ]
 }

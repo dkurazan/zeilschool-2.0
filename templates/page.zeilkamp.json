@@ -14,17 +14,133 @@
       "settings": {
       }
     },
-    "button-section":{
-        "type": "button-section"
+    "button-section": {
+      "type": "button-section",
+      "custom_css": [
+        "p {font-weight: 700;}",
+        "p:last-child {font-weight: 3;}"
+      ],
+      "settings": {
+        "btn-text": "Ons team",
+        "btn-url": "#",
+        "button-color": "#6c9db7",
+        "button-color-hover": "",
+        "text-content": "<p>• De voordelen van een zeilkamp<br\/>• Je gaat wat meemaken<br\/>• Vinkeveen rules<\/p><p>Wil je weten wat een zeilkamp inhoudt? Daar gaat ie: Van april tot oktober kun je bij ons zeilen, dat kan een dag, een paar dagen zijn of langer. Je bent dan in een groep van X kinderen van dezelfde leeftijd. Er is altijd een instructeur bij jullie. Etcetera etcetera.<br\/>Gaat iets over het ontbijt en de lunch, welke kleding, hoe laat aanwezig, mogen de ouders kijken? Hoe laat ongeveer ophalen, etc etcetera etcetera<\/p>"
+      }
     },
     "gallery": {
-      "type": "main-gallery"
+      "type": "main-gallery",
+      "blocks": {
+        "44689fa1-09e0-488a-a7f6-7852cb356b24": {
+          "type": "block1",
+          "settings": {
+            "item-title1": "leeftijd",
+            "richtext-item1": ""
+          }
+        },
+        "8fb32dd8-db12-40a0-b4f2-efb0fa9e3861": {
+          "type": "block2",
+          "settings": {
+            "item-title2": "boottype",
+            "richtext-item2": ""
+          }
+        },
+        "c0241bb6-1b9e-468b-9f93-8fb19a56e68e": {
+          "type": "block3",
+          "settings": {
+            "item-title3": "verblijfstype",
+            "richtext-item3": ""
+          }
+        },
+        "2eb5f833-a1ab-47fc-85f2-0ce6edb98714": {
+          "type": "block4",
+          "settings": {
+            "item-title4": "week programma",
+            "richtext-item4": ""
+          }
+        },
+        "b1a2812f-1815-4d1c-9d0e-32480fb7967f": {
+          "type": "block5",
+          "settings": {
+            "item-title5": "onze locatie",
+            "richtext-item5": ""
+          }
+        },
+        "6f81fdf1-ea24-4441-82ce-02089e7b5b2d": {
+          "type": "block6",
+          "settings": {
+            "item-title6": "eten\/drinken",
+            "richtext-item6": ""
+          }
+        },
+        "ac24e455-76fd-4394-9e61-f3f3809a81de": {
+          "type": "block7",
+          "settings": {
+            "item-title7": "CWO",
+            "richtext-item7": ""
+          }
+        },
+        "67025192-44b5-4f12-9f65-fed0be5da9a0": {
+          "type": "block8",
+          "settings": {
+            "item-title8": "onze instructeurs",
+            "richtext-item8": ""
+          }
+        }
+      },
+      "block_order": [
+        "44689fa1-09e0-488a-a7f6-7852cb356b24",
+        "8fb32dd8-db12-40a0-b4f2-efb0fa9e3861",
+        "c0241bb6-1b9e-468b-9f93-8fb19a56e68e",
+        "2eb5f833-a1ab-47fc-85f2-0ce6edb98714",
+        "b1a2812f-1815-4d1c-9d0e-32480fb7967f",
+        "6f81fdf1-ea24-4441-82ce-02089e7b5b2d",
+        "ac24e455-76fd-4394-9e61-f3f3809a81de",
+        "67025192-44b5-4f12-9f65-fed0be5da9a0"
+      ],
+      "settings": {
+        "row-title1": "",
+        "row-title2": "",
+        "img1": "shopify:\/\/shop_images\/Group_64.jpg",
+        "title-1-color": "",
+        "item-link1": "",
+        "title-2-color": "",
+        "item-link2": "",
+        "title-3-color": "#6c9db7",
+        "item-link3": "",
+        "title-4-color": "#396d84",
+        "item-link4": "",
+        "img5": "shopify:\/\/shop_images\/VKANT_ISLOEP.jpg",
+        "title-5-color": "#6c9db7",
+        "item-link5": "",
+        "title-6-color": "#396d84",
+        "item-link6": "",
+        "title-7-color": "#6c9db7",
+        "item-link7": "",
+        "title-8-color": "#396d84",
+        "item-link8": ""
+      }
     },
-    "info-section":{
-      "type": "main-info-section"
+    "info-section": {
+      "type": "main-info-section",
+      "settings": {
+        "text-top": "",
+        "img": "shopify:\/\/shop_images\/info-section-img.png",
+        "text-middle": "",
+        "text-bottom": "<p> <\/p>"
+      }
     },
-    "e-mail":{
-      "type": "e-mail-section"
+    "e-mail": {
+      "type": "e-mail-section",
+      "settings": {
+      }
+    },
+    "footer-color": {
+      "type": "footer-color",
+      "settings": {
+        "footer-color": "#6c9db7",
+        "footer-mobile-btns": "#396d84"
+      }
     }
   },
   "order": [
@@ -33,6 +149,7 @@
     "button-section",
     "gallery",
     "info-section",
-    "e-mail"
+    "e-mail",
+    "footer-color"
   ]
 }

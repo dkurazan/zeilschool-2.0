@@ -1,12 +1,12 @@
 {
-  "wrapper": ".events-page.pages",
+  "wrapper": ".bedrijven-page.pages",
   "sections": {
     "hero": {
       "type": "pages-hero",
       "settings": {
         "title": "",
         "video_link": "",
-        "img": "shopify:\/\/shop_images\/zeilkamp-bg.png"
+        "img": "shopify:\/\/shop_images\/2021_Zeilschool_188hb_881d55bc-fa2c-4416-977f-e9a44ae90820.jpg"
       }
     },
     "breadcrumbs": {
@@ -15,95 +15,92 @@
       }
     },
     "button-section": {
-      "type": "events-button-section",
+      "type": "button-section",
       "custom_css": [
-        "p:first-child {padding-bottom: 50px;}"
+        "p:last-child {padding-top: 50px;}"
       ],
       "settings": {
-        "btn-text1": "Boek nu",
-        "btn-text2": "CORONA UPDATE",
+        "btn-text": "Boek nu",
         "btn-url": "#",
-        "button-color1": "#d9b259",
-        "button-color2": "#d9b259",
-        "button-color-hover1": "#bc953c",
-        "button-color-hover2": "#bc953c",
+        "button-color": "#d9b259",
+        "button-color-hover": "#bc953c",
         "text-content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<\/p><p>• De voordelen van een zeilkamp<br\/>• Je gaat wat meemaken<br\/>• Vinkeveen rules<\/p>"
       }
     },
     "gallery": {
       "type": "main-gallery",
       "blocks": {
-        "877ad260-9607-4c79-89f1-51807f23f54a": {
+        "58a55681-1e84-46af-b924-8d7a9fc0aba4": {
           "type": "block1",
           "settings": {
-            "item-title1": "bruiloft",
+            "item-title1": "vergaderen",
             "richtext-item1": ""
           }
         },
-        "262e9793-8071-401b-881b-57fb3ca1b12d": {
+        "d3324160-9834-4783-86f8-f457afb69580": {
           "type": "block2",
           "settings": {
             "item-title2": "borrel & feest",
             "richtext-item2": ""
           }
         },
-        "a987146d-4a5d-4c2e-8cba-0df1df8445b0": {
+        "573648d9-cb6e-473a-bae4-c22dc2b448a4": {
           "type": "block3",
           "settings": {
-            "item-title3": "bedrijfsuitje",
+            "item-title3": "wateractiviteiten",
             "richtext-item3": ""
           }
         },
-        "103a13f9-29ad-40fd-860d-eec83347cb03": {
+        "434dcf6b-7d4c-4c06-8c22-ecf612c5f47d": {
           "type": "block4",
           "settings": {
-            "item-title4": "familiefeest",
+            "item-title4": "landactiviteiten",
             "richtext-item4": ""
           }
         },
-        "7228d801-977b-4ec7-9134-8935eaf2fdd5": {
+        "bd9e253d-ea90-406c-9153-c89a1195d0c0": {
           "type": "block5",
           "settings": {
-            "item-title5": "onze locatie",
+            "item-title5": "eten",
             "richtext-item5": ""
           }
         },
-        "c921af2f-c347-4c8c-adbf-ba05ee05b7a5": {
+        "56035e4a-caa5-43fe-9d1e-b00d9fc8197c": {
           "type": "block6",
           "settings": {
-            "item-title6": "eten",
+            "item-title6": "slapen",
             "richtext-item6": ""
           }
         },
-        "d79c7aa5-fab2-43c7-bd7e-c616100c368c": {
+        "948a7a30-7035-4ad6-a949-71b6ec528072": {
           "type": "block7",
           "settings": {
-            "item-title7": "slapen",
+            "item-title7": "boot huren",
             "richtext-item7": ""
           }
         },
-        "12303a60-e14f-4060-92b6-d5c7c7a84027": {
+        "1aca5b66-a304-4be6-8b84-8bab0f9a2e93": {
           "type": "block8",
           "settings": {
-            "item-title8": "scholen",
+            "item-title8": "ons team?",
             "richtext-item8": ""
           }
         }
       },
       "block_order": [
-        "877ad260-9607-4c79-89f1-51807f23f54a",
-        "262e9793-8071-401b-881b-57fb3ca1b12d",
-        "a987146d-4a5d-4c2e-8cba-0df1df8445b0",
-        "103a13f9-29ad-40fd-860d-eec83347cb03",
-        "7228d801-977b-4ec7-9134-8935eaf2fdd5",
-        "c921af2f-c347-4c8c-adbf-ba05ee05b7a5",
-        "d79c7aa5-fab2-43c7-bd7e-c616100c368c",
-        "12303a60-e14f-4060-92b6-d5c7c7a84027"
+        "58a55681-1e84-46af-b924-8d7a9fc0aba4",
+        "d3324160-9834-4783-86f8-f457afb69580",
+        "573648d9-cb6e-473a-bae4-c22dc2b448a4",
+        "434dcf6b-7d4c-4c06-8c22-ecf612c5f47d",
+        "bd9e253d-ea90-406c-9153-c89a1195d0c0",
+        "56035e4a-caa5-43fe-9d1e-b00d9fc8197c",
+        "948a7a30-7035-4ad6-a949-71b6ec528072",
+        "1aca5b66-a304-4be6-8b84-8bab0f9a2e93"
       ],
       "settings": {
         "row-title1": "",
         "row-title2": "",
-        "img1": "shopify:\/\/shop_images\/Group_59.jpg",
+        "img1": "shopify:\/\/shop_images\/Group_65.jpg",
         "title-1-color": "#d9b259",
         "item-link1": "",
         "title-2-color": "#bc953c",
@@ -112,7 +109,7 @@
         "item-link3": "",
         "title-4-color": "#bc953c",
         "item-link4": "",
-        "img5": "shopify:\/\/shop_images\/Group_64.jpg",
+        "img5": "shopify:\/\/shop_images\/Group_68.jpg",
         "title-5-color": "#d9b259",
         "item-link5": "",
         "title-6-color": "#bc953c",

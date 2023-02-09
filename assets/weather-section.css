@@ -14,6 +14,7 @@
     max-width: 75%;
     display: flex;
     flex-wrap: wrap;
+    padding-bottom: 49px;
 }
 
 .weather-section__info{
@@ -65,12 +66,9 @@
     font-size: 30px;
     color: var(--unnamed-color-818080);
     list-style: none;
-    padding-bottom: 49px;
     line-height: 43px;
 }
 
-
-/* zeilschool */
 
 .weather-section__info a{
     color: #6E9DB6;
@@ -79,9 +77,22 @@
     transition: .3s all ease-in-out;
 }
 
+
+.main-page .weather-section__info p{
+    padding-bottom: 60px;
+}
+
 .weather-section__info a:hover{
     color: #C45F53;
     transition: .3s all ease-in-out;
+}
+
+.main-page .weather-section{
+    padding-bottom: 60px;
+}
+
+.main-page .weather-info__wraper{
+    padding-bottom: 0;
 }
 
 .zeilschool-page .weather-section{
@@ -110,12 +121,47 @@
     flex: 0 0 100%;
     max-width: 100%;
     padding-top: 35px;
+    flex-direction: column;
+    display: flex;
 }
 
 
 .button-section.weather-section .weather-section__info p{
     max-width: 1056px;
     padding-bottom: 0;
+}
+
+/* slapen and b & b */
+.slapen-page .button-section .row, .b-b-page .button-section .row{
+    padding-bottom: 20px;
+    border-bottom: 1px solid #707070 ;
+}
+
+.haven-page .button-section.weather-section .weather-section__info, .slapen-page .button-section.weather-section .weather-section__info, .b-b-page .button-section.weather-section .weather-section__info{
+    padding-top: 0;
+}
+
+.events-page .weather-section__button-inner a{
+    line-height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.events-page .weather-section__button-inner a:first-child{
+    margin-bottom: 34px;
+}
+
+.events-page .button-section.weather-section .weather-section__info{
+    padding-top: 60px;
+}
+
+.haven-page .weather-section__button-inner a{
+    max-width: fit-content;
+    padding-right: 35px;
+    line-height: 100%;
+    display: flex;
+    align-items: center;
+    width: 100%;
 }
 
 @media(max-width: 1460px){
@@ -168,6 +214,14 @@
 
 @media(max-width: 956px){
 
+    .weather-section__button-inner a {
+        width: 116px;
+        height: 48px;
+        font-size: 23px;
+        line-height: 48px;
+        padding-left: 10px;
+    } 
+
      .weather-section__data{
         flex: 0 0 100%;
         max-width: 100%;
@@ -199,8 +253,15 @@
         width: 116px;
         height: 48px;
         font-size: 23px;
-        line-height: 48px;
+        line-height: 100%;
         padding-left: 10px;
+        display: flex;
+        align-items: center;
+    }
+
+    .haven-page .main.weather-section__button-inner a{
+        font-size: 20px;
+        padding-left: 18px;
     }
 
     .weather-section__button{
@@ -216,6 +277,9 @@
 }
 
 @media (max-width: 768px) {
+    .weather-section{
+        padding-top: 20px;
+    }
         
     .weather-section__button-inner{
         padding-left: 34px;
@@ -256,6 +320,12 @@
 
     .weather-section__info p{
         font-size: 18px;
+    }
+}
+
+@media(max-width: 550px){
+    .start-section__title h1{
+      font-size: 46px;
     }
 }
 

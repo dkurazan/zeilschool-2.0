@@ -1,0 +1,28 @@
+<style>
+    footer.footer{
+        background-color: {{ section.settings.footer-color }};
+    }
+
+    .footer-main__buttons a{
+        background-color: {{ section.settings.footer-mobile-btns }} !important;
+        
+    }
+</style>
+{% schema %}
+    {
+    "name": "Footer color",
+    "settings": [
+        {
+            "type": "color",
+            "id": "footer-color",
+            "label": "Change the footer color"
+        },
+        {
+            "type": "color",
+            "id": "footer-mobile-btns",
+            "label": "Change footer mobile buttons color"
+        }
+    ]
+    }
+{% endschema %}
+    

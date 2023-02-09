@@ -1,25 +1,44 @@
-{{ 'events.css' | asset_url | stylesheet_tag }}
-<div class="weather-section">
+{{ 'weather-section.css' | asset_url | stylesheet_tag }}
+<style>
+    .weather-section__button-inner a:first-child {
+        background-color: {{ section.settings.button-color1 }};
+    }
+
+    .weather-section__button-inner a:first-child:hover{
+        background-color: {{ section.settings.button-color-hover1 }};
+    }
+
+    .weather-section__button-inner a:last-child {
+        background-color: {{ section.settings.button-color2 }};
+    }
+
+    .weather-section__button-inner a:last-child:hover{
+        background-color: {{ section.settings.button-color-hover2 }};
+    }
+</style>
+<div class="button-section weather-section">
   <div class="container">
     <div class="row">
         <div class="events weather-section__button">
             <div class="weather-section__button-inner">
-                <a href="#" class="btn__lg">Boek nu</a>
-                <a href="#" class="btn__lg">CORONA UPDATE</a>
+                <a href="#" class="btn__lg">{{ section.settings.btn-text1}}</a>
+                <a href="#" class="btn__lg">{{ section.settings.btn-text2}}</a>
             </div>
         </div>
-        <div class="weather-section__info">
-            {% if section.settings.text-content != blank %} 
+        <div class="weather-info__wraper">
+            <div class="weather-section__info">
+                    {% if section.settings.text-content != blank %} 
                         {{ section.settings.text-content }}
-            {%  else %}
-                <p>
-                    • De leukste zeilschool van Midden Nederland <br>
-                    • Wel 12 soorten boten om te huren, van sloep tot fusion <br>
-                    • Surfen, suppen, kanoën en waterfietsen <br>
-                    • Team-uitjes en activiteiten voor jong en oud <br>
-                    • Eten en slapen aan het water<br>
-                </p>
-            {% endif %}
+                    {%  else %}
+                        <p>
+                            • De leukste zeilschool van Midden Nederland <br>
+                            • Wel 12 soorten boten om te huren, van sloep tot fusion <br>
+                            • Surfen, suppen, kanoën en waterfietsen <br>
+                            • Team-uitjes en activiteiten voor jong en oud <br>
+                            • Eten en slapen aan het water<br>
+                        </p>
+                    {% endif %}
+            </div>
         </div>
         <div class="weather-section__data"></div>
     </div>
@@ -28,16 +47,52 @@
 
 {% schema %}
 {
-"name": "Add your text",
-    "settings": [
-            {
-                "type": "richtext",
-                "id": "text",
-                "label": {
-                "en": "Type your text"
-                }
-            }
-        ],
+"name": "Weather section",
+"settings": [
+    {
+        "type": "text",
+        "id": "btn-text1",
+        "label": "Button 1 text",
+        "default": "Boek nu"
+    },
+    {
+        "type": "text",
+        "id": "btn-text2",
+        "label": "Button 2 text",
+        "default": "CORONA UPDATE"
+    },
+    {
+        "type": "text",
+        "id": "btn-url",
+        "label": "Button url",
+        "default": "#"
+    },
+    {
+        "type": "color",
+        "id": "button-color1",
+        "label": "Change the button 1 color"
+    },
+    {
+        "type": "color",
+        "id": "button-color2",
+        "label": "Change the button 2 color"
+    },
+    {
+        "type": "color",
+        "id": "button-color-hover1",
+        "label": "Change the button 1 hover color"
+    },
+    {
+        "type": "color",
+        "id": "button-color-hover2",
+        "label": "Change the button 2 hover color"
+    },
+    {
+        "type": "richtext",
+        "id": "text-content",
+        "label": "Change the button hover color"
+    }
+],
     "presets": [
     ]
 }

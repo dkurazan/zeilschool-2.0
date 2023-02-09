@@ -26,6 +26,10 @@
     background-color: #D9B259;
 }
 
+.weather-section__button a:first-child{
+    margin-top: 20px;
+}
+
 .weather-section__info ul li{
     max-width: 100%;
     

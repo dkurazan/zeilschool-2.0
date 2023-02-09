@@ -6,7 +6,7 @@
       "settings": {
         "title": "",
         "video_link": "",
-        "img": "shopify:\/\/shop_images\/zeilkamp-bg.png"
+        "img": "shopify:\/\/shop_images\/2021_Zeilschool_188hb.jpg"
       }
     },
     "breadcrumbs": {
@@ -14,14 +14,91 @@
       "settings": {
       }
     },
-    "button-section":{
-        "type": "button-section"
+    "button-section": {
+      "type": "button-section",
+      "settings": {
+        "btn-text": "Boek nu",
+        "btn-url": "#",
+        "button-color": "#c45f53",
+        "button-color-hover": "#984539",
+        "text-content": "<p>Wil je weten wat een Slapen inhoudt? Daar gaat ie: Van april tot oktober kun je bij ons zeilen, dat kan een dag, een paar dagen zijn of langer. Je bent dan in een groep van X kinderen van dezelfde leeftijd. Er is altijd een instructeur bij jullie. Etcetera etcetera.<br\/>Gaat iets over het ontbijt en de lunch, welke kleding, hoe laat aanwezig, mogen de ouders kijken? Hoe laat ongeveer ophalen, etc etcetera etcetera<\/p>"
+      }
     },
     "gallery": {
-      "type": "main-gallery"
+      "type": "main-gallery",
+      "blocks": {
+        "b7677d8b-57e7-427d-b924-aeb7d72c9713": {
+          "type": "block1",
+          "settings": {
+            "item-title1": "GROEPS ACCOM...",
+            "richtext-item1": ""
+          }
+        },
+        "7d4533c7-17e0-428a-a117-62b936013250": {
+          "type": "block2",
+          "settings": {
+            "item-title2": "PASSANTEN",
+            "richtext-item2": ""
+          }
+        },
+        "c0a91590-49a6-4c45-969f-00a4616505d3": {
+          "type": "block3",
+          "settings": {
+            "item-title3": "B&B",
+            "richtext-item3": ""
+          }
+        },
+        "0c6ab37b-5c1a-45ac-951b-bfc285ec7ec3": {
+          "type": "block4",
+          "settings": {
+            "item-title4": "OVERIG",
+            "richtext-item4": ""
+          }
+        }
+      },
+      "block_order": [
+        "b7677d8b-57e7-427d-b924-aeb7d72c9713",
+        "7d4533c7-17e0-428a-a117-62b936013250",
+        "c0a91590-49a6-4c45-969f-00a4616505d3",
+        "0c6ab37b-5c1a-45ac-951b-bfc285ec7ec3"
+      ],
+      "settings": {
+        "row-title1": "",
+        "row-title2": "",
+        "img1": "shopify:\/\/shop_images\/zeilkamp-bg.png",
+        "title-1-color": "#c45f53",
+        "item-link1": "",
+        "title-2-color": "#984539",
+        "item-link2": "",
+        "title-3-color": "#c45f53",
+        "item-link3": "",
+        "title-4-color": "#984539",
+        "item-link4": "",
+        "title-5-color": "",
+        "item-link5": "",
+        "title-6-color": "",
+        "item-link6": "",
+        "title-7-color": "",
+        "item-link7": "",
+        "title-8-color": "",
+        "item-link8": ""
+      }
     },
-    "info-section":{
-      "type": "main-info-section"
+    "info-section": {
+      "type": "main-info-section",
+      "settings": {
+        "text-top": "",
+        "img": "shopify:\/\/shop_images\/info-section-img.png",
+        "text-middle": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <br\/><br\/>KOPJE IN DE TEKST<br\/>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.””Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis <\/p>",
+        "text-bottom": "<p> <\/p>"
+      }
+    },
+    "footer-color": {
+      "type": "footer-color",
+      "settings": {
+        "footer-color": "#c45f53",
+        "footer-mobile-btns": "#984539"
+      }
     }
   },
   "order": [
@@ -29,6 +106,7 @@
     "breadcrumbs",
     "button-section",
     "gallery",
-    "info-section"
+    "info-section",
+    "footer-color"
   ]
 }

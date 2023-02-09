@@ -1,0 +1,20 @@
+{
+    "wrapper": ".bruiloft-page",
+    "sections": {
+        "hero": {
+            "type": "pages-hero",
+            "settings": {
+              "title": "",
+              "video_link": "",
+              "img": "shopify:\/\/shop_images\/2021_Zeilschool_188hb_15fc7b9d-e868-4e1d-be3a-c462b78788bc.jpg"
+            }
+        },
+        "template":{
+            "type": "template-bruiloft"
+        }
+    },
+    "order": [
+        "hero",
+        "template"
+    ]
+}

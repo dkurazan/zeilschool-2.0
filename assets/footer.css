@@ -153,6 +153,12 @@
     }
 }
 
+@media (max-width: 1500px) {
+    .footer__main .row{
+        margin-right: 20px;
+    }
+}
+
 @media(max-width: 1300px) {
     .footer__logo{
         display: none;
@@ -179,6 +185,18 @@
     .footer-main__logos{
         justify-content: space-around; 
         flex-wrap: wrap;
+    }
+
+    .footer__header::after{
+        margin: 0;
+    }
+
+    .social-block__inst-facebook{
+        padding-top: 0;
+    }
+
+    .footer__main .row{
+        margin-right: 0;
     }
 }
 

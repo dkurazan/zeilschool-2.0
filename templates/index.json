@@ -1,4 +1,5 @@
 {
+  "wrapper": ".main-page",
   "sections": {
     "main-hero": {
       "type": "main-hero",
@@ -23,72 +24,56 @@
           "type": "block1",
           "settings": {
             "item-title1": "Zeilschool",
-            "richtext-item1": "",
-            "title-1-color": "",
-            "item-link1": "/pages/zeilschool"
+            "richtext-item1": ""
           }
         },
         "5cdec799-9d72-49a9-b890-6a8489d23fab": {
           "type": "block2",
           "settings": {
             "item-title2": "ZEILKAMP",
-            "richtext-item2": "",
-            "title-2-color": "",
-            "item-link2": "/pages/zeilkamp"
+            "richtext-item2": ""
           }
         },
         "f30f2bb9-cf72-472e-80fb-9956a643199a": {
           "type": "block3",
           "settings": {
             "item-title3": "HAVEN",
-            "richtext-item3": "",
-            "title-3-color": "",
-            "item-link3": "/pages/haven"
+            "richtext-item3": ""
           }
         },
         "e049f24c-62a9-40b7-909e-09bfbe9edfd6": {
           "type": "block4",
           "settings": {
             "item-title4": "BOOT HUREN",
-            "richtext-item4": "",
-            "title-4-color": "",
-            "item-link4": "/pages/boot-huren"
+            "richtext-item4": ""
           }
         },
         "3bc66305-af3c-494b-9491-66312c189180": {
           "type": "block5",
           "settings": {
             "item-title5": "Slapen",
-            "richtext-item5": "",
-            "title-5-color": "",
-            "item-link5": "/pages/slapen"
+            "richtext-item5": ""
           }
         },
         "efc58c59-b989-4c3d-8dfe-e38fade70171": {
           "type": "block6",
           "settings": {
             "item-title6": "B&B",
-            "richtext-item6": "",
-            "title-6-color": "",
-            "item-link6": "/pages/b-b"
+            "richtext-item6": ""
           }
         },
         "7b1d756a-2a53-482e-bf67-4f7c7069fb36": {
           "type": "block7",
           "settings": {
             "item-title7": "EVENTS",
-            "richtext-item7": "",
-            "title-7-color": "",
-            "item-link7": "/pages/events"
+            "richtext-item7": ""
           }
         },
         "9fd927e3-463b-4e6c-9caf-0579f2289fc5": {
           "type": "block8",
           "settings": {
             "item-title8": "BEDRIJVEN",
-            "richtext-item8": "",
-            "title-8-color": "",
-            "item-link8": "/pages/bedrijven"
+            "richtext-item8": ""
           }
         }
       },
@@ -107,11 +92,20 @@
         "row-title2": "Kopje"
       }
     },
-    "info-section":{
-      "type": "main-info-section"
+    "info-section": {
+      "type": "main-info-section",
+      "settings": {
+      }
     },
-    "news":{
-      "type": "main-news"
+    "news": {
+      "type": "main-news",
+      "settings": {
+      }
+    },
+    "footer-color": {
+      "type": "footer-color",
+      "settings": {
+      }
     }
   },
   "order": [
@@ -119,6 +113,7 @@
     "weather-section",
     "gallery",
     "info-section",
-    "news"
+    "news",
+    "footer-color"
   ]
 }
