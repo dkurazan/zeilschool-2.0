@@ -1,4 +1,19 @@
 {{ 'hero.css' | asset_url | stylesheet_tag }}
+<style>
+    {% if section.settings.section-height == 'xl' %}
+      .youtube-container iframe{
+        height: 100vh;
+      }
+    {%  elsif section.settings.section-height == 'm' %}
+      .youtube-container iframe{
+        height: 975px;
+      }
+    {%  elsif section.settings.section-height == 'sm' %}
+        .youtube-container iframe{
+          height: 636px;
+        }
+    {% endif %}
+</style>
 <div class="start-section">
     <div class="youtube-container">
       {% if section.settings.video_link == blank %}
@@ -35,6 +50,26 @@
         "type": "image_picker",
         "id": "img",
         "label": "Background image"
+    },
+    {
+      "type": "select",
+      "id": "section-height",
+      "label": "Section height",
+      "options": [
+          {
+          "label": "Xl (100vh)",
+          "value": "xl"
+          },
+          {
+          "label": "M (975px)",
+          "value": "m"
+          },
+          {
+          "label": "Sm (636px)",
+          "value": "sm"
+          }
+      ],
+      "default": "xl"
     }
   ],
 	"presets": []
