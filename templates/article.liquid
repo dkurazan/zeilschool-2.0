@@ -1,0 +1,107 @@
+{% assign number_of_comments = article.comments_count %}
+{% if comment and comment.created_at %}
+  {% assign number_of_comments = article.comments_count %}
+{% endif %}
+
+{{ 'template-4.css' | asset_url | stylesheet_tag }}
+<div class="agenda-detail-start-section">
+    {{ article.metafields.custom.hero_image | image_url:"5760x" | img_tag}}
+    <div class="start-section__title">
+        <h1>{{ article.title }}</h1>
+    </div>
+</div>
+
+<div class="agenda-detail-text">
+    <div class="container">
+         <div class="breadcrumbs">
+            >
+            <a href="/">Home</a>
+            >
+            <a href="/blogs/agenda">Agenda</a>
+            >
+            <p>{{ article.title }}</p>
+        </div>
+        <header class="agenda-detail-text__header">
+            <div class="agenda-detail-text__button">
+                <a href="#" class="btn__lg agenda-detail__btn">Boek nu</a>
+            </div>
+            <div class="agenda-detail-text__title">
+                <h2>{{ article.metafields.custom.first_big_heading }}</h2>
+            </div>
+        </header>
+        {% assign first = article.content | split: "!!divider!!" | first %}
+        {% assign last = article.content | split: "!!divider!!" | last %}
+        {% assign header_parts = first | split: "!!heading!!" %}
+        <main class="agenda-detail-text__main">
+          {% for part in header_parts %}
+            <div class="agenda-detail__list">
+                <div class="agenda-detail__list-inner">
+                    <h4>{{ article.metafields.custom.first_section_headings.value[forloop.index0] }}</h4>
+                </div>
+                <div>
+                  {{ part }}
+                </div>
+            </div>
+          {% endfor %}
+        </main>
+    </div>
+</div>
+<div class="agenda-detail-impressies">
+    <div class="container">
+        {% if article.metafields.custom.gallery_heading %}<h3 class="title-50 agenda-detail-impressies__title">{{ article.metafields.custom.gallery_heading }}</h3>{% endif %}
+        {% if article.metafields.custom.gallery_images %}
+        <div class="agenda-detail-impressies__images">
+          {% for img in article.metafields.custom.gallery_images.value %}
+            <div>
+                {{ img | image_url:"5760x" | img_tag }}
+                <h4 class="agenda-detail-impressies__images-title">{{ article.metafields.custom.gallery_items_headings.value[forloop.index0] }}</h4>
+                <ul>
+                    {{ article.metafields.custom.gallery_text_content.value[forloop.index0] }}
+                </ul>
+                <a href="{{ article.metafields.custom.gallery_links.value[forloop.index0] }}"></a>
+            </div>
+          {% endfor %}
+        </div>
+        {% endif %}
+    </div>
+</div>
+{% if last %}
+<div class="agenda-detail-description">
+    <div class="container">
+        <div class="agenda-detail-description__inner">
+           {{ last }}
+        </div>
+    </div>
+</div>
+{% endif %}
+
+{% if blog.comments_enabled? %}
+  <h2>{{ number_of_comments }} comments</h2>
+  {% paginate article.comments by 5 %}
+    {% for comment in article.comments %}
+      <div>
+        <div>{{ comment.content }}</div>
+        {{ comment.author }} @ {{ comment.created_at }}
+      </div>
+    {% endfor %}
+    {% if paginate.pages > 1 %}
+      {{ paginate | default_pagination }}
+    {% endif %}
+  {% endpaginate %}
+
+  <div>
+    {% form 'new_comment', article %}
+      {{ form.errors | default_errors }}
+      <label for="CommentAuthor">name</label>
+      <input type="text" name="comment[author]" id="CommentAuthor" placeholder="name" value="{{ form.author }}" autocapitalize="words">
+
+      <label for="CommentEmail">email</label>
+      <input type="email" name="comment[email]" id="CommentEmail" placeholder="email" value="{{ form.email }}" autocorrect="off" autocapitalize="off">
+
+      <label for="CommentBody">message</label>
+      <textarea name="comment[body]" id="CommentBody" placeholder="message">{{ form.body }}</textarea>
+
+      <input type="submit" value="post">
+    {% endform %}
+  </div>
+{% endif %}
