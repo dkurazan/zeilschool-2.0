@@ -4,7 +4,7 @@
             "type": "article-hero"
         },
         "template": {
-            "type": "template-agenda-article"
+            "type": "template-article-agenda"
         },
         "footer-color": {
             "type": "footer-color"
