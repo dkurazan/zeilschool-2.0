@@ -9,17 +9,25 @@
         "section-height": "xl"
       }
     },
-    "breadcrumbs":{
-        "type": "breadcrumbs"
+    "breadcrumbs": {
+      "type": "breadcrumbs",
+      "settings": {
+      }
     },
-    "button-section":{
-        "type": "collection-button-section"
+    "button-section": {
+      "type": "collection-button-section",
+      "settings": {
+      }
     },
-    "template":{
-        "type": "template-collection"
+    "template": {
+      "type": "template-collection",
+      "settings": {
+      }
     },
     "info-section": {
-      "type": "main-info-section"
+      "type": "main-info-section",
+      "settings": {
+      }
     }
   },
   "order": [
@@ -28,6 +36,5 @@
     "button-section",
     "template",
     "info-section"
-    
   ]
 }
