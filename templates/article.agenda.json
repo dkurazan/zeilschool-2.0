@@ -1,18 +1,29 @@
 {
-    "sections":{
-        "hero": {
-            "type": "article-hero"
-        },
-        "template": {
-            "type": "template-article-agenda"
-        },
-        "footer-color": {
-            "type": "footer-color"
-        }
+  "sections": {
+    "hero": {
+      "type": "article-hero",
+      "settings": {
+        "title": "",
+        "video_link": "",
+        "section-height": "sm"
+      }
     },
-    "order": [
-        "hero",
-        "template",
-        "footer-color"
-    ]
+    "template": {
+      "type": "template-article-agenda",
+      "settings": {
+      }
+    },
+    "footer-color": {
+      "type": "footer-color",
+      "settings": {
+        "footer-color": "",
+        "footer-mobile-btns": ""
+      }
+    }
+  },
+  "order": [
+    "hero",
+    "template",
+    "footer-color"
+  ]
 }

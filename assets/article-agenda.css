@@ -89,25 +89,38 @@
     max-width: 900px;
 }
 
+.agenda-post__block>div:last-child{
+    max-width: 1056px;
+}
+
 .agenda-post__sm-title h2{
     max-width: 200px;
     text-align: right;
 }
 
-.agenda-post__sm-title h3{
+.agenda-post__sm-title h3, .agenda-post__sm-title h3 p{
     font-family: Scarlet;
     font-size: 30px;
     color: #707070;
     text-align: right;
 }
 
-.agenda-post__block img{
+.agenda-post__img-block{
+    display: flex;
+    margin-top: 20px;
+}
+
+.agenda-post__img-block>div{
     max-width: 480px;
     width: 100%;
-    max-height: 480px;
+    margin-right: 20px;
+}
 
+.agenda-post__block img{
+    width: 100%;
+    max-height: 480px;
     object-fit: cover;
-    margin-top: 20px;
+    
 }
 
 .e-mail-block{

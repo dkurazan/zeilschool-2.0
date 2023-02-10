@@ -1,4 +1,13 @@
 {{ 'article-agenda.css' | asset_url | stylesheet_tag }}
+<style>
+    .weather-section__button-inner a {
+        background-color: {{ section.settings.button-color }};
+    }
+
+    .weather-section__button-inner a:hover{
+        background-color: {{ section.settings.button-color-hover }};
+    }
+</style>
 <div class="weather-section">
   <div class="container">
     <div class="agenda-post__nav">
@@ -21,28 +30,65 @@
         </div>
         <h2>{{ article.title }} <br> {{ article.excerpt | remove: "(SUP)" }}</h2>
       </div>
-      {% assign articleDescription = article.content | split: "< split >"%}
+      {% assign article_content = article.content | split: "@@" %}
       <div class="agenda-post__block">
         <div class="agenda-post__sm-title">
           <h3>{{ article.metafields.custom.start_date | date: "%Y" }}</h3>
         </div>
-        <p>{{ articleDescription[1] }}</p>
+        <div>{{ article_content[0] }}</div>
       </div>
       <div class="agenda-post__block">
         <div class="agenda-post__sm-title">
-          <h3>Onderdeel</h3>
+          <h3>{{ article_content[1] }}</h3>
         </div>
         <div>
-          <p>Voor de kinderen van 7 tot 12 jaar kan je kennismaken door een halve of hele dag te leren varen in een optimist. De Optimist is een toegankelijke jeugdboot voor de zeiler t/m 12 jaar. Door het kleine formaat is het voor de jonge zeiler een perfecte boot om mee overweg te kunnen. Onder leiding van een enthousiaste instructeur ga je de eerste beginselen van het zeilen leren. Dit zal afgewisseld worden door leuke spellen op een eiland.</p>
-          {{ article.excerpt_or_content[1] | img_url: 'master' | img_tag }}
+          <div>
+            {{ article_content[2] }}
+          </div>
+          <div class="agenda-post__img-block">
+            <div>
+              {{ article_content[3] }}
+            </div>
+            {{ article_content[4] }}
+          </div>
         </div>
       </div>
       <div class="agenda-post__block">
         <div class="agenda-post__sm-title">
-          <h3>Meer informatie</h3>
+          <h3>{{ article_content[5] }}</h3>
         </div>
-        <p>Blijf je gezellig slapen, doe je ook met het avondprogramma mee of ben je alleen overdag bij ons? Bekijk hier uit welke verblijfstypes je kunt kiezen.</p>
+        {{ article_content[6] }}
       </div>
     </div>
   </div>
 </div>
+
+{% schema %}
+  {
+    "name": "Article template",
+    "settings":[
+      {
+        "type": "text",
+        "id": "btn-text",
+        "label": "Button text",
+        "default": "Boek nu"
+    },
+    {
+        "type": "text",
+        "id": "btn-url",
+        "label": "Button url",
+        "default": "#"
+    },
+    {
+        "type": "color",
+        "id": "button-color",
+        "label": "Change the button color"
+    },
+    {
+        "type": "color",
+        "id": "button-color-hover",
+        "label": "Change the button hover color"
+    }
+    ]
+  }
+{% endschema %}
