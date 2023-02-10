@@ -122,6 +122,7 @@
       "type": "main-info-section",
       "settings": {
         "text-top": "",
+        "img": "shopify:\/\/shop_images\/info-section-img.png",
         "text-middle": "",
         "text-bottom": ""
       }

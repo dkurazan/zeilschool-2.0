@@ -16,8 +16,12 @@
 </style>
 <div class="start-section">
     <div class="youtube-container">
-      {% if section.settings.video_link == blank %}
+      {% if section.settings.video_link == blank and section.settings.video_link2 == blank %}
         {{  section.settings.img | img_url: 'master' | img_tag }}
+      {% elsif section.settings.video_link == blank %}
+        <video autoplay muted loop id="myVideo">
+				  <source src="{{ section.settings.video_link2 | asset_url }}" type="video/mp4">
+        </video>
       {% else %}
         <iframe src="https://www.youtube.com/embed/{{ section.settings.video_link | slice: 32, 11 }}?autoplay=1&mute=1&loop=1&color=white&controls=0&modestbranding=1&playsinline=1&rel=0&enablejsapi=1&playlist={{ section.settings.video_link | slice: 32, 11 }}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       {% endif %}
@@ -50,6 +54,13 @@
 		"id": "video_link",
 		"label": {
 		"en": "Paste the YouTube video link"
+		}
+	},
+  {
+		"type": "video_url",
+		"id": "video_link2",
+		"label": {
+		"en": "Paste the CDN video link"
 		}
 	},
     {
