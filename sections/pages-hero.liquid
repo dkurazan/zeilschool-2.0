@@ -24,7 +24,13 @@
     </div>
     <div class="start-section__title template-1-section__title">
       {% if section.settings.title == blank %}
-        <h1 style="white-space: nowrap;">{{ page.title}}</h1>
+        <h1 style="white-space: nowrap;">
+          {% if page.title %}
+                {{ page.title }}
+            {% elsif collection.title %}
+                {{ collection.title }}
+            {% endif %}
+        </h1>
       {%  else %} 
         <h1>{{ section.settings.title }}</h1>
       {% endif %}

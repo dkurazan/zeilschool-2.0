@@ -1,0 +1,108 @@
+.weather-section {
+    padding-bottom: 125px;
+}
+
+.row:last-child .info-section__text {
+    margin-left: 0;
+}
+
+.row:nth-child(2) .info-section__title{
+    padding-top: 20px;
+    align-items: start;
+    line-height: 1.4;
+}
+
+.kopje__title-right{
+    background-color: #98BA7F;
+}
+
+.kopje__title-left{
+    background-color: #6A8456;
+}
+
+.kopje-section .row:nth-child(2) {
+    padding-bottom: 0;
+}
+
+.kopje-title{
+    padding-top: 21px;
+}
+
+.kopje-section .container{
+    border-top: 1px solid #707070;
+}
+
+.kopje__two-titles{
+    display: flex;
+}
+
+.kopje__two-titles h2{
+    margin-left: 25%;
+    flex: 0 0 25%;
+    max-width: 25%;
+}
+
+.weather-section__button-inner{
+    padding-bottom: 125px;
+}
+
+.start-section__title{
+    padding: 0;
+}
+
+.row:nth-child(2) .info-section__title{
+    white-space: nowrap;
+}
+
+.info-section{
+    padding-bottom: 243px;
+}
+
+
+
+.footer{
+    background-color: #98BA7F !important;
+}
+
+.footer-main__buttons a {
+    background-color: #6A8456 !important;
+}
+
+@media (max-width: 1350px){
+    .weather-section__button-inner{
+        padding-bottom: 0;
+    }
+}
+
+@media(max-width: 1150px){
+    .start-section__title h1{
+        font-size: 120px;
+    }
+}
+
+@media (max-width: 956px){
+    .info-section .row:last-child {
+        display: block;
+    }
+
+    .info-section{
+        padding-bottom: 40px;
+    }
+}
+
+
+@media(max-width: 800px){
+    .start-section__title h1{
+        font-size: 80px;
+    }
+}
+
+@media(max-width: 550px){
+    .start-section__title h1{
+        font-size: 46px;
+    }
+
+    .weather-section__button-inner a{
+        width: 116px !important;
+    }
+}

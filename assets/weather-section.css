@@ -164,6 +164,10 @@
     width: 100%;
 }
 
+.collection .weather-section{
+    padding-top: 35px;
+}
+
 @media(max-width: 1460px){
     .weather-section__button{
         flex: 0 0 35%;

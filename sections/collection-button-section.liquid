@@ -1,0 +1,33 @@
+{{ 'weather-section.css' | asset_url | stylesheet_tag }}
+<div class="weather-section">
+  <div class="container">
+    <div class="row">
+        <div class="weather-section__button">
+            <div class="weather-section__button-inner">
+                <a href="#" class="btn__lg">Boek nu</a>
+            </div>
+        </div>
+        <div class="weather-section__info">
+            {% render 'filter' %}
+        </div>
+        <div class="weather-section__data"></div>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+"name": "Add your text",
+    "settings": [
+            {
+                "type": "richtext",
+                "id": "text",
+                "label": {
+                "en": "Type your text"
+                }
+            }
+        ],
+    "presets": [
+    ]
+}
+{% endschema %}
