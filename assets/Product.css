@@ -106,13 +106,13 @@
 .impressies__images img{
     width: 100%;
     height: 100%;
-    transition: .5s all ease-in-out;
+    transition: .3s ease;
 }
 
 .impressies__images img:hover{
     position: relative;
-    transform: scale(1.2);
-    transition: 1s all ease-in-out;
+    transform: scale(1.03);
+    transition: .3s ease;
 }
 
 .description__block{
@@ -189,6 +189,12 @@
     text-decoration: none;
     padding-right: 10px;
     height: 100%;
+    
+}
+
+.alternativen__images div{
+    overflow: hidden;
+    height: 100%;
 }
 
 .alternativen__images a:last-child{
@@ -208,6 +214,13 @@
     width: 100%;
     object-fit: cover;
     max-width: 240px;
+    display: block;
+    transition: .4s ease;
+}
+
+.alternativen__images a:hover img{
+    transform: scale(1.04);
+    transition: .4s ease;
 }
 
 .md-hidden{

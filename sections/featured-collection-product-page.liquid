@@ -5,7 +5,9 @@
             <div class="alternativen__images">
                 {% for product in section.settings.featured-collection.products limit: section.settings.number_of_products_to_show %}
                     <a href="{{ product.url }}">
-                        {{ product.featured_image | img_url: 'master' | img_tag }}
+                        <div>
+                            {{ product.featured_image | img_url: 'master' | img_tag }}
+                        </div>
                         <h6>{{ product.title }}</h6>
                     </a>
                 {% endfor %}

@@ -1,4 +1,13 @@
 {{ 'weather-section.css' | asset_url | stylesheet_tag }}
+<style>
+    .weather-section__button-inner .btn__lg {
+        background-color: {{ section.settings.button-color }};
+    }
+
+    .weather-section__button-inner .btn__lg:hover{
+        background-color: {{ section.settings.button-color-hover }};
+    }
+</style>
 <div class="weather-section">
   <div class="container">
     <div class="row">
@@ -19,13 +28,28 @@
 {
 "name": "Add your text",
     "settings": [
-            {
-                "type": "richtext",
-                "id": "text",
-                "label": {
-                "en": "Type your text"
-                }
-            }
+        {
+            "type": "text",
+            "id": "btn-text",
+            "label": "Button text",
+            "default": "Boek nu"
+        },
+        {
+            "type": "text",
+            "id": "btn-url",
+            "label": "Button url",
+            "default": "#"
+        },
+        {
+            "type": "color",
+            "id": "button-color",
+            "label": "Change the button color"
+        },
+        {
+            "type": "color",
+            "id": "button-color-hover",
+            "label": "Change the button hover color"
+        }
         ],
     "presets": [
     ]

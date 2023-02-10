@@ -1,0 +1,613 @@
+{{ 'gallery.css' | asset_url | stylesheet_tag }}
+{{ 'collection.css' | asset_url | stylesheet_tag }}
+<div class="kopje-section">
+  <div class="container">
+    <h2 class="main-title kopje-title">{{ section.settings.row-title1 }}</h2>
+    <div class="row">
+        <div class="kopje__photo-item">
+            {{ section.settings.img1 | img_url: 'master' | img_tag }}
+        
+            <h4 class="kopje__title-right kopje__title-1" >
+              {% for block in section.blocks %}
+                {{ block.settings.item-title1 }}
+              {% endfor %}
+            </h4>
+            <div class="kopje__hover-item">
+                <ul>
+                    {% for block in section.blocks %}
+                      <li>{{ block.settings.richtext-item1 }}</li>
+                    {% endfor %}
+                </ul>
+            </div>
+            <a href="/pages/zeilschool" class="kopje__link"></a>
+        </div>
+        <div class="kopje__photo-item">
+            {{ section.settings.img2 | img_url: 'master' | img_tag }}
+            <h4 class="kopje__title-left kopje__title-2" >
+              {% for block in section.blocks %}
+                {{ block.settings.item-title2 }}
+              {% endfor %}
+            </h4>
+            <div class="kopje__hover-item">
+                <ul>
+                    {% for block in section.blocks %}
+                      <li>{{ block.settings.richtext-item2 }}</li>
+                    {% endfor %}
+                </ul>
+            </div>
+            <a href="#" class="kopje__link"></a>
+        </div>
+        <div class="kopje__photo-item">
+           {{ section.settings.img3 | img_url: 'master' | img_tag }}
+           <h4 class="kopje__title-right kopje__title-3" >
+             {% for block in section.blocks %}
+                {{ block.settings.item-title3 }}
+              {% endfor %}  
+           </h4>
+            <div class="kopje__hover-item">
+                <ul>
+                    {% for block in section.blocks %}
+                      <li>{{ block.settings.richtext-item3 }}</li>
+                    {% endfor %}
+                </ul>
+            </div>
+            <a href="#" class="kopje__link"></a>
+        </div>
+        <div class="kopje__photo-item">
+            {{ section.settings.img4 | img_url: 'master' | img_tag }}
+            <h4 class="kopje__title-left kopje__title-4" >
+              {% for block in section.blocks %}
+                {{ block.settings.item-title4 }}
+              {% endfor %}
+            </h4>
+            <div class="kopje__hover-item">
+                <ul>
+                    {% for block in section.blocks %}
+                      <li>{{ block.settings.richtext-item4 }}</li>
+                    {% endfor %}
+                </ul>
+                <a href="#" class="kopje__link"></a>
+            </div>
+        </div>
+    </div>
+    <h2 class="main-title kopje-title">{{ section.settings.row-title2 }}</h2>
+    <div class="row">
+        <div class="kopje__photo-item">
+            {{ section.settings.img5 | img_url: 'master' | img_tag }}
+            <h4 class="kopje__title-right kopje__title-5" >
+              {% for block in section.blocks %}
+                {{ block.settings.item-title5 }}
+              {% endfor %}
+            </h4>
+            <div class="kopje__hover-item">
+                <ul>
+                    {% for block in section.blocks %}
+                      <li>{{ block.settings.richtext-item5 }}</li>
+                    {% endfor %}
+                </ul>
+            </div>
+            <a href="#" class="kopje__link"></a>
+        </div>
+        <div class="kopje__photo-item">
+            {{ section.settings.img6 | img_url: 'master' | img_tag }}
+            <h4 class="kopje__title-left kopje__title-6" >
+              {% for block in section.blocks %}
+                {{ block.settings.item-title6 }}
+              {% endfor %}
+            </h4>
+            <div class="kopje__hover-item">
+                <ul>
+                    {% for block in section.blocks %}
+                      <li>{{ block.settings.richtext-item6 }}</li>
+                    {% endfor %}
+                </ul>
+            </div>
+            <a href="#" class="kopje__link"></a>
+        </div>
+        <div class="kopje__photo-item kopje__photo-item-bot-0">
+            {{ section.settings.img7 | img_url: 'master' | img_tag }}
+            <h4 class="kopje__title-right kopje__title-7" >
+              {% for block in section.blocks %}
+                {{ block.settings.item-title7 }}
+              {% endfor %}  
+            </h4>
+            <div class="kopje__hover-item">
+                <ul>
+                    {% for block in section.blocks %}
+                      <li>{{ block.settings.richtext-item7 }}</li>
+                    {% endfor %}
+                </ul>
+            </div>
+            <a href="#" class="kopje__link"></a>
+        </div>
+        <div class="kopje__photo-item kopje__photo-item-bot-0">
+            {{ section.settings.img8 | img_url: 'master' | img_tag }}
+            <h4 class="kopje__title-left kopje__title-8" >
+              {% for block in section.blocks %}
+                {{ block.settings.item-title8 }}
+              {% endfor %}
+            </h4>
+            <div class="kopje__hover-item">
+                <ul>
+                    {% for block in section.blocks %}
+                      <li>{{ block.settings.richtext-item8 }}</li>
+                    {% endfor %}
+                </ul>
+            </div>
+            <a href="#" class="kopje__link"></a>
+        </div>
+    </div>
+    <div class="kopje__two-titles">
+      <h2 class="main-title kopje-title">{{ section.settings.row-title3-1 }}</h2>
+      <h2 class="main-title kopje-title">{{ section.settings.row-title3-2 }}</h2>
+    </div>
+    <div class="row">
+        <div class="kopje__photo-item">
+            {{ section.settings.img9 | img_url: 'master' | img_tag }}
+            <h4 class="kopje__title-right kopje__title-9" >
+              {% for block in section.blocks %}
+                {{ block.settings.item-title9 }}
+              {% endfor %}
+            </h4>
+            <div class="kopje__hover-item">
+                <ul>
+                    {% for block in section.blocks %}
+                      <li>{{ block.settings.richtext-item9 }}</li>
+                    {% endfor %}
+                </ul>
+            </div>
+            <a href="#" class="kopje__link"></a>
+        </div>
+        <div class="kopje__photo-item">
+            {{ section.settings.img10 | img_url: 'master' | img_tag }}
+            <h4 class="kopje__title-left kopje__title-10" >
+              {% for block in section.blocks %}
+                {{ block.settings.item-title10 }}
+              {% endfor %}
+            </h4>
+            <div class="kopje__hover-item">
+                <ul>
+                    {% for block in section.blocks %}
+                      <li>{{ block.settings.richtext-item10 }}</li>
+                    {% endfor %}
+                </ul>
+            </div>
+            <a href="#" class="kopje__link"></a>
+        </div>
+        <div class="kopje__photo-item kopje__photo-item-bot-0">
+            {{ section.settings.img11 | img_url: 'master' | img_tag }}
+            <h4 class="kopje__title-right kopje__title-11" >
+              {% for block in section.blocks %}
+                {{ block.settings.item-title11 }}
+              {% endfor %}  
+            </h4>
+            <div class="kopje__hover-item">
+                <ul>
+                    {% for block in section.blocks %}
+                      <li>{{ block.settings.richtext-item11 }}</li>
+                    {% endfor %}
+                </ul>
+            </div>
+            <a href="#" class="kopje__link"></a>
+        </div>
+        <div class="kopje__photo-item kopje__photo-item-bot-0">
+            {{ section.settings.img12 | img_url: 'master' | img_tag }}
+            <h4 class="kopje__title-left kopje__title-12" >
+              {% for block in section.blocks %}
+                {{ block.settings.item-title12 }}
+              {% endfor %}
+            </h4>
+            <div class="kopje__hover-item">
+                <ul>
+                    {% for block in section.blocks %}
+                      <li>{{ block.settings.richtext-item12 }}</li>
+                    {% endfor %}
+                </ul>
+            </div>
+            <a href="#" class="kopje__link"></a>
+        </div>
+        <div class="kopje__photo-item kopje__photo-item-bot-0" style="margin-top: 70px;">
+            {{ section.settings.img13 | img_url: 'master' | img_tag }}
+            <h4 class="kopje__title-right kopje__title-13" >
+              {% for block in section.blocks %}
+                {{ block.settings.item-title13 }}
+              {% endfor %}  
+            </h4>
+            <div class="kopje__hover-item">
+                <ul>
+                    {% for block in section.blocks %}
+                      <li>{{ block.settings.richtext-item13 }}</li>
+                    {% endfor %}
+                </ul>
+            </div>
+            <a href="#" class="kopje__link"></a>
+        </div>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+"name": "Change the titles, images",
+    "settings": [
+                    {
+                    "type": "text",
+                    "label": "First title text",
+                    "id": "row-title1"
+                    },
+                    {
+                    "type": "text",
+                    "label": "Second title text",
+                    "id": "row-title2"
+                    },
+                    {
+                    "type": "text",
+                    "label": "Third(1) title text",
+                    "id": "row-title3-1",
+                    "default":  "Suppen"
+                    },
+                    {
+                    "type": "text",
+                    "label": "Third(2) title text",
+                    "id": "row-title3-2",
+                    "default":  "En verder"
+                    },
+        			{
+        				"type": "image_picker",
+        				"id": "img1",
+        				"label": {
+        				"en": "Pick 1st item image"
+        				}
+                    },
+        			{
+          				"type": "image_picker",
+          				"id": "img2",
+          				"label": {
+          				"en": "Pick 2nd item image"
+        				}
+                    },
+        			{
+        				"type": "image_picker",
+        				"id": "img3",
+        				"label": {
+        				"en": "Pick 3th item image"
+        				}
+                    },
+        			{
+          				"type": "image_picker",
+          				"id": "img4",
+          				"label": {
+          				"en": "Pick 4th item image"
+        				}
+                    },
+        			{
+          				"type": "image_picker",
+          				"id": "img5",
+          				"label": {
+          				"en": "Pick 5th item image"
+        				}
+                    },
+        			{
+          				"type": "image_picker",
+          				"id": "img6",
+          				"label": {
+          				"en": "Pick 6th item image"
+        				}
+                    },
+        			{
+          				"type": "image_picker",
+          				"id": "img7",
+          				"label": {
+          				"en": "Pick 7th item image"
+        				}
+                    },
+        			{
+      				"type": "image_picker",
+      				"id": "img8",
+      				"label": {
+      				"en": "Pick 8th item image"
+    				}
+                },
+        			{
+      				"type": "image_picker",
+      				"id": "img9",
+      				"label": {
+      				"en": "Pick 9th item image"
+    				}
+                },
+        			{
+      				"type": "image_picker",
+      				"id": "img10",
+      				"label": {
+      				"en": "Pick 10th item image"
+    				}
+                },
+        			{
+      				"type": "image_picker",
+      				"id": "img11",
+      				"label": {
+      				"en": "Pick 11th item image"
+    				}
+                },
+        			{
+      				"type": "image_picker",
+      				"id": "img12",
+      				"label": {
+      				"en": "Pick 12th item image"
+    				}
+                },
+        			{
+      				"type": "image_picker",
+      				"id": "img13",
+      				"label": {
+      				"en": "Pick 13th item image"
+    				}
+                }
+                ],
+	"max_blocks": 13,
+	"blocks": [
+		{
+		"type": "block1", 
+		"name": "1st item text settings",
+		"settings": [
+                {
+    				"type": "text",
+    				"id": "item-title1",
+    				"label": {
+    				"en": "Change the item title"
+    				}
+                },
+                {
+    				"type": "richtext",
+    				"id": "richtext-item1",
+    				"label": {
+    				"en": "Add your text"
+    				}
+                }
+		]
+		},
+        {
+		"type": "block2",
+		"name": "2nd item settings",
+		"settings": [
+                {
+    				"type": "text",
+    				"id": "item-title2",
+    				"label": {
+    				"en": "Change the item title"
+    				}
+                },
+                {
+    				"type": "richtext",
+    				"id": "richtext-item2",
+    				"label": {
+    				"en": "Add your text"
+    				}
+                }
+		]
+		},
+        {
+		"type": "block3",
+		"name": "3th item settings",
+		"settings": [
+                {
+    				"type": "text",
+    				"id": "item-title3",
+    				"label": {
+    				"en": "Change the item title"
+    				}
+                },
+                {
+    				"type": "richtext",
+    				"id": "richtext-item3",
+    				"label": {
+    				"en": "Add your text"
+    				}
+                }
+		]
+		},
+        {
+		"type": "block4",
+		"name": "4th item settings",
+		"settings": [
+                {
+    				"type": "text",
+    				"id": "item-title4",
+    				"label": {
+    				"en": "Change the item title"
+    				}
+                },
+                {
+    				"type": "richtext",
+    				"id": "richtext-item4",
+    				"label": {
+    				"en": "Add your text"
+    				}
+                }
+		]
+		},
+        {
+		"type": "block5",
+		"name": "5th item settings",
+		"settings": [
+                {
+    				"type": "text",
+    				"id": "item-title5",
+    				"label": {
+    				"en": "Change the item title"
+    				}
+                },
+                {
+    				"type": "richtext",
+    				"id": "richtext-item5",
+    				"label": {
+    				"en": "Add your text"
+    				}
+                }
+		]
+		},
+        {
+		"type": "block6",
+		"name": "6th item settings",
+		"settings": [
+                {
+    				"type": "text",
+    				"id": "item-title6",
+    				"label": {
+    				"en": "Change the item title"
+    				}
+                },
+                {
+    				"type": "richtext",
+    				"id": "richtext-item6",
+    				"label": {
+    				"en": "Add your text"
+    				}
+                }
+		]
+		},
+        {
+		"type": "block7",
+		"name": "7th item settings",
+		"settings": [
+                {
+    				"type": "text",
+    				"id": "item-title7",
+    				"label": {
+    				"en": "Change the item title"
+    				}
+                },
+                {
+    				"type": "richtext",
+    				"id": "richtext-item7",
+    				"label": {
+    				"en": "Add your text"
+    				}
+                }
+		]
+		},
+        {
+		"type": "block8",
+		"name": "8th item settings",
+		"settings": [
+                {
+    				"type": "text",
+    				"id": "item-title8",
+    				"label": {
+    				"en": "Change the item title"
+    				}
+                },
+                {
+    				"type": "richtext",
+    				"id": "richtext-item8",
+    				"label": {
+    				"en": "Add your text"
+    				}
+                }
+		]
+		},
+        {
+		"type": "block9",
+		"name": "9th item settings",
+		"settings": [
+                {
+    				"type": "text",
+    				"id": "item-title9",
+    				"label": {
+    				"en": "Change the item title"
+    				}
+                },
+                {
+    				"type": "richtext",
+    				"id": "richtext-item9",
+    				"label": {
+    				"en": "Add your text"
+    				}
+                }
+		]
+		},
+        {
+		"type": "block10",
+		"name": "10th item settings",
+		"settings": [
+                {
+    				"type": "text",
+    				"id": "item-title10",
+    				"label": {
+    				"en": "Change the item title"
+    				}
+                },
+                {
+    				"type": "richtext",
+    				"id": "richtext-item10",
+    				"label": {
+    				"en": "Add your text"
+    				}
+                }
+		]
+		},
+        {
+		"type": "block11",
+		"name": "11th item settings",
+		"settings": [
+                {
+    				"type": "text",
+    				"id": "item-title11",
+    				"label": {
+    				"en": "Change the item title"
+    				}
+                },
+                {
+    				"type": "richtext",
+    				"id": "richtext-item11",
+    				"label": {
+    				"en": "Add your text"
+    				}
+                }
+		]
+		},
+        {
+		"type": "block12",
+		"name": "12th item settings",
+		"settings": [
+                {
+    				"type": "text",
+    				"id": "item-title12",
+    				"label": {
+    				"en": "Change the item title"
+    				}
+                },
+                {
+    				"type": "richtext",
+    				"id": "richtext-item12",
+    				"label": {
+    				"en": "Add your text"
+    				}
+                }
+		]
+		},
+        {
+		"type": "block13",
+		"name": "13th item settings",
+		"settings": [
+                {
+    				"type": "text",
+    				"id": "item-title13",
+    				"label": {
+    				"en": "Change the item title"
+    				}
+                },
+                {
+    				"type": "richtext",
+    				"id": "richtext-item13",
+    				"label": {
+    				"en": "Add your text"
+    				}
+                }
+		]
+		}
+	],
+	"presets": [
+	]
+}
+{% endschema %}
