@@ -1,19 +1,31 @@
 {
-    "wrapper": ".product-page",
-    "sections": {
-        "hero": {
-            "type": "product-hero"
-        },
-        "template":{
-            "type": "template-product"
-        },
-        "featured-collection":{
-            "type": "featured-collection-product-page",
-            "settings": {
-                "featured-collection": "all-products",
-                "number_of_products_to_show": 2
-              }
-        }
+  "wrapper": ".product-page",
+  "sections": {
+    "hero": {
+      "type": "product-hero",
+      "settings": {
+        "title": "",
+        "video_link": "",
+        "section-height": "xl"
+      }
+    },
+    "template": {
+      "type": "template-product",
+      "settings": {
+      }
+    },
+    "featured-collection": {
+      "type": "featured-collection-product-page",
+      "settings": {
+        "featured-collection": "frontpage",
+        "title": "Alternativen",
+        "number_of_products_to_show": 2
+      }
+    }
   },
-  "order": ["hero", "template", "featured-collection"]
+  "order": [
+    "hero",
+    "template",
+    "featured-collection"
+  ]
 }
