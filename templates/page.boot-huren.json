@@ -4,6 +4,7 @@
     "hero": {
       "type": "pages-hero",
       "settings": {
+        "title": "",
         "video_link": "",
         "img": "shopify:\/\/shop_images\/2021_Zeilschool_188hb_b5468efb-6cd2-42d9-b379-68343822c6c7.jpg",
         "section-height": "xl"
@@ -17,16 +18,148 @@
     "button-section": {
       "type": "collection-button-section",
       "settings": {
+        "btn-text": "Boek nu",
+        "btn-url": "#",
+        "button-color": "#98ba7f",
+        "button-color-hover": "#6a8456"
       }
     },
     "template": {
       "type": "template-collection",
+      "blocks": {
+        "116cb391-bec6-45d2-af39-0db69f04a922": {
+          "type": "block1",
+          "settings": {
+            "item-title1": "",
+            "richtext-item1": ""
+          }
+        },
+        "c3060ff0-dfee-408b-9c67-92b5685ce8b3": {
+          "type": "block2",
+          "settings": {
+            "item-title2": "",
+            "richtext-item2": ""
+          }
+        },
+        "c09761bb-fe20-4508-9e8d-8d99ccd71944": {
+          "type": "block3",
+          "settings": {
+            "item-title3": "",
+            "richtext-item3": ""
+          }
+        },
+        "bdb5a6bc-9129-4e34-9f77-e8253f4d4008": {
+          "type": "block4",
+          "settings": {
+            "item-title4": "",
+            "richtext-item4": ""
+          }
+        },
+        "1a6d389b-035c-44d5-9078-456db452256b": {
+          "type": "block5",
+          "settings": {
+            "item-title5": "",
+            "richtext-item5": ""
+          }
+        },
+        "d78d79df-8d04-4e10-899d-ce866ce8309d": {
+          "type": "block6",
+          "settings": {
+            "item-title6": "",
+            "richtext-item6": ""
+          }
+        },
+        "40d7bcd8-cafd-4ec0-a6d1-74f3ef6d761f": {
+          "type": "block7",
+          "settings": {
+            "item-title7": "",
+            "richtext-item7": ""
+          }
+        },
+        "4f085ecf-e667-4e46-bfb9-b1e9e4246c7e": {
+          "type": "block8",
+          "settings": {
+            "item-title8": "",
+            "richtext-item8": ""
+          }
+        },
+        "519ee14d-4843-48ac-bb92-e5070b0da872": {
+          "type": "block9",
+          "settings": {
+            "item-title9": "",
+            "richtext-item9": ""
+          }
+        },
+        "2dc4da9c-f684-4265-9815-6d6f23c858da": {
+          "type": "block10",
+          "settings": {
+            "item-title10": "",
+            "richtext-item10": ""
+          }
+        },
+        "d2b85160-823a-463f-bde1-5ff111bc9168": {
+          "type": "block11",
+          "settings": {
+            "item-title11": "",
+            "richtext-item11": ""
+          }
+        },
+        "28f3d5d3-a7f6-446c-8a7b-5db8028acc59": {
+          "type": "block12",
+          "settings": {
+            "item-title12": "",
+            "richtext-item12": ""
+          }
+        },
+        "130b8844-5204-4fc0-b520-69ee2d98ae4c": {
+          "type": "block13",
+          "settings": {
+            "item-title13": "",
+            "richtext-item13": ""
+          }
+        }
+      },
+      "block_order": [
+        "116cb391-bec6-45d2-af39-0db69f04a922",
+        "c3060ff0-dfee-408b-9c67-92b5685ce8b3",
+        "c09761bb-fe20-4508-9e8d-8d99ccd71944",
+        "bdb5a6bc-9129-4e34-9f77-e8253f4d4008",
+        "1a6d389b-035c-44d5-9078-456db452256b",
+        "d78d79df-8d04-4e10-899d-ce866ce8309d",
+        "40d7bcd8-cafd-4ec0-a6d1-74f3ef6d761f",
+        "4f085ecf-e667-4e46-bfb9-b1e9e4246c7e",
+        "519ee14d-4843-48ac-bb92-e5070b0da872",
+        "2dc4da9c-f684-4265-9815-6d6f23c858da",
+        "d2b85160-823a-463f-bde1-5ff111bc9168",
+        "28f3d5d3-a7f6-446c-8a7b-5db8028acc59",
+        "130b8844-5204-4fc0-b520-69ee2d98ae4c"
+      ],
       "settings": {
+        "row-title1": "",
+        "row-title2": "",
+        "row-title3-1": "Suppen",
+        "row-title3-2": "En verder",
+        "img1": "shopify:\/\/shop_images\/VKANT_ISLOEP.jpg",
+        "img2": "shopify:\/\/shop_images\/Group_48.jpg",
+        "img3": "shopify:\/\/shop_images\/Group_18.jpg",
+        "img4": "shopify:\/\/shop_images\/Group_45.jpg",
+        "img5": "shopify:\/\/shop_images\/Group_47.jpg",
+        "img6": "shopify:\/\/shop_images\/Group_43.jpg",
+        "img7": "shopify:\/\/shop_images\/Group_58.jpg",
+        "img8": "shopify:\/\/shop_images\/Group_59.jpg",
+        "img9": "shopify:\/\/shop_images\/Group_64.jpg",
+        "img10": "shopify:\/\/shop_images\/Group_65.jpg",
+        "img11": "shopify:\/\/shop_images\/Group_66.jpg",
+        "img12": "shopify:\/\/shop_images\/Group_67.jpg",
+        "img13": "shopify:\/\/shop_images\/Group_68.jpg"
       }
     },
     "info-section": {
       "type": "main-info-section",
       "settings": {
+        "text-top": "",
+        "text-middle": "",
+        "text-bottom": ""
       }
     }
   },
