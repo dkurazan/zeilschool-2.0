@@ -11,21 +11,22 @@
         >
         <a href="/pages/agenda">Agenda</a>
         >
-        <p>15 april, Standup paddle</p>
+        <p>{{ article.metafields.custom.start_date | date: "%d" }} {{ article.metafields.custom.start_date | date: "%B" }}, {{ article.title }}</p>
       </div>
     </div>
     <div class="agenda-post__text">
       <div class="agenda-post__block">
         <div class="agenda-post__sm-title">
-          <h2>15 april</h2>
+          <h2>{{ article.metafields.custom.start_date | date: "%d" }} {{ article.metafields.custom.start_date | date: "%B" }}</h2>
         </div>
-        <h2>STANDUP PADDLE CLINIC VOOR VOLWASSENEN</h2>
+        <h2>{{ article.title }} <br> {{ article.excerpt | remove: "(SUP)" }}</h2>
       </div>
+      {% assign articleDescription = article.content | split: "< split >"%}
       <div class="agenda-post__block">
         <div class="agenda-post__sm-title">
-          <h3>2022</h3>
+          <h3>{{ article.metafields.custom.start_date | date: "%Y" }}</h3>
         </div>
-        <p>Wil je weten wat een Stanup paddle inhoudt? Daar gaat ie: Van april tot oktober kun je bij ons zeilen, dat kan een dag, een paar dagen zijn of langer. Je bent dan in een groep van X kinderen van dezelfde leeftijd. Er is altijd een instructeur bij jullie. Etcetera etcetera. Gaat iets over het ontbijt en de lunch, welke kleding, hoe laat aanwezig, mogen de ouders kijken? Hoe laat ongeveer ophalen, etc etcetera etcetera</p>
+        <p>{{ articleDescription[1] }}</p>
       </div>
       <div class="agenda-post__block">
         <div class="agenda-post__sm-title">
@@ -33,7 +34,7 @@
         </div>
         <div>
           <p>Voor de kinderen van 7 tot 12 jaar kan je kennismaken door een halve of hele dag te leren varen in een optimist. De Optimist is een toegankelijke jeugdboot voor de zeiler t/m 12 jaar. Door het kleine formaat is het voor de jonge zeiler een perfecte boot om mee overweg te kunnen. Onder leiding van een enthousiaste instructeur ga je de eerste beginselen van het zeilen leren. Dit zal afgewisseld worden door leuke spellen op een eiland.</p>
-          {{ article.image | img_url: 'master' | img_tag }}
+          {{ article.excerpt_or_content[1] | img_url: 'master' | img_tag }}
         </div>
       </div>
       <div class="agenda-post__block">
