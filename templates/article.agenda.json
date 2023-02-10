@@ -1,4 +1,5 @@
 {
+  "wrapper": ".article-agenda",
   "sections": {
     "hero": {
       "type": "article-hero",
@@ -13,6 +14,9 @@
       "settings": {
       }
     },
+    "newsletter":{
+      "type": "e-mail-section"
+    },
     "footer-color": {
       "type": "footer-color",
       "settings": {
@@ -24,6 +28,7 @@
   "order": [
     "hero",
     "template",
+    "newsletter",
     "footer-color"
   ]
 }
