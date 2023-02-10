@@ -10,6 +10,11 @@
     margin-left: -100%;
 }
 
+.youtube-container video{
+  width: 100vw;
+  object-fit: cover;
+}
+
 .start-section{
     position: relative;
 }

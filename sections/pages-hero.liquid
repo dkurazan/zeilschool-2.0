@@ -1,15 +1,15 @@
 {{ 'hero.css' | asset_url | stylesheet_tag }}
 <style>
     {% if section.settings.section-height == 'xl' %}
-      .youtube-container iframe, .youtube-container img{
+      .youtube-container iframe, .youtube-container img, .youtube-container video{
         height: 100vh;
       }
     {%  elsif section.settings.section-height == 'm' %}
-      .youtube-container iframe, .youtube-container img{
+      .youtube-container iframe, .youtube-container img, .youtube-container video{
         height: 975px;
       }
     {%  elsif section.settings.section-height == 'sm' %}
-        .youtube-container iframe, .youtube-container img{
+        .youtube-container iframe, .youtube-container img, .youtube-container video{
           height: 636px;
         }
     {% endif %}
@@ -19,8 +19,8 @@
       {% if section.settings.video_link == blank and section.settings.video_link2 == blank %}
         {{  section.settings.img | img_url: 'master' | img_tag }}
       {% elsif section.settings.video_link == blank %}
-        <video autoplay muted loop id="myVideo">
-				  <source src="{{ section.settings.video_link2 | asset_url }}" type="video/mp4">
+				<video autoplay muted loop id="myVideo">
+          <source src="{{ section.settings.video_link2 }}" type="video/mp4">
         </video>
       {% else %}
         <iframe src="https://www.youtube.com/embed/{{ section.settings.video_link | slice: 32, 11 }}?autoplay=1&mute=1&loop=1&color=white&controls=0&modestbranding=1&playsinline=1&rel=0&enablejsapi=1&playlist={{ section.settings.video_link | slice: 32, 11 }}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -57,7 +57,7 @@
 		}
 	},
   {
-		"type": "video_url",
+		"type": "url",
 		"id": "video_link2",
 		"label": {
 		"en": "Paste the CDN video link"
