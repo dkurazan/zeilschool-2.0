@@ -6,7 +6,14 @@
         },
         "template":{
             "type": "template-product"
+        },
+        "featured-collection":{
+            "type": "featured-collection-product-page",
+            "settings": {
+                "featured-collection": "all-products",
+                "number_of_products_to_show": 2
+              }
         }
   },
-  "order": ["hero", "template"]
+  "order": ["hero", "template", "featured-collection"]
 }

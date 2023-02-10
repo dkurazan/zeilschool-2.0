@@ -1,4 +1,14 @@
 {{ 'Product.css' | asset_url | stylesheet_tag }}
+<style>
+    .product__button {
+        background-color: {{ section.settings.button-color }};
+    }
+
+    .product__button:hover{
+        background-color: {{ section.settings.button-color-hover }};
+    }
+</style>
+{% assign product_description = product.description | split: "@@" %}
 <div class="product">
     <div class="container">
         <div class="breadcrumbs">
@@ -7,43 +17,28 @@
             >
             <a href="#">Boot huren</a>
             >
-            <p>I-Sloep</p>
+            <p>{{ product.title }}</p>
         </div>
         <div class="product__info">
             <div class="col-lg-4 col-md-6 col-sm-12">
                 <div class="product__block-1">
-                    <a href="#" class="product__button btn__lg">Huur nu</a>
+                    <a href="{{ section.settings.btn-url }}" class="product__button btn__lg">{{ section.settings.btn-text }}</a>
                 </div>
             </div>
             <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
                 <div class="product__block-2">
                     <ul>
-                        <li>Max. 12 personen </li>
-                        <li>Huur inclusief brandstof (diesel)</li> 
-                        <li>Diverse menu’s mee te bestellen</li>
+                        {{ product_description[0] }}
                     </ul>
                     <ul>
-                        <li>Huur per dagdeel of per dag </li>
-                        <li>Reserveren is aanbevolen </li>
-                        <li>Geldig legitimatiebewijs </li>
-                        <li>Eventueel les erbij bestellen </li>
-                        <li>Geen vaarbewijs vereist </li>
-                        <li>Vanaf 18 jaar </li>
-                        <li>Borg van € 250,- (per pin)</li>
+                        {{ product_description[1] }}
                     </ul>
                 </div>
             </div>
             <div class="col-lg-4 col-md-12 col-sm-6 col-xs-12" >
                 <div class="product__block-3">
                     <ul>
-                        <li> Hydrolisch stuurwiel </li>
-                        <li>Bijna net zo stil als een elektromotor (aangedreven door een stille drie cilinder Yanmar dieselmotor) </li>
-                        <li>Aansluiting elektrische koelbox </li>
-                        <li>Luxe kussens </li>
-                        <li>Buiskap </li>
-                        <li>Sorry, geen honden aan boord (wel op de Rigiflex)  </li>
-                        <li>Gratis vaarkaart </li>
-                        <li>Gratis zwemvesten</li>
+                        {{ product_description[2] }}
                     </ul>
                 </div>
             </div>
@@ -56,20 +51,11 @@
         <div class="impressies__inner">
             <h3 class="product__small-title impressies__title"> Impressies {{product.title}}</h3>
             <div class="impressies__images">
-                <a href="#">
-                    {{ 'product-img-1.png' | asset_url | img_tag }}
-                </a>
-                <a href="#">
-                    {{ 'product-img-2.png' | asset_url | img_tag }}
-                </a>
-                <a href="#">
-                    {{ 'product-img-2.png' | asset_url | img_tag }}
-                </a>
-                <a href="#">
-                    {{ 'product-img-1.png' | asset_url | img_tag }}
-                    
-                    {{ product.metafields.custom.impressies_images | asset_url | img_tag }}
-                </a>
+                {% for image in product.images %}
+                    <div>
+                        {{ image | img_url: 'master' | img_tag }}
+                    </div>
+                {% endfor %}
             </div>
         </div>
     </div>
@@ -79,11 +65,10 @@
     <div class="container description__container">
         <div class="description__block">
             <div class=" description__title">
-                <h3>I-sloep interieur</h3>
+                <h3>{{ product.title }} interieur</h3>
             </div>
             <div class="description__text">
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s.</p>
+                {{ product_description[3] }}
             </div>
         </div>
         <div class="description__block">
@@ -91,7 +76,7 @@
                 <h4>Slapen</h4>
             </div>
             <div class="description__text">
-                <p>When an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                {{ product_description[4] }}
             </div>
         </div>
         <div class="description__block">
@@ -102,7 +87,7 @@
                 {{ 'product-desc-img.png' | asset_url | img_tag }}
             </div>
             <div class="description__text">
-                <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using ‘Content here, content here’, making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for ‘lorem ipsum’ will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
+                {{ product_description[5] }}
             </div>
         </div>
         <div class="description__block">
@@ -110,26 +95,39 @@
                 <h4>Meer informatie</h4>
             </div>
             <div class="description__text">
-                <p>Where does it come from?<br> Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of “de Finibus Bonorum et Malorum” (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, “Lorem ipsum dolor sit amet..”, comes from a line in section 1.10.32.</p>
+                {{ product_description[6] }}
             </div>
         </div>
     </div>
 </div>
 
-<div class="alternativen">
-    <div class="container">
-        <div class="alternativen__inner">
-            <h3 class="product__small-title">Alternativen</h3>
-            <div class="alternativen__images">
-                <a href="#">
-                    {{ 'product-alternativen-img-1.png' | asset_url | img_tag }}
-                    <h6>RIGIFLEX</h6>
-                </a>
-                <a href="#">
-                    {{ 'product-alternativen-img-2.png' | asset_url | img_tag }}
-                    <h6>ALUVA</h6>
-                </a>
-            </div>
-        </div>
-    </div>
-</div>
+
+{% schema %}
+    {
+      "name": "Article template",
+      "settings":[
+        {
+          "type": "text",
+          "id": "btn-text",
+          "label": "Button text",
+          "default": "Huur nu"
+      },
+      {
+          "type": "text",
+          "id": "btn-url",
+          "label": "Button url",
+          "default": "#"
+      },
+      {
+          "type": "color",
+          "id": "button-color",
+          "label": "Change the button color"
+      },
+      {
+          "type": "color",
+          "id": "button-color-hover",
+          "label": "Change the button hover color"
+      }
+      ]
+    }
+  {% endschema %}

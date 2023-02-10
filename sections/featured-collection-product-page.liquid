@@ -1,0 +1,48 @@
+<div class="alternativen">
+    <div class="container">
+        <div class="alternativen__inner">
+            <h3 class="product__small-title">{{ section.settings.title }}</h3>
+            <div class="alternativen__images">
+                {% for product in section.settings.featured-collection.products limit: section.settings.number_of_products_to_show %}
+                    <a href="{{ product.url }}">
+                        {{ product.featured_image | img_url: 'master' | img_tag }}
+                        <h6>{{ product.title }}</h6>
+                    </a>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</div>
+
+
+{% schema %}
+    {
+        "name": "Featured Collection",
+        "settings": [
+            {
+                "type": "collection",
+                "id": "featured-collection",
+                "label": "Collection"
+            },
+            {
+                "type": "text",
+                "id": "title",
+                "label": "Title",
+                "default": "Alternativen"
+            },
+            {
+                "type": "range",
+                "id": "number_of_products_to_show",
+                "min": 1,
+                "max": 4,
+                "default": 3,
+                "label": "Number of products to show"
+            }
+        ],
+        "presets": [
+            {
+                "name": "Featured Collection"
+            }
+        ]
+    }
+{% endschema %}
