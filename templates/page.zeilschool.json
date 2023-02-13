@@ -140,8 +140,8 @@
     "footer-color": {
       "type": "footer-color",
       "settings": {
-        "footer-color": "",
-        "footer-mobile-btns": ""
+        "footer-color": "#6c9db7",
+        "footer-mobile-btns": "#396d84"
       }
     }
   },
