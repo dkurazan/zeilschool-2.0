@@ -56,6 +56,10 @@
   width: 100%;
 }
 
+.agenda-page .start-section__title{
+  padding: 0 !important;
+}
+
 @media (max-width:1400px) {
     .start-section__title h1{
       font-size: 130px;
@@ -84,4 +88,8 @@
     .start-section__title{
         padding: 0 30px;
     }
+
+    .agenda-page .start-section__title{
+      bottom: 20px;
+  }
 }

@@ -31,3 +31,21 @@ menuOverlay.addEventListener('click', closeMobileMenu);
 mobileMenuNavLi.forEach(item => {
   item.addEventListener('click', closeMobileMenu)
 })
+
+
+
+//collection hide titles
+const collectionTitles = document.querySelectorAll('.collection__product-item');
+
+collectionTitles.forEach( item => {
+  if( item.previousElementSibling ){
+    if( item.children[0].textContent == item.previousElementSibling.children[0].textContent ){
+
+    } else{
+      item.children[0].classList.add("title-visible")
+    }
+  } else{
+    item.children[0].classList.add("title-visible")
+  }
+  
+});

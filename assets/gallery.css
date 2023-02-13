@@ -99,6 +99,10 @@
     padding: 0 15px 0 15px;
 }
 
+.kopje__hover-item li ul li::before{
+    content: '• ';
+}
+
 .kopje__hover-item>div{
     height: 100%;
     width: 100%;
