@@ -26,7 +26,7 @@
           "type": "block1",
           "settings": {
             "item-title1": "Zeilschool",
-            "richtext-item1": ""
+            "richtext-item1": "<p>hoi<\/p>"
           }
         },
         "5cdec799-9d72-49a9-b890-6a8489d23fab": {
