@@ -5,7 +5,9 @@
       "type": "pages-hero",
       "settings": {
         "title": "",
-        "video_link": "https:\/\/www.youtube.com\/watch?v=DrQCR3I7TYQ&ab_channel=THEBOATSHOW"
+        "video_link": "https:\/\/www.youtube.com\/watch?v=DrQCR3I7TYQ&ab_channel=THEBOATSHOW",
+        "video_link2": "",
+        "section-height": "xl"
       }
     },
     "breadcrumbs": {
@@ -94,8 +96,8 @@
         "9fd927e3-463b-4e6c-9caf-0579f2289fc5"
       ],
       "settings": {
-        "row-title1": "Kopje",
-        "row-title2": "Kopje",
+        "row-title1": "",
+        "row-title2": "",
         "title-1-color": "",
         "item-link1": "",
         "title-2-color": "",
@@ -138,6 +140,8 @@
     "footer-color": {
       "type": "footer-color",
       "settings": {
+        "footer-color": "",
+        "footer-mobile-btns": ""
       }
     }
   },
