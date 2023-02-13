@@ -33,7 +33,7 @@
           "type": "block2",
           "settings": {
             "item-title2": "ZEILKAMP",
-            "richtext-item2": ""
+            "richtext-item2": "<ul><li>test 1<\/li><li>test 2<\/li><\/ul>"
           }
         },
         "f30f2bb9-cf72-472e-80fb-9956a643199a": {
