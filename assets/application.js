@@ -103,8 +103,8 @@ if(siteUrl.includes('Beginner')){
     document.getElementById('level').value = 'Beginner';
 } else if(siteUrl.includes('Medium')){
     document.getElementById('level').value = 'Medium';
-} else if(siteUrl.includes('Medium')){
-    document.getElementById('level').value = 'Medium';
+} else if(siteUrl.includes('Master')){
+    document.getElementById('level').value = 'Master';
 }
 
 for(let i = 0; i < 13; i++){
