@@ -248,6 +248,10 @@ main:has(.shopify-challenge__container) {
   font-size: 26px;
 }
 
+.filter-grid.product-filter{
+  display: flex;
+}
+
 .filter-grid .filter-column {
   display: flex;
   flex-direction: column;

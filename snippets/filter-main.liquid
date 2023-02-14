@@ -1,0 +1,48 @@
+<form action="" class="filter-grid">
+  <div class="filter-column">
+    <div class="filter-title">Filter</div>
+    <button class="filter-reset">Reset</button>
+  </div>
+  <div class="filter-column">
+    <label class="filter-value" data-filter-checkbox="Motorboten"  >
+      <input type="checkbox" id="motorboat" name="motorboat" data-filter-checkbox-input onchange="if(this.checked) document.location.href='?filter.p.m.opkl.boat_type=Motorboten'">
+      Motorboot 
+    </label>
+    <label class="filter-value" data-filter-checkbox="Zeilboten">
+      <input type="checkbox" id="nonmotorboat" name="nonmotoboat" onchange="if(this.checked) document.location.href='?filter.p.m.opkl.boat_type=+Zeilboten'" data-filter-checkbox-input >
+      Zeilen 
+    </label>
+  </div>
+  <div class="filter-column">
+    <label class="filter-value" data-filter-checkbox="Valwassen">
+      <input type="checkbox" id="adult" onchange="if(this.checked) document.location.href='?filter.p.m.opkl.age=Valwassen'" data-filter-checkbox-input >
+      Volwassen  
+    </label>
+    <label class="filter-value" data-filter-checkbox="Kind">
+      <input type="checkbox" id="kids" data-filter-checkbox-input onchange="if(this.checked) document.location.href='?filter.p.m.opkl.age=Kind'" >
+      Kind 
+    </label>
+  </div>
+  <div class="filter-column">
+    <div class="filter-value">
+      <label for="person">Personen</label>
+      <div class="select">
+        <select id="person" >
+          {% for item in (1..12) %}
+            <option value="{{ item }}" >{{ item }}</option>
+          {% endfor %}
+        </select>
+      </div>
+    </div>
+    <div class="filter-value">
+      <label for="level">Ervaring</label>
+      <div class="select">
+        <select id="level">
+          <option value="1">Beginner</option>
+          <option value="2">Sarge</option>
+          <option value="3">Hurt me plenty</option>
+        </select>
+      </div>
+    </div>
+  </div>
+</form>
