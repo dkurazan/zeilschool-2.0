@@ -412,7 +412,88 @@ main:has(.shopify-challenge__container) {
   padding-bottom: 1.5rem;
 }
 
+.filter__checkbox {
+  display: flex;
+  gap: 8px;
+  min-height: 30px;
+  align-items: flex-start;
+}
 
+.filter__checkbox input[type="checkbox"] {
+  -webkit-appearance: none;
+  appearance: none;
+  background-color: white;
+  margin: 0;
+
+  font: inherit;
+  color: #818080;
+  width: 1.15em;
+  height: 1.15em;
+  border: 1px solid #818080;
+  transform: translateY(-0.075em);
+
+  display: grid;
+  place-content: center;
+}
+
+.filter__checkbox input[type="checkbox"]::before {
+  content: "";
+  width: 0.65em;
+  height: 0.65em;
+  clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
+  transform: scale(0);
+  transform-origin: bottom left;
+  transition: 120ms transform ease-in-out;
+  box-shadow: inset 1em 1em #818080;
+  /* Windows High Contrast Mode */
+  background-color: CanvasText;
+}
+
+.filter__checkbox input[type="checkbox"]:hover{
+  cursor: pointer;
+}
+
+.filter__checkbox input[type="checkbox"]:checked::before {
+  transform: scale(1);
+}
+
+.filter__checkbox input[type="checkbox"]:disabled{
+  background-color: #818080;
+}
+
+.filter__checkbox input[type="checkbox"]:disabled:hover{
+  cursor: not-allowed;
+}
+
+.filter-value:last-child label{
+  width: 96px;
+}
+
+.filter-grid a {
+  background: #818080;
+  display: block;
+  color: white;
+  border: none;
+  font-size: 20px;
+  font-family: Roboto Condensed,sans-serif;
+  padding: 6px 16px;
+  cursor: pointer;
+  border: 1px solid #818080;
+  transition: .2s ease-in-out;
+  margin-bottom:3px;
+  text-decoration: none;
+}
+
+.filter-grid a:hover {
+  background: white;
+  border: 1px solid #818080;
+  color: #818080;
+  
+}
+
+.filter__apply-button{
+  display: none;
+}
 
 
 

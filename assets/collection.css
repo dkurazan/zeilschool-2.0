@@ -117,6 +117,17 @@
     background-color: #98BA7F;
 }
 
+.no-product-title{
+    font-family: Scarlet;
+    font-size: 70px;
+    font-weight: 700;
+    color: #98BA7F;
+    text-align: center;
+    text-transform: uppercase;
+    text-align: center;
+    width: 100%;
+}
+
 @media (max-width: 1460px) {
     .collection__product-name{
         width: 225px;

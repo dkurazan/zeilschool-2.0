@@ -84,6 +84,10 @@
                                 </div>
                             </a>
                         </div>
+                    {%  else %}
+                    <h3 class="no-product-title" style="padding-top: 30px;">
+                        There is no products with such options
+                    </h3>
                     {% endfor %}
                 </div>  
                 <div class="collection__pagination">
@@ -107,6 +111,7 @@
                         </nav>
                     {% endif %}
                 </div>
+            
             {% endpaginate %}
         </div>
     </div>

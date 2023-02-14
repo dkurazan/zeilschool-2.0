@@ -1,48 +1,47 @@
-<form action="" class="filter-grid">
-  <div class="filter-column">
-    <div class="filter-title">Filter</div>
-    <button class="filter-reset">Reset</button>
-  </div>
-  <div class="filter-column">
-    <label class="filter-value">
-      <input type="checkbox" checked id="motorboat" name="motorboat">
-      Motorboot
-    </label>
-    <label class="filter-value">
-      <input type="checkbox" id="nonmotorboat" name="nonmotoboat">
-      Zeilen
-    </label>
-  </div>
-  <div class="filter-column">
-    <label class="filter-value">
-      <input type="checkbox" id="adult" >
-      Volwassen 
-    </label>
-    <label class="filter-value">
-      <input type="checkbox" id="kids" >
-      Kind
-    </label>
-  </div>
-  <div class="filter-column">
+
+<form class="filter-grid">
+    <div class="filter-column">
+      <div class="filter-title">Filter</div>
+      <a href="{{ collection.url }}">Reset</a>
+    </div>
+    {%- for filter in collection.filters limit: 2 -%}
+      <div class="filter-column">
+        {%- for filter_value in filter.values -%}
+            <div class="filter__checkbox">
+                <input type="checkbox"
+                name="{{ filter_value.param_name }}"
+                value="{{ filter_value.value }}"
+                id="Filter-{{ filter.param_name }}-{{ forloop.index }}"
+                {% if filter_value.active -%}checked{%- endif %}
+                {% if filter_value.count == 0 and filter_value.active == false -%}disabled{%- endif %}
+                >
+                <label class="filter-value" for="Filter-{{ filter.param_name }}-{{ forloop.index }}">{{ filter_value.label }}</label>
+            </div>
+        {% endfor %}
+      </div>
+    {% endfor %}
+    <div class="filter-column">
     <div class="filter-value">
       <label for="person">Personen</label>
       <div class="select">
-        <select id="person">
-          <option value="1">1</option>
-          <option value="2">2</option>
-          <option value="3">3</option>
+        <select id="person" onchange="personFiltr()" >
+          {% for item in (1..12) %}
+            <option value="{{ item }}" >{{ item }}</option>
+          {% endfor %}
         </select>
       </div>
     </div>
     <div class="filter-value">
       <label for="level">Ervaring</label>
       <div class="select">
-        <select id="level">
-          <option value="1">Beginner</option>
-          <option value="2">Sarge</option>
-          <option value="3">Hurt me plenty</option>
+        <select id="level" onchange="levelFiltr()">
+          <option value="Beginner">Beginner</option>
+          <option value="Medium">Sarge</option>
+          <option value="Master">Hurt me plenty</option>
         </select>
       </div>
     </div>
   </div>
+    <button class="filter__apply-button">Apply filters</button>
 </form>
+
