@@ -176,7 +176,10 @@
 .collection .weather-section__info{
     display: flex;
     align-items: center;
+    flex: 0 0 75%;
+    max-width: 75%;
 }
+
 
 @media(max-width: 1460px){
     .weather-section__button{

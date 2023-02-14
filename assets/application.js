@@ -53,23 +53,18 @@ collectionTitles.forEach((item) => {
 let siteUrl = window.location.href;
 const featuredCollections = document.querySelector('.collection__row');
 const collectionAll = document.querySelector('.collection__all');
+const checkBoxes = document.querySelectorAll('.filter__checkbox');
 
 if(siteUrl.includes('filter.p.m.opkl')){
     featuredCollections.style.display = 'none';
     collectionAll.style.display = 'block';
 }
 
-const checkBoxes = document.querySelectorAll('.filter__checkbox');
-
 checkBoxes.forEach(item => {
     item.addEventListener('click', () => {
-        document.querySelector('.filter__apply-button').click();
+        document.querySelector('.filter__apply-button').classList.add('active')
     })
 });
-
-
-
-
 
 function personFiltr() {
     const personenFilterItems = document.querySelector('#person');

@@ -21,29 +21,31 @@
       </div>
     {% endfor %}
     <div class="filter-column">
-    <div class="filter-value">
-      <label for="person">Personen</label>
-      <div class="select">
-        <select id="person" onchange="personFiltr()" >
-          <option>—</option>
-          {% for item in (1..12) %}
-            <option value="{{ item }}" >{{ item }}</option>
-          {% endfor %}
-        </select>
+      <div class="filter-value">
+        <label for="person">Personen</label>
+        <div class="select">
+          <select id="person" onchange="personFiltr()" >
+            <option>—</option>
+            {% for item in (1..12) %}
+              <option value="{{ item }}" >{{ item }}</option>
+            {% endfor %}
+          </select>
+        </div>
       </div>
-    </div>
-    <div class="filter-value">
-      <label for="level">Ervaring</label>
-      <div class="select">
-        <select id="level" onchange="levelFiltr()">
-          <option>—</option>
-          <option value="Beginner">Beginner</option>
-          <option value="Medium">Sarge</option>
-          <option value="Master">Hurt me plenty</option>
-        </select>
+      <div class="filter-value">
+        <label for="level">Ervaring</label>
+        <div class="select">
+          <select id="level" onchange="levelFiltr()">
+            <option>—</option>
+            <option value="Beginner">Beginner</option>
+            <option value="Medium">Sarge</option>
+            <option value="Master">Hurt me plenty</option>
+          </select>
+        </div>
       </div>
+    </div> 
+    <div class="filter-column">
+      <button class="filter__apply-button">Apply filters</button>
     </div>
-  </div>
-    <button class="filter__apply-button">Apply filters</button>
 </form>
 
