@@ -53,18 +53,23 @@ collectionTitles.forEach((item) => {
 let siteUrl = window.location.href;
 const featuredCollections = document.querySelector('.collection__row');
 const collectionAll = document.querySelector('.collection__all');
-const checkBoxes = document.querySelectorAll('.filter__checkbox');
 
 if(siteUrl.includes('filter.p.m.opkl')){
     featuredCollections.style.display = 'none';
     collectionAll.style.display = 'block';
 }
 
+const checkBoxes = document.querySelectorAll('.filter__checkbox');
+
 checkBoxes.forEach(item => {
     item.addEventListener('click', () => {
-        document.querySelector('.filter__apply-button').classList.add('active')
+        document.querySelector('.filter__apply-button').click();
     })
 });
+
+
+
+
 
 function personFiltr() {
     const personenFilterItems = document.querySelector('#person');
@@ -98,8 +103,8 @@ if(siteUrl.includes('Beginner')){
     document.getElementById('level').value = 'Beginner';
 } else if(siteUrl.includes('Medium')){
     document.getElementById('level').value = 'Medium';
-} else if(siteUrl.includes('Master')){
-    document.getElementById('level').value = 'Master';
+} else if(siteUrl.includes('Medium')){
+    document.getElementById('level').value = 'Medium';
 }
 
 for(let i = 0; i < 13; i++){
