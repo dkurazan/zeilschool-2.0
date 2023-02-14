@@ -68,7 +68,7 @@
         </div>
     </div>
     <div class="container">
-        <div class="collection__all" >
+        <div class="collection__all" style="display: none;">
             {% paginate collection.products by 20 %}
                 <div class="collection__products-inner">
                     {% for product in collection.products %}

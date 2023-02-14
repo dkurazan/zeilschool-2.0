@@ -52,8 +52,11 @@ collectionTitles.forEach((item) => {
 
 let siteUrl = window.location.href;
 const featuredCollections = document.querySelector('.collection__row');
+const collectionAll = document.querySelector('.collection__all');
+
 if(siteUrl.includes('filter.p.m.opkl')){
     featuredCollections.style.display = 'none';
+    collectionAll.style.display = 'block';
 }
 
 const checkBoxes = document.querySelectorAll('.filter__checkbox');
