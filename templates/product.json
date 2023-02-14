@@ -12,12 +12,16 @@
     "template": {
       "type": "template-product",
       "settings": {
+        "btn-text": "Huur nu",
+        "btn-url": "#",
+        "button-color": "",
+        "button-color-hover": ""
       }
     },
     "featured-collection": {
       "type": "featured-collection-product-page",
       "settings": {
-        "featured-collection": "frontpage",
+        "featured-collection": "motorboten",
         "title": "Alternativen",
         "number_of_products_to_show": 2
       }
