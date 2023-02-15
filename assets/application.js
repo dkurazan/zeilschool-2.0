@@ -133,8 +133,11 @@ personcheckBoxes.forEach(item => {
 }
 });
 
-
+const scrollToFilter = document.querySelector('#hero-title');
 if(siteUrl.includes('filter.p.m.opkl')){
   featuredCollections.style.display = 'none';
   collectionAll.style.display = 'block';
+  window.addEventListener("load", () => {
+    scrollToFilter.scrollIntoView({behavior: "smooth"});
+  });
 }
