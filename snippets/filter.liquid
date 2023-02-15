@@ -1,10 +1,10 @@
 
-<form class="filter-grid product-filter">
+<form class="filter-grid product-filter filter-form" id="filter-form">
     <div class="filter-column">
       <div class="filter-title">Filter</div>
       <a href="{{ collection.url }}">Reset</a>
     </div>
-    {%- for filter in collection.filters limit: 2 -%}
+    {%- for filter in collection.filters-%}
       <div class="filter-column">
         {%- for filter_value in filter.values -%}
             <div class="filter__checkbox">
@@ -25,10 +25,6 @@
         <label for="person">Personen</label>
         <div class="select">
           <select id="person" onchange="personFiltr()" >
-            <option>—</option>
-            {% for item in (1..12) %}
-              <option value="{{ item }}" >{{ item }}</option>
-            {% endfor %}
           </select>
         </div>
       </div>
@@ -45,7 +41,7 @@
       </div>
     </div> 
     <div class="filter-column">
-      <button class="filter__apply-button" onclick="filterRun()">Apply</button>
+      <button class="filter__apply-button">Apply</button>
     </div>
 </form>
 

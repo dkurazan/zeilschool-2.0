@@ -483,7 +483,7 @@ main:has(.shopify-challenge__container) {
   background-color: #818080;
 }
 
-.filter__checkbox input[type="checkbox"]:disabled:hover{
+.filter__checkbox input[type="checkbox"]:disabled:hover, select:disabled:hover{
   cursor: not-allowed;
 }
 
@@ -513,7 +513,11 @@ main:has(.shopify-challenge__container) {
   
 }
 
+/* !!! HIDDEN CHECKBOXES !!! */
 
+.filter-column:nth-child(4), .filter-column:nth-child(5){
+  display: none;
+} 
 
 
 @media (max-width: 960px) {

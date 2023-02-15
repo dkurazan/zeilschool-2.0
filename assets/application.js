@@ -53,62 +53,88 @@ collectionTitles.forEach((item) => {
 let siteUrl = window.location.href;
 const featuredCollections = document.querySelector('.collection__row');
 const collectionAll = document.querySelector('.collection__all');
-
-if(siteUrl.includes('filter.p.m.opkl')){
-    featuredCollections.style.display = 'none';
-    collectionAll.style.display = 'block';
-}
-
 const checkBoxes = document.querySelectorAll('.filter__checkbox');
+const levelFilterItems = document.querySelector('#level');
+const levelCheckboxes = document.getElementsByName("filter.p.m.opkl.level");
+const personenFilterItems = document.querySelector('#person');
+const personcheckBoxes = document.getElementsByName("filter.p.m.opkl.persons");
+let personOption = '<option>—</option>';
+
 
 checkBoxes.forEach(item => {
     item.addEventListener('click', () => {
-        document.querySelector('.filter__apply-button').click();
+        document.querySelector('.filter__apply-button').classList.add('active');
     })
 });
 
 
-
+if(personcheckBoxes){
+  personcheckBoxes.forEach(item => {
+    personOption = personOption + `<option value="${item.value}">${item.value}</option>`
+  });
+  personenFilterItems.innerHTML = personOption;
+}
 
 
 function personFiltr() {
-    const personenFilterItems = document.querySelector('#person');
-    if(!siteUrl.includes(`filter.p.m.opkl`)){
-        siteUrl = siteUrl + '?';
-    };
-    if(siteUrl.includes(`&filter.p.m.opkl.persons=`)){
-        window.location.href = siteUrl.split('persons=')[0] + `persons=${personenFilterItems.value}`;
-    } else{
-        window.location.href = siteUrl + `&filter.p.m.opkl.persons=${personenFilterItems.value}`;
+  personcheckBoxes.forEach(item => {
+    if(item.value == personenFilterItems.value){
+      item.checked = true;
+    }else if(item.value != personenFilterItems.value) {
+      item.checked = false;
     }
+  });
+  
+  personenFilterItems.addEventListener('click', () => {
+    document.querySelector('.filter__apply-button').classList.add('active');
+  })
 }
+
 
 function levelFiltr() {
-    const levelFilterItems = document.querySelector('#level');
-    if(!siteUrl.includes(`filter.p.m.opkl`)){
-        siteUrl = siteUrl + '?';
-    };
-
-    if(siteUrl.includes(`&filter.p.m.opkl.level=`)){
-        window.location.href = siteUrl.split('level=')[0] + `level=${levelFilterItems.value}`;
-        levelFilterItems.selected = true;
-    } else{
-        window.location.href = siteUrl + `&filter.p.m.opkl.level=${levelFilterItems.value}`;
-    };
-
-    
+    levelCheckboxes.forEach(item => {
+      if(item.value == levelFilterItems.value){
+        item.checked = true;
+      }else if(item.value != levelFilterItems.value) {
+        item.checked = false;
+      }
+    });
+   
+    levelFilterItems.addEventListener('click', () => {
+      document.querySelector('.filter__apply-button').classList.add('active');
+    })
 }
 
-if(siteUrl.includes('Beginner')){
-    document.getElementById('level').value = 'Beginner';
-} else if(siteUrl.includes('Medium')){
-    document.getElementById('level').value = 'Medium';
-} else if(siteUrl.includes('Medium')){
-    document.getElementById('level').value = 'Medium';
-}
 
-for(let i = 0; i < 13; i++){
-    if(siteUrl.includes(`persons=${i}`)){
-        document.getElementById('person').value = i;
+levelCheckboxes.forEach(item => {
+  if(siteUrl.includes(`level=${item.value}`)){
+    document.getElementById('level').value = item.value;
+} else if( item.disabled ){
+    document.querySelectorAll('#level option').forEach(child => {
+      if(child.value == item.value){
+        child.disabled = true;
+        child.style.color = 'rgb(216 212 212)'
+      }
+  });
+}
+});
+
+
+personcheckBoxes.forEach(item => {
+  if(siteUrl.includes(`persons=${item.value}`)){
+    document.getElementById('person').value = item.value;
+} else if( item.disabled ){
+  document.querySelectorAll('#person option').forEach(child => {
+    if(child.value == item.value){
+      child.disabled = true;
+      child.style.color = 'rgb(216 212 212)'
     }
+});
+}
+});
+
+
+if(siteUrl.includes('filter.p.m.opkl')){
+  featuredCollections.style.display = 'none';
+  collectionAll.style.display = 'block';
 }
