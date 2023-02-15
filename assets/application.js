@@ -141,3 +141,9 @@ if(siteUrl.includes('filter.p.m.opkl')){
     scrollToFilter.scrollIntoView({behavior: "smooth"});
   });
 }
+
+if(siteUrl.includes('?')){
+  window.addEventListener("load", () => {
+    scrollToFilter.scrollIntoView({behavior: "smooth"});
+  });
+}

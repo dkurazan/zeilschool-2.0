@@ -2,7 +2,7 @@
 <form class="filter-grid product-filter filter-form" id="filter-form">
     <div class="filter-column">
       <div class="filter-title">Filter</div>
-      <a href="{{ collection.url }}">Reset</a>
+      <a href="{{ collection.url }}?" data-reset >Reset</a>
     </div>
     {%- for filter in collection.filters-%}
       <div class="filter-column">
