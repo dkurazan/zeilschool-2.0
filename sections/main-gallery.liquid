@@ -4,170 +4,20 @@
     {% render 'filter-main' %}
     <h2 class="main-title kopje-title">{{ section.settings.row-title1 }}</h2>
     <div class="row">
-
-      <div class="kopje__photo-item">
-        {% if section.settings.img1 %}
-            {{ section.settings.img1 | img_url: 'master' | img_tag }}
-        {% else %}
-            {{ 'product-1' | placeholder_svg_tag }}
-        {% endif %}
-        <h4 class="kopje__title-right kopje__title-1" style="background-color: {{ section.settings.title-1-color }};" >
-            {% for block in section.blocks %}
-                {{ block.settings.item-title1 }}
-            {% endfor %}
-        </h4>
-        <div class="kopje__hover-item">
-          <ul>
-            {% for block in section.blocks %}
-              <li>{{ block.settings.richtext-item1 }}</li>
-            {% endfor %}
-          </ul>
-        </div>
-        <a href="{{ block.settings.item-link1 }}" class="kopje__link"></a>
-      </div>
-      <div class="kopje__photo-item">
-        {% if section.settings.img2 %}
-            {{ section.settings.img2 | img_url: 'master' | img_tag }}
-        {% else %}
-            {{ 'product-1' | placeholder_svg_tag }}
-        {% endif %}
-        <h4 class="kopje__title-left kopje__title-2" style="background-color: {{ section.settings.title-2-color }};" >
-          {% for block in section.blocks %}
-            {{ block.settings.item-title2 }}
-          {% endfor %}
-        </h4>
-        <div class="kopje__hover-item">
-          <ul>
-            {% for block in section.blocks %}
-              <li>{{ block.settings.richtext-item2 }}</li>
-            {% endfor %}
-          </ul>
-        </div>
-        <a href="{{ block.settings.item-link2 }}" class="kopje__link"></a>
-      </div>
-      <div class="kopje__photo-item">
-        {% if section.settings.img3 %}
-            {{ section.settings.img3 | img_url: 'master' | img_tag }}
-        {% else %}
-            {{ 'product-1' | placeholder_svg_tag }}
-        {% endif %}
-        <h4 class="kopje__title-right kopje__title-3" style="background-color: {{ section.settings.title-3-color }};" >
-          {% for block in section.blocks %}
-            {{ block.settings.item-title3 }}
-          {% endfor %}
-        </h4>
-        <div class="kopje__hover-item">
-          <ul>
-            {% for block in section.blocks %}
-              <li>{{ block.settings.richtext-item3 }}</li>
-            {% endfor %}
-          </ul>
-        </div>
-        <a href="{{ block.settings.item-link3 }}" class="kopje__link"></a>
-      </div>
-      <div class="kopje__photo-item">
-        {% if section.settings.img4 %}
-            {{ section.settings.img4 | img_url: 'master' | img_tag }}
-        {% else %}
-            {{ 'product-1' | placeholder_svg_tag }}
-        {% endif %}
-        <h4 class="kopje__title-left kopje__title-4" style="background-color: {{ section.settings.title-4-color }};" >
-          {% for block in section.blocks %}
-            {{ block.settings.item-title4 }}
-          {% endfor %}
-        </h4>
-        <div class="kopje__hover-item">
-          <ul>
-            {% for block in section.blocks %}
-              <li>{{ block.settings.richtext-item4 }}</li>
-            {% endfor %}
-          </ul>
-          <a href="{{ block.settings.item-link4 }}" class="kopje__link"></a>
-        </div>
-      </div>
-    </div>
-    <h2 class="main-title kopje-title">{{ section.settings.row-title2 }}</h2>
-    <div class="row">
-      <div class="kopje__photo-item">
-        {% if section.settings.img5 %}
-            {{ section.settings.img5 | img_url: 'master' | img_tag }}
-        {% else %}
-            {{ 'product-1' | placeholder_svg_tag }}
-        {% endif %}
-        <h4 class="kopje__title-right kopje__title-5" style="background-color: {{ section.settings.title-5-color }};" >
-          {% for block in section.blocks %}
-            {{ block.settings.item-title5 }}
-          {% endfor %}
-        </h4>
-        <div class="kopje__hover-item">
-          <ul>
-            {% for block in section.blocks %}
-              <li>{{ block.settings.richtext-item5 }}</li>
-            {% endfor %}
-          </ul>
-        </div>
-        <a href="{{ block.settings.item-link5 }}" class="kopje__link"></a>
-      </div>
-      <div class="kopje__photo-item">
-        {% if section.settings.img6 %}
-            {{ section.settings.img6 | img_url: 'master' | img_tag }}
-        {% else %}
-            {{ 'product-1' | placeholder_svg_tag }}
-        {% endif %}
-        <h4 class="kopje__title-left kopje__title-6" style="background-color: {{ section.settings.title-6-color }};" >
-          {% for block in section.blocks %}
-            {{ block.settings.item-title6 }}
-          {% endfor %}
-        </h4>
-        <div class="kopje__hover-item">
-          <ul>
-            {% for block in section.blocks %}
-              <li>{{ block.settings.richtext-item6 }}</li>
-            {% endfor %}
-          </ul>
-        </div>
-        <a href="{{ block.settings.item-link6 }}" class="kopje__link"></a>
-      </div>
-      <div class="kopje__photo-item kopje__photo-item-bot-0">
-        {% if section.settings.img7 %}
-            {{ section.settings.img7 | img_url: 'master' | img_tag }}
-        {% else %}
-            {{ 'product-1' | placeholder_svg_tag }}
-        {% endif %}
-        <h4 class="kopje__title-right kopje__title-7" style="background-color: {{ section.settings.title-7-color }};" >
-          {% for block in section.blocks %}
-            {{ block.settings.item-title7 }}
-          {% endfor %}
-        </h4>
-        <div class="kopje__hover-item">
-          <ul>
-            {% for block in section.blocks %}
-              <li>{{ block.settings.richtext-item7 }}</li>
-            {% endfor %}
-          </ul>
-        </div>
-        <a href="{{ block.settings.item-link7 }}" class="kopje__link"></a>
-      </div>
-      <div class="kopje__photo-item kopje__photo-item-bot-0">
-        {% if section.settings.img8 %}
-            {{ section.settings.img8 | img_url: 'master' | img_tag }}
-        {% else %}
-            {{ 'product-1' | placeholder_svg_tag }}
-        {% endif %}
-        <h4 class="kopje__title-left kopje__title-8" style="background-color: {{ section.settings.title-8-color }};" >
-          {% for block in section.blocks %}
-            {{ block.settings.item-title8 }}
-          {% endfor %}
-        </h4>
-        <div class="kopje__hover-item">
-          <ul>
-            {% for block in section.blocks %}
-              <li>{{ block.settings.richtext-item8 }}</li>
-            {% endfor %}
-          </ul>
-        </div>
-         <a href="{{ section.settings.item-link8 }}" class="kopje__link"></a> 
-      </div>
+      {% for block in section.blocks %}
+        <div class="kopje__photo-item">
+          <h2 class="kopje__top-title">{{ block.settings.title }}</h2>
+              <a href="{{ block.settings.item-link }}">
+                  {{ block.settings.img | img_url: 'master' | img_tag }}
+                  <h4 class="kopje__title" style="background-color: {{ block.settings.title-color }};" >{{ block.settings.item-title }}</h4>
+                  <div class="kopje__hover-item">
+                      <div>
+                        {{ block.settings.richtext }}
+                      </div>
+                  </div>
+              </a>
+          </div>
+      {% endfor %}
     </div>
   </div>
 </div>
@@ -175,328 +25,43 @@
 {% schema %}
   {
     "name": "Gallery section",
-    "settings": [
-      {
-        "type": "text",
-        "label": "First title text",
-        "id": "row-title1",
-        "default": "Kopje"
-      },
-      {
-        "type": "text",
-        "label": "Second title text",
-        "id": "row-title2",
-        "default": "Kopje"
-      },
-      {
-        "type": "image_picker",
-        "id": "img1",
-        "label": {
-          "en": "Pick 1st item image"
-        }
-      }, 
-      {
-        "type": "color",
-        "id": "title-1-color",
-        "label": "Change the color of title 1"
-      },
-      {
-        "type": "text",
-        "id": "item-link1",
-        "label": {
-          "en": "Item 1 url"
-        }
-      },
-      {
-        "type": "image_picker",
-        "id": "img2",
-        "label": {
-          "en": "Pick 2nd item image"
-        }
-      }, 
-      {
-        "type": "color",
-        "id": "title-2-color",
-        "label": "Change the color of title 2"
-      },
-      {
-        "type": "text",
-        "id": "item-link2",
-        "label": {
-          "en": "Item 2 url"
-        }
-      }, 
-      {
-        "type": "image_picker",
-        "id": "img3",
-        "label": {
-          "en": "Pick 3th item image"
-        }
-      }, 
-      {
-          "type": "color",
-          "id": "title-3-color",
-          "label": "Change the color of title 3"
-        },
-      {
-        "type": "text",
-        "id": "item-link3",
-        "label": {
-          "en": "Item 3 url"
-        }
-      }, 
-      {
-        "type": "image_picker",
-        "id": "img4",
-        "label": {
-          "en": "Pick 4th item image"
-        }
-      }, 
-        {
-            "type": "color",
-            "id": "title-4-color",
-            "label": "Change the color of title 4"
-        },
-      {
-        "type": "text",
-        "id": "item-link4",
-        "label": {
-          "en": "Item 4 url"
-        }
-      }, 
-      {
-        "type": "image_picker",
-        "id": "img5",
-        "label": {
-          "en": "Pick 5th item image"
-        }
-      }, 
-        {
-            "type": "color",
-            "id": "title-5-color",
-            "label": "Change the color of title 5"
-        },
-      {
-        "type": "text",
-        "id": "item-link5",
-        "label": {
-          "en": "Item url"
-        }
-      }, 
-      {
-        "type": "image_picker",
-        "id": "img6",
-        "label": {
-          "en": "Pick 6th item image"
-        }
-      }, 
-            {
-                "type": "color",
-                "id": "title-6-color",
-                "label": "Change the color of title 6"
-            },
-            {
-                "type": "text",
-                "id": "item-link6",
-                "label": {
-                "en": "Item url"
-                }
-            }, 
-      {
-        "type": "image_picker",
-        "id": "img7",
-        "label": {
-          "en": "Pick 7th item image"
-        }
-      }, 
-            {
-                "type": "color",
-                "id": "title-7-color",
-                "label": "Change the color of title 7"
-            },
-            {
-                "type": "text",
-                "id": "item-link7",
-                "label": {
-                "en": "Item url"
-                }
-            }, 
-      {
-        "type": "image_picker",
-        "id": "img8",
-        "label": {
-          "en": "Pick 8th item image"
-        }
-      }, 
-      {
-          "type": "color",
-          "id": "title-8-color",
-          "label": "Change the color of title 8"
-      },
-      {
-          "type": "text",
-          "id": "item-link8",
-          "label": {
-          "en": "Item 8 url"
-          }
-      }
-    ],
     "max_blocks": 8,
     "blocks": [
       {
-        "type": "block1",
-        "name": "1st item text settings",
+        "type": "block",
+        "name": "Item settings",
         "settings": [
           {
             "type": "text",
-            "id": "item-title1",
-            "label": {
-              "en": "Change the item title"
-            }
-          }, 
+            "label": "Title above item",
+            "id": "title",
+            "default": "EVENTUEEL KOP"
+          },
           {
-            "type": "richtext",
-            "id": "richtext-item1",
-            "label": {
-              "en": "Add your text"
-            }
-          }
-        ]
-      },
-      {
-        "type": "block2",
-        "name": "2nd item settings",
-        "settings": [
+            "type": "image_picker",
+            "id": "img",
+            "label": "Pick item image"
+          }, 
           {
             "type": "text",
-            "id": "item-title2",
-            "label": {
-              "en": "Change the item title"
-            }
+            "id": "item-title",
+            "label": "Item title"
           }, 
           {
             "type": "richtext",
-            "id": "richtext-item2",
-            "label": {
-              "en": "Add your text"
-            }
+            "id": "item-richtext",
+            "label": "Item text content"
+          },
+          {
+            "type": "color",
+            "id": "title-color",
+            "label": "Item title color"
+          },
+          {
+            "type": "text",
+            "id": "item-link",
+            "label": "Item url"
           }
-        ]
-      },
-      {
-        "type": "block3",
-        "name": "3th item settings",
-        "settings": [
-            {
-                "type": "text",
-                "id": "item-title3",
-                "label": {
-                "en": "Change the item title"
-                }
-            }, 
-            {
-                "type": "richtext",
-                "id": "richtext-item3",
-                "label": {
-                "en": "Add your text"
-                }
-            }
-        ]
-      },
-      {
-        "type": "block4",
-        "name": "4th item settings",
-        "settings": [
-            {
-                "type": "text",
-                "id": "item-title4",
-                "label": {
-                "en": "Change the item title"
-                }
-            }, 
-            {
-                "type": "richtext",
-                "id": "richtext-item4",
-                "label": {
-                "en": "Add your text"
-                }
-            }
-        ]
-      }, {
-        "type": "block5",
-        "name": "5th item settings",
-        "settings": [
-            {
-                "type": "text",
-                "id": "item-title5",
-                "label": {
-                "en": "Change the item title"
-                }
-            }, 
-            {
-                "type": "richtext",
-                "id": "richtext-item5",
-                "label": {
-                "en": "Add your text"
-                }
-            }
-        ]
-      }, {
-        "type": "block6",
-        "name": "6th item settings",
-        "settings": [
-            {
-                "type": "text",
-                "id": "item-title6",
-                "label": {
-                "en": "Change the item title"
-                }
-            }, 
-            {
-                "type": "richtext",
-                "id": "richtext-item6",
-                "label": {
-                "en": "Add your text"
-                }
-            }
-        ]
-      }, {
-        "type": "block7",
-        "name": "7th item settings",
-        "settings": [
-            {
-                "type": "text",
-                "id": "item-title7",
-                "label": {
-                "en": "Change the item title"
-                }
-            }, 
-            {
-                "type": "richtext",
-                "id": "richtext-item7",
-                "label": {
-                "en": "Add your text"
-                }
-            }
-        ]
-      }, {
-        "type": "block8",
-        "name": "8th item settings",
-        "settings": [
-            {
-                "type": "text",
-                "id": "item-title8",
-                "label": {
-                "en": "Change the item title"
-                }
-            }, 
-            {
-                "type": "richtext",
-                "id": "richtext-item8",
-                "label": {
-                "en": "Add your text"
-                }
-            }
         ]
       }
     ],

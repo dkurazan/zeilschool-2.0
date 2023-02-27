@@ -2,6 +2,8 @@
     overflow: hidden;
     width: 100%;
     pointer-events: none;
+    max-width: 1730px;
+    margin: 0 auto;
 }
 
 .youtube-container iframe {
@@ -20,12 +22,14 @@
 }
 
 .main-start-section__title{
-    bottom: 105px;
+    bottom: 68px;
     width: 1113px;
 }
 
 .start-section__title svg{
-    width: 100%;
+    display: block;
+    width: 611px;
+    margin: 0 auto;
 }
 
 .youtube-container img{

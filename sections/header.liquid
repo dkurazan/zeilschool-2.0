@@ -1,7 +1,7 @@
 {{ 'header.css' | asset_url | stylesheet_tag }}
 <header class="header">
-  <div class="container">
-    <div class="row header__row">
+  <div class="container-xl container-xl_center">
+    <div class="row header__row ">
       <div class="header__logo">
         <a href="/">
           {% render 'icon-header-logo' %}
@@ -54,21 +54,7 @@
           
         </nav>
       </div>
-      <div class="header__right-nav">
-        <nav>
-          <li class="header__right-nav-item-blue">
-            <a href="/blogs/agenda">Agenda</a>
-          </li>
-          <li class="header__right-nav-item-grey">
-            <a href="#">Winkel</a>
-          </li>
-          <li class="header__right-nav-item-black">
-            <a href="">NL</a>
-            <p>|</p>
-            <a href="">Eng</a>
-          </li>
-        </nav>
-      </div>
+      
       
       <div class="burger-menu">
         <div class="burger-menu__strips">
@@ -121,6 +107,19 @@
       </div>
       <div class="menu-overlay"></div>
     </div>
+    <div class="header__right-nav">
+        <nav>
+          <li class="header__right-nav-item-blue">
+            <a href="/blogs/agenda">Agenda</a>
+          </li>
+          <li class="header__right-nav-item-grey">
+            <a href="#">Winkel</a>
+          </li>
+          <li class="header__right-nav-item-black">
+            <a href="#">NL | EN</a>
+          </li>
+        </nav>
+      </div>
   </div>
 </header>
 
