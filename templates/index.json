@@ -20,35 +20,7 @@
       }
     },
     "gallery": {
-      "type": "main-gallery",
-      "settings": {
-        "row-title1": "Kopje",
-        "row-title2": "Kopje",
-        "img1": "shopify:\/\/shop_images\/vinkeveen_zeilschool.jpg",
-        "title-1-color": "",
-        "item-link1": "",
-        "img2": "shopify:\/\/shop_images\/vinkeveen_zeilkamp.jpg",
-        "title-2-color": "",
-        "item-link2": "",
-        "img3": "shopify:\/\/shop_images\/vinkeveen_haven.jpg",
-        "title-3-color": "",
-        "item-link3": "",
-        "img4": "shopify:\/\/shop_images\/vinkeveen_boothuren.jpg",
-        "title-4-color": "",
-        "item-link4": "",
-        "img5": "shopify:\/\/shop_images\/vinkeveen_slapen.jpg",
-        "title-5-color": "",
-        "item-link5": "",
-        "img6": "shopify:\/\/shop_images\/vinkeveen_bb.jpg",
-        "title-6-color": "",
-        "item-link6": "",
-        "img7": "shopify:\/\/shop_images\/vinkeveen_event.jpg",
-        "title-7-color": "",
-        "item-link7": "",
-        "img8": "shopify:\/\/shop_images\/vinkeveen_bedrijven.jpg",
-        "title-8-color": "",
-        "item-link8": ""
-      }
+      "type": "main-gallery"
     },
     "info-section": {
       "type": "main-info-section",
