@@ -1,0 +1,112 @@
+{
+  "wrapper": ".b-b-page.pages",
+  "sections": {
+    "hero": {
+      "type": "pages-hero",
+      "settings": {
+        "title": "",
+        "video_link": "",
+        "img": "shopify:\/\/shop_images\/2021_Zeilschool_188hb_1c6514f6-a4de-4e90-bd1f-c994af2dfeb2.jpg"
+      }
+    },
+    "breadcrumbs": {
+      "type": "breadcrumbs",
+      "settings": {
+      }
+    },
+    "button-section": {
+      "type": "button-section",
+      "settings": {
+        "btn-text": "Boek nu",
+        "btn-url": "#",
+        "button-color": "#c65f50",
+        "button-color-hover": "#984539",
+        "text-content": "<p>Wil je weten wat een B&B inhoudt? Daar gaat ie: Van april tot oktober kun je bij ons zeilen, dat kan een dag, een paar dagen zijn of langer. Je bent dan in een groep van X kinderen van dezelfde leeftijd. Er is altijd een instructeur bij jullie. Etcetera etcetera.<br\/>Gaat iets over het ontbijt en de lunch, welke kleding, hoe laat aanwezig, mogen de ouders kijken? Hoe laat ongeveer ophalen, etc etcetera etcetera<\/p>"
+      }
+    },
+    "gallery": {
+      "type": "main-gallery",
+      "blocks": {
+        "644131cc-759c-4939-b864-1d44ed28b4bf": {
+          "type": "block1",
+          "settings": {
+            "item-title1": ".....",
+            "richtext-item1": ""
+          }
+        },
+        "c8d4c5f9-8a00-4e14-8b64-f351bc45d53e": {
+          "type": "block2",
+          "settings": {
+            "item-title2": ".....",
+            "richtext-item2": ""
+          }
+        },
+        "566d7b67-7e0d-4d91-9af4-3e64e052d771": {
+          "type": "block3",
+          "settings": {
+            "item-title3": ".....",
+            "richtext-item3": ""
+          }
+        },
+        "26f6b845-0984-4cc0-a4ab-c261e11574df": {
+          "type": "block4",
+          "settings": {
+            "item-title4": ".....",
+            "richtext-item4": ""
+          }
+        }
+      },
+      "block_order": [
+        "644131cc-759c-4939-b864-1d44ed28b4bf",
+        "c8d4c5f9-8a00-4e14-8b64-f351bc45d53e",
+        "566d7b67-7e0d-4d91-9af4-3e64e052d771",
+        "26f6b845-0984-4cc0-a4ab-c261e11574df"
+      ],
+      "settings": {
+        "row-title1": "Kopje",
+        "row-title2": "Kopje",
+        "img1": "shopify:\/\/shop_images\/Group_67.jpg",
+        "title-1-color": "#c65f50",
+        "item-link1": "",
+        "title-2-color": "#984539",
+        "item-link2": "",
+        "title-3-color": "#c65f50",
+        "item-link3": "",
+        "title-4-color": "#984539",
+        "item-link4": "",
+        "title-5-color": "",
+        "item-link5": "",
+        "title-6-color": "",
+        "item-link6": "",
+        "title-7-color": "",
+        "item-link7": "",
+        "title-8-color": "",
+        "item-link8": ""
+      }
+    },
+    "info-section": {
+      "type": "main-info-section",
+      "settings": {
+        "text-top": "",
+        "img": "shopify:\/\/shop_images\/info-section-img.png",
+        "text-middle": "",
+        "text-bottom": "<p> <\/p>"
+      }
+    },
+    "footer-color": {
+      "type": "footer-color",
+      "settings": {
+        "footer-color": "#c65f50",
+        "footer-mobile-btns": "#984539"
+      }
+    }
+  },
+  "order": [
+    "hero",
+    "breadcrumbs",
+    "button-section",
+    "gallery",
+    "info-section",
+    "footer-color"
+  ]
+}
