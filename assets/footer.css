@@ -9,15 +9,16 @@
 }
 
 .footer__inner{
-    padding-top: 63px;
+    padding-top: 34px;
     flex: 0 0 79%;
     max-width: 79%;
 
 }
 
 .header__logo-icon-footer{
-    margin-left: 54px;
-    padding-right: 19px;
+    display: block;
+    max-width: 188px;
+    height: fit-content;
 }
 
 .footer nav{
@@ -29,7 +30,7 @@
     display: block;
     background-color: #FFFFFF;
     height: 1px;
-    width: calc( 100% - 32px );
+    width: 100%;
     margin-top: 14px;
     margin-left: -4px;
 }
@@ -45,7 +46,7 @@
 
 .footer__header li{
     text-align: left;
-    font: normal 400 normal 25px/33px 'Roboto Condensed' , sans-serif;
+    font: normal 400 normal 16px 'Roboto Condensed' , sans-serif;
     letter-spacing: 2.5px;
     color: #FFFFFF;
     text-transform: uppercase;
@@ -64,7 +65,7 @@
 
 .footer__main-col>nav>li>a{
     text-align: left;
-    font: normal normal 300 25px/33px 'Roboto Condensed', sans-serif;
+    font: normal normal 300 16px 'Roboto Condensed', sans-serif;
     letter-spacing: 0px;
     color: #FFFFFF;
     text-decoration: none;
@@ -86,7 +87,7 @@
 }
 
 .footer__footer a{
-    font: normal 100 25px 'Roboto Condensed', sans-serif;
+    font: normal 100 14px 'Roboto Condensed', sans-serif;
     color: #FFFFFF;
     text-decoration: none;
     margin-right: 10px;
@@ -137,6 +138,7 @@
     display: flex;
     max-width: 1392px;
     justify-content: space-between;
+    max-height: 59px;
 }
 
 .footer-main__logos img{

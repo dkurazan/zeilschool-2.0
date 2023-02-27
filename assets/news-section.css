@@ -22,6 +22,8 @@
     margin-left: 54px;
     padding-bottom: 73px;
     max-width: 541px;
+    flex: 0 0 50%;
+    max-width: 50%;
 }
 
 
@@ -66,18 +68,13 @@
     display: flex;
     align-items: end;
     width: fit-content;
+    max-width: 47px;
+    max-height: 47px;
 }
 
-.social-block__inst-facebook a:first-child{
-    margin-right: 75px;
-}
-
-.social-block__inst-facebook a:first-child img{
-    height: 85px;
-}
-
-.social-block__inst-facebook a:last-child img{
-    height: 78px;
+.social-block__inst-facebook img{
+    width: fit-content;
+    height: 100%;
 }
 
 .social-block__inner{
@@ -95,11 +92,14 @@
 
 .news-block__post{
     display: flex;
-    padding-bottom: 46px;
+    padding-bottom: 25px;
 }
 
 .news-block__post img{
     margin-right: 30px;
+    max-width: 100px;
+    max-height: 100px;
+    object-fit: cover;
 }
 
 .news-block__post div{
@@ -109,7 +109,7 @@
 
 .news-block__post a{
     color: var(--unnamed-color-707070);
-    font-size: 30px;
+    font-size: 16px;
     font-weight: 400;
     font-family: 'Roboto Condensed', sans-serif;
     line-height: 1.1;
@@ -119,7 +119,7 @@
 .news-block__post>div>a:first-child{
     text-transform: uppercase;
     padding-bottom: 10px;
-    font-size: 35px;
+    font-size: 22px;
 }
 
 .news-block__post:first-child>div>a:last-child{
@@ -142,14 +142,14 @@
 
 .agenda__item{
     display: flex;
-    padding-bottom: 40px;
+    padding-bottom: 25px;
     text-decoration:none;
 }
 
 .agenda__data{
     background: #98BA7F 0% 0% no-repeat padding-box;
-    width: 120px;
-    height: 120px;
+    width: 100px;
+    height: 100px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -164,14 +164,14 @@
 }
 
 .agenda__data h6:first-child{
-    font-size: 35px;
+    font-size: 29px;
     line-height: 30px;
     font-weight: 700;
     padding-bottom: 4px;
 }
 
 .agenda__data h6:last-child{
-    font-size: 20px;
+    font-size: 16px;
     line-height: 25px;
     font-weight: 400;
     text-transform: lowercase;
@@ -185,7 +185,7 @@
     font-family: 'Roboto Condensed', sans-serif;
     color: var(--unnamed-color-818080);
     text-transform: uppercase;
-    font-size: 35px;
+    font-size: 22px;
     font-weight: 400;
     padding-bottom: 10px;
     padding-top: 20px;
@@ -195,7 +195,7 @@
     font-family: 'Roboto Condensed', sans-serif;
     color: var(--unnamed-color-818080);
     font-weight: 400;
-    font-size: 30px;
+    font-size: 16px;
 }
 
 

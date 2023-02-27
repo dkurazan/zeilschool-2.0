@@ -1,14 +1,19 @@
 /* GALLERY SECTION */
 
+.gallery__row{
+    row-gap: 29px;
+}
+
 .kopje__top-title{
-    color: var(--unnamed-color-888888);
     text-transform: uppercase;
-    font-size: 50px;
+
     font-family: 'Roboto Condensed', sans-serif;
+    font-style: normal;
     font-weight: 700;
-    padding-left: 54px;
-    visibility: hidden;
-    opacity: 0;
+    font-size: 21px;
+    line-height: 37px;
+    padding-left: 10px;
+    color: #888888;
 }
 
 .kopje__photo-item{
@@ -16,6 +21,7 @@
     max-width: 25%;
     display: block;
     transition: .5s all ease-in-out;
+    height: fit-content;
 }
 
 .kopje__photo-item>a{
@@ -33,13 +39,13 @@
 .kopje__title{
     position: absolute;
     bottom: 0;
-    font: normal normal bold 34px/45px 'Roboto Condensed', sans-serif;
+    font: normal normal bold 20px 'Roboto Condensed', sans-serif;
     letter-spacing: 0px;
     color: #FFFFFF;
     text-transform: uppercase;
-    width: 225px;
-    height: 50px;
-    line-height: 50px;
+    width: 172px;
+    height: 34px;
+    line-height: 34px;
     z-index: 5;
     transition: .5s all ease-in-out;
     overflow: hidden;
@@ -60,15 +66,15 @@
 
 .kopje__photo-item:nth-child( even ) .kopje__title{
     left: 0;
-    border-radius: 0px 0px 40px 0px;
+    border-radius: 0px 0px 26px 0px;
     text-align: left;
     padding-left: 15px;
     background-color: #6A8456;
 }
 
-.kopje__photo-item:nth-of-type(2n+1) .collectkopje__title{
+.kopje__photo-item:nth-of-type( 2n+1 ) .kopje__title{
     right: 0;
-    border-radius: 0px 0px 0px 40px;
+    border-radius: 0px 0px 0px 26px;
     text-align: right;
     padding-right: 15px;
     background-color: #98BA7F;

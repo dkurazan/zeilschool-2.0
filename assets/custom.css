@@ -140,10 +140,14 @@ main:has(.shopify-challenge__container) {
 }
 
 .newsletter__wrapper {
-    font: 700 50px Roboto Condensed,sans-serif;
+    font: 700 24px Roboto Condensed,sans-serif;
     color: #6E9DB6;
     padding-bottom: 12px;
     position: relative;
+}
+
+.newsletter__wrapper h4{
+  padding-bottom: 5px;
 }
 
 .newsletter__wrapper form {
@@ -167,11 +171,11 @@ main:has(.shopify-challenge__container) {
 }
 
 .newsletter__wrapper form input {
-  height: 49px;
+  height: 41px;
   border-radius: 25px;
   padding-left: 20px;
-  font-size: 25px;
-  margin-right: 9px;
+  font-size: 18px;
+  margin-right: 18px;
   border: 1px solid #818080;
 }
 
@@ -187,8 +191,8 @@ main:has(.shopify-challenge__container) {
 }
 
 .newsletter__wrapper button {
-  font: 700 50px Roboto Condensed,sans-serif;
-  font-size: 26px;
+  font: 700 18px Roboto Condensed,sans-serif;
+  font-size: 18px;
   font-weight: 700;
   background-color: #707070;
   color: #FFFFFF;
@@ -199,8 +203,8 @@ main:has(.shopify-challenge__container) {
 }
 
 .newsletter__wrapper {
-  margin-left: 54px;
-  padding-top: 67px
+  max-width: calc(100% - 150px);
+  padding-top: 67px;
 }
 
 .filter-grid {
@@ -475,6 +479,11 @@ main:has(.shopify-challenge__container) {
   border: 1px solid #818080;
   color: #818080;
   
+}
+
+.insta-block__images a{
+  height: 144px;
+  width: 144px;
 }
 
 /* !!! HIDDEN CHECKBOXES !!! */
