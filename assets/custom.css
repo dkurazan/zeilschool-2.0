@@ -8,14 +8,14 @@ body {
 
 .weather-section__data {
   font-family: 'Roboto Condensed', sans-serif;
-  font-size: 30px;
+  font-size: 16px;
   color: var(--unnamed-color-818080);
   list-style: initial;
   padding-bottom: 10px;
 }
 
 .weather-section__day{
-  margin-bottom: 56px;
+  margin-bottom: 24px;
 }
 
 .weather-section__day-title {
@@ -29,9 +29,8 @@ body {
 
 .weather-section__day, .weather-section__morning, .weather-section__wind, .weather-section__wind-image {
   display:flex;
-  gap: 16px;
+  gap: 14px;
   align-items: center;
-  justify-content: space-between;
 }
 
 .weather-section__wind, .weather-sectoin__clouds {
@@ -50,8 +49,9 @@ body {
   /* position:relative; */
   background-image: url('./weather-compass.svg');
   background-repeat: no-repeat;
-  height: 64px;
-  width: 64px;
+  background-size: contain;
+  height: 39px;
+  width: 39px;
   display: flex;
   justify-content: center;
   align-items: center;
