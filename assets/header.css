@@ -437,16 +437,14 @@
 
     .header__menu>nav>li>a:first-child{
         font-size: 20px;
-        padding: 15px 0 6px 6px;
         text-align: left;
         width: 130px;
-        padding: 15px 24px 6px 6px;
     }
 
     .header__menu>nav>li>a:last-child{
         font-size: 15px;
         width: 90px;
-        padding: 6px 20px 8px 10px;
+        padding: 106px 20px 8px 10px;
         text-align: left;
     }
 
@@ -463,16 +461,11 @@
         padding-right: 6px;
         padding-left: 20px;
     }
-
-    .header__right-nav-item-black a:first-child, .header__right-nav-item-black a:last-child, .header__right-nav-item-black p{
-        padding-top: 15px;
-        padding-bottom: 14px;
-    }
     
 }
 
 
-@media(max-width: 1140px){
+@media(max-width: 1300px){
     .header__logo{
         padding-left: 15px;
     }
@@ -495,7 +488,9 @@
         padding-left: 15px;
     }
   
-    
+    .header__row{
+        justify-content: space-between;
+    }
     
     .header__logo g{
         display: block;

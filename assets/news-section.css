@@ -237,10 +237,7 @@
     .insta-block__images{
         max-width: 100%;
     }
-    
-    .main-start-section__title{
-        width: 800px;
-    }
+
 }
 
 
@@ -327,8 +324,10 @@
         padding-bottom: 20px;
     }
 
-    .info-section .row:nth-child(2){
-        display: none;
+
+
+    .news-info__insta-block .news-info-title{
+        margin-left: 23px;
     }
 
 }
@@ -365,13 +364,7 @@
         padding: 0 15px 0 15px;
     }
 
-    .news-block__post:last-child{
-        display: none;
-    }
-
-    .agenda__item{
-        display: none;
-    }
+   
 
 
 

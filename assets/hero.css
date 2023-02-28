@@ -68,6 +68,10 @@
     .start-section__title h1{
       font-size: 130px;
   }
+
+  .main-start-section__title{
+    width: 100%;
+}
 }
 
 @media(max-width: 950px){
@@ -85,6 +89,14 @@
     .start-section__title{
       bottom: 20px;
     }
+
+    .youtube-container iframe, .youtube-container img{
+      height: 400px !important;
+    }
+    
+    .start-section__title svg{
+      width: 300px;
+  }
 }
 
 @media(max-width: 600px){
@@ -95,5 +107,10 @@
 
     .agenda-page .start-section__title{
       bottom: 20px;
+  }
+
+  .start-section__title svg{
+    width: 240px;
+    
   }
 }

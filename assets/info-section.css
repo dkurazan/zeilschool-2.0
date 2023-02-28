@@ -76,9 +76,10 @@
 
 
 @media(max-width: 1460px){
-    .info-section__title{
-        text-align: left;
-        padding-bottom: 7px;
+
+    .info-section__text-inner>div{
+        padding-left: 0px;
+        margin-left: 0;
     }
 
     .info-section{
@@ -123,19 +124,16 @@
     .info-section__text-inner>div{
         margin-left: 0;
         padding-top: 20px;
-        padding-left: 20px;
-    }
-}
-
-
-@media(max-width: 1103px){
-    .info-section__text-inner>div{
-        padding-left: 0px;
     }
 }
 
 @media(max-width: 956px){
     
+    .info-section__title{
+        text-align: left;
+        padding-bottom: 7px;
+    }
+
     .info-section{
         padding-left: 23px;
     }
@@ -149,8 +147,10 @@
         padding-bottom: 20px;
     }
 
-    .info-section .row:nth-child(2){
-        display: none;
+    .info-section__title, .info-section__text{
+        flex: 0 0 100%;
+        max-width: 100%;
     }
+    
 
 }

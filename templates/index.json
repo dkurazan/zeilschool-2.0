@@ -20,7 +20,109 @@
       }
     },
     "gallery": {
-      "type": "main-gallery"
+      "type": "main-gallery",
+      "blocks": {
+        "419440c2-3b74-40f8-b175-fdb6c5c41f54": {
+          "type": "item",
+          "settings": {
+            "title": "EVENTUEEL KOP",
+            "img": "shopify:\/\/shop_images\/vinkeveen_zeilschool.jpg",
+            "item-title": "Zeilschool",
+            "item-richtext": "<p>Item 1<\/p><p>Item 2<\/p>",
+            "title-color": "#6c9db7",
+            "item-link": ""
+          }
+        },
+        "bb028cab-0743-4bca-b325-86a5bcf455b7": {
+          "type": "item",
+          "settings": {
+            "title": "EVENTUEEL KOP",
+            "img": "shopify:\/\/shop_images\/vinkeveen_zeilkamp.jpg",
+            "item-title": "Zeilkamp",
+            "item-richtext": "<p>Item 1<\/p><p>Item 2<\/p>",
+            "title-color": "#396d84",
+            "item-link": ""
+          }
+        },
+        "d243fa48-2225-4207-b976-4e8f1f4d07f4": {
+          "type": "item",
+          "settings": {
+            "title": "EVENTUEEL KOP",
+            "img": "shopify:\/\/shop_images\/vinkeveen_haven.jpg",
+            "item-title": "HAVEN",
+            "item-richtext": "<p>HAVEN<\/p><p>HAVEN<\/p>",
+            "title-color": "",
+            "item-link": ""
+          }
+        },
+        "903f9ba7-59e0-4f3a-8de0-4d496a5bf1d4": {
+          "type": "item",
+          "settings": {
+            "title": "EVENTUEEL KOP",
+            "img": "shopify:\/\/shop_images\/vinkeveen_boothuren.jpg",
+            "item-title": "BOOT HUREN",
+            "item-richtext": "<p>BOOT HUREN<\/p><p>BOOT HUREN<\/p>",
+            "title-color": "",
+            "item-link": ""
+          }
+        },
+        "b3147006-6844-4d61-9a57-7113fb31c3b4": {
+          "type": "item",
+          "settings": {
+            "title": "EVENTUEEL KOP",
+            "img": "shopify:\/\/shop_images\/vinkeveen_event.jpg",
+            "item-title": "SLAPEN",
+            "item-richtext": "<p>SLAPEN<\/p><p>SLAPEN<\/p>",
+            "title-color": "#c65f50",
+            "item-link": ""
+          }
+        },
+        "14777657-d8da-4501-99b3-a3ea852e2369": {
+          "type": "item",
+          "settings": {
+            "title": "EVENTUEEL KOP",
+            "img": "shopify:\/\/shop_images\/vinkeveen_bb.jpg",
+            "item-title": "B&B",
+            "item-richtext": "<p>B&B<\/p><p>B&B<\/p>",
+            "title-color": "#984539",
+            "item-link": ""
+          }
+        },
+        "1a7f30d6-2996-4b3a-a3c3-16e869126f87": {
+          "type": "item",
+          "settings": {
+            "title": "EVENTUEEL KOP",
+            "img": "shopify:\/\/shop_images\/vinkeveen_slapen.jpg",
+            "item-title": "EVENTS",
+            "item-richtext": "<p>EVENTS<\/p><p>EVENTS<\/p>",
+            "title-color": "#f3c867",
+            "item-link": ""
+          }
+        },
+        "4c85fad3-f78e-4a74-8c71-d050fafc5013": {
+          "type": "item",
+          "settings": {
+            "title": "EVENTUEEL KOP",
+            "img": "shopify:\/\/shop_images\/vinkeveen_bedrijven.jpg",
+            "item-title": "Berijven",
+            "item-richtext": "<p>Berijven<\/p><p>Berijven<\/p>",
+            "title-color": "#bc953c",
+            "item-link": ""
+          }
+        }
+      },
+      "block_order": [
+        "419440c2-3b74-40f8-b175-fdb6c5c41f54",
+        "bb028cab-0743-4bca-b325-86a5bcf455b7",
+        "d243fa48-2225-4207-b976-4e8f1f4d07f4",
+        "903f9ba7-59e0-4f3a-8de0-4d496a5bf1d4",
+        "b3147006-6844-4d61-9a57-7113fb31c3b4",
+        "14777657-d8da-4501-99b3-a3ea852e2369",
+        "1a7f30d6-2996-4b3a-a3c3-16e869126f87",
+        "4c85fad3-f78e-4a74-8c71-d050fafc5013"
+      ],
+      "settings": {
+      }
     },
     "info-section": {
       "type": "main-info-section",
