@@ -162,6 +162,10 @@ main:has(.shopify-challenge__container) {
   padding-right: 27px;
 }
 
+.field{
+  display: flex;
+}
+
 .newsletter-form__field-wrapper{
   width: 100%;
 }
@@ -378,9 +382,7 @@ main:has(.shopify-challenge__container) {
 }
 
 
-.news-info__left-block>div:first-child{
-  display: flex;
-}
+
 
 .instagram-grid-container{
   max-width: fit-content !important;
@@ -481,23 +483,12 @@ main:has(.shopify-challenge__container) {
   
 }
 
-.insta-block__images a{
-  height: 144px;
-  width: 144px;
-}
 
 /* !!! HIDDEN CHECKBOXES !!! */
 
 .collection .filter-column:nth-child(4), .collection .filter-column:nth-child(5){
   display: none;
 } 
-
-@media (max-width: 1300px) {
-  .insta-block__images a {
-    height: 100%;
-    width: 100%;
-}
-}
 
 
 @media (max-width: 960px) {
@@ -515,9 +506,7 @@ main:has(.shopify-challenge__container) {
 }
 
 @media (min-width: 1300px) {
-  .insta-block__images {
-    max-width: 100%;
-  }
+
   .insta-block__images {
     gap: 2px;
   }
