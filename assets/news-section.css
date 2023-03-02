@@ -1,7 +1,7 @@
 /* news-info section */
 
 .news-info{
-    padding-top: 63px;
+    padding-top: 27px;
     border-top: 1px solid #707070;
     display: flex;
     padding-bottom: 117px;
@@ -25,7 +25,7 @@
   }
 
 .news-info__insta-block{
-    padding-bottom: 73px;
+    padding-bottom: 31px;
     flex: 0 0 300px;
     max-width: 300px;
     width: 100%;
@@ -101,7 +101,6 @@
     width: calc(100% + 20px);
     height: 1px;
     background-color: #707070;
-    margin-left: -54px;
 }
 
 .news-block__post{
@@ -145,7 +144,7 @@
 }
 
 .news-info__agenda-block{
-    padding-top: 60px;
+    padding-top: 30px;
 }
 
 .agenda__inner{

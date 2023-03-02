@@ -209,7 +209,7 @@ main:has(.shopify-challenge__container) {
 
 .newsletter__wrapper {
   max-width: calc(100% - 150px);
-  padding-top: 67px;
+  padding-top: 20px;
 }
 
 .filter-grid {

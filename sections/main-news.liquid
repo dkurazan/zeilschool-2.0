@@ -60,7 +60,7 @@
             <h3 class="main-title news-info-title">{{ section.settings.agenda-title }}</h3>
             <div class="agenda__inner">
                 
-                {% paginate blogs.agenda.articles by 50 %}
+                {% paginate blogs.agenda.articles by 2 %}
                 
                     {% assign res = false %}
                     {% for article in blogs.agenda.articles %}
