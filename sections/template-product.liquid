@@ -22,7 +22,8 @@
         <div class="product__info">
             <div class="col-lg-4 col-md-6 col-sm-12">
                 <div class="product__block-1">
-                    <a href="{{ section.settings.btn-url }}" class="product__button btn__lg">{{ section.settings.btn-text }}</a>
+                    {% comment %} <a href="{{ section.settings.btn-url }}" class="product__button btn__lg">{{ section.settings.btn-text }}</a> {% endcomment %}
+                    <div class="product__button btn__lg" id="recras-vouchers">{{ section.settings.btn-text }}</div>
                 </div>
             </div>
             <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">

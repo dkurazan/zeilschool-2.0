@@ -32,14 +32,16 @@
     font-weight: 700;
 }
 
-.product__button{
-    background-color: #6a8456;
+.product__button {
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: #6a8456;
+    color: white;
+    cursor: pointer;
 }
 
-.product__button:hover{
+.product__button:hover {
     background-color: #3e5030;
 }
 
