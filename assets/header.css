@@ -57,7 +57,7 @@
 
 .header__menu .header__nav-item {
     text-align: left;
-    padding: 21px 21px 8px 4px;
+    padding: 21px 21px 8px 8px;
     font: normal normal bold 18px 'Roboto Condensed', sans-serif;
     letter-spacing: 0px;
     color: #FFFFFF;
@@ -76,7 +76,7 @@
     z-index: -1;
     text-align: left;
     text-align: center;
-    font: normal normal 50 14px 'Roboto Condensed', sans-serif;
+    font: normal normal 500 14px 'Roboto Condensed', sans-serif;
     letter-spacing: 0px;
     color: #FFFFFF;
     text-transform: uppercase;
@@ -89,19 +89,19 @@
   }
 
   .header__menu li:nth-child(1) .header__nav-subitem{
-    padding: 105px 31px 5px 4px;
+    padding: 105px 31px 5px 8px;
   }
 
   .header__menu li:nth-child(2) .header__nav-item{
-    padding: 21px 54px 8px 4px;
+    padding: 21px 58px 8px 8px;
   }
 
   .header__menu li:nth-child(2) .header__nav-subitem{
-    padding: 105px 18px 5px 4px;
+    padding: 105px 18px 5px 8px;
   }
 
   .header__menu li:nth-child(4) .header__nav-item{
-    padding: 21px 42px 8px 4px;
+    padding: 21px 42px 8px 8px;
   }
 
 .header__nav-item-blue{
@@ -428,7 +428,6 @@
 
     .header__logo-icon{
         width: 200px;
-        height: 100%;
     }
 
     .header__logo-icon-mobile{

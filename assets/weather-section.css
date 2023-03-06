@@ -33,7 +33,7 @@
 
 .weather-section__button-inner a{
     display: flex;
-    justify-content: center;
+    padding-left: 24px;
     align-items: center;
     background: #6C9DB7 0% 0% no-repeat padding-box;
     border-radius: 0px 100px 100px 100px;
