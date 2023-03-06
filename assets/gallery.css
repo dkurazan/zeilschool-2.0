@@ -27,6 +27,8 @@
 .kopje__photo-item>a{
     position: relative;
     overflow: hidden;
+    display: block;
+    height: 100%;
 }
 
 .kopje__photo-item img{
@@ -72,7 +74,7 @@
     background-color: #6A8456;
 }
 
-.kopje__photo-item:nth-of-type( 2n+1 ) .kopje__title{
+.kopje__photo-item:nth-of-type( odd ) .kopje__title{
     right: 0;
     border-radius: 0px 0px 0px 26px;
     text-align: right;
