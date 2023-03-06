@@ -37,6 +37,8 @@
 .collection__product-item>a{
     position: relative;
     overflow: hidden;
+    display: block;
+    height: 100%;
 }
 
 
