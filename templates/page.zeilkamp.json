@@ -37,6 +37,7 @@
           "type": "item",
           "settings": {
             "title": "EVENTUEEL KOP",
+            "img": "shopify:\/\/shop_images\/product-alternativen-img-1.png",
             "item-title": "leeftijd",
             "item-richtext": "<p>item<\/p><p>item<\/p>",
             "title-color": "#6c9db7",
@@ -47,6 +48,7 @@
           "type": "item",
           "settings": {
             "title": "EVENTUEEL KOP",
+            "img": "shopify:\/\/shop_images\/product-alternativen-img-1.png",
             "item-title": "boottype",
             "item-richtext": "<p>item<\/p><p>item<\/p>",
             "title-color": "#396d84",
@@ -57,6 +59,7 @@
           "type": "item",
           "settings": {
             "title": "EVENTUEEL KOP",
+            "img": "shopify:\/\/shop_images\/product-alternativen-img-1.png",
             "item-title": "verblijfstype",
             "item-richtext": "",
             "title-color": "#6c9db7",
@@ -67,6 +70,7 @@
           "type": "item",
           "settings": {
             "title": "EVENTUEEL KOP",
+            "img": "shopify:\/\/shop_images\/product-alternativen-img-1.png",
             "item-title": "week programma",
             "item-richtext": "<p>item<\/p><p>item<\/p>",
             "title-color": "#396d84",
@@ -77,6 +81,7 @@
           "type": "item",
           "settings": {
             "title": "EVENTUEEL KOP",
+            "img": "shopify:\/\/shop_images\/product-alternativen-img-1.png",
             "item-title": "onze locatie",
             "item-richtext": "",
             "title-color": "#6c9db7",
@@ -87,6 +92,7 @@
           "type": "item",
           "settings": {
             "title": "EVENTUEEL KOP",
+            "img": "shopify:\/\/shop_images\/product-alternativen-img-1.png",
             "item-title": "eten\/drinken",
             "item-richtext": "<p>item<\/p><p>item<\/p>",
             "title-color": "#396d84",
@@ -97,6 +103,7 @@
           "type": "item",
           "settings": {
             "title": "EVENTUEEL KOP",
+            "img": "shopify:\/\/shop_images\/product-alternativen-img-1.png",
             "item-title": "CWO",
             "item-richtext": "",
             "title-color": "#6c9db7",
@@ -107,6 +114,7 @@
           "type": "item",
           "settings": {
             "title": "EVENTUEEL KOP",
+            "img": "shopify:\/\/shop_images\/product-alternativen-img-1.png",
             "item-title": "onze instructeurs",
             "item-richtext": "",
             "title-color": "#396d84",
@@ -125,6 +133,7 @@
         "6823c24c-800e-4f47-98e2-9953b7253f94"
       ],
       "settings": {
+        "show-title": false
       }
     },
     "info-section": {
