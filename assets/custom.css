@@ -207,7 +207,9 @@ main:has(.shopify-challenge__container) {
   border: 1px solid #818080;
 }
 
-
+.newsletter__wrapper {
+  padding-top: 20px;
+}
 
 .filter-grid {
   display: grid;
