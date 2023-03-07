@@ -34,7 +34,7 @@
           "settings": {
             "title": "EVENTUEEL KOP",
             "item-title": "Zomerstalling",
-            "item-richtext": "",
+            "item-richtext": "<p>item<\/p><p>item<\/p><p>item<\/p>",
             "title-color": "",
             "item-link": ""
           }
@@ -44,7 +44,7 @@
           "settings": {
             "title": "EVENTUEEL KOP",
             "item-title": "Winterstalling",
-            "item-richtext": "",
+            "item-richtext": "<p>item<\/p><p>item<\/p><p>item<\/p>",
             "title-color": "",
             "item-link": ""
           }
@@ -54,7 +54,7 @@
           "settings": {
             "title": "EVENTUEEL KOP",
             "item-title": "Passanten",
-            "item-richtext": "",
+            "item-richtext": "<p>item<\/p><p>item<\/p><p>item<\/p>",
             "title-color": "",
             "item-link": ""
           }
