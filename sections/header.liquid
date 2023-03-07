@@ -55,57 +55,6 @@
         </nav>
       </div>
       
-      
-      <div class="burger-menu">
-        <div class="burger-menu__strips">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-        
-        <nav class="mobile-menu__nav">
-          {%- assign zindex = 200 -%}
-          {%- for link in section.settings.navigation_menu.links -%}
-            
-              {%- assign mtdown = link.title | downcase -%}
-              
-              {%- for color in color_blocks -%}
-                {%- assign ctdown = color.settings.title | downcase -%}
-                {%- if ctdown == mtdown -%}
-                  {%- assign bgcolor = color.settings.bg_color -%}
-                  {%- assign txcolor = color.settings.tx_color -%}
-                {%- endif -%}
-              {%- endfor -%}
-            {%- assign zindex = zindex | minus: forloop.index -%}
-            <li style="background: {{ bgcolor }}; color: {{ txcolor }}; z-index:{{ zindex }}; margin-top: -40px">
-                <a href="{{ link.url }}"
-                  class="">{{ link.title }}
-                </a>
-            </li>
-              {%- if link.levels > 0 -%}
-                {%- for child_link in link.links -%}
-                  {%- assign smtdown = child_link.title | downcase -%}
-                  {%- for color in color_blocks -%}
-                    {%- assign ctdown = color.settings.title | downcase -%}
-                    {%- if ctdown == smtdown -%}
-                      {%- assign bgcolor = color.settings.bg_color -%}
-                      {%- assign txcolor = color.settings.tx_color -%}
-                    {%- endif -%}
-                  {%- endfor -%}
-                  {%- assign zindex = zindex | minus: forloop.index -%}
-                  <li style="background: {{ bgcolor }}; color: {{ txcolor }}; z-index: {{ zindex }}; margin-top: -40px">
-                    <a href="{{ child_link.url }}" 
-                      class="">{{ child_link.title }}
-                    </a>
-                  </li>
-                {%- endfor -%}
-              
-              {%- endif -%}
-              
-            {%- endfor -%}
-        </nav>
-      </div>
-      <div class="menu-overlay"></div>
     </div>
     <div class="header__right-nav">
         <nav>
@@ -122,6 +71,76 @@
       </div>
   </div>
 </header>
+
+<header class="header-mobile">
+  <div class="row header__row">
+    <div class="header-mobile__logo">
+      <a href="/">
+        {% render 'icon-header-logo' %}
+      </a>
+    </div>
+    <div class="burger-menu">
+      <div class="burger-menu__strips">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </div>
+</header>
+<div class="mobile-menu__nav">
+        <nav>
+          {%- assign zindex = 200 -%}
+        {%- for link in section.settings.navigation_menu.links -%}
+          {%- assign mtdown = link.title | downcase -%}
+          
+          {%- for color in color_blocks -%}
+            {%- assign ctdown = color.settings.title | downcase -%}
+            {%- if ctdown == mtdown -%}
+              {%- assign bgcolor = color.settings.bg_color -%}
+              {%- assign txcolor = color.settings.tx_color -%}
+            {%- endif -%}
+          {%- endfor -%}
+          {%- assign zindex = zindex | minus: forloop.index -%}
+          <li style="background: {{ bgcolor }}; color: {{ txcolor }}; z-index:{{ zindex }}; ">
+              <a href="{{ link.url }}"
+                class="">{{ link.title }}
+              </a>
+          </li>
+            {%- if link.levels > 0 -%}
+              {%- for child_link in link.links -%}
+                {%- assign smtdown = child_link.title | downcase -%}
+                {%- for color in color_blocks -%}
+                  {%- assign ctdown = color.settings.title | downcase -%}
+                  {%- if ctdown == smtdown -%}
+                    {%- assign bgcolor = color.settings.bg_color -%}
+                    {%- assign txcolor = color.settings.tx_color -%}
+                  {%- endif -%}
+                {%- endfor -%}
+                {%- assign zindex = zindex | minus: forloop.index -%}
+                <li style="background: {{ bgcolor }}; color: {{ txcolor }}; z-index: {{ zindex }};">
+                  <a href="{{ child_link.url }}" 
+                    class="">{{ child_link.title }}
+                  </a>
+                </li>
+              {%- endfor -%}
+            {%- endif -%}
+            
+          {%- endfor -%}
+          <li style="background: #6C9DB7 ; color: #fff; z-index: {{ zindex | minus: 1 }};">
+            <a href="/blogs/agenda" 
+              class="">Agenda
+            </a>
+          </li>
+          <li style="background: #272727 ; color: #fff; z-index: {{ zindex | minus: 2 }};">
+            <a href="/blogs/agenda" 
+              class="">Winkel
+            </a>
+          </li>
+        </nav>
+        
+      </div>
+<div class="menu-overlay"></div>
 
 {% schema %}
   {

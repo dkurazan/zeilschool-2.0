@@ -1,31 +1,23 @@
+//mobile menu
 const burgerMenu = document.querySelector(".burger-menu__strips");
 const mobileMenuNav = document.querySelector(".mobile-menu__nav");
 const menuOverlay = document.querySelector(".menu-overlay");
-const mobileMenuNavLi = document.querySelectorAll(".mobile-menu__nav");
-const burgerMenuBtn = document.querySelector(".burger-menu");
-
-const closeMobileMenu = () => {
-    burgerMenu.classList.remove("burger-menu-active");
-    mobileMenuNav.classList.remove("mobile-menu__nav-active");
-    document.body.classList.remove("overflow-hidden");
-    menuOverlay.classList.remove("menu-overlay-active");
-}
+const mobileMenuNavLi = document.querySelectorAll(".mobile-menu__nav li");
 
 burgerMenu.addEventListener("click", () => {
-    burgerMenu.classList.toggle("burger-menu-active");
-    mobileMenuNav.classList.toggle("mobile-menu__nav-active");
+    burgerMenu.classList.toggle("active");
+    mobileMenuNav.classList.toggle("active");
     document.body.classList.toggle("overflow-hidden");
-    menuOverlay.classList.toggle("menu-overlay-active");
-
-    if (burgerMenuBtn.classList.contains("burger-menu-button-act")) {
-        const removeActClass = () => {
-            return burgerMenuBtn.classList.remove("burger-menu-button-act");
-        }
-    }
-    else {
-        burgerMenuBtn.classList.add("burger-menu-button-act");
-    }
+    menuOverlay.classList.toggle("active");
 });
+
+const closeMobileMenu = () => {
+    burgerMenu.classList.remove("active");
+    mobileMenuNav.classList.remove("active");
+    document.body.classList.remove("overflow-hidden");
+    menuOverlay.classList.remove("active");
+
+}
 
 menuOverlay.addEventListener("click", closeMobileMenu);
 mobileMenuNavLi.forEach((item) => {

@@ -9,6 +9,7 @@
 .header__row{
     max-width: 1280px;
     width: 100%;
+    position: relative;
 }
 
 .header__logo{
@@ -275,10 +276,22 @@
 }
 
 
-.burger-menu{
-    position: relative;
+.header-mobile{
+    width: 100%;
+    position: absolute;
+    
     display: none;
-    /* padding-bottom: 700px; */
+}
+
+.header-mobile__logo{
+    position: absolute;
+    z-index: 1;
+}
+
+.burger-menu{
+    position: absolute;
+    right: 0;
+    display: none;
 }
 
 .burger-menu-button-act{
@@ -306,19 +319,28 @@
 .mobile-menu__nav{
     list-style: none;
     position: absolute;
-    width: 100%;
-    left: 208px;
+    width: 208px;
+    right: -100%;
     transition: .5s all ease-in-out;
-    z-index: 249;
+    z-index: 200;
+    height: 100vh;
+    /* top: 22px; */
+    padding-top: 22px;
+    background-color: transparent;
 }
 
-.burger-menu-active{
+.mobile-menu__nav nav{
+    overflow: scroll;
+    height: 100%;
+}
+
+.burger-menu-active, .burger-menu__strips.active{
     padding: 22px 113px 7px 21px;
     transition: .5s all ease-in-out;
 }
 
-.mobile-menu__nav-active{
-    left: 0;
+.mobile-menu__nav-active, .mobile-menu__nav.active{
+    right: 0;
     transition: .5s all ease-in-out;
 }
 
@@ -328,6 +350,12 @@
     position: relative;
     padding-top: 40px;
     width: 100%;
+    margin-top: -40px
+}
+
+.mobile-menu__nav li:first-child{
+    margin-top: 0
+    
 }
 
 .mobile-menu__nav li a{
@@ -411,12 +439,18 @@
     left: 0;
     right: 0;
     height: 100vh;
-    z-index: 200;
-    display: none;
+    z-index: 190;
+    visibility: hidden;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: rgba(0, 0, 0, 0.4);
 }
 
-.menu-overlay-active{
+.menu-overlay.active{
     display: block;
+    transition: .5s ease;
+    visibility: visible;
+    opacity: 1;
 }
 
 @media(max-width: 1500px){
@@ -484,7 +518,15 @@
 
 
 @media(max-width: 956px){
-    .header__logo{
+    .header{
+        display: none;
+    }
+
+    .header-mobile{
+        display: block;
+    }
+
+    .header-mobile__logo{
         padding-left: 15px;
     }
   
@@ -492,7 +534,7 @@
         justify-content: space-between;
     }
     
-    .header__logo g{
+    .header-mobile__logo g{
         display: block;
     }
 
