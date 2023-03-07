@@ -33,6 +33,7 @@
           "type": "item",
           "settings": {
             "title": "EVENTUEEL KOP",
+            "img": "shopify:\/\/shop_images\/droog.jpg",
             "item-title": "GROEPS ACCOMEDATIES",
             "item-richtext": "<p>item<\/p><p>item<\/p>",
             "title-color": "#c65f50",
@@ -43,6 +44,7 @@
           "type": "item",
           "settings": {
             "title": "EVENTUEEL KOP",
+            "img": "shopify:\/\/shop_images\/droog.jpg",
             "item-title": "PASSANTEN",
             "item-richtext": "<p>item<\/p><p>item<\/p>",
             "title-color": "#984539",
@@ -53,6 +55,7 @@
           "type": "item",
           "settings": {
             "title": "EVENTUEEL KOP",
+            "img": "shopify:\/\/shop_images\/droog.jpg",
             "item-title": "B&B",
             "item-richtext": "<p>item<\/p><p>item<\/p>",
             "title-color": "#c65f50",
@@ -63,6 +66,7 @@
           "type": "item",
           "settings": {
             "title": "EVENTUEEL KOP",
+            "img": "shopify:\/\/shop_images\/droog.jpg",
             "item-title": "OVERIG",
             "item-richtext": "<p>item<\/p><p>item<\/p>",
             "title-color": "#984539",
@@ -77,6 +81,7 @@
         "99d980b7-eb61-4645-83f6-5939eb8a93ba"
       ],
       "settings": {
+        "show-title": false
       }
     },
     "info-section": {
