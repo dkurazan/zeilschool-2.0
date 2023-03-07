@@ -90,7 +90,7 @@ p {
   gap: 5px;
   position: relative;
   z-index: 300;
-  padding: 13px 0 0 54px;
+  padding: 13px 0 0 85px;
 }
 
 .breadcrumbs a, .breadcrumbs p, .breadcrumbs {
