@@ -6,7 +6,9 @@
       "settings": {
         "title": "",
         "video_link": "",
-        "img": "shopify:\/\/shop_images\/2021_Zeilschool_188hb_881d55bc-fa2c-4416-977f-e9a44ae90820.jpg"
+        "video_link2": "",
+        "img": "shopify:\/\/shop_images\/2021_Zeilschool_188hb_881d55bc-fa2c-4416-977f-e9a44ae90820.jpg",
+        "section-height": "xl"
       }
     },
     "breadcrumbs": {
@@ -28,7 +30,101 @@
       }
     },
     "gallery": {
-      "type": "main-gallery"
+      "type": "main-gallery",
+      "blocks": {
+        "9a2daf42-f83f-4a53-897a-1dee2af92856": {
+          "type": "item",
+          "settings": {
+            "title": "EVENTUEEL KOP",
+            "item-title": "vergaderen",
+            "item-richtext": "<p>item1<\/p><p>item2<\/p>",
+            "title-color": "#d9b259",
+            "item-link": ""
+          }
+        },
+        "79fc65be-e32f-4db6-a93c-bc1a736d9775": {
+          "type": "item",
+          "settings": {
+            "title": "EVENTUEEL KOP",
+            "item-title": "borrel & feest",
+            "item-richtext": "<p>item1<\/p><p>item2<\/p>",
+            "title-color": "#bc953c",
+            "item-link": ""
+          }
+        },
+        "87195d77-8028-4250-aeee-149e7564d270": {
+          "type": "item",
+          "settings": {
+            "title": "EVENTUEEL KOP",
+            "item-title": "wateractiviteiten",
+            "item-richtext": "<p>item1<\/p><p>item2<\/p>",
+            "title-color": "#d9b259",
+            "item-link": ""
+          }
+        },
+        "f2599bbf-d3d0-4af0-afa6-3f111fa7c9e1": {
+          "type": "item",
+          "settings": {
+            "title": "EVENTUEEL KOP",
+            "item-title": "landactiviteiten",
+            "item-richtext": "",
+            "title-color": "#bc953c",
+            "item-link": ""
+          }
+        },
+        "a22340e6-e018-4de6-b75c-1c9f8a096520": {
+          "type": "item",
+          "settings": {
+            "title": "EVENTUEEL KOP",
+            "item-title": "eten",
+            "item-richtext": "",
+            "title-color": "#d9b259",
+            "item-link": ""
+          }
+        },
+        "6cae961f-3b61-43d3-a427-e6548ce097c5": {
+          "type": "item",
+          "settings": {
+            "title": "EVENTUEEL KOP",
+            "item-title": "slapen",
+            "item-richtext": "",
+            "title-color": "#bc953c",
+            "item-link": ""
+          }
+        },
+        "36ca95c0-af47-48ac-9404-7c0185d964db": {
+          "type": "item",
+          "settings": {
+            "title": "EVENTUEEL KOP",
+            "item-title": "boot huren",
+            "item-richtext": "",
+            "title-color": "#d9b259",
+            "item-link": ""
+          }
+        },
+        "405847db-cbcf-48f1-b563-1764e31747be": {
+          "type": "item",
+          "settings": {
+            "title": "EVENTUEEL KOP",
+            "item-title": "ons team?",
+            "item-richtext": "<p>item1<\/p><p>item2<\/p>",
+            "title-color": "#bc953c",
+            "item-link": ""
+          }
+        }
+      },
+      "block_order": [
+        "9a2daf42-f83f-4a53-897a-1dee2af92856",
+        "79fc65be-e32f-4db6-a93c-bc1a736d9775",
+        "87195d77-8028-4250-aeee-149e7564d270",
+        "f2599bbf-d3d0-4af0-afa6-3f111fa7c9e1",
+        "a22340e6-e018-4de6-b75c-1c9f8a096520",
+        "6cae961f-3b61-43d3-a427-e6548ce097c5",
+        "36ca95c0-af47-48ac-9404-7c0185d964db",
+        "405847db-cbcf-48f1-b563-1764e31747be"
+      ],
+      "settings": {
+      }
     },
     "info-section": {
       "type": "main-info-section",
