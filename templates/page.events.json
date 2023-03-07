@@ -6,7 +6,9 @@
       "settings": {
         "title": "",
         "video_link": "",
-        "img": "shopify:\/\/shop_images\/zeilkamp-bg.png"
+        "video_link2": "",
+        "img": "shopify:\/\/shop_images\/zeilkamp-bg.png",
+        "section-height": "xl"
       }
     },
     "breadcrumbs": {
@@ -31,7 +33,101 @@
       }
     },
     "gallery": {
-      "type": "main-gallery"
+      "type": "main-gallery",
+      "blocks": {
+        "963bd89f-75ee-4060-9926-cbb0b7821fd2": {
+          "type": "item",
+          "settings": {
+            "title": "EVENTUEEL KOP",
+            "item-title": "bruiloft",
+            "item-richtext": "<p>item1<\/p><p>item2<\/p>",
+            "title-color": "#d9b259",
+            "item-link": ""
+          }
+        },
+        "0d025564-064c-4c34-ac5a-8457ac9558a9": {
+          "type": "item",
+          "settings": {
+            "title": "EVENTUEEL KOP",
+            "item-title": "borrel & feest",
+            "item-richtext": "<p>item1<\/p><p>item2<\/p>",
+            "title-color": "#bc953c",
+            "item-link": ""
+          }
+        },
+        "4e2092cf-6909-4cc4-a926-3848f537f05b": {
+          "type": "item",
+          "settings": {
+            "title": "EVENTUEEL KOP",
+            "item-title": "bedrijfsuitje",
+            "item-richtext": "<p>item1<\/p><p>item2<\/p>",
+            "title-color": "#d9b259",
+            "item-link": ""
+          }
+        },
+        "373f2474-a94e-4283-af15-868bce139c6d": {
+          "type": "item",
+          "settings": {
+            "title": "EVENTUEEL KOP",
+            "item-title": "familiefeest",
+            "item-richtext": "",
+            "title-color": "#bc953c",
+            "item-link": ""
+          }
+        },
+        "195bb219-4f5f-42bb-a88a-24e11cb8500f": {
+          "type": "item",
+          "settings": {
+            "title": "EVENTUEEL KOP",
+            "item-title": "onze locatie",
+            "item-richtext": "",
+            "title-color": "#d9b259",
+            "item-link": ""
+          }
+        },
+        "8428f3d8-8e1e-48e3-a517-42f1664c3ee9": {
+          "type": "item",
+          "settings": {
+            "title": "EVENTUEEL KOP",
+            "item-title": "eten",
+            "item-richtext": "",
+            "title-color": "#bc953c",
+            "item-link": ""
+          }
+        },
+        "ef31bbeb-b5f1-4b1f-8ba8-5d7fe686cc1e": {
+          "type": "item",
+          "settings": {
+            "title": "EVENTUEEL KOP",
+            "item-title": "slapen",
+            "item-richtext": "",
+            "title-color": "#d9b259",
+            "item-link": ""
+          }
+        },
+        "c2f804cc-aef5-443d-9066-e933cbe7453b": {
+          "type": "item",
+          "settings": {
+            "title": "EVENTUEEL KOP",
+            "item-title": "scholen",
+            "item-richtext": "",
+            "title-color": "#bc953c",
+            "item-link": ""
+          }
+        }
+      },
+      "block_order": [
+        "963bd89f-75ee-4060-9926-cbb0b7821fd2",
+        "0d025564-064c-4c34-ac5a-8457ac9558a9",
+        "4e2092cf-6909-4cc4-a926-3848f537f05b",
+        "373f2474-a94e-4283-af15-868bce139c6d",
+        "195bb219-4f5f-42bb-a88a-24e11cb8500f",
+        "8428f3d8-8e1e-48e3-a517-42f1664c3ee9",
+        "ef31bbeb-b5f1-4b1f-8ba8-5d7fe686cc1e",
+        "c2f804cc-aef5-443d-9066-e933cbe7453b"
+      ],
+      "settings": {
+      }
     },
     "info-section": {
       "type": "main-info-section",
