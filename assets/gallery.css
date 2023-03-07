@@ -155,9 +155,9 @@
     transition: .5s all ease-in-out;
 }
 
-.pages .kopje__photo-item h4, .zeilschool-page .kopje__photo-item h4{
+/* .pages .kopje__photo-item h4, .zeilschool-page .kopje__photo-item h4{
     width: 336px;
-}
+} */
 
 .pages .kopje-section .row:nth-child(3), .zeilschool-page .kopje-section .row:nth-child(3){
     padding-bottom: 50px;

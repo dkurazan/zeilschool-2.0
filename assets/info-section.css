@@ -91,23 +91,9 @@
         padding: 50px 34px 22px 54px;
     }
 
-    .zeilschool-page .row:nth-child(2) .info-section__title{
-        justify-content: start;
-        flex: 0 0 100%;
-        max-width: 100%;
-        width: 100%;
-    }
-
     .zeilschool-page .row:last-child .info-section__text{
         margin-left: 0;
     }   
-    
-    .zeilschool-page .row:nth-child(2) .info-section__title{
-        justify-content: start;
-        flex: 0 0 100%;
-        max-width: 100%;
-        width: 100%;
-    }
 
     .zeilschool-page .row:last-child .info-section__text{
         margin-left: 0;
