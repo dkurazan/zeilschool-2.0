@@ -38,7 +38,7 @@
             "title": "EVENTUEEL KOP",
             "item-title": "vergaderen",
             "item-richtext": "<p>item1<\/p><p>item2<\/p>",
-            "title-color": "",
+            "title-color": "#d9b259",
             "item-link": ""
           }
         },
@@ -48,7 +48,7 @@
             "title": "EVENTUEEL KOP",
             "item-title": "borrel & feest",
             "item-richtext": "<p>item1<\/p><p>item2<\/p>",
-            "title-color": "",
+            "title-color": "#bc953c",
             "item-link": ""
           }
         },
@@ -58,7 +58,7 @@
             "title": "EVENTUEEL KOP",
             "item-title": "wateractiviteiten",
             "item-richtext": "<p>item1<\/p><p>item2<\/p>",
-            "title-color": "",
+            "title-color": "#d9b259",
             "item-link": ""
           }
         },
@@ -68,7 +68,7 @@
             "title": "EVENTUEEL KOP",
             "item-title": "landactiviteiten",
             "item-richtext": "",
-            "title-color": "",
+            "title-color": "#bc953c",
             "item-link": ""
           }
         },
@@ -78,7 +78,7 @@
             "title": "EVENTUEEL KOP",
             "item-title": "eten",
             "item-richtext": "",
-            "title-color": "",
+            "title-color": "#d9b259",
             "item-link": ""
           }
         },
@@ -88,7 +88,7 @@
             "title": "EVENTUEEL KOP",
             "item-title": "slapen",
             "item-richtext": "",
-            "title-color": "",
+            "title-color": "#bc953c",
             "item-link": ""
           }
         },
@@ -98,7 +98,7 @@
             "title": "EVENTUEEL KOP",
             "item-title": "boot huren",
             "item-richtext": "",
-            "title-color": "",
+            "title-color": "#d9b259",
             "item-link": ""
           }
         },
@@ -108,7 +108,7 @@
             "title": "EVENTUEEL KOP",
             "item-title": "ons team?",
             "item-richtext": "<p>item1<\/p><p>item2<\/p>",
-            "title-color": "",
+            "title-color": "#bc953c",
             "item-link": ""
           }
         }
