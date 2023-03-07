@@ -6,7 +6,9 @@
       "settings": {
         "title": "",
         "video_link": "",
-        "img": "shopify:\/\/shop_images\/2021_Zeilschool_188hb_15fc7b9d-e868-4e1d-be3a-c462b78788bc.jpg"
+        "video_link2": "",
+        "img": "shopify:\/\/shop_images\/2021_Zeilschool_188hb_15fc7b9d-e868-4e1d-be3a-c462b78788bc.jpg",
+        "section-height": "xl"
       }
     },
     "breadcrumbs": {
@@ -25,7 +27,101 @@
       }
     },
     "gallery": {
-      "type": "main-gallery"
+      "type": "main-gallery",
+      "blocks": {
+        "2bbb6247-d01a-4c69-8916-1bfd933e3eb4": {
+          "type": "item",
+          "settings": {
+            "title": "EVENTUEEL KOP",
+            "item-title": "Zomerstalling",
+            "item-richtext": "",
+            "title-color": "",
+            "item-link": ""
+          }
+        },
+        "27e8bed7-ad95-4529-9c66-a15cafba6847": {
+          "type": "item",
+          "settings": {
+            "title": "EVENTUEEL KOP",
+            "item-title": "Winterstalling",
+            "item-richtext": "",
+            "title-color": "",
+            "item-link": ""
+          }
+        },
+        "061672ab-4d13-420f-922d-85d10d2e5acf": {
+          "type": "item",
+          "settings": {
+            "title": "EVENTUEEL KOP",
+            "item-title": "Passanten",
+            "item-richtext": "",
+            "title-color": "",
+            "item-link": ""
+          }
+        },
+        "d87a6fd6-70c2-4d61-a37f-cd8d75503cdf": {
+          "type": "item",
+          "settings": {
+            "title": "EVENTUEEL KOP",
+            "item-title": "Boot huren",
+            "item-richtext": "",
+            "title-color": "",
+            "item-link": ""
+          }
+        },
+        "907ef7ed-718c-44c9-bbee-2b9ba3a1ec85": {
+          "type": "item",
+          "settings": {
+            "title": "EVENTUEEL KOP",
+            "item-title": "Boothelling",
+            "item-richtext": "",
+            "title-color": "",
+            "item-link": ""
+          }
+        },
+        "bbe4f361-9d73-4792-8671-da8f5c1cc5cd": {
+          "type": "item",
+          "settings": {
+            "title": "EVENTUEEL KOP",
+            "item-title": "Toeristische info",
+            "item-richtext": "",
+            "title-color": "",
+            "item-link": ""
+          }
+        },
+        "0939d88e-4d25-41e9-af5b-abe3e558381c": {
+          "type": "item",
+          "settings": {
+            "title": "EVENTUEEL KOP",
+            "item-title": "Boathouse",
+            "item-richtext": "",
+            "title-color": "",
+            "item-link": ""
+          }
+        },
+        "98ac3446-d427-4b3e-ac66-ecb279d4b4ac": {
+          "type": "item",
+          "settings": {
+            "title": "EVENTUEEL KOP",
+            "item-title": "Verkoop boten & sups",
+            "item-richtext": "",
+            "title-color": "",
+            "item-link": ""
+          }
+        }
+      },
+      "block_order": [
+        "2bbb6247-d01a-4c69-8916-1bfd933e3eb4",
+        "27e8bed7-ad95-4529-9c66-a15cafba6847",
+        "061672ab-4d13-420f-922d-85d10d2e5acf",
+        "d87a6fd6-70c2-4d61-a37f-cd8d75503cdf",
+        "907ef7ed-718c-44c9-bbee-2b9ba3a1ec85",
+        "bbe4f361-9d73-4792-8671-da8f5c1cc5cd",
+        "0939d88e-4d25-41e9-af5b-abe3e558381c",
+        "98ac3446-d427-4b3e-ac66-ecb279d4b4ac"
+      ],
+      "settings": {
+      }
     },
     "info-section": {
       "type": "main-info-section",
