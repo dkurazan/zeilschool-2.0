@@ -39,6 +39,7 @@
           "type": "item",
           "settings": {
             "title": "EVENTUEEL KOP",
+            "img": "shopify:\/\/shop_images\/vierkante-fotos_jeugdzeilen.jpg",
             "item-title": "bruiloft",
             "item-richtext": "<p>item1<\/p><p>item2<\/p>",
             "title-color": "#d9b259",
@@ -49,6 +50,7 @@
           "type": "item",
           "settings": {
             "title": "EVENTUEEL KOP",
+            "img": "shopify:\/\/shop_images\/vierkante-fotos_jeugdzeilen.jpg",
             "item-title": "borrel & feest",
             "item-richtext": "<p>item1<\/p><p>item2<\/p>",
             "title-color": "#bc953c",
@@ -59,6 +61,7 @@
           "type": "item",
           "settings": {
             "title": "EVENTUEEL KOP",
+            "img": "shopify:\/\/shop_images\/vierkante-fotos_jeugdzeilen.jpg",
             "item-title": "bedrijfsuitje",
             "item-richtext": "<p>item1<\/p><p>item2<\/p>",
             "title-color": "#d9b259",
@@ -69,6 +72,7 @@
           "type": "item",
           "settings": {
             "title": "EVENTUEEL KOP",
+            "img": "shopify:\/\/shop_images\/vierkante-fotos_jeugdzeilen.jpg",
             "item-title": "familiefeest",
             "item-richtext": "",
             "title-color": "#bc953c",
@@ -79,6 +83,7 @@
           "type": "item",
           "settings": {
             "title": "EVENTUEEL KOP",
+            "img": "shopify:\/\/shop_images\/vierkante-fotos_jeugdzeilen.jpg",
             "item-title": "onze locatie",
             "item-richtext": "",
             "title-color": "#d9b259",
@@ -89,6 +94,7 @@
           "type": "item",
           "settings": {
             "title": "EVENTUEEL KOP",
+            "img": "shopify:\/\/shop_images\/vierkante-fotos_jeugdzeilen.jpg",
             "item-title": "eten",
             "item-richtext": "",
             "title-color": "#bc953c",
@@ -99,6 +105,7 @@
           "type": "item",
           "settings": {
             "title": "EVENTUEEL KOP",
+            "img": "shopify:\/\/shop_images\/vierkante-fotos_jeugdzeilen.jpg",
             "item-title": "slapen",
             "item-richtext": "",
             "title-color": "#d9b259",
@@ -109,6 +116,7 @@
           "type": "item",
           "settings": {
             "title": "EVENTUEEL KOP",
+            "img": "shopify:\/\/shop_images\/vierkante-fotos_jeugdzeilen.jpg",
             "item-title": "scholen",
             "item-richtext": "",
             "title-color": "#bc953c",
@@ -127,6 +135,7 @@
         "c2f804cc-aef5-443d-9066-e933cbe7453b"
       ],
       "settings": {
+        "show-title": false
       }
     },
     "info-section": {

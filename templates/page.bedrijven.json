@@ -36,6 +36,7 @@
           "type": "item",
           "settings": {
             "title": "EVENTUEEL KOP",
+            "img": "shopify:\/\/shop_images\/vierkante-fotos_jeugdzeilen.jpg",
             "item-title": "vergaderen",
             "item-richtext": "<p>item1<\/p><p>item2<\/p>",
             "title-color": "#d9b259",
@@ -46,6 +47,7 @@
           "type": "item",
           "settings": {
             "title": "EVENTUEEL KOP",
+            "img": "shopify:\/\/shop_images\/vierkante-fotos_jeugdzeilen.jpg",
             "item-title": "borrel & feest",
             "item-richtext": "<p>item1<\/p><p>item2<\/p>",
             "title-color": "#bc953c",
@@ -56,6 +58,7 @@
           "type": "item",
           "settings": {
             "title": "EVENTUEEL KOP",
+            "img": "shopify:\/\/shop_images\/vierkante-fotos_jeugdzeilen.jpg",
             "item-title": "wateractiviteiten",
             "item-richtext": "<p>item1<\/p><p>item2<\/p>",
             "title-color": "#d9b259",
@@ -66,6 +69,7 @@
           "type": "item",
           "settings": {
             "title": "EVENTUEEL KOP",
+            "img": "shopify:\/\/shop_images\/vierkante-fotos_jeugdzeilen.jpg",
             "item-title": "landactiviteiten",
             "item-richtext": "",
             "title-color": "#bc953c",
@@ -76,6 +80,7 @@
           "type": "item",
           "settings": {
             "title": "EVENTUEEL KOP",
+            "img": "shopify:\/\/shop_images\/vierkante-fotos_jeugdzeilen.jpg",
             "item-title": "eten",
             "item-richtext": "",
             "title-color": "#d9b259",
@@ -86,6 +91,7 @@
           "type": "item",
           "settings": {
             "title": "EVENTUEEL KOP",
+            "img": "shopify:\/\/shop_images\/vierkante-fotos_jeugdzeilen.jpg",
             "item-title": "slapen",
             "item-richtext": "",
             "title-color": "#bc953c",
@@ -96,6 +102,7 @@
           "type": "item",
           "settings": {
             "title": "EVENTUEEL KOP",
+            "img": "shopify:\/\/shop_images\/vierkante-fotos_jeugdzeilen.jpg",
             "item-title": "boot huren",
             "item-richtext": "",
             "title-color": "#d9b259",
@@ -106,6 +113,7 @@
           "type": "item",
           "settings": {
             "title": "EVENTUEEL KOP",
+            "img": "shopify:\/\/shop_images\/vierkante-fotos_jeugdzeilen.jpg",
             "item-title": "ons team?",
             "item-richtext": "<p>item1<\/p><p>item2<\/p>",
             "title-color": "#bc953c",
@@ -124,6 +132,7 @@
         "405847db-cbcf-48f1-b563-1764e31747be"
       ],
       "settings": {
+        "show-title": false
       }
     },
     "info-section": {
