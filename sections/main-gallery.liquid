@@ -5,7 +5,9 @@
     <div class="row gallery__row">
       {% for block in section.blocks %}
         <div class="kopje__photo-item">
-          <h2 class="kopje__top-title">{{ block.settings.title }}</h2>
+          {% if section.settings.show-title %}
+            <h2 class="kopje__top-title">{{ block.settings.title }}</h2>
+          {% endif %}
               <a href="{{ block.settings.item-link }}">
                   {{ block.settings.img | img_url: 'master' | img_tag }}
                   <h4 class="kopje__title" style="background-color: {{ block.settings.title-color }};" >{{ block.settings.item-title }}</h4>
@@ -24,6 +26,14 @@
 {% schema %}
   {
     "name": "Gallery section",
+    "settings": [
+      {
+        "type": "checkbox",
+        "id": "show-title",
+        "label": "Show title above each item",
+        "default": false
+      }
+    ],
     "max_blocks": 8,
     "blocks": [
       {

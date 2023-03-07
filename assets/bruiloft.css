@@ -32,7 +32,7 @@
 .bruiloft__title h2{
     font-family: Scarlet;
     color: #707070;
-    font-size: 60px;
+    font-size: 40px;
     max-width: 809px;
 }
 
@@ -55,13 +55,13 @@
     padding-right: 26px;
     font-family: Scarlet;
     color: #707070;
-    font-size: 30px;
+    font-size: 18px;
 }
 
 .bruiloft__block p{
     max-width: 1070px;
-    padding-bottom: 50px;
-    font-size: 30px;
+    padding-bottom: 30px;
+    font-size: 16px;
     color: #818080;
     font-family: Roboto Condensed;
     font-weight: 400;
@@ -86,8 +86,8 @@
 .bruiloft__block img{
     padding-bottom: 50px;
     width: 100%;
-    max-width: 480px;
-    max-height: 480px;
+    max-width: 300px;
+    max-height: 300px;
     height: 100%;
     object-fit: cover;
 }
@@ -106,12 +106,12 @@
 
 @media(max-width: 1000px){
     .bruiloft__title h2{
-        font-size: 40px;
+        font-size: 30px;
     }
 
-    .bruiloft__block h4, .bruiloft__block p {
+    /* .bruiloft__block h4, .bruiloft__block p {
         font-size: 25px;
-    }
+    } */
 }
 
 @media(max-width: 800px){
