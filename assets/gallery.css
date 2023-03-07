@@ -171,9 +171,9 @@
     padding-left: 23px;
 }
 
-.slapen-page .kopje-section .row:last-child, .slapen-page .kopje-section h2:nth-child(4), .b-b-page .kopje-section .row:last-child, .b-b-page .kopje-section h2:nth-child(4){
+/* .slapen-page .kopje-section .row:last-child, .slapen-page .kopje-section h2:nth-child(4), .b-b-page .kopje-section .row:last-child, .b-b-page .kopje-section h2:nth-child(4){
     display: none;
-}
+} */
 
 @media (max-width: 1400px) {
     .kopje__photo-item h4, .zeilschool-page .kopje__photo-item h4, .pages .kopje__photo-item h4{
