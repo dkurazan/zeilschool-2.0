@@ -218,7 +218,6 @@ p {
 
 @media(max-width: 1460px){
   .e-mail{
-      width: fit-content;
       margin: 0 auto;
   }
 
@@ -269,13 +268,13 @@ p {
   }
 
   .e-mail form{
-      flex-wrap: wrap;
       align-items: center;
   }
 
   .e-mail button{
       margin-top: 0;
       font-size: 16px;
+      height: 30px;
   }
 }
 
@@ -287,22 +286,17 @@ p {
 
 @media(max-width: 552px){
   .e-mail input{
-      width: 80%;
+      width: 100%;
   }
 
   .e-mail form{
       justify-content: end;
+      flex-wrap: wrap;
   }
 
-  .e-mail{
-
-    padding-left: 20px;
-}
-
   .e-mail button{
-      margin-top: 21px;
       margin-right: 10px;
-      
+    margin-top: 10px;
   }
 
   .e-mail p{
@@ -324,9 +318,7 @@ p {
 
 
 @media(max-width: 447px){
-  .e-mail input{
-      max-width: 78%;
-  }
+
   .e-mail h4{
       font-size: 20px;
   }

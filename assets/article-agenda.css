@@ -124,7 +124,7 @@
     max-height: 240px;
     object-fit: cover;
     height: 100%;
-    
+    min-width: 150px;
 }
 
 .e-mail-block{

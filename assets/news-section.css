@@ -82,9 +82,9 @@
     max-height: 47px;
 }
 
-.social-block__inst-facebook a:first-child{
+/* .social-block__inst-facebook a:first-child{
     margin-right: 20px;
-}
+} */
 
 .social-block__inst-facebook img{
     height: 100%;
@@ -315,7 +315,10 @@
         width: 82px;
     }
 
-
+    .social-block__inst-facebook{
+        padding-top: 0;
+        justify-content: start;
+    }
 
 }
 
@@ -442,9 +445,7 @@
         height: 395px !important;
     }
 
-    .social-block__inst-facebook a:first-child {
-        margin-right: 34px;
-    }
+
 
     #instagram-feed-box{
         max-height: 180px;

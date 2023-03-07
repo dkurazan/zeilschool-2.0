@@ -138,3 +138,13 @@
     
 
 }
+
+@media (max-width:768px) {
+    .pages .info-section{
+        margin-left: 0;
+    }
+
+    .pages .info-section>.row>.info-section__text>p{
+        max-width: 100%;
+    }
+}
