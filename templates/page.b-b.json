@@ -34,9 +34,9 @@
           "settings": {
             "title": "EVENTUEEL KOP",
             "img": "shopify:\/\/shop_images\/vinkeveen_bedrijven.jpg",
-            "item-title": "",
-            "item-richtext": "",
-            "title-color": "",
+            "item-title": "...",
+            "item-richtext": "<p>item1<\/p><p>item1<\/p>",
+            "title-color": "#c65f50",
             "item-link": ""
           }
         },
@@ -45,9 +45,9 @@
           "settings": {
             "title": "EVENTUEEL KOP",
             "img": "shopify:\/\/shop_images\/vinkeveen_bedrijven.jpg",
-            "item-title": "",
-            "item-richtext": "",
-            "title-color": "",
+            "item-title": "...",
+            "item-richtext": "<p>item1<\/p><p>item1<\/p>",
+            "title-color": "#984539",
             "item-link": ""
           }
         },
@@ -56,9 +56,9 @@
           "settings": {
             "title": "EVENTUEEL KOP",
             "img": "shopify:\/\/shop_images\/vinkeveen_bedrijven.jpg",
-            "item-title": "",
+            "item-title": "...",
             "item-richtext": "",
-            "title-color": "",
+            "title-color": "#c65f50",
             "item-link": ""
           }
         },
@@ -67,9 +67,9 @@
           "settings": {
             "title": "EVENTUEEL KOP",
             "img": "shopify:\/\/shop_images\/vinkeveen_bedrijven.jpg",
-            "item-title": "",
+            "item-title": "...",
             "item-richtext": "",
-            "title-color": "",
+            "title-color": "#984539",
             "item-link": ""
           }
         }
