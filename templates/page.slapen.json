@@ -6,7 +6,9 @@
       "settings": {
         "title": "",
         "video_link": "",
-        "img": "shopify:\/\/shop_images\/2021_Zeilschool_188hb.jpg"
+        "video_link2": "",
+        "img": "shopify:\/\/shop_images\/2021_Zeilschool_188hb.jpg",
+        "section-height": "xl"
       }
     },
     "breadcrumbs": {
@@ -26,6 +28,54 @@
     },
     "gallery": {
       "type": "main-gallery",
+      "blocks": {
+        "b6b439c8-b088-40e6-aef0-122f42eb2ecf": {
+          "type": "item",
+          "settings": {
+            "title": "EVENTUEEL KOP",
+            "item-title": "GROEPS ACCOMEDATIES",
+            "item-richtext": "<p>item<\/p><p>item<\/p>",
+            "title-color": "#c65f50",
+            "item-link": ""
+          }
+        },
+        "93b207c0-4404-466e-a3ce-e5548995f654": {
+          "type": "item",
+          "settings": {
+            "title": "EVENTUEEL KOP",
+            "item-title": "PASSANTEN",
+            "item-richtext": "<p>item<\/p><p>item<\/p>",
+            "title-color": "#984539",
+            "item-link": ""
+          }
+        },
+        "6f1e9c1f-ce23-42bc-9b52-0ccb809a1dee": {
+          "type": "item",
+          "settings": {
+            "title": "EVENTUEEL KOP",
+            "item-title": "B&B",
+            "item-richtext": "<p>item<\/p><p>item<\/p>",
+            "title-color": "#c65f50",
+            "item-link": ""
+          }
+        },
+        "99d980b7-eb61-4645-83f6-5939eb8a93ba": {
+          "type": "item",
+          "settings": {
+            "title": "EVENTUEEL KOP",
+            "item-title": "OVERIG",
+            "item-richtext": "<p>item<\/p><p>item<\/p>",
+            "title-color": "#984539",
+            "item-link": ""
+          }
+        }
+      },
+      "block_order": [
+        "b6b439c8-b088-40e6-aef0-122f42eb2ecf",
+        "93b207c0-4404-466e-a3ce-e5548995f654",
+        "6f1e9c1f-ce23-42bc-9b52-0ccb809a1dee",
+        "99d980b7-eb61-4645-83f6-5939eb8a93ba"
+      ],
       "settings": {
       }
     },

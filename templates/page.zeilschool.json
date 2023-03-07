@@ -26,7 +26,103 @@
       }
     },
     "gallery": {
-      "type": "main-gallery"
+      "type": "main-gallery",
+      "blocks": {
+        "39d30ee9-8840-496b-bfd7-16e58f855eee": {
+          "type": "item",
+          "settings": {
+            "title": "EVENTUEEL KOP",
+            "img": "shopify:\/\/shop_images\/vierkante-fotos_jeugdzeilen_bba20cbd-792f-4ae0-a15a-0fc18e78e986.jpg",
+            "item-title": "ZEILkamp",
+            "item-richtext": "<p>item<\/p><p>item<\/p><p>item<\/p>",
+            "title-color": "#6c9db7",
+            "item-link": ""
+          }
+        },
+        "f0092e7d-b4e9-43df-a425-85b0a2f99dac": {
+          "type": "item",
+          "settings": {
+            "title": "EVENTUEEL KOP",
+            "img": "shopify:\/\/shop_images\/2021_Zeilschool_188hb_1c6514f6-a4de-4e90-bd1f-c994af2dfeb2.jpg",
+            "item-title": "privé les",
+            "item-richtext": "<p>item<\/p><p>item<\/p><p>item<\/p>",
+            "title-color": "#396d84",
+            "item-link": ""
+          }
+        },
+        "227a4fc2-1d9e-4ef6-ab0d-96d68ace21e6": {
+          "type": "item",
+          "settings": {
+            "title": "EVENTUEEL KOP",
+            "item-title": "groepsles",
+            "item-richtext": "<p>item<\/p><p>item<\/p><p>item<\/p>",
+            "title-color": "#6c9db7",
+            "item-link": ""
+          }
+        },
+        "c6c00c8a-ee29-4b0d-bd9d-f9ba1e456292": {
+          "type": "item",
+          "settings": {
+            "title": "EVENTUEEL KOP",
+            "item-title": "OPLEIDING instructeurs",
+            "item-richtext": "<p>item<\/p><p>item<\/p><p>item<\/p>",
+            "title-color": "#396d84",
+            "item-link": ""
+          }
+        },
+        "9e8dc76a-d01a-4986-839a-17ac7711d861": {
+          "type": "item",
+          "settings": {
+            "title": "EVENTUEEL KOP",
+            "item-title": "vaarbewijs",
+            "item-richtext": "",
+            "title-color": "#6c9db7",
+            "item-link": ""
+          }
+        },
+        "f2d198d0-54fe-420c-a778-38cedb97f04b": {
+          "type": "item",
+          "settings": {
+            "title": "EVENTUEEL KOP",
+            "item-title": "kinderfeestje",
+            "item-richtext": "",
+            "title-color": "#396d84",
+            "item-link": ""
+          }
+        },
+        "6c753a59-138c-4898-a9c7-409ea143940a": {
+          "type": "item",
+          "settings": {
+            "title": "EVENTUEEL KOP",
+            "item-title": "bedrijfsuitje",
+            "item-richtext": "",
+            "title-color": "#6c9db7",
+            "item-link": ""
+          }
+        },
+        "156df122-9f69-4287-a56f-3668ee10f219": {
+          "type": "item",
+          "settings": {
+            "title": "EVENTUEEL KOP",
+            "item-title": "scholieren",
+            "item-richtext": "<p>item<\/p><p>item<\/p><p>item<\/p>",
+            "title-color": "#396d84",
+            "item-link": ""
+          }
+        }
+      },
+      "block_order": [
+        "39d30ee9-8840-496b-bfd7-16e58f855eee",
+        "f0092e7d-b4e9-43df-a425-85b0a2f99dac",
+        "227a4fc2-1d9e-4ef6-ab0d-96d68ace21e6",
+        "c6c00c8a-ee29-4b0d-bd9d-f9ba1e456292",
+        "9e8dc76a-d01a-4986-839a-17ac7711d861",
+        "f2d198d0-54fe-420c-a778-38cedb97f04b",
+        "6c753a59-138c-4898-a9c7-409ea143940a",
+        "156df122-9f69-4287-a56f-3668ee10f219"
+      ],
+      "settings": {
+      }
     },
     "info-section": {
       "type": "main-info-section",

@@ -6,6 +6,7 @@
       "settings": {
         "title": "",
         "video_link": "",
+        "video_link2": "",
         "img": "shopify:\/\/shop_images\/zeilkamp-bg.png",
         "section-height": "xl"
       }
@@ -30,7 +31,101 @@
       }
     },
     "gallery": {
-      "type": "main-gallery"
+      "type": "main-gallery",
+      "blocks": {
+        "59211363-f33b-4075-9026-f0eacdc5fce4": {
+          "type": "item",
+          "settings": {
+            "title": "EVENTUEEL KOP",
+            "item-title": "leeftijd",
+            "item-richtext": "<p>item<\/p><p>item<\/p>",
+            "title-color": "#6c9db7",
+            "item-link": ""
+          }
+        },
+        "8575b4de-9837-45b0-b923-a4d27c2243ad": {
+          "type": "item",
+          "settings": {
+            "title": "EVENTUEEL KOP",
+            "item-title": "boottype",
+            "item-richtext": "<p>item<\/p><p>item<\/p>",
+            "title-color": "#396d84",
+            "item-link": ""
+          }
+        },
+        "7c8df787-d8df-43af-a522-2b9ff994672d": {
+          "type": "item",
+          "settings": {
+            "title": "EVENTUEEL KOP",
+            "item-title": "verblijfstype",
+            "item-richtext": "",
+            "title-color": "#6c9db7",
+            "item-link": ""
+          }
+        },
+        "ae3ca08c-8bf6-4eca-b306-741b89b7f783": {
+          "type": "item",
+          "settings": {
+            "title": "EVENTUEEL KOP",
+            "item-title": "week programma",
+            "item-richtext": "<p>item<\/p><p>item<\/p>",
+            "title-color": "#396d84",
+            "item-link": ""
+          }
+        },
+        "26bbdfec-e185-4d6f-aa79-ef0130cb9236": {
+          "type": "item",
+          "settings": {
+            "title": "EVENTUEEL KOP",
+            "item-title": "onze locatie",
+            "item-richtext": "",
+            "title-color": "#6c9db7",
+            "item-link": ""
+          }
+        },
+        "d4201531-67b6-40f0-b36c-5ba37edd7ba6": {
+          "type": "item",
+          "settings": {
+            "title": "EVENTUEEL KOP",
+            "item-title": "eten\/drinken",
+            "item-richtext": "<p>item<\/p><p>item<\/p>",
+            "title-color": "#396d84",
+            "item-link": ""
+          }
+        },
+        "2424a6fd-6d38-4704-92bf-264016b3f03f": {
+          "type": "item",
+          "settings": {
+            "title": "EVENTUEEL KOP",
+            "item-title": "CWO",
+            "item-richtext": "",
+            "title-color": "#6c9db7",
+            "item-link": ""
+          }
+        },
+        "6823c24c-800e-4f47-98e2-9953b7253f94": {
+          "type": "item",
+          "settings": {
+            "title": "EVENTUEEL KOP",
+            "item-title": "onze instructeurs",
+            "item-richtext": "",
+            "title-color": "#396d84",
+            "item-link": ""
+          }
+        }
+      },
+      "block_order": [
+        "59211363-f33b-4075-9026-f0eacdc5fce4",
+        "8575b4de-9837-45b0-b923-a4d27c2243ad",
+        "7c8df787-d8df-43af-a522-2b9ff994672d",
+        "ae3ca08c-8bf6-4eca-b306-741b89b7f783",
+        "26bbdfec-e185-4d6f-aa79-ef0130cb9236",
+        "d4201531-67b6-40f0-b36c-5ba37edd7ba6",
+        "2424a6fd-6d38-4704-92bf-264016b3f03f",
+        "6823c24c-800e-4f47-98e2-9953b7253f94"
+      ],
+      "settings": {
+      }
     },
     "info-section": {
       "type": "main-info-section",
