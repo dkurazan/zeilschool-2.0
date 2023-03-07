@@ -6,7 +6,9 @@
       "settings": {
         "title": "",
         "video_link": "",
-        "img": "shopify:\/\/shop_images\/2021_Zeilschool_188hb_1c6514f6-a4de-4e90-bd1f-c994af2dfeb2.jpg"
+        "video_link2": "",
+        "img": "shopify:\/\/shop_images\/2021_Zeilschool_188hb_1c6514f6-a4de-4e90-bd1f-c994af2dfeb2.jpg",
+        "section-height": "sm"
       }
     },
     "breadcrumbs": {
@@ -25,7 +27,102 @@
       }
     },
     "gallery": {
-      "type": "main-gallery"
+      "type": "main-gallery",
+      "blocks": {
+        "bccdd977-144e-44b5-9213-1d0ec7c727e3": {
+          "type": "item",
+          "settings": {
+            "title": "EVENTUEEL KOP",
+            "img": "shopify:\/\/shop_images\/2021_Zeilschool_188hb_b5468efb-6cd2-42d9-b379-68343822c6c7.jpg",
+            "item-title": "",
+            "item-richtext": "",
+            "title-color": "",
+            "item-link": ""
+          }
+        },
+        "b78f65dd-6a47-4c79-871c-675fba890ea2": {
+          "type": "item",
+          "settings": {
+            "title": "EVENTUEEL KOP",
+            "item-title": "",
+            "item-richtext": "",
+            "title-color": "",
+            "item-link": ""
+          }
+        },
+        "6d25f3a1-db42-4be4-b008-d30519656d40": {
+          "type": "item",
+          "settings": {
+            "title": "EVENTUEEL KOP",
+            "item-title": "",
+            "item-richtext": "",
+            "title-color": "",
+            "item-link": ""
+          }
+        },
+        "73d1e42e-12b3-41a2-920c-9bbb16a0c33a": {
+          "type": "item",
+          "settings": {
+            "title": "EVENTUEEL KOP",
+            "item-title": "",
+            "item-richtext": "",
+            "title-color": "",
+            "item-link": ""
+          }
+        },
+        "87fbee80-8504-4e6a-aab7-5e43e83f1578": {
+          "type": "item",
+          "settings": {
+            "title": "EVENTUEEL KOP",
+            "item-title": "",
+            "item-richtext": "",
+            "title-color": "",
+            "item-link": ""
+          }
+        },
+        "117cd029-101e-4b54-9bb7-c16e156617eb": {
+          "type": "item",
+          "settings": {
+            "title": "EVENTUEEL KOP",
+            "item-title": "",
+            "item-richtext": "",
+            "title-color": "",
+            "item-link": ""
+          }
+        },
+        "9d6e1e96-cb55-44dc-b70c-37bf40ca0c53": {
+          "type": "item",
+          "settings": {
+            "title": "EVENTUEEL KOP",
+            "item-title": "",
+            "item-richtext": "",
+            "title-color": "",
+            "item-link": ""
+          }
+        },
+        "badf9907-d417-47f3-a69e-2a0cb35ff06f": {
+          "type": "item",
+          "settings": {
+            "title": "EVENTUEEL KOP",
+            "item-title": "",
+            "item-richtext": "",
+            "title-color": "",
+            "item-link": ""
+          }
+        }
+      },
+      "block_order": [
+        "bccdd977-144e-44b5-9213-1d0ec7c727e3",
+        "b78f65dd-6a47-4c79-871c-675fba890ea2",
+        "6d25f3a1-db42-4be4-b008-d30519656d40",
+        "73d1e42e-12b3-41a2-920c-9bbb16a0c33a",
+        "87fbee80-8504-4e6a-aab7-5e43e83f1578",
+        "117cd029-101e-4b54-9bb7-c16e156617eb",
+        "9d6e1e96-cb55-44dc-b70c-37bf40ca0c53",
+        "badf9907-d417-47f3-a69e-2a0cb35ff06f"
+      ],
+      "settings": {
+      }
     },
     "info-section": {
       "type": "main-info-section",
