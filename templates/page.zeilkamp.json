@@ -1,168 +1,170 @@
 {
-    "wrapper": ".zeilkamp-page.pages",
-    "sections": {
-        "hero": {
-            "type": "pages-hero",
-            "settings": {
-                "title": "",
-                "video_link": "",
-                "video_link2": "",
-                "img": "shopify:\/\/shop_images\/zeilkamp-bg.png",
-                "section-height": "xl"
-            }
-        },
-        "breadcrumbs": {
-            "type": "breadcrumbs",
-            "settings": {}
-        },
-        "button-section": {
-            "type": "button-section",
-            "custom_css": [
-                "p {font-weight: 700;}",
-                "p:last-child {font-weight: 3;}"
-            ],
-            "settings": {
-                "btn-text": "Ons team",
-                "btn-url": "#",
-                "button-color": "#6c9db7",
-                "button-color-hover": "#396d84",
-                "text-content": "<p>• De voordelen van een zeilkamp<br\/>• Je gaat wat meemaken<br\/>• Vinkeveen rules<\/p><p>Wil je weten wat een zeilkamp inhoudt? Daar gaat ie: Van april tot oktober kun je bij ons zeilen, dat kan een dag, een paar dagen zijn of langer. Je bent dan in een groep van X kinderen van dezelfde leeftijd. Er is altijd een instructeur bij jullie. Etcetera etcetera.<br\/>Gaat iets over het ontbijt en de lunch, welke kleding, hoe laat aanwezig, mogen de ouders kijken? Hoe laat ongeveer ophalen, etc etcetera etcetera<\/p>"
-            }
-        },
-        "gallery": {
-            "type": "main-gallery",
-            "blocks": {
-                "59211363-f33b-4075-9026-f0eacdc5fce4": {
-                    "type": "item",
-                    "settings": {
-                        "title": "EVENTUEEL KOP",
-                        "img": "shopify:\/\/shop_images\/product-alternativen-img-1.png",
-                        "item-title": "leeftijd",
-                        "item-richtext": "<p>item<\/p><p>item<\/p>",
-                        "title-color": "#6c9db7",
-                        "item-link": ""
-                    }
-                },
-                "8575b4de-9837-45b0-b923-a4d27c2243ad": {
-                    "type": "item",
-                    "settings": {
-                        "title": "EVENTUEEL KOP",
-                        "img": "shopify:\/\/shop_images\/product-alternativen-img-1.png",
-                        "item-title": "boottype",
-                        "item-richtext": "<p>item<\/p><p>item<\/p>",
-                        "title-color": "#396d84",
-                        "item-link": ""
-                    }
-                },
-                "7c8df787-d8df-43af-a522-2b9ff994672d": {
-                    "type": "item",
-                    "settings": {
-                        "title": "EVENTUEEL KOP",
-                        "img": "shopify:\/\/shop_images\/product-alternativen-img-1.png",
-                        "item-title": "verblijfstype",
-                        "item-richtext": "",
-                        "title-color": "#6c9db7",
-                        "item-link": ""
-                    }
-                },
-                "ae3ca08c-8bf6-4eca-b306-741b89b7f783": {
-                    "type": "item",
-                    "settings": {
-                        "title": "EVENTUEEL KOP",
-                        "img": "shopify:\/\/shop_images\/product-alternativen-img-1.png",
-                        "item-title": "week programma",
-                        "item-richtext": "<p>item<\/p><p>item<\/p>",
-                        "title-color": "#396d84",
-                        "item-link": ""
-                    }
-                },
-                "26bbdfec-e185-4d6f-aa79-ef0130cb9236": {
-                    "type": "item",
-                    "settings": {
-                        "title": "EVENTUEEL KOP",
-                        "img": "shopify:\/\/shop_images\/product-alternativen-img-1.png",
-                        "item-title": "onze locatie",
-                        "item-richtext": "",
-                        "title-color": "#6c9db7",
-                        "item-link": ""
-                    }
-                },
-                "d4201531-67b6-40f0-b36c-5ba37edd7ba6": {
-                    "type": "item",
-                    "settings": {
-                        "title": "EVENTUEEL KOP",
-                        "img": "shopify:\/\/shop_images\/product-alternativen-img-1.png",
-                        "item-title": "eten\/drinken",
-                        "item-richtext": "<p>item<\/p><p>item<\/p>",
-                        "title-color": "#396d84",
-                        "item-link": ""
-                    }
-                },
-                "2424a6fd-6d38-4704-92bf-264016b3f03f": {
-                    "type": "item",
-                    "settings": {
-                        "title": "EVENTUEEL KOP",
-                        "img": "shopify:\/\/shop_images\/product-alternativen-img-1.png",
-                        "item-title": "CWO",
-                        "item-richtext": "",
-                        "title-color": "#6c9db7",
-                        "item-link": ""
-                    }
-                },
-                "6823c24c-800e-4f47-98e2-9953b7253f94": {
-                    "type": "item",
-                    "settings": {
-                        "title": "EVENTUEEL KOP",
-                        "img": "shopify:\/\/shop_images\/product-alternativen-img-1.png",
-                        "item-title": "onze instructeurs",
-                        "item-richtext": "",
-                        "title-color": "#396d84",
-                        "item-link": ""
-                    }
-                }
-            },
-            "block_order": [
-                "59211363-f33b-4075-9026-f0eacdc5fce4",
-                "8575b4de-9837-45b0-b923-a4d27c2243ad",
-                "7c8df787-d8df-43af-a522-2b9ff994672d",
-                "ae3ca08c-8bf6-4eca-b306-741b89b7f783",
-                "26bbdfec-e185-4d6f-aa79-ef0130cb9236",
-                "d4201531-67b6-40f0-b36c-5ba37edd7ba6",
-                "2424a6fd-6d38-4704-92bf-264016b3f03f",
-                "6823c24c-800e-4f47-98e2-9953b7253f94"
-            ],
-            "settings": {
-                "show-title": false
-            }
-        },
-        "info-section": {
-            "type": "main-info-section",
-            "settings": {
-                "text-top": "",
-                "img": "shopify:\/\/shop_images\/info-section-img.png",
-                "text-middle": "",
-                "text-bottom": "<p> <\/p>"
-            }
-        },
-        "e-mail": {
-            "type": "e-mail-section",
-            "settings": {}
-        },
-        "footer-color": {
-            "type": "footer-color",
-            "settings": {
-                "footer-color": "#6c9db7",
-                "footer-mobile-btns": "#396d84"
-            }
-        }
+  "wrapper": ".zeilkamp-page.pages",
+  "sections": {
+    "hero": {
+      "type": "pages-hero",
+      "settings": {
+        "title": "",
+        "video_link": "",
+        "video_link2": "",
+        "img": "shopify:\/\/shop_images\/zeilkamp-bg.png",
+        "section-height": "sm"
+      }
     },
-    "order": [
-        "hero",
-        "breadcrumbs",
-        "button-section",
-        "gallery",
-        "info-section",
-        "e-mail",
-        "footer-color"
-    ]
+    "breadcrumbs": {
+      "type": "breadcrumbs",
+      "settings": {
+      }
+    },
+    "button-section": {
+      "type": "button-section",
+      "custom_css": [
+        "p {font-weight: 700;}",
+        "p:last-child {font-weight: 3;}"
+      ],
+      "settings": {
+        "btn-text": "Ons team",
+        "btn-url": "#",
+        "button-color": "#6c9db7",
+        "button-color-hover": "#396d84",
+        "text-content": "<p>• De voordelen van een zeilkamp<br\/>• Je gaat wat meemaken<br\/>• Vinkeveen rules<\/p><p>Wil je weten wat een zeilkamp inhoudt? Daar gaat ie: Van april tot oktober kun je bij ons zeilen, dat kan een dag, een paar dagen zijn of langer. Je bent dan in een groep van X kinderen van dezelfde leeftijd. Er is altijd een instructeur bij jullie. Etcetera etcetera.<br\/>Gaat iets over het ontbijt en de lunch, welke kleding, hoe laat aanwezig, mogen de ouders kijken? Hoe laat ongeveer ophalen, etc etcetera etcetera<\/p>"
+      }
+    },
+    "gallery": {
+      "type": "main-gallery",
+      "blocks": {
+        "59211363-f33b-4075-9026-f0eacdc5fce4": {
+          "type": "item",
+          "settings": {
+            "title": "EVENTUEEL KOP",
+            "img": "shopify:\/\/shop_images\/product-alternativen-img-1.png",
+            "item-title": "leeftijd",
+            "item-richtext": "<p>item<\/p><p>item<\/p>",
+            "title-color": "#6c9db7",
+            "item-link": ""
+          }
+        },
+        "8575b4de-9837-45b0-b923-a4d27c2243ad": {
+          "type": "item",
+          "settings": {
+            "title": "EVENTUEEL KOP",
+            "img": "shopify:\/\/shop_images\/product-alternativen-img-1.png",
+            "item-title": "boottype",
+            "item-richtext": "<p>item<\/p><p>item<\/p>",
+            "title-color": "#396d84",
+            "item-link": ""
+          }
+        },
+        "7c8df787-d8df-43af-a522-2b9ff994672d": {
+          "type": "item",
+          "settings": {
+            "title": "EVENTUEEL KOP",
+            "img": "shopify:\/\/shop_images\/product-alternativen-img-1.png",
+            "item-title": "verblijfstype",
+            "item-richtext": "",
+            "title-color": "#6c9db7",
+            "item-link": ""
+          }
+        },
+        "ae3ca08c-8bf6-4eca-b306-741b89b7f783": {
+          "type": "item",
+          "settings": {
+            "title": "EVENTUEEL KOP",
+            "img": "shopify:\/\/shop_images\/product-alternativen-img-1.png",
+            "item-title": "week programma",
+            "item-richtext": "<p>item<\/p><p>item<\/p>",
+            "title-color": "#396d84",
+            "item-link": ""
+          }
+        },
+        "26bbdfec-e185-4d6f-aa79-ef0130cb9236": {
+          "type": "item",
+          "settings": {
+            "title": "EVENTUEEL KOP",
+            "img": "shopify:\/\/shop_images\/product-alternativen-img-1.png",
+            "item-title": "onze locatie",
+            "item-richtext": "",
+            "title-color": "#6c9db7",
+            "item-link": ""
+          }
+        },
+        "d4201531-67b6-40f0-b36c-5ba37edd7ba6": {
+          "type": "item",
+          "settings": {
+            "title": "EVENTUEEL KOP",
+            "img": "shopify:\/\/shop_images\/product-alternativen-img-1.png",
+            "item-title": "eten\/drinken",
+            "item-richtext": "<p>item<\/p><p>item<\/p>",
+            "title-color": "#396d84",
+            "item-link": ""
+          }
+        },
+        "2424a6fd-6d38-4704-92bf-264016b3f03f": {
+          "type": "item",
+          "settings": {
+            "title": "EVENTUEEL KOP",
+            "img": "shopify:\/\/shop_images\/product-alternativen-img-1.png",
+            "item-title": "CWO",
+            "item-richtext": "",
+            "title-color": "#6c9db7",
+            "item-link": ""
+          }
+        },
+        "6823c24c-800e-4f47-98e2-9953b7253f94": {
+          "type": "item",
+          "settings": {
+            "title": "EVENTUEEL KOP",
+            "img": "shopify:\/\/shop_images\/product-alternativen-img-1.png",
+            "item-title": "onze instructeurs",
+            "item-richtext": "",
+            "title-color": "#396d84",
+            "item-link": ""
+          }
+        }
+      },
+      "block_order": [
+        "59211363-f33b-4075-9026-f0eacdc5fce4",
+        "8575b4de-9837-45b0-b923-a4d27c2243ad",
+        "7c8df787-d8df-43af-a522-2b9ff994672d",
+        "ae3ca08c-8bf6-4eca-b306-741b89b7f783",
+        "26bbdfec-e185-4d6f-aa79-ef0130cb9236",
+        "d4201531-67b6-40f0-b36c-5ba37edd7ba6",
+        "2424a6fd-6d38-4704-92bf-264016b3f03f",
+        "6823c24c-800e-4f47-98e2-9953b7253f94"
+      ],
+      "settings": {
+        "show-title": false
+      }
+    },
+    "info-section": {
+      "type": "main-info-section",
+      "settings": {
+        "text-top": "",
+        "img": "shopify:\/\/shop_images\/info-section-img.png",
+        "text-middle": "",
+        "text-bottom": "<p> <\/p>"
+      }
+    },
+    "e-mail": {
+      "type": "e-mail-section",
+      "settings": {
+      }
+    },
+    "footer-color": {
+      "type": "footer-color",
+      "settings": {
+        "footer-color": "#6c9db7",
+        "footer-mobile-btns": "#396d84"
+      }
+    }
+  },
+  "order": [
+    "hero",
+    "breadcrumbs",
+    "button-section",
+    "gallery",
+    "info-section",
+    "e-mail",
+    "footer-color"
+  ]
 }
