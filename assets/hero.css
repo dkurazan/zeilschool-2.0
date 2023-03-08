@@ -71,7 +71,7 @@
     padding: 0 !important;
 }
 
-@media sceen and (max-width: 1400px) {
+@media (max-width: 1400px) {
     .start-section__title h1 {
         font-size: 130px;
     }
@@ -81,13 +81,13 @@
     }
 }
 
-@media sceen and (max-width: 950px) {
+@media (max-width: 950px) {
     .start-section__title h1 {
         font-size: 80px;
     }
 }
 
-@media sceen and (max-width: 800px) {
+@media (max-width: 800px) {
     .youtube-container img {
         height: 400px !important;
     }
@@ -106,7 +106,7 @@
     }
 }
 
-@media sceen and (max-width: 600px) {
+@media (max-width: 600px) {
     .start-section__title {
         padding: 0 30px;
     }
