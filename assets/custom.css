@@ -407,7 +407,7 @@ main:has(.shopify-challenge__container) {
   display: flex;
   gap: 8px;
   min-height: 30px;
-  align-items: flex-start;
+  align-items: center;
 }
 
 .filter__checkbox input[type="checkbox"] {

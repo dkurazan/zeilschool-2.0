@@ -7,8 +7,8 @@
         "title": "Nieuws",
         "video_link": "",
         "video_link2": "",
-        "img": "shopify:\/\/shop_images\/Scroll_Group_17_907a0c15-213e-4540-9c21-6be2d7c64894.jpg",
-        "section-height": "xl"
+        "img": "shopify:\/\/shop_images\/2021_Zeilschool_188hb_b5468efb-6cd2-42d9-b379-68343822c6c7.jpg",
+        "section-height": "sm"
       }
     },
     "template": {
@@ -16,9 +16,6 @@
       "settings": {
         "button-color": "#98ba7f",
         "button-color-hover": "#6a8456",
-        "agenda-block-color": "#98ba7f",
-        "agenda-mid-block-color": "",
-        "agenda-block-color-hover": "",
         "newsletter-title-color": "#98ba7f"
       }
     },
