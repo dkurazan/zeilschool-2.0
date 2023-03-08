@@ -96,7 +96,7 @@
             "item-title": "EVENTS",
             "item-richtext": "<p>EVENTS<\/p><p>EVENTS<\/p>",
             "title-color": "#f3c867",
-            "item-link": ""
+            "item-link": "shopify:\/\/pages\/events"
           }
         },
         "4c85fad3-f78e-4a74-8c71-d050fafc5013": {
@@ -104,10 +104,10 @@
           "settings": {
             "title": "EVENTUEEL KOP",
             "img": "shopify:\/\/shop_images\/vinkeveen_bedrijven.jpg",
-            "item-title": "Berijven",
-            "item-richtext": "<p>Berijven<\/p><p>Berijven<\/p>",
+            "item-title": "Bedrijven",
+            "item-richtext": "<p>Bedrijven<\/p><p>Bedrijven<\/p>",
             "title-color": "#bc953c",
-            "item-link": ""
+            "item-link": "shopify:\/\/pages\/bedrijven"
           }
         }
       },
