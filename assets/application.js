@@ -78,9 +78,8 @@ const personFiltr = () => {
         }
     });
   
-    personenFilterItems.addEventListener('click', () => {
-        document.querySelector('.filter__apply-button').classList.add('active');
-    });
+    document.querySelector('.filter__apply-button').classList.add('active');
+
 }
 
 const levelFiltr = () => {
@@ -93,9 +92,7 @@ const levelFiltr = () => {
         }
     });
    
-    levelFilterItems.addEventListener("click", () => {
-        document.querySelector(".filter__apply-button").classList.add("active");
-    })
+    document.querySelector(".filter__apply-button").classList.add("active");
 }
 
 levelCheckboxes.forEach(item => {
