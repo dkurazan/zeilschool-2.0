@@ -1,5 +1,5 @@
 {
-    "wrapper": ".article-agenda",
+    "wrapper": ".article-news",
     "sections": {
         "hero": {
             "type": "article-hero",
@@ -10,17 +10,13 @@
             }
         },
         "template": {
-            "type": "template-article-agenda",
+            "type": "template-article-news",
             "settings": {
                 "btn-text": "Boek nu",
                 "btn-url": "#",
                 "button-color": "",
                 "button-color-hover": ""
             }
-        },
-        "newsletter": {
-            "type": "e-mail-section",
-            "settings": {}
         },
         "footer-color": {
             "type": "footer-color",
@@ -33,7 +29,6 @@
     "order": [
         "hero",
         "template",
-        "newsletter",
         "footer-color"
     ]
 }

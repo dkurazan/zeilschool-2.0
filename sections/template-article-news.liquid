@@ -1,0 +1,90 @@
+{{ 'article-news.css' | asset_url | stylesheet_tag }}
+<style>
+  .weather-section__button-inner a {
+    background-color: {{ section.settings.button-color }}
+    ;
+  }
+
+  .weather-section__button-inner a:hover {
+    background-color: {{ section.settings.button-color-hover }}
+    ;
+  }
+</style>
+<div class="weather-section">
+  <div class="container">
+    <div class="news-post__nav">
+      <div class="breadcrumbs">
+        >
+        <a href="/">Home</a>
+        >
+        <a href="/blogs/news">Nieuws</a>
+        >
+        <p>{{ article.title }}</p>
+      </div>
+    </div>
+    <div class="news-post__text">
+      <div class="news-post__title">
+        <h2>{{ article.title }}
+        </h2>
+      </div>
+      {% assign article_content = article.content | split: "@@" %}
+      <div class="news-post__block">
+        <h3>{{ article_content[0] }}</h3>
+        <div>
+          {{ article_content[1] }}
+        </div>
+        <div class="news-post__img-block">
+          {{ article_content[2] }}
+          <div>
+            {{ article_content[3] }}
+
+          </div>
+        </div>
+      </div>
+      <div class="news-post__block img">
+        <h3>{{ article_content[4] }}</h3>
+        <div>
+          {{ article_content[5] }}
+        </div>
+        <div class="news-post__img-block">
+          {{ article_content[6] }}
+        </div>
+      </div>
+      <div class="news-post__block ">
+        <h3>{{ article_content[7] }}</h3>
+        <div>
+          {{ article_content[8] }}
+        </div>
+        <div class="news-post__img-block ">
+          {{ article_content[9] }}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+  {
+    "name": "Article template",
+    "settings": [
+      {
+        "type": "text",
+        "id": "btn-text",
+        "label": "Button text",
+        "default": "Boek nu"
+      }, {
+        "type": "url",
+        "id": "btn-url",
+        "label": "Button url"
+      }, {
+        "type": "color",
+        "id": "button-color",
+        "label": "Change the button color"
+      }, {
+        "type": "color",
+        "id": "button-color-hover",
+        "label": "Change the button hover color"
+      }
+    ]
+  }
+{% endschema %}

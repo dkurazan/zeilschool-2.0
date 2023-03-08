@@ -40,6 +40,10 @@
   .start-section__title h1{
     font-size: 180px;
   }
+
+  .article-news .start-section__title h1{
+    display: none;
+}
   
 
 .start-section__title{
