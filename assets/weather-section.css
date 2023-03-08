@@ -70,13 +70,6 @@
 }
 
 
-.weather-section__info a{
-    color: #6E9DB6;
-    font-size: 30px;
-    font-family: 'Roboto Condensed', sans-serif;
-    transition: .3s all ease-in-out;
-}
-
 .weather-section__info a:hover{
     color: #C45F53;
     transition: .3s all ease-in-out;
