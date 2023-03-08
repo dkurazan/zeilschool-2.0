@@ -1,1 +1,39 @@
-{"wrapper":".article-agenda","sections":{"hero":{"type":"article-hero","settings":{"title":"","video_link":"","section-height":"sm"}},"template":{"type":"template-article-agenda","settings":{"btn-text":"Boek nu","btn-url":"#","button-color":"","button-color-hover":""}},"newsletter":{"type":"e-mail-section","settings":{}},"footer-color":{"type":"footer-color","settings":{"footer-color":"#6c9db7","footer-mobile-btns":"#396d84"}}},"order":["hero","template","newsletter","footer-color"]}
+{
+    "wrapper": ".article-agenda",
+    "sections": {
+        "hero": {
+            "type": "article-hero",
+            "settings": {
+                "title": "",
+                "video_link": "",
+                "section-height": "sm"
+            }
+        },
+        "template": {
+            "type": "template-article-agenda",
+            "settings": {
+                "btn-text": "Boek nu",
+                "btn-url": "#",
+                "button-color": "",
+                "button-color-hover": ""
+            }
+        },
+        "newsletter": {
+            "type": "e-mail-section",
+            "settings": {}
+        },
+        "footer-color": {
+            "type": "footer-color",
+            "settings": {
+                "footer-color": "#6c9db7",
+                "footer-mobile-btns": "#396d84"
+            }
+        }
+    },
+    "order": [
+        "hero",
+        "template",
+        "newsletter",
+        "footer-color"
+    ]
+}

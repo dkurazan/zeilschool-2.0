@@ -324,7 +324,7 @@
     transition: .5s all ease-in-out;
     z-index: 200;
     height: 100vh;
-    /* top: 22px; */
+    display: none;
     padding-top: 22px;
     background-color: transparent;
 }
@@ -522,7 +522,7 @@
         display: none;
     }
 
-    .header-mobile{
+    .header-mobile, .mobile-menu__nav{
         display: block;
     }
 
