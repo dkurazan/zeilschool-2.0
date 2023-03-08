@@ -1,1 +1,38 @@
-{"wrapper":".agenda-page","sections":{"hero":{"type":"pages-hero","settings":{"title":"Agenda","video_link":"","img":"shopify:\/\/shop_images\/Scroll_Group_17_907a0c15-213e-4540-9c21-6be2d7c64894.jpg","section-height":"xl"}},"template":{"type":"template-blog-agenda","settings":{"button-color":"","button-color-hover":"","agenda-block-color":"","agenda-block-color-hover":"","newsletter-title-color":""}},"footer-color":{"type":"footer-color","settings":{}}},"order":["hero","template","footer-color"]}
+{
+  "wrapper": ".agenda-page",
+  "sections": {
+    "hero": {
+      "type": "pages-hero",
+      "settings": {
+        "title": "Agenda",
+        "video_link": "",
+        "video_link2": "",
+        "img": "shopify:\/\/shop_images\/Scroll_Group_17_907a0c15-213e-4540-9c21-6be2d7c64894.jpg",
+        "section-height": "sm"
+      }
+    },
+    "template": {
+      "type": "template-blog-agenda",
+      "settings": {
+        "button-color": "",
+        "button-color-hover": "",
+        "agenda-block-color": "",
+        "agenda-mid-block-color": "",
+        "agenda-block-color-hover": "",
+        "newsletter-title-color": ""
+      }
+    },
+    "footer-color": {
+      "type": "footer-color",
+      "settings": {
+        "footer-color": "",
+        "footer-mobile-btns": ""
+      }
+    }
+  },
+  "order": [
+    "hero",
+    "template",
+    "footer-color"
+  ]
+}
