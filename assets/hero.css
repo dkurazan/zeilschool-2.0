@@ -7,7 +7,7 @@
 
 .youtube-container iframe {
     width: 300%;
-    height: 100vh;
+    height: 600px;
     margin-left: -100%;
 }
 
@@ -36,7 +36,7 @@
 }
 
 .youtube-container img {
-    height: 100vh;
+    height: 600px;
     width: 100%;
     object-fit: cover;
 }
@@ -87,11 +87,7 @@
     }
 }
 
-@media (max-width: 800px) {
-    .youtube-container img {
-        height: 400px !important;
-    }
-  
+@media (max-width: 800px) {  
     .start-section__title {
         bottom: 20px;
     }
