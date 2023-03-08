@@ -1,1 +1,166 @@
-{"wrapper":".events-page.pages","sections":{"hero":{"type":"pages-hero","settings":{"title":"","video_link":"","video_link2":"","img":"shopify:\/\/shop_images\/zeilkamp-bg.png","section-height":"xl"}},"breadcrumbs":{"type":"breadcrumbs","settings":{}},"button-section":{"type":"events-button-section","custom_css":["p:first-child {padding-bottom: 50px;}"],"settings":{"btn-text1":"Boek nu","btn-text2":"CORONA UPDATE","btn-url":"#","button-color1":"#d9b259","button-color2":"#d9b259","button-color-hover1":"#bc953c","button-color-hover2":"#bc953c","text-content":"<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<\/p><p>• De voordelen van een zeilkamp<br\/>• Je gaat wat meemaken<br\/>• Vinkeveen rules<\/p>"}},"gallery":{"type":"main-gallery","blocks":{"963bd89f-75ee-4060-9926-cbb0b7821fd2":{"type":"item","settings":{"title":"EVENTUEEL KOP","img":"shopify:\/\/shop_images\/vierkante-fotos_jeugdzeilen.jpg","item-title":"bruiloft","item-richtext":"<p>item1<\/p><p>item2<\/p>","title-color":"#d9b259","item-link":""}},"0d025564-064c-4c34-ac5a-8457ac9558a9":{"type":"item","settings":{"title":"EVENTUEEL KOP","img":"shopify:\/\/shop_images\/vierkante-fotos_jeugdzeilen.jpg","item-title":"borrel & feest","item-richtext":"<p>item1<\/p><p>item2<\/p>","title-color":"#bc953c","item-link":""}},"4e2092cf-6909-4cc4-a926-3848f537f05b":{"type":"item","settings":{"title":"EVENTUEEL KOP","img":"shopify:\/\/shop_images\/vierkante-fotos_jeugdzeilen.jpg","item-title":"bedrijfsuitje","item-richtext":"<p>item1<\/p><p>item2<\/p>","title-color":"#d9b259","item-link":""}},"373f2474-a94e-4283-af15-868bce139c6d":{"type":"item","settings":{"title":"EVENTUEEL KOP","img":"shopify:\/\/shop_images\/vierkante-fotos_jeugdzeilen.jpg","item-title":"familiefeest","item-richtext":"","title-color":"#bc953c","item-link":""}},"195bb219-4f5f-42bb-a88a-24e11cb8500f":{"type":"item","settings":{"title":"EVENTUEEL KOP","img":"shopify:\/\/shop_images\/vierkante-fotos_jeugdzeilen.jpg","item-title":"onze locatie","item-richtext":"","title-color":"#d9b259","item-link":""}},"8428f3d8-8e1e-48e3-a517-42f1664c3ee9":{"type":"item","settings":{"title":"EVENTUEEL KOP","img":"shopify:\/\/shop_images\/vierkante-fotos_jeugdzeilen.jpg","item-title":"eten","item-richtext":"","title-color":"#bc953c","item-link":""}},"ef31bbeb-b5f1-4b1f-8ba8-5d7fe686cc1e":{"type":"item","settings":{"title":"EVENTUEEL KOP","img":"shopify:\/\/shop_images\/vierkante-fotos_jeugdzeilen.jpg","item-title":"slapen","item-richtext":"","title-color":"#d9b259","item-link":""}},"c2f804cc-aef5-443d-9066-e933cbe7453b":{"type":"item","settings":{"title":"EVENTUEEL KOP","img":"shopify:\/\/shop_images\/vierkante-fotos_jeugdzeilen.jpg","item-title":"scholen","item-richtext":"","title-color":"#bc953c","item-link":""}}},"block_order":["963bd89f-75ee-4060-9926-cbb0b7821fd2","0d025564-064c-4c34-ac5a-8457ac9558a9","4e2092cf-6909-4cc4-a926-3848f537f05b","373f2474-a94e-4283-af15-868bce139c6d","195bb219-4f5f-42bb-a88a-24e11cb8500f","8428f3d8-8e1e-48e3-a517-42f1664c3ee9","ef31bbeb-b5f1-4b1f-8ba8-5d7fe686cc1e","c2f804cc-aef5-443d-9066-e933cbe7453b"],"settings":{"show-title":false}},"info-section":{"type":"main-info-section","settings":{"text-top":"","img":"shopify:\/\/shop_images\/info-section-img.png","text-middle":"","text-bottom":""}},"footer-color":{"type":"footer-color","settings":{"footer-color":"#d9b259","footer-mobile-btns":"#bc953c"}}},"order":["hero","breadcrumbs","button-section","gallery","info-section","footer-color"]}
+{
+  "wrapper": ".events-page.pages",
+  "sections": {
+    "hero": {
+      "type": "pages-hero",
+      "settings": {
+        "title": "",
+        "video_link": "",
+        "video_link2": "",
+        "img": "shopify:\/\/shop_images\/zeilkamp-bg.png",
+        "section-height": "sm"
+      }
+    },
+    "breadcrumbs": {
+      "type": "breadcrumbs",
+      "settings": {
+      }
+    },
+    "button-section": {
+      "type": "events-button-section",
+      "custom_css": [
+        "p:first-child {padding-bottom: 50px;}"
+      ],
+      "settings": {
+        "btn-text1": "Boek nu",
+        "btn-text2": "CORONA UPDATE",
+        "btn-url": "#",
+        "button-color1": "#d9b259",
+        "button-color2": "#d9b259",
+        "button-color-hover1": "#bc953c",
+        "button-color-hover2": "#bc953c",
+        "text-content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<\/p><p>• De voordelen van een zeilkamp<br\/>• Je gaat wat meemaken<br\/>• Vinkeveen rules<\/p>"
+      }
+    },
+    "gallery": {
+      "type": "main-gallery",
+      "blocks": {
+        "963bd89f-75ee-4060-9926-cbb0b7821fd2": {
+          "type": "item",
+          "settings": {
+            "title": "EVENTUEEL KOP",
+            "img": "shopify:\/\/shop_images\/vierkante-fotos_jeugdzeilen.jpg",
+            "item-title": "bruiloft",
+            "item-richtext": "<p>item1<\/p><p>item2<\/p>",
+            "title-color": "#d9b259",
+            "item-link": ""
+          }
+        },
+        "0d025564-064c-4c34-ac5a-8457ac9558a9": {
+          "type": "item",
+          "settings": {
+            "title": "EVENTUEEL KOP",
+            "img": "shopify:\/\/shop_images\/vierkante-fotos_jeugdzeilen.jpg",
+            "item-title": "borrel & feest",
+            "item-richtext": "<p>item1<\/p><p>item2<\/p>",
+            "title-color": "#bc953c",
+            "item-link": ""
+          }
+        },
+        "4e2092cf-6909-4cc4-a926-3848f537f05b": {
+          "type": "item",
+          "settings": {
+            "title": "EVENTUEEL KOP",
+            "img": "shopify:\/\/shop_images\/vierkante-fotos_jeugdzeilen.jpg",
+            "item-title": "bedrijfsuitje",
+            "item-richtext": "<p>item1<\/p><p>item2<\/p>",
+            "title-color": "#d9b259",
+            "item-link": ""
+          }
+        },
+        "373f2474-a94e-4283-af15-868bce139c6d": {
+          "type": "item",
+          "settings": {
+            "title": "EVENTUEEL KOP",
+            "img": "shopify:\/\/shop_images\/vierkante-fotos_jeugdzeilen.jpg",
+            "item-title": "familiefeest",
+            "item-richtext": "",
+            "title-color": "#bc953c",
+            "item-link": ""
+          }
+        },
+        "195bb219-4f5f-42bb-a88a-24e11cb8500f": {
+          "type": "item",
+          "settings": {
+            "title": "EVENTUEEL KOP",
+            "img": "shopify:\/\/shop_images\/vierkante-fotos_jeugdzeilen.jpg",
+            "item-title": "onze locatie",
+            "item-richtext": "",
+            "title-color": "#d9b259",
+            "item-link": ""
+          }
+        },
+        "8428f3d8-8e1e-48e3-a517-42f1664c3ee9": {
+          "type": "item",
+          "settings": {
+            "title": "EVENTUEEL KOP",
+            "img": "shopify:\/\/shop_images\/vierkante-fotos_jeugdzeilen.jpg",
+            "item-title": "eten",
+            "item-richtext": "",
+            "title-color": "#bc953c",
+            "item-link": ""
+          }
+        },
+        "ef31bbeb-b5f1-4b1f-8ba8-5d7fe686cc1e": {
+          "type": "item",
+          "settings": {
+            "title": "EVENTUEEL KOP",
+            "img": "shopify:\/\/shop_images\/vierkante-fotos_jeugdzeilen.jpg",
+            "item-title": "slapen",
+            "item-richtext": "",
+            "title-color": "#d9b259",
+            "item-link": ""
+          }
+        },
+        "c2f804cc-aef5-443d-9066-e933cbe7453b": {
+          "type": "item",
+          "settings": {
+            "title": "EVENTUEEL KOP",
+            "img": "shopify:\/\/shop_images\/vierkante-fotos_jeugdzeilen.jpg",
+            "item-title": "scholen",
+            "item-richtext": "",
+            "title-color": "#bc953c",
+            "item-link": ""
+          }
+        }
+      },
+      "block_order": [
+        "963bd89f-75ee-4060-9926-cbb0b7821fd2",
+        "0d025564-064c-4c34-ac5a-8457ac9558a9",
+        "4e2092cf-6909-4cc4-a926-3848f537f05b",
+        "373f2474-a94e-4283-af15-868bce139c6d",
+        "195bb219-4f5f-42bb-a88a-24e11cb8500f",
+        "8428f3d8-8e1e-48e3-a517-42f1664c3ee9",
+        "ef31bbeb-b5f1-4b1f-8ba8-5d7fe686cc1e",
+        "c2f804cc-aef5-443d-9066-e933cbe7453b"
+      ],
+      "settings": {
+        "show-title": false
+      }
+    },
+    "info-section": {
+      "type": "main-info-section",
+      "settings": {
+        "text-top": "",
+        "img": "shopify:\/\/shop_images\/info-section-img.png",
+        "text-middle": "",
+        "text-bottom": ""
+      }
+    },
+    "footer-color": {
+      "type": "footer-color",
+      "settings": {
+        "footer-color": "#d9b259",
+        "footer-mobile-btns": "#bc953c"
+      }
+    }
+  },
+  "order": [
+    "hero",
+    "breadcrumbs",
+    "button-section",
+    "gallery",
+    "info-section",
+    "footer-color"
+  ]
+}
