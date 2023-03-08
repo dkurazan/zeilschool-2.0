@@ -12,10 +12,10 @@
 .collection__title{
     color: var(--unnamed-color-888888);
     text-transform: uppercase;
-    font-size: 50px;
+    font-size: 35px;
     font-family: 'Roboto Condensed', sans-serif;
     font-weight: 700;
-    padding-left: 54px;
+    padding-left: 34px;
     visibility: hidden;
     opacity: 0;
 }
@@ -51,13 +51,13 @@
 .collection__product-name{
     position: absolute;
     bottom: 0;
-    font: normal normal bold 34px/45px 'Roboto Condensed', sans-serif;
+    font: normal normal bold 20px 'Roboto Condensed', sans-serif;
     letter-spacing: 0px;
     color: #FFFFFF;
     text-transform: uppercase;
-    width: 350px;
-    height: 50px;
-    line-height: 50px;
+    width: 172px;
+    height: 34px;
+    line-height: 34px;
     z-index: 5;
     transition: .5s all ease-in-out;
     overflow: hidden;
@@ -137,7 +137,7 @@
     }
 
     .collection__title{
-        font-size: 40px;
+        font-size: 30px;
     }
 }
 
