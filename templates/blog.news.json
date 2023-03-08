@@ -1,33 +1,34 @@
 {
-    "wrapper": ".agenda-page",
-    "sections": {
-        "hero": {
-            "type": "pages-hero",
-            "settings": {
-                "title": " Nieuws",
-                "video_link": "",
-                "img": "shopify:\/\/shop_images\/Scroll_Group_17_907a0c15-213e-4540-9c21-6be2d7c64894.jpg",
-                "section-height": "xl"
-            }
-        },
-        "template": {
-            "type": "template-blog-news",
-            "settings": {
-                "button-color": "",
-                "button-color-hover": "",
-                "agenda-block-color": "",
-                "agenda-block-color-hover": "",
-                "newsletter-title-color": ""
-            }
-        },
-        "footer-color": {
-            "type": "footer-color",
-            "settings": {}
-        }
+  "wrapper": ".agenda-page",
+  "sections": {
+    "hero": {
+      "type": "pages-hero",
+      "settings": {
+        "title": " Nieuws",
+        "video_link": "",
+        "img": "shopify:\/\/shop_images\/Scroll_Group_17_907a0c15-213e-4540-9c21-6be2d7c64894.jpg",
+        "section-height": "xl"
+      }
     },
-    "order": [
-        "hero",
-        "template",
-        "footer-color"
-    ]
+    "template": {
+      "type": "template-blog-news",
+      "settings": {
+        "button-color": "",
+        "button-color-hover": "",
+        "agenda-block-color": "",
+        "agenda-block-color-hover": "",
+        "newsletter-title-color": ""
+      }
+    },
+    "footer-color": {
+      "type": "footer-color",
+      "settings": {
+      }
+    }
+  },
+  "order": [
+    "hero",
+    "template",
+    "footer-color"
+  ]
 }
