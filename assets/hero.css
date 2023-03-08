@@ -11,9 +11,13 @@
     margin-left: -100%;
 }
 
-.youtube-container video{
+.youtube-container video {
   width: 100vw;
   object-fit: cover;
+}
+
+.youtube-container .video {
+    height: 600px;
 }
 
 .start-section{
@@ -31,22 +35,22 @@
     margin: 0 auto;
 }
 
-.youtube-container img{
+.youtube-container img {
     height: 100vh;
     width: 100%;
     object-fit: cover;
-  }
+}
   
-  .start-section__title h1{
+.start-section__title h1 {
     font-size: 180px;
   }
 
-  .article-news .start-section__title h1{
+.article-news .start-section__title h1 {
     display: none;
 }
   
 
-.start-section__title{
+.start-section__title {
     position: absolute;
     left: 50%;
     transform: translate(-50%);
@@ -59,61 +63,59 @@
     
 }
 
-.collection .start-section__title{
-  width: 100%;
-}
-
-.agenda-page .start-section__title{
-  padding: 0 !important;
-}
-
-@media (max-width:1400px) {
-    .start-section__title h1{
-      font-size: 130px;
-  }
-
-  .main-start-section__title{
+.collection .start-section__title {
     width: 100%;
 }
+
+.agenda-page .start-section__title {
+    padding: 0 !important;
 }
 
-@media(max-width: 950px){
-  
-    .start-section__title h1{
-      font-size: 80px;
+@media sceen and (max-width: 1400px) {
+    .start-section__title h1 {
+        font-size: 130px;
+    }
+
+    .main-start-section__title {
+        width: 100%;
     }
 }
 
-  @media(max-width: 800px){
-    .youtube-container img{
-      height: 400px !important;
+@media sceen and (max-width: 950px) {
+    .start-section__title h1 {
+        font-size: 80px;
+    }
+}
+
+@media sceen and (max-width: 800px) {
+    .youtube-container img {
+        height: 400px !important;
     }
   
-    .start-section__title{
-      bottom: 20px;
+    .start-section__title {
+        bottom: 20px;
     }
 
-    .youtube-container iframe, .youtube-container img{
-      height: 400px !important;
+    .youtube-container iframe,
+    .youtube-container img {
+        height: 400px !important;
     }
     
-    .start-section__title svg{
-      width: 300px;
-  }
+    .start-section__title svg {
+        width: 300px;
+    }
 }
 
-@media(max-width: 600px){
-    
-    .start-section__title{
+@media sceen and (max-width: 600px) {
+    .start-section__title {
         padding: 0 30px;
     }
 
-    .agenda-page .start-section__title{
-      bottom: 20px;
-  }
+    .agenda-page .start-section__title {
+        bottom: 20px;
+    }
 
-  .start-section__title svg{
-    width: 240px;
-    
-  }
+    .start-section__title svg {
+        width: 240px;
+    }
 }

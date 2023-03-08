@@ -17,10 +17,14 @@
 
 <div class="start-section">
     <div class="youtube-container">
-      <iframe src="https://www.youtube.com/embed/{{ section.settings.video_link | slice: 32, 11 }}?autoplay=1&mute=1&loop=1&color=white&controls=0&modestbranding=1&playsinline=1&rel=0&enablejsapi=1&cc_lang_pref=1&playlist={{ section.settings.video_link | slice: 32, 11 }}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        {% if section.settings.video_hero %}
+            <video class="video" src="{{ section.settings.video_hero }}" autoplay muted playsinline loop></video>
+        {% else %}
+            <iframe src="https://www.youtube.com/embed/{{ section.settings.video_link | slice: 32, 11 }}?autoplay=1&mute=1&loop=1&color=white&controls=0&modestbranding=1&playsinline=1&rel=0&enablejsapi=1&cc_lang_pref=1&autopause=0&playlist={{ section.settings.video_link | slice: 32, 11 }}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        {% endif %}
     </div>
     <div class="start-section__title main-start-section__title">
-        {%  if section.settings.title != blank %} 
+        {% if section.settings.title != blank %} 
             <h1>{{ section.settings.title }}</h1>
         {%  else %}
             {% render 'hero-logo' %}
@@ -38,11 +42,24 @@
                 "label": "Type the top title"
             },
             {
-                "type": "text",
+                "type": "url",
+                "id": "video_hero",
+                "label": {
+                    "en": "Paste the video link"
+                },
+                "info": {
+                    "en": "Make all steps from instruction to get this link"
+                }
+            },
+            {
+                "type": "video_url",
                 "id": "video_link",
                 "label": {
                 "en": "Paste the YouTube video link"
                 },
+                "accept": [
+                    "youtube"
+                ],
                 "default": "https://www.youtube.com/watch?v=DrQCR3I7TYQ&ab_channel=THEBOATSHOW"
             },
             {
