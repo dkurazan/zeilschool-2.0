@@ -1,15 +1,15 @@
 {{ 'hero.css' | asset_url | stylesheet_tag }}
 <style>
     {% if section.settings.section-height == 'xl' %}
-      .youtube-container iframe, .youtube-container img, .youtube-container video{
+      .youtube-container iframe, .youtube-container img, .youtube-container video {
         height: 100vh;
       }
     {%  elsif section.settings.section-height == 'm' %}
-      .youtube-container iframe, .youtube-container img, .youtube-container video{
+      .youtube-container iframe, .youtube-container img, .youtube-container video {
         height: 975px;
       }
     {%  elsif section.settings.section-height == 'sm' %}
-        .youtube-container iframe, .youtube-container img, .youtube-container video{
+        .youtube-container iframe, .youtube-container img, .youtube-container video {
           height: 600px;
         }
     {% endif %}
