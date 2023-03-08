@@ -3,12 +3,14 @@ const burgerMenu = document.querySelector(".burger-menu__strips");
 const mobileMenuNav = document.querySelector(".mobile-menu__nav");
 const menuOverlay = document.querySelector(".menu-overlay");
 const mobileMenuNavLi = document.querySelectorAll(".mobile-menu__nav li");
+const headerMobile = document.querySelector(".header-mobile");
 
 burgerMenu.addEventListener("click", () => {
     burgerMenu.classList.toggle("active");
     mobileMenuNav.classList.toggle("active");
     document.body.classList.toggle("overflow-hidden");
     menuOverlay.classList.toggle("active");
+    headerMobile.classList.toggle("active");
 });
 
 const closeMobileMenu = () => {
@@ -16,6 +18,7 @@ const closeMobileMenu = () => {
     mobileMenuNav.classList.remove("active");
     document.body.classList.remove("overflow-hidden");
     menuOverlay.classList.remove("active");
+    headerMobile.classList.remove("active");
 
 }
 

@@ -1,0 +1,132 @@
+{{ 'template-agenda.css' | asset_url | stylesheet_tag }}
+<style>
+    .agenda__button a{
+      background-color: {{ section.settings.button-color }};
+    }
+
+    .agenda__button a:hover{
+      background-color: {{ section.settings.button-color-hover }};
+    }
+
+    .calendar__data-item{
+      background-color: {{ section.settings.agenda-block-color }};
+    }
+
+    .calendar__data-item:hover{
+      background-color: {{ section.settings.agenda-block-color-hover }};
+    }
+
+    .calendar__data-item-light{
+      background-color: {{ section.settings.agenda-mid-block-color }};
+    }
+
+    .agenda__newsletter-inner h4{
+      color: {{ section.settings.newsletter-title-color }};
+    }
+</style>
+<div class="agenda">
+  <div class="container agenda__container">
+    <div class="breadcrumbs">
+        >
+        <a href="/">Home</a>
+        >
+        <a href="/pages/zeilschool">Zeilschool</a>
+        >
+        <p>Niews</p>
+    </div>
+    <div class="agenda__button agenda__button-lg-dn">
+        <a href="#">CORONA UPDATE</a>
+    </div>
+    <div class="agenda__newsletter">
+      <div class="agenda__button">
+          <a href="#">CORONA UPDATE</a>
+      </div>
+      <div class="agenda__newsletter-inner">
+        {% render 'newsletter' %}
+      </div>
+    </div>
+    <div class="agena__calendar">
+        
+{% paginate blogs['news'].articles by 50 %}
+  {% assign res = false %}
+  {% for article in blogs['news'].articles %}
+    {% if res %}
+      {% assign tmp = article.metafields.custom.start_date | append:"." | append: article.handle | split: ","  %}
+      {% assign res = res | concat: tmp %}
+    {% else %}
+      {% assign res = article.metafields.custom.start_date | append:"." | append: article.handle | split: ","  %}
+    {% endif %}
+  {% endfor %}
+  {% assign res = res | sort %}
+{% endpaginate %}
+
+    <div class="calendar__inner">
+
+    {% assign month = 0 %}
+    {%- for articl in res  -%}
+      {% assign handl = articl | split:"." | last %}
+      {% assign article = articles[handl] %}
+      {% assign curr_month = article.metafields.custom.start_date | date: "%B" %}
+      {% if curr_month != month %}
+        {% assign month = curr_month %}
+        {% assign year = article.metafields.custom.start_date | date: "%Y" %}
+        <h1 class="calendar__mounth-name">{{ month }} {{ year }}</h1>
+      {% endif %}
+        <a class="calendar__url" href="{{ article.url }}">
+         <div class="calendar__date-wrap">
+            <div class="calendar__data-item">{{ article.image | img_url: 'medium' | img_tag }}</div>
+          
+            
+          
+        </div>
+        <div class="calendar__date-text">
+          <div class="calendar__text-item">
+              <h4>{{ article.title }}</h4>
+              <h6>{% if article.excerpt != "" and article.excerpt != nil %}{{article.excerpt | strip_html }}{% endif %}</h6>
+          </div>
+        </div>
+        </a>
+
+    {%- endfor -%}
+          </div>
+    </div>
+    </div>
+  </div>
+</div>
+{% schema %}
+{
+"name": "News",
+"settings": [
+  {
+        "type": "color",
+        "id": "button-color",
+        "label": "Change the button color"
+    },
+    {
+        "type": "color",
+        "id": "button-color-hover",
+        "label": "Change the button hover color"
+    },
+    {
+        "type": "color",
+        "id": "agenda-block-color",
+        "label": "Change the agenda blocks color"
+    },
+    {
+        "type": "color",
+        "id": "agenda-mid-block-color",
+        "label": "Change the agenda middle blocks color"
+    },
+    {
+        "type": "color",
+        "id": "agenda-block-color-hover",
+        "label": "Change the agenda blocks hover color"
+    },
+    {
+        "type": "color",
+        "id": "newsletter-title-color",
+        "label": "Change the newsletter title color"
+    }
+]
+}
+{% endschema %}

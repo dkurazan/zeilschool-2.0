@@ -11,7 +11,7 @@
             }
         },
         "template": {
-            "type": "template-blog-agenda",
+            "type": "template-blog-news",
             "settings": {
                 "button-color": "",
                 "button-color-hover": "",

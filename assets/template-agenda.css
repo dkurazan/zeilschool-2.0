@@ -160,6 +160,10 @@
     transition: .3s all ease-in-out;
 }
 
+.calendar__data-item img{
+    width: 100%;
+}
+
 
 .calendar__data-item:hover{
     background-color: #4A6D80;

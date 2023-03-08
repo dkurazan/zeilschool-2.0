@@ -279,12 +279,20 @@
 .header-mobile{
     width: 100%;
     position: absolute;
-    
+    overflow: hidden;
     display: none;
+    padding-bottom: 0;
+    transition: .5s ease;
+}
+
+.header-mobile.active{
+    padding-bottom: 600px;
+    transition: .5s ease;
+
 }
 
 .header-mobile__logo{
-    position: absolute;
+    position: relative;
     z-index: 1;
 }
 
@@ -325,7 +333,7 @@
     z-index: 200;
     height: 100vh;
     display: none;
-    padding-top: 22px;
+    margin-top: -40px;
     background-color: transparent;
 }
 
