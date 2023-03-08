@@ -1,1 +1,35 @@
-{"wrapper":".product-page","sections":{"hero":{"type":"product-hero","settings":{"title":"","video_link":"","section-height":"xl"}},"template":{"type":"template-product","settings":{"btn-text":"Huur nu","btn-url":"#","button-color":"","button-color-hover":""}},"featured-collection":{"type":"featured-collection-product-page","settings":{"featured-collection":"motorboten","title":"Alternativen","number_of_products_to_show":2}}},"order":["hero","template","featured-collection"]}
+{
+  "wrapper": ".product-page",
+  "sections": {
+    "hero": {
+      "type": "product-hero",
+      "settings": {
+        "title": "",
+        "video_link": "",
+        "section-height": "sm"
+      }
+    },
+    "template": {
+      "type": "template-product",
+      "settings": {
+        "btn-text": "Huur nu",
+        "btn-url": "#",
+        "button-color": "",
+        "button-color-hover": ""
+      }
+    },
+    "featured-collection": {
+      "type": "featured-collection-product-page",
+      "settings": {
+        "featured-collection": "motorboten",
+        "title": "Alternativen",
+        "number_of_products_to_show": 2
+      }
+    }
+  },
+  "order": [
+    "hero",
+    "template",
+    "featured-collection"
+  ]
+}
