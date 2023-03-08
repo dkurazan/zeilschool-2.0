@@ -1,1 +1,112 @@
-{"wrapper":".slapen-page.pages","sections":{"hero":{"type":"pages-hero","settings":{"title":"","video_link":"","video_link2":"","img":"shopify:\/\/shop_images\/2021_Zeilschool_188hb.jpg","section-height":"xl"}},"breadcrumbs":{"type":"breadcrumbs","settings":{}},"button-section":{"type":"button-section","settings":{"btn-text":"Boek nu","btn-url":"#","button-color":"#c45f53","button-color-hover":"#984539","text-content":"<p>Wil je weten wat een Slapen inhoudt? Daar gaat ie: Van april tot oktober kun je bij ons zeilen, dat kan een dag, een paar dagen zijn of langer. Je bent dan in een groep van X kinderen van dezelfde leeftijd. Er is altijd een instructeur bij jullie. Etcetera etcetera.<br\/>Gaat iets over het ontbijt en de lunch, welke kleding, hoe laat aanwezig, mogen de ouders kijken? Hoe laat ongeveer ophalen, etc etcetera etcetera<\/p>"}},"gallery":{"type":"main-gallery","blocks":{"b6b439c8-b088-40e6-aef0-122f42eb2ecf":{"type":"item","settings":{"title":"EVENTUEEL KOP","img":"shopify:\/\/shop_images\/droog.jpg","item-title":"GROEPS ACCOMEDATIES","item-richtext":"<p>item<\/p><p>item<\/p>","title-color":"#c65f50","item-link":""}},"93b207c0-4404-466e-a3ce-e5548995f654":{"type":"item","settings":{"title":"EVENTUEEL KOP","img":"shopify:\/\/shop_images\/droog.jpg","item-title":"PASSANTEN","item-richtext":"<p>item<\/p><p>item<\/p>","title-color":"#984539","item-link":""}},"6f1e9c1f-ce23-42bc-9b52-0ccb809a1dee":{"type":"item","settings":{"title":"EVENTUEEL KOP","img":"shopify:\/\/shop_images\/droog.jpg","item-title":"B&B","item-richtext":"<p>item<\/p><p>item<\/p>","title-color":"#c65f50","item-link":""}},"99d980b7-eb61-4645-83f6-5939eb8a93ba":{"type":"item","settings":{"title":"EVENTUEEL KOP","img":"shopify:\/\/shop_images\/droog.jpg","item-title":"OVERIG","item-richtext":"<p>item<\/p><p>item<\/p>","title-color":"#984539","item-link":""}}},"block_order":["b6b439c8-b088-40e6-aef0-122f42eb2ecf","93b207c0-4404-466e-a3ce-e5548995f654","6f1e9c1f-ce23-42bc-9b52-0ccb809a1dee","99d980b7-eb61-4645-83f6-5939eb8a93ba"],"settings":{"show-title":false}},"info-section":{"type":"main-info-section","settings":{"text-top":"","img":"shopify:\/\/shop_images\/info-section-img.png","text-middle":"<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <br\/><br\/>KOPJE IN DE TEKST<br\/>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.””Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis <\/p>","text-bottom":"<p> <\/p>"}},"footer-color":{"type":"footer-color","settings":{"footer-color":"#c45f53","footer-mobile-btns":"#984539"}}},"order":["hero","breadcrumbs","button-section","gallery","info-section","footer-color"]}
+{
+  "wrapper": ".slapen-page.pages",
+  "sections": {
+    "hero": {
+      "type": "pages-hero",
+      "settings": {
+        "title": "",
+        "video_link": "",
+        "video_link2": "",
+        "img": "shopify:\/\/shop_images\/2021_Zeilschool_188hb.jpg",
+        "section-height": "sm"
+      }
+    },
+    "breadcrumbs": {
+      "type": "breadcrumbs",
+      "settings": {
+      }
+    },
+    "button-section": {
+      "type": "button-section",
+      "settings": {
+        "btn-text": "Boek nu",
+        "btn-url": "#",
+        "button-color": "#c45f53",
+        "button-color-hover": "#984539",
+        "text-content": "<p>Wil je weten wat een Slapen inhoudt? Daar gaat ie: Van april tot oktober kun je bij ons zeilen, dat kan een dag, een paar dagen zijn of langer. Je bent dan in een groep van X kinderen van dezelfde leeftijd. Er is altijd een instructeur bij jullie. Etcetera etcetera.<br\/>Gaat iets over het ontbijt en de lunch, welke kleding, hoe laat aanwezig, mogen de ouders kijken? Hoe laat ongeveer ophalen, etc etcetera etcetera<\/p>"
+      }
+    },
+    "gallery": {
+      "type": "main-gallery",
+      "blocks": {
+        "b6b439c8-b088-40e6-aef0-122f42eb2ecf": {
+          "type": "item",
+          "settings": {
+            "title": "EVENTUEEL KOP",
+            "img": "shopify:\/\/shop_images\/droog.jpg",
+            "item-title": "GROEPS ACCOMEDATIES",
+            "item-richtext": "<p>item<\/p><p>item<\/p>",
+            "title-color": "#c65f50",
+            "item-link": ""
+          }
+        },
+        "93b207c0-4404-466e-a3ce-e5548995f654": {
+          "type": "item",
+          "settings": {
+            "title": "EVENTUEEL KOP",
+            "img": "shopify:\/\/shop_images\/droog.jpg",
+            "item-title": "PASSANTEN",
+            "item-richtext": "<p>item<\/p><p>item<\/p>",
+            "title-color": "#984539",
+            "item-link": ""
+          }
+        },
+        "6f1e9c1f-ce23-42bc-9b52-0ccb809a1dee": {
+          "type": "item",
+          "settings": {
+            "title": "EVENTUEEL KOP",
+            "img": "shopify:\/\/shop_images\/droog.jpg",
+            "item-title": "B&B",
+            "item-richtext": "<p>item<\/p><p>item<\/p>",
+            "title-color": "#c65f50",
+            "item-link": ""
+          }
+        },
+        "99d980b7-eb61-4645-83f6-5939eb8a93ba": {
+          "type": "item",
+          "settings": {
+            "title": "EVENTUEEL KOP",
+            "img": "shopify:\/\/shop_images\/droog.jpg",
+            "item-title": "OVERIG",
+            "item-richtext": "<p>item<\/p><p>item<\/p>",
+            "title-color": "#984539",
+            "item-link": ""
+          }
+        }
+      },
+      "block_order": [
+        "b6b439c8-b088-40e6-aef0-122f42eb2ecf",
+        "93b207c0-4404-466e-a3ce-e5548995f654",
+        "6f1e9c1f-ce23-42bc-9b52-0ccb809a1dee",
+        "99d980b7-eb61-4645-83f6-5939eb8a93ba"
+      ],
+      "settings": {
+        "show-title": false
+      }
+    },
+    "info-section": {
+      "type": "main-info-section",
+      "settings": {
+        "text-top": "",
+        "img": "shopify:\/\/shop_images\/info-section-img.png",
+        "text-middle": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <br\/><br\/>KOPJE IN DE TEKST<br\/>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.””Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis <\/p>",
+        "text-bottom": "<p> <\/p>"
+      }
+    },
+    "footer-color": {
+      "type": "footer-color",
+      "settings": {
+        "footer-color": "#c45f53",
+        "footer-mobile-btns": "#984539"
+      }
+    }
+  },
+  "order": [
+    "hero",
+    "breadcrumbs",
+    "button-section",
+    "gallery",
+    "info-section",
+    "footer-color"
+  ]
+}
