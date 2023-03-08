@@ -1,1 +1,166 @@
-{"wrapper":".main-page","sections":{"main-hero":{"type":"main-hero","settings":{"title":"","video_link":"https:\/\/www.youtube.com\/watch?v=DrQCR3I7TYQ&ab_channel=THEBOATSHOW","section-height":"sm"}},"weather-section":{"type":"main-weather-section","settings":{"btn-text":"Boek nu","btn-url":"#","button-color":"","button-color-hover":"","text-content":""}},"gallery":{"type":"main-gallery","blocks":{"419440c2-3b74-40f8-b175-fdb6c5c41f54":{"type":"item","settings":{"title":"EVENTUEEL KOP","img":"shopify:\/\/shop_images\/vinkeveen_zeilschool.jpg","item-title":"Zeilschool","item-richtext":"<p>Item 1<\/p><p>Item 2<\/p>","title-color":"#6c9db7","item-link":"shopify:\/\/pages\/zeilschool"}},"bb028cab-0743-4bca-b325-86a5bcf455b7":{"type":"item","settings":{"title":"EVENTUEEL KOP","img":"shopify:\/\/shop_images\/vinkeveen_zeilkamp.jpg","item-title":"Zeilkamp","item-richtext":"<p>Item 1<\/p><p>Item 2<\/p>","title-color":"#396d84","item-link":"shopify:\/\/pages\/zeilkamp"}},"d243fa48-2225-4207-b976-4e8f1f4d07f4":{"type":"item","settings":{"title":"EVENTUEEL KOP","img":"shopify:\/\/shop_images\/vinkeveen_haven.jpg","item-title":"HAVEN","item-richtext":"<p>HAVEN<\/p><p>HAVEN<\/p>","title-color":"","item-link":"shopify:\/\/pages\/haven"}},"903f9ba7-59e0-4f3a-8de0-4d496a5bf1d4":{"type":"item","settings":{"title":"EVENTUEEL KOP","img":"shopify:\/\/shop_images\/vinkeveen_boothuren.jpg","item-title":"BOOT HUREN","item-richtext":"<p>BOOT HUREN<\/p><p>BOOT HUREN<\/p>","title-color":"","item-link":"shopify:\/\/pages\/boot-huren"}},"b3147006-6844-4d61-9a57-7113fb31c3b4":{"type":"item","settings":{"title":"EVENTUEEL KOP","img":"shopify:\/\/shop_images\/vinkeveen_event.jpg","item-title":"SLAPEN","item-richtext":"<p>SLAPEN<\/p><p>SLAPEN<\/p>","title-color":"#c65f50","item-link":"shopify:\/\/pages\/slapen"}},"14777657-d8da-4501-99b3-a3ea852e2369":{"type":"item","settings":{"title":"EVENTUEEL KOP","img":"shopify:\/\/shop_images\/vinkeveen_bb.jpg","item-title":"B&B","item-richtext":"<p>B&B<\/p><p>B&B<\/p>","title-color":"#984539","item-link":"shopify:\/\/pages\/b-b"}},"1a7f30d6-2996-4b3a-a3c3-16e869126f87":{"type":"item","settings":{"title":"EVENTUEEL KOP","img":"shopify:\/\/shop_images\/vinkeveen_slapen.jpg","item-title":"EVENTS","item-richtext":"<p>EVENTS<\/p><p>EVENTS<\/p>","title-color":"#f3c867","item-link":"shopify:\/\/pages\/events"}},"4c85fad3-f78e-4a74-8c71-d050fafc5013":{"type":"item","settings":{"title":"EVENTUEEL KOP","img":"shopify:\/\/shop_images\/vinkeveen_bedrijven.jpg","item-title":"Bedrijven","item-richtext":"<p>Bedrijven<\/p><p>Bedrijven<\/p>","title-color":"#bc953c","item-link":"shopify:\/\/pages\/bedrijven"}}},"block_order":["419440c2-3b74-40f8-b175-fdb6c5c41f54","bb028cab-0743-4bca-b325-86a5bcf455b7","d243fa48-2225-4207-b976-4e8f1f4d07f4","903f9ba7-59e0-4f3a-8de0-4d496a5bf1d4","b3147006-6844-4d61-9a57-7113fb31c3b4","14777657-d8da-4501-99b3-a3ea852e2369","1a7f30d6-2996-4b3a-a3c3-16e869126f87","4c85fad3-f78e-4a74-8c71-d050fafc5013"],"settings":{"show-title":true}},"info-section":{"type":"main-info-section","settings":{"text-top":"","img":"shopify:\/\/shop_images\/info-section-img.png","text-middle":"","text-bottom":""}},"news":{"type":"main-news","settings":{"insta-title":"Instagram","social-title":"volg ons","news-title":"nieuws","newsletter-title":"ONTVANG ONZE NIEUWSBRIEF","newsletter-color":"","agenda-title":"Agenda","agenda-blocks-color":""}},"footer-color":{"type":"footer-color","settings":{"footer-color":"","footer-mobile-btns":""}}},"order":["main-hero","weather-section","gallery","info-section","news","footer-color"]}
+{
+  "wrapper": ".main-page",
+  "sections": {
+    "main-hero": {
+      "type": "main-hero",
+      "settings": {
+        "title": "",
+        "video_hero": "https:\/\/rr5---sn-4g5lznl7.googlevideo.com\/videoplayback?expire=1678290267&ei=-1gIZM1gtYzp2w_lrrKoBA&ip=216.131.110.156&id=o-ANPOehnfDAzwoAiMEOr5SKoDfj82Geic3zWnO9F_pHQd&itag=302&aitags=133%2C134%2C135%2C136%2C160%2C242%2C243%2C244%2C247%2C278%2C298%2C299%2C302%2C303%2C308%2C315&source=youtube&requiressl=yes&spc=H3gIhq1lt8ELmK1Xd_dB6G7rMAgyh6ZnF-wBymbdoOgI15--Qg&vprv=1&mime=video%2Fwebm&ns=1KEJ6wcclVpLz1fYNhjuLi0L&gir=yes&clen=195462388&dur=704.440&lmt=1568752913366880&keepalive=yes&fexp=24007246&c=WEB&txp=5531432&n=qJvry-IchIm86Q&sparams=expire%2Cei%2Cip%2Cid%2Caitags%2Csource%2Crequiressl%2Cspc%2Cvprv%2Cmime%2Cns%2Cgir%2Cclen%2Cdur%2Clmt&sig=AOq0QJ8wRQIhAKoyrhIAXZboibTvswTrWsPQ5bF93DSaAusUpRMJlmDXAiASwCN83JPf9Yjt3JjmR3gC7MVVlF9LS_YvDrcYcUmByQ%3D%3D&rm=sn-n02xgoxufvg3-2gbs7d&req_id=4894719f0631a3ee&redirect_counter=2&cm2rm=sn-2gbez7s&cms_redirect=yes&cmsv=e&mh=SZ&mip=146.70.86.117&mm=34&mn=sn-4g5lznl7&ms=ltu&mt=1678279243&mv=u&mvi=5&pl=24&lsparams=mh,mip,mm,mn,ms,mv,mvi,pl&lsig=AG3C_xAwRQIhAIIIQLtWRzNf3ZjMwCFjkixP-Pp1JHKIkRNQ2c29IA7fAiBkiBH28CbZKrC21732wJnujn8u7oNIl_pAVEAwF-1STA%3D%3D",
+        "video_link": "https:\/\/www.youtube.com\/watch?v=DrQCR3I7TYQ&ab_channel=THEBOATSHOW",
+        "section-height": "sm"
+      }
+    },
+    "weather-section": {
+      "type": "main-weather-section",
+      "settings": {
+        "btn-text": "Boek nu",
+        "btn-url": "#",
+        "button-color": "",
+        "button-color-hover": "",
+        "text-content": ""
+      }
+    },
+    "gallery": {
+      "type": "main-gallery",
+      "blocks": {
+        "419440c2-3b74-40f8-b175-fdb6c5c41f54": {
+          "type": "item",
+          "settings": {
+            "title": "EVENTUEEL KOP",
+            "img": "shopify:\/\/shop_images\/vinkeveen_zeilschool.jpg",
+            "item-title": "Zeilschool",
+            "item-richtext": "<p>Item 1<\/p><p>Item 2<\/p>",
+            "title-color": "#6c9db7",
+            "item-link": "shopify:\/\/pages\/zeilschool"
+          }
+        },
+        "bb028cab-0743-4bca-b325-86a5bcf455b7": {
+          "type": "item",
+          "settings": {
+            "title": "EVENTUEEL KOP",
+            "img": "shopify:\/\/shop_images\/vinkeveen_zeilkamp.jpg",
+            "item-title": "Zeilkamp",
+            "item-richtext": "<p>Item 1<\/p><p>Item 2<\/p>",
+            "title-color": "#396d84",
+            "item-link": "shopify:\/\/pages\/zeilkamp"
+          }
+        },
+        "d243fa48-2225-4207-b976-4e8f1f4d07f4": {
+          "type": "item",
+          "settings": {
+            "title": "EVENTUEEL KOP",
+            "img": "shopify:\/\/shop_images\/vinkeveen_haven.jpg",
+            "item-title": "HAVEN",
+            "item-richtext": "<p>HAVEN<\/p><p>HAVEN<\/p>",
+            "title-color": "",
+            "item-link": "shopify:\/\/pages\/haven"
+          }
+        },
+        "903f9ba7-59e0-4f3a-8de0-4d496a5bf1d4": {
+          "type": "item",
+          "settings": {
+            "title": "EVENTUEEL KOP",
+            "img": "shopify:\/\/shop_images\/vinkeveen_boothuren.jpg",
+            "item-title": "BOOT HUREN",
+            "item-richtext": "<p>BOOT HUREN<\/p><p>BOOT HUREN<\/p>",
+            "title-color": "",
+            "item-link": "shopify:\/\/pages\/boot-huren"
+          }
+        },
+        "b3147006-6844-4d61-9a57-7113fb31c3b4": {
+          "type": "item",
+          "settings": {
+            "title": "EVENTUEEL KOP",
+            "img": "shopify:\/\/shop_images\/vinkeveen_event.jpg",
+            "item-title": "SLAPEN",
+            "item-richtext": "<p>SLAPEN<\/p><p>SLAPEN<\/p>",
+            "title-color": "#c65f50",
+            "item-link": "shopify:\/\/pages\/slapen"
+          }
+        },
+        "14777657-d8da-4501-99b3-a3ea852e2369": {
+          "type": "item",
+          "settings": {
+            "title": "EVENTUEEL KOP",
+            "img": "shopify:\/\/shop_images\/vinkeveen_bb.jpg",
+            "item-title": "B&B",
+            "item-richtext": "<p>B&B<\/p><p>B&B<\/p>",
+            "title-color": "#984539",
+            "item-link": "shopify:\/\/pages\/b-b"
+          }
+        },
+        "1a7f30d6-2996-4b3a-a3c3-16e869126f87": {
+          "type": "item",
+          "settings": {
+            "title": "EVENTUEEL KOP",
+            "img": "shopify:\/\/shop_images\/vinkeveen_slapen.jpg",
+            "item-title": "EVENTS",
+            "item-richtext": "<p>EVENTS<\/p><p>EVENTS<\/p>",
+            "title-color": "#f3c867",
+            "item-link": "shopify:\/\/pages\/events"
+          }
+        },
+        "4c85fad3-f78e-4a74-8c71-d050fafc5013": {
+          "type": "item",
+          "settings": {
+            "title": "EVENTUEEL KOP",
+            "img": "shopify:\/\/shop_images\/vinkeveen_bedrijven.jpg",
+            "item-title": "Bedrijven",
+            "item-richtext": "<p>Bedrijven<\/p><p>Bedrijven<\/p>",
+            "title-color": "#bc953c",
+            "item-link": "shopify:\/\/pages\/bedrijven"
+          }
+        }
+      },
+      "block_order": [
+        "419440c2-3b74-40f8-b175-fdb6c5c41f54",
+        "bb028cab-0743-4bca-b325-86a5bcf455b7",
+        "d243fa48-2225-4207-b976-4e8f1f4d07f4",
+        "903f9ba7-59e0-4f3a-8de0-4d496a5bf1d4",
+        "b3147006-6844-4d61-9a57-7113fb31c3b4",
+        "14777657-d8da-4501-99b3-a3ea852e2369",
+        "1a7f30d6-2996-4b3a-a3c3-16e869126f87",
+        "4c85fad3-f78e-4a74-8c71-d050fafc5013"
+      ],
+      "settings": {
+        "show-title": true
+      }
+    },
+    "info-section": {
+      "type": "main-info-section",
+      "settings": {
+        "text-top": "",
+        "img": "shopify:\/\/shop_images\/info-section-img.png",
+        "text-middle": "",
+        "text-bottom": ""
+      }
+    },
+    "news": {
+      "type": "main-news",
+      "settings": {
+        "insta-title": "Instagram",
+        "social-title": "volg ons",
+        "news-title": "nieuws",
+        "newsletter-title": "ONTVANG ONZE NIEUWSBRIEF",
+        "newsletter-color": "",
+        "agenda-title": "Agenda",
+        "agenda-blocks-color": ""
+      }
+    },
+    "footer-color": {
+      "type": "footer-color",
+      "settings": {
+        "footer-color": "",
+        "footer-mobile-btns": ""
+      }
+    }
+  },
+  "order": [
+    "main-hero",
+    "weather-section",
+    "gallery",
+    "info-section",
+    "news",
+    "footer-color"
+  ]
+}
