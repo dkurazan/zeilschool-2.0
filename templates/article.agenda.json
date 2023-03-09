@@ -13,6 +13,7 @@
       "type": "template-article-agenda",
       "settings": {
         "btn-text": "Boek nu",
+        "btn-url": "https:\/\/boeken.zeilschoolvinkeveen.nl\/",
         "button-color": "",
         "button-color-hover": ""
       }
