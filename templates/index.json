@@ -14,7 +14,7 @@
       "type": "main-weather-section",
       "settings": {
         "btn-text": "Boek nu",
-        "btn-url": "#",
+        "btn-url": "https:\/\/boeken.zeilschoolvinkeveen.nl\/",
         "button-color": "",
         "button-color-hover": "",
         "text-content": ""
