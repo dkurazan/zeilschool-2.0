@@ -20,6 +20,7 @@
       "type": "collection-button-section",
       "settings": {
         "btn-text": "Boek nu",
+        "btn-url": "https:\/\/boeken.zeilschoolvinkeveen.nl\/",
         "button-color": "#98ba7f",
         "button-color-hover": "#6a8456"
       }
