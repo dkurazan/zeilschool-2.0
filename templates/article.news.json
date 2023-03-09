@@ -13,7 +13,6 @@
       "type": "template-article-news",
       "settings": {
         "btn-text": "Boek nu",
-        "btn-url": "#",
         "button-color": "",
         "button-color-hover": ""
       }
