@@ -15,13 +15,15 @@
       "settings": {
         "btn-text": "Boek nu",
         "btn-url": "https:\/\/boeken.zeilschoolvinkeveen.nl\/",
-        "button-color": "",
-        "button-color-hover": "",
+        "button-color": "#6c9db7",
+        "button-color-hover": "#396d84",
         "text-content": ""
       }
     },
-    "filter":{
-      "type": "main-filter"
+    "filter": {
+      "type": "main-filter",
+      "settings": {
+      }
     },
     "gallery": {
       "type": "main-gallery",
