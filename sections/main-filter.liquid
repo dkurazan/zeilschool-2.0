@@ -1,0 +1,53 @@
+{% assign collection = collections['all'] %}
+
+<div class="container">
+    
+<form class="filter-grid product-filter filter-form" id="filter-form">
+    <div class="filter-column">
+      <div class="filter-title">Filter</div>
+      <a href="{{ collection.url }}?" data-reset >Reset</a>
+    </div>
+    {%- for filter in collection.filters-%}
+      <div class="filter-column">
+        {%- for filter_value in filter.values -%}
+            <div class="filter__checkbox">
+                <input type="checkbox"
+                name="{{ filter_value.param_name }}"
+                value="{{ filter_value.value }}"
+                id="Filter-{{ filter.param_name }}-{{ forloop.index }}"
+                {% if filter_value.active -%}checked{%- endif %}
+                {% if filter_value.count == 0 and filter_value.active == false -%}disabled{%- endif %}
+                >
+                <label class="filter-value" for="Filter-{{ filter.param_name }}-{{ forloop.index }}">{{ filter_value.label }}</label>
+            </div>
+        {% endfor %}
+      </div>
+    {% endfor %}
+    <div class="filter-column">
+      <div class="filter-value">
+        <label for="person">Personen</label>
+        <div class="select">
+          <select id="person" onchange="personFiltr()" >
+          </select>
+        </div>
+      </div>
+      <div class="filter-value">
+        <label for="level">Ervaring</label>
+        <div class="select">
+          <select id="level" onchange="levelFiltr()">
+            <option>—</option>
+            <option value="Beginner">Beginner</option>
+            <option value="Medium">Sarge</option>
+            <option value="Master">Hurt me plenty</option>
+          </select>
+        </div>
+      </div>
+    </div> 
+    <div class="filter-column">
+      <a href="{{ collection.url }}" class="filter__apply-button" data-button-filter >Apply</a>
+    </div>
+</form>
+
+
+</div>
+

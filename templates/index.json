@@ -20,6 +20,9 @@
         "text-content": ""
       }
     },
+    "filter":{
+      "type": "main-filter"
+    },
     "gallery": {
       "type": "main-gallery",
       "blocks": {
@@ -158,6 +161,7 @@
   "order": [
     "main-hero",
     "weather-section",
+    "filter",
     "gallery",
     "info-section",
     "news",

@@ -228,7 +228,8 @@
     height: 144px;
   }
 
-  .instagram-grid-container{
+  div.instagram-grid-container{
+    display: flex !important;
     flex-wrap: wrap;
     gap: 2px;
   }

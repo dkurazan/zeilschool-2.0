@@ -1,7 +1,7 @@
 {{ 'gallery.css' | asset_url | stylesheet_tag }}
 <div class="kopje-section">
   <div class="container">
-    {% render 'filter-main' %}
+
     <div class="row gallery__row">
       {% for block in section.blocks %}
         <div class="kopje__photo-item">

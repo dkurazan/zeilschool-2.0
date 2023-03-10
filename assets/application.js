@@ -53,9 +53,12 @@ const personcheckBoxes = document.getElementsByName("filter.p.m.opkl.persons");
 let personOption = '<option>—</option>';
 
 checkBoxes.forEach(item => {
-    item.addEventListener('click', () => {
-        document.querySelector('.filter__apply-button').classList.add('active');
+    item.childNodes.forEach( child => {
+        child.addEventListener('click', () => {
+            document.querySelector('.filter__apply-button').classList.add('active');
+        })
     })
+    
 });
 
 if (personcheckBoxes) {
@@ -137,3 +140,23 @@ if (siteUrl.includes('?')) {
         scrollToFilter.scrollIntoView({behavior: "smooth"});
     });
 }
+
+const mainBtnFilter = document.querySelector('[data-button-filter]');
+
+mainBtnFilter.addEventListener( 'click', (e) => {
+    
+    const mainInpts = document.querySelectorAll('.filter__checkbox input');
+    const arr =[];
+    mainInpts.forEach( item => {
+        
+        if(item.checked){
+            arr.push(item.getAttribute('name') + `=${item.nextElementSibling.textContent}`);
+        }
+        
+    })
+    const reg = /,/gi;
+    console.log(arr.toString().replace(reg,'&'));
+    mainBtnFilter.setAttribute('href', `${mainBtnFilter.getAttribute('href') + '?' + arr.toString().replace(reg,'&') }`)
+})
+
+

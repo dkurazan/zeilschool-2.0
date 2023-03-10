@@ -237,6 +237,7 @@ main:has(.shopify-challenge__container) {
   gap: 8px;
   min-height: 30px;
   align-items: center;
+  justify-content: space-between;
 }
 
 .filter-grid .filter-column:last-child{
@@ -360,6 +361,7 @@ main:has(.shopify-challenge__container) {
   grid-template-areas: "select";
   align-items: center;
   position: relative;
+  max-width: 163px;
 }
 
 .filter-grid .filter-column .filter-value .select::after {
@@ -485,7 +487,7 @@ main:has(.shopify-challenge__container) {
 
 /* !!! HIDDEN CHECKBOXES !!! */
 
-.collection .filter-column:nth-child(4), .collection .filter-column:nth-child(5){
+.collection .filter-column:nth-child(4), .collection .filter-column:nth-child(5), .main-page .filter-column:nth-child(4), .main-page .filter-column:nth-child(5){
   display: none;
 } 
 
