@@ -54,7 +54,7 @@
 } 
 
 
-.kopje__photo-item>a:hover .kopje__title{
+.kopje__photo-item:hover .kopje__title{
     bottom: 75%;
     transition: .5s all ease-in-out;
 }

@@ -91,7 +91,7 @@
     padding-bottom: 26px;
 }
 
-.footer__footer a{
+.footer__footer li{
     font: normal 100 14px 'Roboto Condensed', sans-serif;
     color: #FFFFFF;
     text-decoration: none;
@@ -102,16 +102,13 @@
     content: '/';
     font: normal 100 25px 'Roboto Condensed', sans-serif;
     color: #FFFFFF;
-    padding-right: 10px;
+    padding-left: 10px;
 }
 
 .footer__footer li:last-child:after{
     content: '';
 }
 
-.footer__footer a:hover{
-    text-decoration: underline;
-}
 
 .footer-main__buttons{
     display: flex;
@@ -192,11 +189,6 @@
         justify-content: space-around; 
         flex-wrap: wrap;
     }
-
-    .footer__header::after{
-        margin: 0;
-    }
-
 
 
     .footer__main .row{

@@ -6,7 +6,7 @@
             <div class="news-info__insta-block">
             <h3 class="main-title news-info-title">{{ section.settings.insta-title }}</h3>
             <div class="insta-block__images">
-                <a href="#">
+                {% comment %} <a href="#">
                     {{ 'insta-block-1.png' | asset_url | img_tag }}
                 </a>
                 <a href="#">
@@ -17,7 +17,8 @@
                 </a>
                 <a href="#">
                     {{ 'insta-block-4.png' | asset_url | img_tag }}
-                </a>
+                </a> {% endcomment %}
+                <div id="instagram-feed-box"></div>
             </div>
         </div>
         <div class="news-info__social-netw">
