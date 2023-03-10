@@ -178,7 +178,7 @@
 
 .agenda__data h6:first-child{
     font-size: 29px;
-    line-height: 30px;
+    line-height: 100%;
     font-weight: 700;
     padding-bottom: 4px;
 }
@@ -188,6 +188,8 @@
     line-height: 25px;
     font-weight: 400;
     text-transform: lowercase;
+    line-height: 100%;
+
 }
 
 .agenda__data img{
