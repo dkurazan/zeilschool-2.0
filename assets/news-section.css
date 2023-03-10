@@ -234,7 +234,7 @@
   }
 
   li.ingtagram-grid-item{
-    flex: 0 0 50%;
+    flex: 0 0 49%;
     max-width: 50% !important;
     height: fit-content !important;
   }
@@ -328,6 +328,18 @@
     .social-block__inst-facebook{
         padding-top: 0;
         justify-content: start;
+    }
+
+    .instagram-grid-container{
+        gap: 0 !important;
+        max-width: 100% !important;
+        
+    }
+
+    li.ingtagram-grid-item{
+        flex: 0 0 25%;
+        max-width: 25% !important;
+        height: auto !important;
     }
 
 }
