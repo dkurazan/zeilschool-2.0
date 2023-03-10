@@ -230,7 +230,7 @@
 
   .instagram-grid-container{
     flex-wrap: wrap;
-    gap: 0;
+    gap: 2px;
   }
 
   li.ingtagram-grid-item{
