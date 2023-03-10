@@ -228,6 +228,16 @@
     height: 144px;
   }
 
+  .instagram-grid-container{
+    flex-wrap: wrap;
+    gap: 0;
+  }
+
+  li.ingtagram-grid-item{
+    flex: 0 0 50%;
+    max-width: 50% !important;
+    height: fit-content !important;
+  }
 
 
 
