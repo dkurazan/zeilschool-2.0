@@ -1,5 +1,5 @@
 .agenda{
-    padding-top: 35px;
+    padding-top: 15px;
     padding-bottom: 80px;
 }
 
@@ -9,7 +9,6 @@
     padding-left: 54px;
     display: flex;
     flex-direction: column;
-    padding-right: 191px;
 
 }
 
@@ -22,12 +21,12 @@
     justify-content: space-between;
     position: relative;
     z-index: 300;
-    margin-top: 37px;
+    margin-top: 35px;
 }
 
 .agenda__button{
     position: relative;
-    z-index: 300;
+    padding-left: 31px;
 }
 
 .agenda__button a{
@@ -250,18 +249,21 @@
 
 .breadcrumbs{
     padding: 0;
+    padding-left: 31px;
 }
 
-@media (max-width: 1920px) {
-    .agenda__container{
-        padding-right: 54px;
-    }
+.agenda__button.agenda__button-lg-dn{
+    margin-top: 20px;
 }
 
 @media(max-width:1400px){
 
     .agenda__newsletter-inner{
         padding: 0px 0 50px 0;
+    }
+
+    .agenda__container{
+        padding-right: 20px;
     }
 }
 
@@ -274,9 +276,6 @@
         margin-left: 0;
     }
 
-    .agenda__newsletter-inner{
-        padding-top: 30px;
-    }
 }
 
 @media(max-width: 900px){

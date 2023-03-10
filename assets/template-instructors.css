@@ -14,12 +14,13 @@
 }
 
 .instructeurs{
-    padding-top: 26px;
+    padding-top: 15px;
 }
 
 .breadcrumbs{
-    padding-left: 54px;
-    padding-bottom: 26px;
+    padding-left: 85px;
+    padding-bottom: 35px;
+    padding-top: 0;
 }
 
 .instructeurs__intro{
@@ -29,7 +30,7 @@
 .instructeurs__button{
     flex: 0 0 350px;
     max-width: 350px;
-    padding-left: 54px;
+    padding-left: 85px;
 }
 
 .instructeurs__btn{
@@ -62,7 +63,6 @@
     font-family: Scarlet;
     color: #707070;
     margin-bottom: 35px;
-    margin-top: 54px;
 }
 
 .instructeurs__intro-text p{

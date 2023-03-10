@@ -1,6 +1,6 @@
  /* weather section */
  .weather-section{
-    padding-top: 100px;
+    padding-top: 75px;
     padding-bottom: 47px;
 }
 
@@ -84,12 +84,9 @@
 }
 
 .zeilschool-page .weather-section{
-    padding-top: 30px;
+    padding-top: 35px;
 }
 
-.zeilschool-page .weather-section__button-inner{
-    padding-top: 30px;
-}
 
 .zeilschool-page .weather-section__data{
     display: flex;
@@ -102,13 +99,13 @@
 }
 
 .button-section.weather-section{
-    padding-top: 20px;
+    padding-top: 35px;
 }
 
 .button-section.weather-section .weather-section__info{
     flex: 0 0 100%;
     max-width: 100%;
-    padding-top: 35px;
+    padding-top: 0;
     flex-direction: column;
     display: flex;
 }
@@ -140,7 +137,7 @@
 }
 
 .events-page .button-section.weather-section .weather-section__info{
-    padding-top: 60px;
+    padding-top: 0;
 }
 
 .haven-page .weather-section__button-inner a{
@@ -157,8 +154,7 @@
 }
 
 .collection .weather-section .row{
-    padding-bottom: 125px;
-    border-bottom: 1px solid #3c5969;
+    padding-bottom: 100px;
 }
 
 .collection .weather-section__info{
@@ -166,6 +162,13 @@
     align-items: center;
     flex: 0 0 75%;
     max-width: 75%;
+}
+
+
+
+.haven-page .button-section.weather-section, .slapen-page .button-section.weather-section, .b-b-page .button-section.weather-section,
+.events-page .button-section.weather-section, .bedrijven-page .button-section.weather-section{
+    padding-top: 35px;
 }
 
 
