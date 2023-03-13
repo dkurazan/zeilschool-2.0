@@ -12,20 +12,15 @@
     padding: 0;
 }
 
-.product{
-    padding-top: 41px;
+.breadcrumbs{
+    padding-left: 85px;
 }
 
-.breadcrumbs{
-    padding-bottom: 32px;
-    padding-left: 54px;
-}
 
 .product__info{
     display: flex;
     flex-wrap: wrap;
-    padding-left: 54px;
-    padding-bottom: 120px;
+    padding: 35px 0 60px 85px;
 }
 
 .product__info strong{
@@ -39,6 +34,9 @@
     background-color: #6a8456;
     color: white;
     cursor: pointer;
+    height: 64px;
+    width: 160px;
+    font-size: 27px;
 }
 
 .product__button:hover {
@@ -54,7 +52,7 @@
     list-style: initial;
     font-family: Roboto Condensed;
     font-weight: 400;
-    font-size: 30px;
+    font-size: 16px;
     color: #818080;
     line-height: 1.2;
     display: flex;
@@ -66,12 +64,12 @@
 }
 
 .product__block-2 ul:first-child{
-    padding-bottom: 75px;
+    padding-bottom: 25px;
 }
 
 
 .impressies{
-    padding-bottom: 111px;
+    padding-bottom: 60px;
 }
 
 .impressies__inner{
@@ -80,11 +78,11 @@
 }
 
 .product__small-title{
-    font-size: 50px;
+    font-size: 30px;
     font-weight: 700;
     font-family: Roboto Condensed;
     color: #888888;
-    padding-left: 54px;
+    padding-left: 30px;
     padding-bottom: 10px;
     text-transform: uppercase;
 }
@@ -130,7 +128,7 @@
 }
 
 .description__title h3{
-    font-size: 60px;
+    font-size: 40px;
     font-family: Scarlet;
     font-weight: 700;
     color: #707070;
@@ -138,7 +136,7 @@
 }
 
 .description__title h4{
-    font-size: 30px;
+    font-size: 25px;
     font-family: Scarlet;
     font-weight: 700;
     color: #707070;
@@ -150,14 +148,10 @@
     max-width: 56.25%;
 }
 
-.description__block:first-child .description__text p:first-child{
-    padding-top: 15px;
-}
-
 .description__text p{
     color: #818080;
     font-family: Roboto Condensed;
-    font-size: 30px;
+    font-size: 16px;
     font-weight: 400;
     line-height: 1.3;
     padding-left: 24px;
@@ -168,7 +162,7 @@
 }
 
 .description__block:last-child{
-    padding-bottom: 120px;
+    padding-bottom: 90px;
 }
 
 .alternativen{
@@ -206,7 +200,7 @@
 .alternativen__images h6{
     color: #707070;
     font-family: Roboto Condensed;
-    font-size: 35px;
+    font-size: 30px;
     font-weight: 400;
     text-align: center;
     padding-top: 5px;
@@ -215,7 +209,7 @@
 .alternativen__images img{
     width: 100%;
     object-fit: cover;
-    max-width: 240px;
+    max-width: 220px;
     display: block;
     transition: .4s ease;
 }

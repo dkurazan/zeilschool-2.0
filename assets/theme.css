@@ -86,7 +86,7 @@ p {
   padding-bottom: 10px;
   font-family: Roboto Condensed;
   font-weight: 400;
-  font-size: 25px; 
+  font-size: 16px; 
   gap: 5px;
   position: relative;
   z-index: 300;
@@ -111,8 +111,8 @@ p {
 }
 
 .col-lg-4{
-  flex: 0 0 33.333%;
-  max-width: 33.333%;
+  flex: 0 0 25%;
+  max-width: 25%;
 }
 
 .title-50{
