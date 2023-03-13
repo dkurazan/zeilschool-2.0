@@ -36,6 +36,7 @@
 
 p {
   font-weight: 300;
+  line-height: 22px !important;
 }
 
 .container{
@@ -83,6 +84,7 @@ p {
 
 .breadcrumbs{
   display: flex;
+  align-items: center;
   padding-bottom: 10px;
   font-family: Roboto Condensed;
   font-weight: 400;

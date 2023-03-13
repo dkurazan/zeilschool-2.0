@@ -78,7 +78,6 @@
     max-width: 1056px;
     font-family: Roboto Condensed;
     color: #818080;
-    font-weight: 400;
     font-size: 16px;
 }
 
@@ -106,7 +105,7 @@
 
 .agenda-post__sm-title h3, .agenda-post__sm-title h3 p{
     font-family: Scarlet;
-    font-size: 20px;
+    font-size: 17px;
     color: #707070;
     text-align: right;
 }
