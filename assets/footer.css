@@ -98,6 +98,15 @@
     margin-right: 10px;
 }
 
+.footer__footer li a{
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.footer__footer li a:hover{
+    text-decoration: underline;
+}
+
 .footer__footer li::after{
     content: '/';
     font: normal 100 25px 'Roboto Condensed', sans-serif;
